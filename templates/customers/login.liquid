@@ -1,0 +1,115 @@
+<div class="extra-page" id="login-page">
+    <section class="product-block-section">
+        <div class="product-block-inner">
+            <div class="product-block">
+
+
+                <div class="product-block-item block-text">
+
+                    <div class="product-text-inner">
+                        <div class="form-vertical" id="CustomerLoginForm">
+                            {% form 'customer_login' %}
+
+                                <h3 class="uppercase">{{ 'customer.login.title' | t }}</h3>
+
+                                <div class="note form-success hide" id="ResetSuccess">
+                                    {{ 'customer.recover_password.success' | t }}
+                                </div>
+
+                                {{ form.errors | default_errors }}
+
+                                <label for="CustomerEmail">{{ 'customer.login.email' | t }}</label>
+                                <input type="email" name="customer[email]" id="CustomerEmail" class="{% if form.errors contains 'email' %} input--error{% endif %}" autocorrect="off" autocapitalize="off" autofocus>
+
+                                {% if form.password_needed %}
+                                    <label for="CustomerPassword">{{ 'customer.login.password' | t }}</label>
+                                    <input type="password" value="" name="customer[password]" id="CustomerPassword" class="{% if form.errors contains 'password' %} input--error{% endif %}">
+                                {% endif %}
+
+                                <div class="text-center">
+                                    {% if form.password_needed %}
+                                        <p>
+                                            <a href="#recover" id="RecoverPassword">{{ 'customer.login.forgot_password' | t }}</a>
+                                        </p>
+                                    {% endif %}
+
+                                    <div class="main-contact-buttons no-padding">
+                                        <input type="submit" class="block-button" value="{{ 'customer.login.sign_in' | t }}">
+
+                                        <div class="underline-button">
+                                            {{ 'layout.customer.create_account' | t | customer_register_link }}
+                                        </div>
+                                    </div>
+                                </div>
+
+                            {% endform %}
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="product-block-item block-text">
+
+
+                    <div class="product-text-inner">
+
+                        <div class="hide" id="RecoverPasswordForm">
+
+                            <div class="text-center">
+                                <p class="font-bolder black uppercase">{{ 'customer.recover_password.title' | t }}</p>
+                                <p>{{ 'customer.recover_password.subtext' | t }}</p>
+                            </div>
+
+                            <div class="form-vertical">
+                                {% form 'recover_customer_password' %}
+
+                                    {{ form.errors | default_errors }}
+
+                                    {% comment %}
+										Add a hidden span to indicate the form was submitted succesfully.
+									{% endcomment %}
+                                    {% if form.posted_successfully? %}
+                                        <span class="hide reset-password-success"></span>
+                                    {% endif %}
+
+                                    <label for="RecoverEmail">{{ 'customer.recover_password.email' | t }}</label>
+                                    <input autocapitalize="off" autocorrect="off" class="input-full" id="RecoverEmail" name="email" type="email" value="">
+
+                                    <div class="main-contact-buttons no-padding">
+
+                                        <input type="submit" class="block-button" value="{{ 'customer.recover_password.submit' | t }}">
+
+
+                                        <button class="underline-button" id="HideRecoverPasswordLink" type="button">{{ 'customer.recover_password.cancel' | t }}</button>
+                                    </div>
+                                {% endform %}
+                            </div>
+
+                        </div>
+
+                        {% comment %}
+							If accounts are set as optional, the following will be shown as an option
+																									during checkout, not on the default /login page.
+						{% endcomment %}
+                        {% if shop.checkout.guest_login %}
+                            <div class="text-center">
+                                <hr class="hr--invisible">
+                                <h4 class="uppercase">{{ 'customer.login.guest_title' | t }}</h4>
+
+                                {% form 'guest_login' %}
+                                    <input type="submit" class="block-button" value="{{ 'customer.login.guest_continue' | t }}">
+                                {% endform %}
+                            </div>
+                        {% endif %}
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</div>

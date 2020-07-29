@@ -1,0 +1,13 @@
+{% comment %}
+  DO NOT MODIFY THIS FILE DIRECTLY. THIS FILE WILL BE OVERWRITTEN.
+  YOU CAN MODIFY THE LIQUID CODE FOR THIS CUSTOM FIELD HERE:
+  https://customfields.bonify.io/dashboard/hornit-dev.myshopify.com/products/configure/184153/edit
+{% endcomment %}
+{% if product.metafields.custom_fields["helmet_sizing_pop-up"] != blank %}
+  <div class="custom-field custom-field__helmet-sizing-pop-up custom-field__type--url">
+    <h3 class="custom-field--title">Helmet Sizing Pop-up</h3>
+    <div class="custom-field--value">
+      {{ product.metafields.custom_fields["helmet_sizing_pop-up"] }}
+    </div>
+  </div>
+{% endif %}

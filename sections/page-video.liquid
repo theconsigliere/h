@@ -1,0 +1,82 @@
+{% schema %}
+
+{
+    "name": "Display Video",
+    "class": "display-video",
+    "blocks": [
+        {
+            "type": "video",
+            "name": "Video",
+            "limit": 1,
+            "settings": [
+                {
+                    "id": "video_image",
+                    "type": "image_picker",
+                    "label": "Vide Hero Image"
+                }, {
+                    "id": "video_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Video Title"
+                }, {
+                    "id": "video_desc",
+                    "type": "textarea",
+                    "label": "Text Description"
+                }, {
+                    "id": "video_url",
+                    "type": "video_url",
+                    "label": "Video URL",
+                    "accept": [
+                        "youtube",
+                        "vimeo"
+                    ],
+                    "default": "https://youtu.be/o0HGtxPc454",
+                    "info": "Text",
+                    "placeholder": "Add your video link here"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "content",
+            "name": "Display Video"
+        }
+    ]
+}
+
+{% endschema %}
+
+<section class="page-video-section" id="homepage-video">
+
+    {% for block in section.blocks %}
+
+
+        <div class="page-video-image">
+            <img data-src="{{ block.settings.video_image | img_url: 'master' }}" alt="{{ block.settings.video_image.alt }}" class="lazyload"/>
+        </div>
+
+
+        <div class="page-video-section-title">
+
+
+            {% if block.settings.video_url != blank %}
+
+                <div class="page-video-icon">
+                    {%- comment -%}pass url into video snippet{%- endcomment -%}
+                    {% include "video" with video_url: block.settings.video_url %}
+
+                </div>
+
+            {% endif %}
+
+
+            <h3 class="video-title-desc white uppercase">{{ block.settings.video_title }}</h3>
+            <p class="video-title-desc white p-fade">{{ block.settings.video_desc }}</p>
+
+
+        </div>
+
+
+    {% endfor %}
+</section>

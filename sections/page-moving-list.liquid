@@ -1,0 +1,145 @@
+{% schema %}
+
+{
+    "name": "Title Section",
+    "class": "page-title-section",
+    "blocks": [
+        {
+            "type": "title",
+            "name": "Cyclist Section",
+            "settings": [
+                {
+                    "id": "title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Page Title"
+                }, {
+                    "type": "link_list",
+                    "id": "cycle_list",
+                    "label": "List of different types of cyclists"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "content",
+            "name": "Moving List Section"
+        }
+    ]
+}
+
+{% endschema %}
+
+<section>
+
+    {% for block in section.blocks %}
+
+        <div class="title-section cycle-title">
+            <h3 class="uppercase">{{ block.settings.title }}</h3>
+            {{ 'underline.svg' | asset_url | img_tag: 'Background', 'underline-svg' }}
+        </div>
+
+        <div class="reel">
+            {% assign cycleListHandle = block.settings.cycle_list %}
+
+            <div class="cycle_list">
+                {% assign cycleList = linklists[cycleListHandle] %}
+                <div class="cycle_parent_link">
+
+                    {% comment %}
+						Creates new variable called navList, which grabs linklist object for the link list we need, let us define handle variable on the include tag ie in header.liquid or footer footer.liquid
+					{% endcomment %}
+                    <span>
+                        {% for cycle in cycleList.links %}
+
+
+                            <a class="cycle_text_link" href="{{ cycle.url }}">{{ cycle.title }}</a>
+
+
+                        {% endfor %}
+                    </span>
+
+                    <span>
+                        {% for cycle in cycleList.links %}
+
+
+                            <a class="cycle_text_link" href="{{ cycle.url }}">{{ cycle.title }}</a>
+
+
+                        {% endfor %}
+                    </span>
+
+
+                </div>
+            </div>
+
+            <div class="cycle_list">
+                {% assign cycleList = linklists[cycleListHandle] %}
+                <div class="cycle_parent_link_yellow">
+
+                    {% comment %}
+						Creates new variable called navList, which grabs linklist object for the link list we need, let us define handle variable on the include tag ie in header.liquid or footer footer.liquid
+					{% endcomment %}
+                    <span>
+                        {% for cycle in cycleList.links %}
+
+
+                            <a class="cycle_text_link_yellow" href="{{ cycle.url }}">{{ cycle.title }}</a>
+
+
+                        {% endfor %}
+                    </span>
+
+                    <span>
+                        {% for cycle in cycleList.links %}
+
+
+                            <a class="cycle_text_link_yellow" href="{{ cycle.url }}">{{ cycle.title }}</a>
+
+
+                        {% endfor %}
+                    </span>
+
+
+                </div>
+            </div>
+
+            <div class="cycle_list">
+                {% assign cycleList = linklists[cycleListHandle] %}
+                <div class="cycle_parent_link">
+
+                    {% comment %}
+						Creates new variable called navList, which grabs linklist object for the link list we need, let us define handle variable on the include tag ie in header.liquid or footer footer.liquid
+					{% endcomment %}
+                    <span>
+                        {% for cycle in cycleList.links %}
+
+
+                            <a class="cycle_text_link" href="{{ cycle.url }}">{{ cycle.title }}</a>
+
+
+                        {% endfor %}
+                    </span>
+
+                    <span>
+                        {% for cycle in cycleList.links %}
+
+
+                            <a class="cycle_text_link" href="{{ cycle.url }}">{{ cycle.title }}</a>
+
+
+                        {% endfor %}
+                    </span>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    {% endfor %}
+
+</section>

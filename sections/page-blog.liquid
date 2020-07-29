@@ -1,0 +1,116 @@
+{% schema %}
+
+{
+    "name": "Blog Content",
+    "class": "blog-content-section",
+    "blocks": [
+        {
+            "name": "Blog",
+            "type": "blog_section",
+            "settings": [
+                {
+                    "type": "blog",
+                    "id": "blog_items",
+                    "label": "Blog Item",
+                    "info": "Select your blog item "
+                }, {
+                    "id": "max_items",
+                    "type": "range",
+                    "min": 1,
+                    "max": 4,
+                    "step": 1,
+                    "unit": "x",
+                    "label": "Blog items to Show",
+                    "default": 2
+                }, {
+                    "id": "title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Defaults to Collection Title"
+                }, {
+                    "id": "content",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "show_button",
+                    "type": "checkbox",
+                    "label": "Show Button?",
+                    "default": true
+                }, {
+                    "id": "button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }, {
+                    "id": "button_url",
+                    "type": "url",
+                    "label": "Button URL"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "content",
+            "name": "Blog Item Section"
+        }
+    ]
+}
+
+{% endschema %}
+
+
+<div class="content-wrap">
+    <div class="page-category">
+
+
+        {% for block in section.blocks %}
+
+            <div class="section-contents">
+                <div class="collection-block-info">
+                    <h3 class="white uppercase">{{ block.settings.title }}</h3>
+                    {{ 'underline.svg' | asset_url | img_tag: 'Background', 'underline-svg' }}
+                    <p class="white">{{ block.settings.content }}</p>
+                </div>
+
+                <div class="blog-item-group">
+                    {% assign news = block.settings.blog_items %}
+                    {% for article in
+                      
+        blogs[news].articles limit: block.settings.max_items %}
+
+                        <a aria-label="Read more about {{article.title }}" href="{{ article.url }}" class="blog_item">
+                            <div>
+                                <img alt="{{ article.title }}" data-src="{{ article.image.src | img_url: '1024x' }}" class="lazyload"/>
+                                <div class="grid-product__meta">
+                                    <div class="article__content-meta">
+                                        <div class="blog_item_text">
+                                            <p class="white">
+                                                {{ article.created_at | date: format:"abbreviated_date" }}
+                                            </p>
+                                            <h6 class="white">{{ article.title }}</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+
+                    {% endfor %}
+                </div>
+
+                {% if block.settings.show_button %}
+
+                    <div class="collection-block-button">
+                        <a href="{{ block.settings.button_url }}" class="block-button">
+                            {{ block.settings.button_text }}
+                        </a>
+                    </div>
+
+                {% endif %}
+            </div>
+
+        {% endfor %}
+    </div>
+</div>

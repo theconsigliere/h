@@ -1,0 +1,114 @@
+{% schema %}
+
+{
+    "name": "Instagram Section",
+    "class": "page-insta-section",
+    "blocks": [
+        {
+            "type": "title",
+            "name": "Instagram Inner Section",
+            "limit": 1,
+            "settings": [
+                {
+                    "id": "insta_image_one",
+                    "type": "image_picker",
+                    "label": "First Instagram Image"
+                }, {
+                    "id": "insta_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Section Title"
+                }, {
+                    "id": "hashtag",
+                    "type": "textarea",
+                    "label": "Enter Hornit Hashtag"
+                }, {
+                    "id": "insta_button_url",
+                    "type": "url",
+                    "label": "Hornit Instagram url"
+                }, {
+                    "id": "insta_button_text",
+                    "type": "text",
+                    "label": "Hornit Instagram Text",
+                    "placeholder": "Follow us on instagram"
+                }, {
+                    "id": "kids_insta_button_url",
+                    "type": "url",
+                    "label": "Hornit Kids Instagram url"
+                }, {
+                    "id": "kids_insta_button_text",
+                    "type": "text",
+                    "label": "Hornit Kids Instagram Text",
+                    "placeholder": "Follow us on instagram"
+                }, {
+                    "id": "insta_image_two",
+                    "type": "image_picker",
+                    "label": "Second Instagram Image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "content",
+            "name": "Display Instagram Section"
+        }
+    ]
+}
+
+{% endschema %}
+
+<section>
+
+    {% for block in section.blocks %}
+
+        <div class="page-insta-section">
+
+            <div class="insta_inner-section">
+                {% if block.settings.insta_image_one != blank %}
+                    <div class="insta_item">
+
+                        <img data-src="{{ block.settings.insta_image_one | img_url: 'master' }}" alt="{{ block.settings.insta_image_two.alt }}" class="lazyload"/>
+
+                    </div>
+                {% endif %}
+
+                <div class="insta_item insta_item_text">
+                    <div class="insta-item-text-group">
+                        <h4 class="uppercase">{{ block.settings.insta_title }}</h4>
+
+                        <p class="p-fade">{{ block.settings.hashtag }}</p>
+
+                        {% if block.settings.insta_button_url != blank %}
+                            <a href="{{ block.settings.insta_button_url }}" target="new" class="underline-button button-block uppercase">
+                                {{ block.settings.insta_button_text }}
+                            </a>
+                        {% endif %}
+
+                        {% if block.settings.kids_insta_button_url != blank %}
+                            <a href="{{ block.settings.kids_insta_button_url }}" target="new" class="underline-button button-block uppercase">
+                                {{ block.settings.kids_insta_button_text }}
+                            </a>
+                        {% endif %}
+                    </div>
+
+
+                </div>
+                {% if block.settings.insta_image_two != blank %}
+                    <div class="insta_item">
+
+                        <img data-src="{{ block.settings.insta_image_two | img_url: 'master' }}" alt="{{ block.settings.insta_image_two.alt }}" class="lazyload"/>
+
+                    </div>
+                {% endif %}
+
+
+            </div>
+
+
+        </div>
+
+
+    {% endfor %}
+
+</section>

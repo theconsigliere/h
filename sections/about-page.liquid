@@ -1,0 +1,109 @@
+{% schema %}
+
+{
+    "name": "story",
+    "class": "our-story",
+    "blocks": [
+        {
+            "type": "about-section",
+            "name": "About Section",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image_selector",
+                    "label": "Add Image"
+                }, {
+                    "type": "textarea",
+                    "id": "textareaone",
+                    "label": "Add a text section",
+                    "info": "Text",
+                    "placeholder": "Type here..."
+                }, {
+                    "type": "textarea",
+                    "id": "textareatwo",
+                    "label": "Add a text section",
+                    "info": "Text",
+                    "placeholder": "Type here..."
+                }, {
+                    "type": "textarea",
+                    "id": "textareathree",
+                    "label": "Add a text section",
+                    "info": "Text",
+                    "placeholder": "Type here..."
+                }, {
+                    "type": "textarea",
+                    "id": "textareafour",
+                    "label": "Add a text section",
+                    "info": "Text",
+                    "placeholder": "Type here..."
+                }, {
+                    "id": "contact_button_url",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "contact_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Contact Us"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "content",
+            "name": "Our Story"
+        }
+    ]
+}
+
+{% endschema %}
+
+
+<section class="story-info">
+	<div class="inner">
+		{% for block in section.blocks %}
+
+
+			<section class="about-us-section">
+
+				<div class="about-image">
+					{{ block.settings.image_selector | img_url: 'master' | img_tag: 'lazyload' }}
+				</div>
+
+
+				<div class="about-text-area">
+					<div class="about-para">
+						<p>
+							{{ block.settings.textareaone }}
+						</p>
+					</div>
+					<div class="about-para">
+						<p>
+							{{ block.settings.textareatwo }}
+						</p>
+					</div>
+					<div class="about-para">
+						<p>
+							{{ block.settings.textareathree }}
+						</p>
+					</div>
+					<div class="about-para">
+						<p>
+							{{ block.settings.textareafour }}
+						</p>
+					</div>
+
+					{% if block.settings.contact_button_url != blank %}
+						<a href="{{ block.settings.contact_button_url }}" class="block-button">
+							{{ block.settings.contact_button_text }}
+						</a>
+					{% endif %}
+				</div>
+
+			</section>
+
+
+		{% endfor %}
+	</div>
+</section>

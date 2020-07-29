@@ -1,0 +1,23 @@
+<button class="slider-button prev js-slider-button-prev">
+
+
+	{% if template contains 'product' %}
+		{% include 'inline-icon' with svg: 'icon-arrow-left.svg', alt: 'Previous', class: 'grey-color-stroke' %}
+	{% else %}
+		{% include 'inline-icon' with svg: 'icon-arrow-left.svg', alt: 'Previous', class: 'white-color-stroke' %}
+	{% endif %}
+
+</button>
+
+
+<button class="slider-button next js-slider-button-next">
+
+
+	{% if template contains 'product' %}
+		{% include 'inline-icon' with svg: 'icon-arrow-right.svg', alt: 'Next', class: 'grey-color-stroke' %}
+	{% else %}
+		{% include 'inline-icon' with svg: 'icon-arrow-right.svg', alt: 'Next', class: 'white-color-stroke' %}
+	{% endif %}
+
+
+</button>

@@ -1,0 +1,85 @@
+{% comment %}
+	https://help.shopify.com/en/themes/liquid/objects/collection#collection-products
+{% endcomment %}
+{% paginate collection.products by 9999 %}
+	<div id="page-collection">
+		{% if collection.image %}
+			<div id="collection-image">
+				<img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}" class="lazyload"/>
+			</div>
+		{% endif %}
+
+		<div class="collection-content">
+			<aside class="collection-sidebar">
+
+
+				{% if collection.handle contains 'kids' or collection.handle contains 'mini' %}
+
+
+					<h1 class="uppercase kids-header-font">{{ collection.title }}</h1>
+					<div class="collection-description">
+						<p>{{ collection.description }}</p>
+					</div>
+					<div class="collection-sorting">
+
+					{%- comment -%}<h3 class="uppercase kids-sub-header-font">{{ "collection.sort.title" | t }}</h3>{%- endcomment -%}
+						
+
+
+					{% else %}
+
+						<h3 class="uppercase">{{ collection.title }}</h3>
+						<div class="collection-description">
+							<p>{{ collection.description }}</p>
+						</div>
+						<div class="collection-sorting">
+							{%- comment -%}<h5 class="uppercase">{{ "collection.sort.title" | t }}</h5>{%- endcomment -%}
+
+
+						{% endif %}
+
+
+{%- comment -%}
+						<div class='sorting-options'>
+						
+					
+							{% for option in collection.sort_options %}
+								{% if option.value contains 'price-' %}
+
+									<a class="text-link {% if collection.sort_by == option.value %}active{% endif %}" href="?sort_by={{ option.value }}">
+
+										{% if option.value contains 'ascending' %}
+											<p class="uppercase font-bolder">{{ "collection.sort.price_low_high" | t }}</p>
+										{% else %}
+											<p class="uppercase font-bolder">{{ "collection.sort.price_high_low" | t }}</p>
+										{% endif %}
+									</a>
+
+								{% endif %}
+							{% endfor %}
+						</div>
+{%- endcomment -%}
+
+						{% comment %}
+							https://help.shopify.com/en/themes/liquid/objects/collection#collection-sort_by
+						{% endcomment %}
+
+						{%- comment -%}
+						{% if collection.sort_by %}
+							<a class="block-button" href="{{ collection.url }}">
+								{{ "collection.sort.clear" | t}}
+							</a>
+						{% endif %}
+						{%- endcomment -%}
+					</div>
+				</aside>
+
+				<div class="collection-products">
+					{% for product in collection.products %}
+						{% include 'product-card' %}
+					{%endfor %}
+				</div>
+			</div>
+		</div>
+
+	{% endpaginate %}

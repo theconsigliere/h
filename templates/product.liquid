@@ -1,0 +1,127 @@
+{% comment %} {% include "product-shipping-returns" %} {% endcomment %}
+
+{% comment %}
+	Breaking up the description into different pieces
+{% endcomment %}
+
+
+<div class="product-page" id="page-product">
+
+    {% comment %}Begin Product Top{% endcomment %}
+    <div id="product-top">
+
+        <div class="product-top-inner">
+            <div class="product-images js-product-slideshow">
+
+
+                <div class="slides js-slides">
+                    {% for image in product.images %}
+
+                        {% comment %}
+							if one image available, single image shown
+						{% endcomment %}
+                        <div class="single-image">
+                            <img src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}">
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <div class="slider-nav">
+                    {% for image in product.images %}
+
+                        {% comment %}
+							if one image available, single image shown
+						{% endcomment %}
+                        <div class="single-image">
+                            <img src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}">
+                        </div>
+                    {% endfor %}
+
+                </div>
+                {% comment %}
+					if images available multiple image slideshow
+				{% endcomment %}
+                {% if product.images.size > 1 %}
+                    {% include 'slider-buttons' %}
+
+                    <div class="image-counter">
+                        <span class="js-current-slide">
+                            1
+                        </span>
+                        of
+                        {{ product.images.size }}
+                    </div>
+                {% endif %}
+
+            </div>
+
+
+            <div class="product-actions">
+
+
+                <nav aria-label="breadcrumbs" class="breadcrumb" role="navigation">
+                    {% comment %}
+						if within collection url, display collecion name
+					{% endcomment %}
+                    {% if collection %}
+                        <a class="current-page" href="{{ collection.url }}">{{ collection.title }}</a>
+                    {% endif %}
+
+                </nav>
+
+
+                <h2 class="uppercase product-title">{{ product.title }}</h2>
+                {% comment %}
+					{{ description }}
+				{% endcomment %}
+                {% include 'add-to-cart-form' %}
+
+            </div>
+        </div>
+
+    </div>
+    {% comment %}End Product Top{% endcomment %}
+
+    {% comment %}Begin Product Bottom{% endcomment %}
+    <div id="product-bottom">
+
+        {% if description != blank %}
+            <div class="info-section description single_product__inner">
+                <h5 class="uppercase">{{ 'product.description.title' | t }}</h5>
+                <div class="product-description">
+                    {% comment %}
+						this has been set above by the description_array
+					{% endcomment %}
+
+                    <p>{{ description }}</p>
+                </div>
+            </div>
+
+        {% endif %}
+
+
+        <div class="shipping-returns">
+            <div class="info-section shipping">
+                <h6 class="font-bolder uppercase">{{ 'product.shipping.title' | t }}</h6>
+                <p>{{ shop.shipping_policy }}</p>
+            </div>
+
+            <div class="info-section returns">
+                <h6 class="font-bolder uppercase">{{ 'product.returns.title' | t }}</h6>
+                <p>{{ shop.refund_policy }}</p>
+            </div>
+        </div>
+    </div>
+
+    {% comment %}End Product Bottom{% endcomment %}
+
+    {% comment %}
+		if we are in product more.liquid re assign collection
+	{% endcomment %}
+
+    {% if collection %}
+        {% include 'product-more' with collection: collection, exclude: product.handle %}
+    {% endif %}
+
+
+</div>

@@ -1,0 +1,303 @@
+{% schema %}
+
+{
+    "name": "Clug Video & Collection",
+    "class": "product-templates",
+    "blocks": [
+        {
+            "type": "faq",
+            "name": "Faq Section",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "enable_faq",
+                    "label": "Enable FAQ Section"
+                }, {
+                    "id": "faq_title",
+                    "type": "text",
+                    "label": "Faq Title",
+                    "placeholder": "FAQ Title"
+                }, {
+                    "id": "faq_question_1",
+                    "type": "text",
+                    "label": "FAQ Title",
+                    "placeholder": "FAQ Question Title"
+                }, {
+                    "id": "faq_desc_1",
+                    "type": "textarea",
+                    "label": "FAQ Question"
+                }, {
+                    "id": "faq_question_2",
+                    "type": "text",
+                    "label": "FAQ Question Title",
+                    "placeholder": "FAQ Question Title"
+                }, {
+                    "id": "faq_desc_2",
+                    "type": "textarea",
+                    "label": "FAQ Question"
+                }, {
+                    "id": "faq_question_3",
+                    "type": "text",
+                    "label": "FAQ Question Title",
+                    "placeholder": "FAQ Question Title"
+                }, {
+                    "id": "faq_desc_3",
+                    "type": "textarea",
+                    "label": "FAQ Question"
+                }, {
+                    "id": "faq_question_4",
+                    "type": "text",
+                    "label": "FAQ Question Title",
+                    "placeholder": "FAQ Question Title"
+                }, {
+                    "id": "faq_desc_4",
+                    "type": "textarea",
+                    "label": "FAQ Question"
+                }, {
+                    "id": "faq_button_url",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "faq_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Read More"
+                }
+            ]
+        }, {
+            "type": "video",
+            "name": "Video",
+            "limit": 1,
+            "settings": [
+                {
+                    "id": "video_image",
+                    "type": "image_picker",
+                    "label": "Vide Hero Image"
+                }, {
+                    "id": "video_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Video Title"
+                }, {
+                    "id": "video_desc",
+                    "type": "textarea",
+                    "label": "Text Description"
+                }, {
+                    "id": "video_url",
+                    "type": "video_url",
+                    "label": "Video URL",
+                    "accept": [
+                        "youtube",
+                        "vimeo"
+                    ],
+                    "default": "https://youtu.be/o0HGtxPc454",
+                    "info": "Text",
+                    "placeholder": "Add your video link here"
+                }
+            ]
+        }, {
+            "type": "collection",
+            "name": "Collection",
+            "settings": [
+                {
+                    "id": "collection",
+                    "type": "collection",
+                    "label": "Collection"
+                }, {
+                    "id": "max_products",
+                    "type": "range",
+                    "min": 2,
+                    "max": 6,
+                    "step": 1,
+                    "unit": "ct",
+                    "label": "Products to Show",
+                    "default": 2
+                }, {
+                    "id": "title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Defaults to Collection Title"
+                }, {
+                    "id": "content",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "show_button",
+                    "type": "checkbox",
+                    "label": "Show Button?",
+                    "default": true
+                }, {
+                    "id": "button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }
+            ]
+        }
+    ]
+}
+
+{% endschema %}
+
+{% for block in section.blocks %}
+
+    {% case block.type %}
+
+        {% when 'faq' %}
+
+            {% if block.settings.enable_faq %}
+
+                <section class="tab-section" id="faqs">
+                    <div class="inner">
+                        <h3 class="text-align uppercase">{{ block.settings.faq_title }}</h3>
+
+                        <div class="tabs">
+
+                            {% if block.settings.faq_question_1 %}
+
+                                <div class="tab">
+                                    <input class="tab-input" type="checkbox">
+
+                                    <label class="tab-label">
+                                        <h6>{{ block.settings.faq_question_1 }}</h6>
+                                    </label>
+                                    <div class="tab-content">
+                                        <p>{{ block.settings.faq_desc_1 }}</p>
+                                    </div>
+
+                                </div>
+
+                            {% endif %}
+
+                            {% if block.settings.faq_question_2 %}
+
+                                <div class="tab">
+                                    <input class="tab-input" type="checkbox">
+
+                                    <label class="tab-label">
+                                        <h6>{{ block.settings.faq_question_2 }}</h6>
+                                    </label>
+                                    <div class="tab-content">
+                                        <p>{{ block.settings.faq_desc_2 }}</p>
+                                    </div>
+
+                                </div>
+
+                            {% endif %}
+
+
+                            {% if block.settings.faq_question_3 %}
+
+                                <div class="tab">
+                                    <input class="tab-input" type="checkbox">
+
+                                    <label class="tab-label">
+                                        <h6>{{ block.settings.faq_question_3 }}</h6>
+                                    </label>
+                                    <div class="tab-content">
+                                        <p>{{ block.settings.faq_desc_3 }}</p>
+                                    </div>
+
+                                </div>
+
+                            {% endif %}
+
+                            {% if block.settings.faq_question_4 %}
+
+                                <div class="tab">
+                                    <input class="tab-input" type="checkbox">
+
+                                    <label class="tab-label">
+                                        <h6>{{ block.settings.faq_question_4 }}</h6>
+                                    </label>
+                                    <div class="tab-content">
+                                        <p>{{ block.settings.faq_desc_4 }}</p>
+                                    </div>
+
+                                </div>
+
+                            {% endif %}
+
+
+                        </div>
+
+                        {% if block.settings.faq_button_url != blank %}
+                            <div class="tabs-button">
+
+                                <a href="{{ block.settings.faq_button_url }}" class="block-button">
+                                    {% if block.settings.faq_button_text != blank %}
+                                        {{ block.settings.faq_button_text }}
+                                    {% else %}
+                                        {{ "general.shop.shop_now" | t }}
+                                    {% endif %}
+                                </a>
+
+                            </div>
+                        {% endif %}
+
+
+                    </div>
+
+                </section>
+
+            {% endif %}
+
+
+        {% when 'video' %}
+
+
+            <section class="video-section">
+
+                <div class="video-section-title">
+                    <div class="video-icon">
+                        {% include "inline-icon" with svg: 'play-button.svg' %}
+                    </div>
+
+                    <h4 class="white uppercase">{{ block.settings.video_title }}
+                    </h4>
+                    <p class="white p-fade">{{ block.settings.video_desc }}
+                    </p>
+                </div>
+
+
+                <div class="video-item">
+                    <div class="black-overlay"></div>
+
+                    <iframe data-src="{{ block.settings.video_url }}?loop=1&autopause=0" class="lazyload" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+                </div>
+
+                <img data-src="{{ block.settings.video_image | img_url: 'master' }}" alt="{{ block.settings.video_image.alt }}" class="lazyload"/>
+
+
+            </section>
+
+
+        {% when 'collection' %}
+
+            <section class="collection-product-more">
+                <div class="content-wrap">
+
+                    <div class="content-block-{{ block.type }}" {{ block.shopify_attributes }}>
+
+
+                        {% assign collection = collections[block.settings.collection] %}
+
+                        <div class="collection-list-wrap wrapper">
+                            {% include "collection-list" with title: block.settings.title, content:
+          block.settings.content, show_button: block.settings.show_button, exclude: product.handle,
+          button_text: block.settings.button_text, max_products:
+          block.settings.max_products %}
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+    {% endcase %}
+
+{% endfor %}

@@ -1,0 +1,49 @@
+{% comment %}
+	https://help.shopify.com/en/themes/liquid/objects/collection#collection-products
+{% endcomment %}
+{% paginate collection.products by 9999 %}
+    <div id="page-collection">
+        {% if collection.image %}
+            <div id="collection-image">
+                <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}" class="lazyload"/>
+            </div>
+        {% endif %}
+
+        <div class="collection-content">
+            <aside class="collection-sidebar">
+
+
+                {% if collection.handle contains 'kids' or collection.handle contains 'mini' %}
+
+
+                    <h1 class="uppercase kids-header-font">{{ collection.title }}</h1>
+                    <div class="collection-description">
+                        <p>{{ collection.description }}</p>
+                    </div>
+
+
+                {% else %}
+
+                    <h3 class="uppercase">{{ collection.title }}</h3>
+                    <div class="collection-description">
+                        <p>{{ collection.description }}</p>
+                    </div>
+
+
+                {% endif %}
+
+
+                {% section 'helmet-collection' %}
+
+
+            </aside>
+
+            <div class="collection-products">
+                {% for product in collection.products %}
+                    {% include 'product-card' %}
+                {%endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endpaginate %}

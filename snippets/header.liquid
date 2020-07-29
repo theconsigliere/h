@@ -1,0 +1,110 @@
+<header>
+	{% section "announcement-bar" %}
+
+	<div class="mobile-nav">
+
+		<div class="mobile-nav-inner">
+			{% section "mega-menu" %}
+
+			{%- comment -%}
+				<div class="mobile-currency">
+				                    {% include 'currency-picker' %}
+				                </div>
+			{%- endcomment -%}
+
+			<div class="mobile-store-selector">
+				{% section "store-selector" %}
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<div id="header-global">
+
+		<div class="header-mobile">
+			<div class="mobile-menu-icon">
+				<div id="toggle">
+					<span></span>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="header-left">
+			{% comment %}
+				Link to Homepage
+			{% endcomment %}
+			<a class="link-logo" href="/">
+
+				{% comment %}
+					using inline-item to select svg for us
+				{% endcomment %}
+				{% assign shop_title = 'general.shop.title' | t %}
+				{% include 'inline-icon' with svg: 'hornit-logo.svg', alt: shop_title, class: 'logo-main' %}
+			</a>
+
+		</div>
+
+
+		<div class="header-middle">
+
+			{% section "mega-menu" %}
+
+
+		</div>
+
+
+		<div class="header-right">
+
+
+			<a class="text-link" href="/search">
+
+				{% include 'inline-icon' with svg: 'icon-search.svg' %}
+			</a>
+
+			{% comment %}
+				include currency picker
+																																												
+																																				                <div class="header-right-currency-picker">
+																																				                    {% include 'currency-picker' %}
+																																				                </div>
+
+			{% endcomment %}
+
+
+			<div class="header-store-selector">
+				{% section "store-selector" %}
+			</div>
+
+
+			{% comment %}
+				Cart with cart link
+			{% endcomment %}
+			<a class="text-link cart-link js-cart-link" href="/cart">
+
+				{% include "inline-icon" with svg: 'cart.svg' %}
+
+				{% if cart.item_count > 0 %}
+					{{ 'cart.button.count_html' | t: itemCount: cart.item_count }}
+
+				{% else %}
+					{{ 'cart.button.count_html' | t: itemCount: cart.item_count  }}
+				{% endif %}
+
+			</a>
+		</div>
+
+
+	</div>
+
+	{% comment %}
+		if we are not on cart page, show mini cart
+	{% endcomment %}
+	{% if template != 'cart' %}
+		{% include 'mini-cart' %}
+	{% endif %}
+
+
+</header>

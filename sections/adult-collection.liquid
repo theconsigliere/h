@@ -1,0 +1,464 @@
+{% schema %}
+
+{
+    "name": "Adult Collection Page",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title_top",
+            "label": "Heading",
+            "default": "Custom content"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "title",
+            "name": "Title Section",
+            "settings": [
+                {
+                    "id": "title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Page Title"
+                }, {
+                    "id": "contentdesc",
+                    "type": "textarea",
+                    "label": "Text Description",
+                    "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+                }
+            ]
+        }, {
+            "type": "header",
+            "name": "Page Header",
+            "settings": [
+                {
+                    "id": "header_image",
+                    "type": "image_picker",
+                    "label": "Background Image"
+                }, {
+                    "id": "header_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Slide Title"
+                }, {
+                    "id": "header_content",
+                    "type": "textarea",
+                    "label": "Slide Content"
+                }, {
+                    "id": "header_button_url",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "header_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }
+            ]
+        }, {
+            "type": "collection",
+            "name": "Collection",
+            "settings": [
+                {
+                    "id": "collection",
+                    "type": "collection",
+                    "label": "Collection"
+                }, {
+                    "id": "max_products",
+                    "type": "range",
+                    "min": 2,
+                    "max": 6,
+                    "step": 1,
+                    "unit": "ct",
+                    "label": "Products to Show",
+                    "default": 2
+                }, {
+                    "id": "title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Defaults to Collection Title"
+                }, {
+                    "id": "content",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "show_button",
+                    "type": "checkbox",
+                    "label": "Show Button?",
+                    "default": true
+                }, {
+                    "id": "button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }
+            ]
+        }, {
+            "type": "video",
+            "name": "Video",
+            "settings": [
+                {
+                    "id": "video_url",
+                    "type": "video_url",
+                    "label": "Video URL",
+                    "accept": [
+                        "youtube",
+                        "vimeo"
+                    ],
+                    "default": "https://youtu.be/o0HGtxPc454",
+                    "info": "Text",
+                    "placeholder": "Add your video link here"
+                }
+            ]
+        }, {
+            "type": "product-block",
+            "name": "Product Block",
+            "settings": [
+                {
+                    "type": "color",
+                    "id": "product_color",
+                    "label": "Background color",
+                    "default": "#24272c"
+                }, {
+                    "id": "product_image",
+                    "type": "image_picker",
+                    "label": "Background Image"
+                }, {
+                    "type": "checkbox",
+                    "id": "product_checkbox",
+                    "default": false,
+                    "label": "Do you need the text to be black? "
+                }, {
+                    "id": "product_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Defaults to Collection Title"
+                }, {
+                    "id": "product_content",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "product_button_url",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "product_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }
+            ]
+        }, {
+            "type": "product",
+            "name": "Product",
+            "settings": [
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "Product"
+                }, {
+                    "type": "select",
+                    "id": "width",
+                    "label": "Container width",
+                    "default": "50%",
+                    "options": [
+                        {
+                            "value": "25%",
+                            "label": "25%"
+                        }, {
+                            "value": "33%",
+                            "label": "33%"
+                        }, {
+                            "value": "50%",
+                            "label": "50%"
+                        }, {
+                            "value": "66%",
+                            "label": "66%"
+                        }, {
+                            "value": "75%",
+                            "label": "75%"
+                        }, {
+                            "value": "100%",
+                            "label": "100%"
+                        }
+                    ]
+                }, {
+                    "type": "select",
+                    "id": "alignment",
+                    "label": "Vertical alignment",
+                    "default": "center",
+                    "options": [
+                        {
+                            "value": "top-left",
+                            "label": "Top left"
+                        }, {
+                            "value": "top-middle",
+                            "label": "Top middle"
+                        }, {
+                            "value": "top-right",
+                            "label": "Top right"
+                        }, {
+                            "value": "middle-left",
+                            "label": "Middle left"
+                        }, {
+                            "value": "center",
+                            "label": "Middle"
+                        }, {
+                            "value": "middle-right",
+                            "label": "Middle right"
+                        }, {
+                            "value": "bottom-left",
+                            "label": "Bottom left"
+                        }, {
+                            "value": "bottom-middle",
+                            "label": "Bottom middle"
+                        }, {
+                            "value": "bottom-right",
+                            "label": "Bottom right"
+                        }
+                    ]
+                }
+            ]
+        }, {
+            "type": "list",
+            "name": "Collection List",
+            "settings": [
+                {
+                    "type": "link_list",
+                    "id": "collection_list",
+                    "label": "Collection List"
+                }
+            ]
+        }, {
+            "type": "html",
+            "name": "Custom HTML",
+            "settings": [
+                {
+                    "type": "html",
+                    "id": "code",
+                    "label": "HTML"
+                }, {
+                    "type": "select",
+                    "id": "width",
+                    "label": "Container width",
+                    "default": "50%",
+                    "options": [
+                        {
+                            "value": "25%",
+                            "label": "25%"
+                        }, {
+                            "value": "33%",
+                            "label": "33%"
+                        }, {
+                            "value": "50%",
+                            "label": "50%"
+                        }, {
+                            "value": "66%",
+                            "label": "66%"
+                        }, {
+                            "value": "75%",
+                            "label": "75%"
+                        }, {
+                            "value": "100%",
+                            "label": "100%"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+{% endschema %}
+
+
+<div class="master-collection-full">
+
+    {% for block in section.blocks %}
+
+        {% case block.type %}
+
+
+            {% when 'header' %}
+
+                <div class="collection-header">
+
+                    <img src="{{ block.settings.header_image | img_url: 'master' }}" alt="{{ block.settings.header_image.alt }}"/>
+
+                    <div class="collection-header-content">
+                        <h1 class="white uppercase">{{ block.settings.header_title }}</h1>
+
+                        {% if block.settings.header_content != blank %}
+                            <p class="white">{{ block.settings.header_content }}</p>
+                        {% endif %}
+
+                        {% if block.settings.header_button_url != blank %}
+                            <a href="{{ block.settings.header_button_url }}" class="block-button">
+                                {% if block.settings.header_button_text != blank %}
+                                    {{ block.settings.header_button_text }}
+                                {% else %}
+                                    {{ "general.shop.shop_now" | t }}
+                                {% endif %}
+                            </a>
+                        {% endif %}
+
+                    </div>
+
+                </div>
+
+
+            {% when 'title' %}
+
+                <div class="title-section">
+                    <h3 class="uppercase">{{ block.settings.title }}</h3>
+                    {%- comment -%}
+						{{ 'underline.svg' | asset_url | img_tag: 'Background', 'underline-svg' }}
+					{%- endcomment -%}
+                    <p>{{ block.settings.contentdesc }}</p>
+                </div>
+
+
+            {% when 'collection' %}
+
+
+                <div class="block-collection-list" {{ block.shopify_attributes }}>
+
+
+                    {% assign collection = collections[block.settings.collection] %}
+
+                    <div class="collection-list-wrap ">
+                        {% include "collection-list" with title: block.settings.title, content: block.settings.content, show_button: block.settings.show_button,
+                            button_text: block.settings.button_text, max_products: block.settings.max_products %}
+
+                    </div>
+
+
+                </div>
+
+
+            {% when 'video' %}
+
+                <section class="video-section">
+
+                    <div class="video-item">
+
+                        <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-iframe" frameborder="0" height="315" src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?controls=0" width="560"></iframe>
+                    </div>
+
+                </section>
+
+
+            {% when 'list' %}
+
+
+                {% assign collectList = linklists[block.settings.collection_list] %}
+
+                <div class="homepage-category">
+                    <div class="master-collection-list-wrap wrapper">
+
+                        {% for link in collectList.links %}
+
+                            {% assign linkCollection = link.object %}
+
+                            <div class="collection-item">
+                                <a href="{{ link.url }}">
+                                    <div class="nav-item-image">
+
+                                        {% if linkCollection.image %}
+                                            <img data-src="{{ linkCollection.image.src | collection_img_url: 'large' }}" alt="{{ linkCollection.title | escape }}" class="lazyload"/>
+                                        {% else %}
+                                            <img data-src="{{ linkCollection.products.first.featured_image.src | product_img_url: 'large' }}" alt="{{ linkCollection.title | escape }}" class="lazyload"/>
+                                        {% endif %}
+
+                                        <div class="nav-item-image-text">
+                                            <h4 class="white uppercase">{{link.title }}</h4>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+
+                        {% endfor %}
+
+                    </div>
+                </div>
+
+
+            {% when 'html' %}
+
+                {% if block.settings.code != blank %}
+                    {{ block.settings.code }}
+                {% endif %}
+
+
+            {% when 'product-block' %}
+
+                <section class="collection-product-block-section">
+                    <div class="collection-product-block-inner">
+                        <div class="collection-product-block" style="background-color: {{ block.settings.product_color }};">
+
+
+                            <div class="collection-product-block-item collection-block-text">
+
+                                <div class="collection-product-text-inner">
+                                    {% if block.settings.product_checkbox %}
+
+                                        <h3 class="uppercase">{{ block.settings.product_title }}</h3>
+
+                                        <p class="p-fade">{{ block.settings.product_content }}</p>
+
+                                        {% if block.settings.product_button_url != blank %}
+                                            <a href="{{ block.settings.product_button_url }}" class="black-button">
+                                                {% if block.settings.button_text != blank %}
+                                                    {{ block.settings.product_button_text }}
+                                                {% else %}
+                                                    {{ "general.shop.shop_now" | t }}
+                                                {% endif %}
+                                            </a>
+                                        {% endif %}
+
+
+                                    {% else %}
+
+                                        <h3 class="white uppercase">{{ block.settings.product_title }}</h3>
+
+                                        <p class="white p-fade">{{ block.settings.product_content }}</p>
+
+                                        {% if block.settings.product_button_url != blank %}
+                                            <a href="{{ block.settings.product_button_url }}" class="block-button">
+                                                {% if block.settings.button_text != blank %}
+                                                    {{ block.settings.product_button_text }}
+                                                {% else %}
+                                                    {{ "general.shop.shop_now" | t }}
+                                                {% endif %}
+                                            </a>
+                                        {% endif %}
+
+
+                                    {% endif %}
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="collection-product-block-item collection-block-image">
+
+                                <img data-src="{{ block.settings.product_image | img_url: 'master' }}" alt="{{ block.settings.product_image.alt }}" class="lazyload"/>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+
+        {% endcase %}
+
+    {% endfor %}
+
+</div>

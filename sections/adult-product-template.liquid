@@ -1,0 +1,643 @@
+{% schema %}
+
+{
+    "name": "Product",
+    "class": "product-template product-details-section",
+    "max_blocks": 20,
+    "settings": [
+        {
+            "id": "shortdesc_title",
+            "type": "text",
+            "label": "Title",
+            "placeholder": "Product Description Title"
+        }, {
+            "id": "shortdesc_desc",
+            "type": "textarea",
+            "label": "Product Description"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "featured_collection",
+            "name": "Featured collection",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Heading",
+                    "default": "Featured collection"
+                }, {
+                    "type": "collection",
+                    "id": "collection",
+                    "label": "Collection"
+                }, {
+                    "type": "radio",
+                    "id": "collection_style",
+                    "label": "Collection layout",
+                    "default": "grid",
+                    "options": [
+                        {
+                            "value": "slider",
+                            "label": "Slider"
+                        }, {
+                            "value": "grid",
+                            "label": "Grid"
+                        }
+                    ]
+                }, {
+                    "type": "range",
+                    "id": "products_per",
+                    "label": "Products per row",
+                    "min": 2,
+                    "max": 7,
+                    "step": 1,
+                    "default": 3
+                }, {
+                    "type": "range",
+                    "id": "products_limit",
+                    "label": "Limit products",
+                    "min": 2,
+                    "max": 50,
+                    "step": 1,
+                    "default": 48
+                }
+            ]
+        }, {
+            "type": "video",
+            "name": "Video",
+            "limit": 1,
+            "settings": [
+                {
+                    "id": "video_image",
+                    "type": "image_picker",
+                    "label": "Vide Hero Image"
+                }, {
+                    "id": "video_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Video Title"
+                }, {
+                    "id": "video_desc",
+                    "type": "textarea",
+                    "label": "Text Description"
+                }, {
+                    "id": "video_url",
+                    "type": "video_url",
+                    "label": "Video URL",
+                    "accept": [
+                        "youtube",
+                        "vimeo"
+                    ],
+                    "default": "https://youtu.be/o0HGtxPc454",
+                    "info": "Text",
+                    "placeholder": "Add your video link here"
+                }
+            ]
+        }, {
+            "type": "image_gallery",
+            "name": "Image gallery",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "product_detail_image_1",
+                    "label": "Image 1",
+                    "info": "760 x 500px recommended"
+                }, {
+                    "type": "image_picker",
+                    "id": "product_detail_image_2",
+                    "label": "Image 2",
+                    "info": "760 x 500px recommended"
+                }, {
+                    "type": "image_picker",
+                    "id": "product_detail_image_3",
+                    "label": "Image 3",
+                    "info": "760 x 500px recommended"
+                }
+            ]
+        }, {
+            "type": "image_with_text",
+            "name": "Image with text",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "layout",
+                    "label": "Wide display"
+                }, {
+                    "type": "select",
+                    "id": "frontpage_text_align",
+                    "label": "Text alignment",
+                    "options": [
+                        {
+                            "value": "left",
+                            "label": "Left"
+                        }, {
+                            "value": "center",
+                            "label": "Center"
+                        }, {
+                            "value": "right",
+                            "label": "Right"
+                        }
+                    ]
+                }, {
+                    "type": "select",
+                    "id": "frontpage_image_position",
+                    "label": "Image position",
+                    "options": [
+                        {
+                            "value": "left",
+                            "label": "Left"
+                        }, {
+                            "value": "right",
+                            "label": "Right"
+                        }
+                    ]
+                }, {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                }, {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Heading",
+                    "default": "Your headline"
+                }, {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "Text",
+                    "default": "<p>Promotion description appears here.</p>"
+                }, {
+                    "type": "url",
+                    "id": "link",
+                    "label": "Link"
+                }, {
+                    "type": "text",
+                    "id": "button_label",
+                    "label": "Button label",
+                    "default": "View all"
+                }
+            ]
+        }, {
+            "type": "image_with_text_overlay",
+            "name": "Image with text overlay",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image",
+                    "info": "1800 x 1000px recommended"
+                }, {
+                    "type": "richtext",
+                    "id": "pretext",
+                    "label": "Preheading",
+                    "default": "<p>This is</p>"
+                }, {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Heading",
+                    "default": "Your headline"
+                }, {
+                    "type": "richtext",
+                    "id": "subtitle",
+                    "label": "Text",
+                    "default": "<p>Customize this section</p>"
+                }, {
+                    "type": "checkbox",
+                    "id": "caption_background",
+                    "label": "Display solid text background",
+                    "default": false
+                }, {
+                    "type": "checkbox",
+                    "id": "caption_background_transparency",
+                    "label": "Enable background transparency"
+                }, {
+                    "type": "select",
+                    "id": "text_position",
+                    "label": "Text position",
+                    "options": [
+                        {
+                            "value": "left",
+                            "label": "Left"
+                        }, {
+                            "value": "center",
+                            "label": "Center"
+                        }, {
+                            "value": "right",
+                            "label": "Right"
+                        }
+                    ]
+                }, {
+                    "type": "select",
+                    "id": "text_align",
+                    "label": "Text alignment",
+                    "options": [
+                        {
+                            "value": "left",
+                            "label": "Left"
+                        }, {
+                            "value": "center",
+                            "label": "Center"
+                        }, {
+                            "value": "right",
+                            "label": "Right"
+                        }
+                    ]
+                }, {
+                    "type": "text",
+                    "id": "button1",
+                    "label": "First button label",
+                    "default": "Button"
+                }, {
+                    "type": "url",
+                    "id": "button1_link",
+                    "label": "First link"
+                }, {
+                    "type": "checkbox",
+                    "id": "button1_highlight",
+                    "label": "Highlight first button"
+                }, {
+                    "type": "text",
+                    "id": "button2",
+                    "label": "Second button label"
+                }, {
+                    "type": "url",
+                    "id": "button2_link",
+                    "label": "Second link"
+                }, {
+                    "type": "checkbox",
+                    "id": "button2_highlight",
+                    "label": "Highlight second button"
+                }
+            ]
+        }, {
+            "type": "map",
+            "name": "Map",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "contact_address",
+                    "label": "Street address",
+                    "info": "The full address that will be placed on the map."
+                }, {
+                    "type": "range",
+                    "id": "zoom_level",
+                    "label": "Map zoom level",
+                    "min": 1,
+                    "max": 20,
+                    "step": 1,
+                    "default": 12
+                }, {
+                    "type": "range",
+                    "id": "map_height",
+                    "min": 250,
+                    "max": 500,
+                    "step": 50,
+                    "unit": "px",
+                    "label": "Height",
+                    "default": 400
+                }, {
+                    "type": "checkbox",
+                    "id": "map_stretch",
+                    "label": "Wide display",
+                    "default": true
+                }, {
+                    "type": "checkbox",
+                    "id": "map_greyscale",
+                    "label": "Enable greyscale map",
+                    "default": false
+                }, {
+                    "type": "checkbox",
+                    "id": "map_scrolling",
+                    "label": "Enable scrolling",
+                    "default": false
+                }
+            ]
+        }, {
+            "type": "page",
+            "name": "Page",
+            "settings": [
+                {
+                    "type": "page",
+                    "id": "content_page",
+                    "label": "Content page"
+                }
+            ]
+        }, {
+            "type": "quote",
+            "name": "Quote",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "quote_text",
+                    "label": "Text",
+                    "default": "40% of online shoppers abandon a site that takes more than 3 seconds to load"
+                }, {
+                    "type": "url",
+                    "id": "quote_link",
+                    "label": "Link"
+                }
+            ]
+        }, {
+            "type": "rich_text_and_image",
+            "name": "Rich text and image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                }, {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Heading",
+                    "default": "Talk about your brand"
+                }, {
+                    "type": "richtext",
+                    "id": "content",
+                    "label": "Text",
+                    "default": "<p>Use this text to share information about your brand with your customers.</p><p>Describe a product, share announcements, or welcome customers to your store.</p>"
+                }, {
+                    "type": "select",
+                    "id": "text_size",
+                    "label": "Text size",
+                    "options": [
+                        {
+                            "value": "regular_text",
+                            "label": "Regular"
+                        }, {
+                            "value": "featured_text",
+                            "label": "Large"
+                        }
+                    ],
+                    "default": "featured_text"
+                }, {
+                    "type": "select",
+                    "id": "text_alignment",
+                    "label": "Text alignment",
+                    "options": [
+                        {
+                            "value": "align_left",
+                            "label": "Left"
+                        }, {
+                            "value": "center",
+                            "label": "Center"
+                        }
+                    ],
+                    "default": "center"
+                }, {
+                    "type": "text",
+                    "id": "button_label",
+                    "label": "Button label"
+                }, {
+                    "type": "url",
+                    "id": "button_link",
+                    "label": "link"
+                }
+            ]
+        }
+    ],
+    "default": {
+        "settings": {},
+        "blocks": [
+            {
+                "type": "rich_text_and_image",
+                "settings": {
+                    "title": "This is an example headline",
+                    "content": "<p>Vestibulum fringilla pede sit amet augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer tincidunt. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Suspendisse potenti.</p>",
+                    "text_alignment": "center",
+                    "button_label": "Button"
+                }
+            }, {
+                "type": "image_gallery",
+                "settings": {}
+            }, {
+                "type": "image_with_text_overlay",
+                "settings": {
+                    "pretext": "<p>This is</p>",
+                    "title": "Your Headline",
+                    "subtitle": "<p>Customize this section</p>",
+                    "button1": "Button"
+                }
+            }, {
+                "type": "image_with_text",
+                "settings": {
+                    "layout": "right",
+                    "title": "Headline",
+                    "text": "<p>Vestibulum fringilla pede sit amet augue. Pellentesque habitant morbi tristique senecrutrum eu, nisl.</p>",
+                    "button_label": "Button",
+                    "frontpage_text_align": "left"
+                }
+            }, {
+                "type": "image_with_text",
+                "settings": {
+                    "layout": "left",
+                    "title": "Headline",
+                    "text": "<p>Vestibulum fringilla pede sit amet augue. Pellentesque habitant morbi tristique senecrutrum eu, nisl.</p>",
+                    "button_label": "Button",
+                    "frontpage_text_align": "left"
+                }
+            }, {
+                "type": "image_with_text_overlay",
+                "settings": {
+                    "pretext": "<p>This is</p>",
+                    "title": "Your Headline",
+                    "subtitle": "<p>Customize this section</p>",
+                    "button1": "Button",
+                    "text_position": "right"
+                }
+            }
+        ]
+    }
+}
+
+{% endschema %}
+
+
+{% assign featured_image = current_variant.featured_image | default: product.featured_image %}
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+{% comment %}Extending the Product Description using Liquid{% endcomment %}
+{% assign description = product.description %}
+{% assign shipping = 'product.shipping.content' | t %}
+{% assign returns = 'product.returns.content' | t %}
+{% if product.description contains '---' %}
+    {% assign description = product.description | split: '---' | first %}
+    {% assign description_array = product.description | split: '---' %}
+    {% comment %}Splits into two item array with first item being Shipping second being Array{% endcomment %}
+
+    {% assign productInfoKeys = 'Shipping|Returns' | split: '|' %}
+    {% for key in productInfoKeys %}
+        {% assign split_key = key | prepend: '~*~' | append: '~*~' %}
+        {% if product.description contains split_key %}
+            {% if key == 'Shipping' %}
+                {% comment %}
+					Spliting the description into shipping variable
+				{% endcomment %}
+                {% assign shipping = product.description | split: split_key | last | split: '---' | first %}
+            {% elsif key == 'Returns' %}
+                {% assign returns = product.description | split: split_key | last | split: '---' | first %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+
+<div id="page-product">
+
+    {% comment %}Begin Product Top{% endcomment %}
+    <div class="wrapper grid" id="product-top">
+
+        <div class="product-images js-product-slideshow">
+
+
+            <div class="slides js-slides">
+                {% for image in product.images %}
+
+                    {% comment %}
+						if one image available, single image shown
+					{% endcomment %}
+                    <div class="single-image">
+                        <img data-src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}" class="lazyload">
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="slider-nav">
+                {% for image in product.images %}
+
+                    {% comment %}
+						if one image available, single image shown
+					{% endcomment %}
+                    <div class="single-image">
+                        <img data-src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}" class="lazyload">
+                    </div>
+                {% endfor %}
+
+            </div>
+            {% comment %}
+				if images available multiple image slideshow
+			{% endcomment %}
+            {% if product.images.size > 1 %}
+                {% include 'slider-buttons' %}
+
+                <div class="image-counter">
+                    <span class="js-current-slide">
+                        1
+                    </span>
+                    of
+                    {{ product.images.size }}
+                </div>
+            {% endif %}
+
+        </div>
+
+
+        <div class="product-actions">
+
+
+            {% if collection %}
+                <a href="{{ collection.url }}">{{ collection.title }}</a>
+            {% endif %}
+            <h4 class="uppercase product-title">{{ product.title }}</h4>
+
+
+            <div class="product-short-desc">
+
+
+                {% if section.settings.shortdesc_title %}
+                    <p class="uppercase font-bolder">{{ section.settings.shortdesc_title }}</p>
+
+                {% endif %}
+
+                {% if section.settings.shortdesc_desc %}
+                    <p>{{ section.settings.shortdesc_desc }}</p>
+                {% endif %}
+
+            </div>
+
+            {% include 'add-to-cart-form' %}
+            <div class="payment-options">
+                {{ 'payment-options.png' | asset_url | img_tag }}
+            </div>
+
+        </div>
+
+    </div>
+    {% comment %}End Product Top{% endcomment %}
+
+    {% comment %}Begin Product Bottom{% endcomment %}
+    <div id="product-bottom">
+
+
+        {% for block in section.blocks %}
+
+            {% case block.type %}
+
+
+                {% when 'video' %}
+
+                    <section class="video-section">
+
+
+                        <img data-src="{{ block.settings.video_image | img_url: 'master' }}" alt="{{ block.settings.video_image.alt }}" class="lazyload"/>
+
+
+                        <div class="video-section-title">
+                            <div class="video-icon">
+                                {% include "inline-icon" with svg: 'play-button.svg' %}
+                            </div>
+
+                            <h4 class="white uppercase">{{ block.settings.video_title }}
+                            </h4>
+                            <p class="white p-fade">{{ block.settings.video_desc }}
+                            </p>
+                        </div>
+
+
+                        <div class="video-item">
+
+                            <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-iframe" frameborder="0" height="315" src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?controls=0" width="560"></iframe>
+                        </div>
+
+                    </section>
+
+            {% endcase %}
+
+
+        {% endfor %}
+
+
+        <div class="wrapper grid">
+            <div class="info-section description">
+                <h6 class="uppercase">{{ 'product.description.title' | t }}</h6>
+                <div class="product-description">
+                    {% comment %}
+                this has been set above by the description_array
+            {% endcomment %}
+
+                    {{ description }}</div>
+            </div>
+
+
+            <div class="info-section shipping">
+                <h6 class="uppercase">{{ 'product.shipping.title' | t }}</h6>
+                <p>{{ shipping }}</p>
+            </div>
+
+            <div class="info-section returns">
+                <h6 class="uppercase">{{ 'product.returns.title' | t }}</h6>
+                <p>{{ returns }}</p>
+            </div>
+        </div>
+    </div>
+
+    {% comment %}End Product Bottom{% endcomment %}
+
+    {% comment %}
+		if we are in product more.liquid re assign collection
+	{% endcomment %}
+
+    {% if collection %}
+        {% include 'product-more' with collection: collection, exclude: product.handle %}
+    {% endif %}
+
+
+</div>

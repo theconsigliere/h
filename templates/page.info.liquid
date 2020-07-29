@@ -1,0 +1,41 @@
+<section id="article-page">
+
+
+    {%- comment -%}
+
+        {% if template.name == "page" %}
+            {% capture myimage %}
+                {{ page.handle }}.jpg
+            {% endcapture %}
+            <img src="{{ myimage| file_img_url: 'medium' }}" onerror="style.display = 'none';" class="article-header-img"/>
+        {% endif %}
+
+        {%- endcomment -%}
+
+    {%- comment -%}
+
+        <img src="{{ 'legal-01.jpg' | asset_url }}" class="article-header-img"/>
+
+        {%- endcomment -%}
+
+    <div class="no-header_content">
+        <div class="inner">
+            <h3 class="uppercase">{{ page.title }}</h3>
+            <div class="underline"></div>
+        </div>
+    </div>
+
+
+    <article class="article-content">
+        <div class="inner">
+
+
+            <div class="article-group">
+                {{ page.content }}
+            </div>
+
+        </div>
+    </article>
+
+
+</section>

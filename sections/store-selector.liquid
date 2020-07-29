@@ -1,0 +1,64 @@
+{% schema %}
+
+{
+    "name": "Store Selector",
+    "blocks": [
+        {
+            "type": "store",
+            "name": "Store",
+            "settings": [
+                {
+                    "id": "store_url",
+                    "type": "url",
+                    "label": "Store URL"
+                }, {
+                    "id": "store_currency",
+                    "type": "text",
+                    "label": "Store Currency",
+                    "placeholder": "$"
+                }, {
+                    "id": "store_flag",
+                    "type": "image_picker",
+                    "label": "Add store flag"
+                }, {
+                    "type": "checkbox",
+                    "id": "current_store",
+                    "label": "Active Store",
+                    "default": false,
+                    "info": "is this the current store?"
+                }
+            ]
+        }
+    ]
+}
+
+{% endschema %}
+
+
+<div class="multiple-stores">
+
+
+    {% for block in section.blocks %}
+
+        {% if block.settings.store_url != blank %}
+
+            <a href="{{ block.settings.store_url }}" class="store-item">
+                <div class="store {% if block.settings.current_store == true %} active-store {% endif %}">
+
+                    {% if block.settings.store_currency != blank %}
+                        <p>{{ block.settings.store_currency }}</p>
+                    {% endif %}
+
+                    <div class="store-flag">
+                        <img data-src="{{ block.settings.store_flag | img_url: 'master' }}" alt="{{ block.settings.store_flag.alt }}" class="lazyload"/>
+                    </div>
+
+                </div>
+            </a>
+
+        {% endif %}
+
+
+    {% endfor %}
+
+</div>

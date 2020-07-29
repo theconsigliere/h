@@ -1,0 +1,314 @@
+// Typography
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@import url("https://use.typekit.net/fsp3qru.css");
+
+@font-face {
+  font-family: "meatloaf";
+  src: url("../assets/meatloaf_solid-webfont.woff2") format("woff2"),
+    url("../assets/meatloaf_solid-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "kg";
+  src: url("../assets/kghowmanytimes-webfont.woff2") format("woff2"),
+    url("../assets/kghowmanytimes-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$headline-font: "din-2014", sans-serif;
+$text-font: "din-2014", sans-serif;
+$kids-headline-font: "meatloaf", sans-serif !important;
+$kids-sub-headline-font: "kg", sans-serif !important;
+
+b,
+strong {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  color: $black;
+  line-height: 1.2;
+
+  @media (min-width: #{$screen-sm}) {
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: #{$screen-xl}) {
+    margin-bottom: 2rem;
+  }
+}
+
+h1 {
+  font-family: $headline-font;
+  font-weight: $type-bold;
+  font-size: 3rem;
+
+  @media (min-width: #{$screen-sm}) {
+    font-size: 4.6rem;
+  }
+
+  @media (min-width: #{$screen-xl}) {
+    font-size: 4.8rem;
+  }
+}
+
+h2 {
+  font-family: $headline-font;
+  font-weight: $type-bold;
+  font-size: 2.8rem;
+
+  @media (min-width: #{$screen-md}) {
+    font-size: 3.2rem;
+  }
+
+  @media (min-width: #{$screen-xl}) {
+    font-size: 4rem;
+  }
+}
+
+h3 {
+  font-family: $headline-font;
+  font-weight: $type-bold;
+  font-size: 2.2rem;
+
+  @media (min-width: #{$screen-md}) {
+    font-size: 2.4rem;
+  }
+
+  @media (min-width: #{$screen-lg}) {
+    font-size: 2.6rem;
+  }
+
+  @media (min-width: #{$screen-xl}) {
+    font-size: 2.9rem;
+  }
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: $type-bold;
+
+  @media (min-width: #{$screen-md}) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: #{$screen-xl}) {
+    font-size: 2.2rem;
+  }
+}
+
+h5 {
+  font-weight: $type-bold;
+  font-size: 1.4rem;
+
+  @media (min-width: #{$screen-md}) {
+    font-size: 1.6rem;
+  }
+
+  @media (min-width: #{$screen-xl}) {
+    font-size: 1.8rem;
+  }
+}
+
+h6 {
+  font-weight: $type-thin;
+  font-size: 1.2rem;
+
+  @media (min-width: #{$screen-md}) {
+    font-size: 1.4rem;
+  }
+
+  @media (min-width: #{$screen-xl}) {
+    font-size: 1.6rem;
+  }
+}
+
+p,
+a {
+  margin-top: 0;
+  color: $text-color;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-weight: $type-thin;
+  font-size: 0.8rem;
+
+  @media (min-width: #{$screen-sm}) {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+
+  @media (min-width: #{$screen-xl}) {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+}
+
+li {
+  margin-top: 0;
+  color: $text-color;
+  font-weight: $type-thin;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+ul {
+  margin-bottom: 2rem;
+  list-style-type: none;
+
+  li {
+    text-indent: 5px;
+
+    &:before {
+      content: "-";
+      padding-right: 5px;
+    }
+  }
+}
+
+.kids-header-font {
+  font-family: $kids-headline-font;
+  font-weight: 300;
+}
+
+.h1-big {
+  font-size: 4.2rem;
+  line-height: 1;
+
+  @media (min-width: #{$screen-sm}) {
+    font-size: 4.6rem;
+    line-height: 1.2;
+  }
+
+  @media (min-width: #{$screen-xl}) {
+    font-size: 5.6rem;
+  }
+}
+
+h1.kids-header-font {
+  font-size: 5rem;
+  line-height: 0.8;
+
+  @media (min-width: #{$screen-sm}) {
+    font-size: 5.6rem;
+  }
+
+  @media (min-width: #{$screen-xl}) {
+    font-size: 7rem;
+  }
+}
+
+h2.kids-header-font {
+  font-size: 5rem;
+  line-height: 0.8;
+
+  @media (min-width: #{$screen-sm}) {
+    font-size: 5.5rem;
+  }
+
+  @media (min-width: #{$screen-xl}) {
+    font-size: 6rem;
+  }
+}
+
+.kids-sub-header-font {
+  font-family: $kids-sub-headline-font;
+  font-weight: 300;
+}
+
+.white {
+  color: $white;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.black {
+  color: $black;
+}
+
+.red {
+  color: red;
+}
+
+.p-large {
+  font-family: $text-font;
+  font-size: $type-body-lg;
+  line-height: $line-global * 2;
+}
+
+.small-p {
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+  margin-bottom: 0;
+  &:hover {
+    color: $black;
+  }
+}
+
+.link-logo {
+  display: inline-block;
+}
+
+.text-link {
+  font-family: $text-font;
+  color: $text-color;
+  fill: currentColor;
+  &:hover {
+    color: $black;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product-uppercase {
+  text-transform: uppercase;
+  font-weight: $type-bold;
+  margin-bottom: 0;
+  color: $black;
+}
+
+.font-bold {
+  font-weight: 400;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-bolder {
+  font-weight: $type-bold;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.text-width-small {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: #{$screen-md}) {
+    width: 40%;
+  }
+}

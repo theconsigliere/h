@@ -1,0 +1,13 @@
+{% comment %}
+  DO NOT MODIFY THIS FILE DIRECTLY. THIS FILE WILL BE OVERWRITTEN.
+  YOU CAN MODIFY THE LIQUID CODE FOR THIS CUSTOM FIELD HERE:
+  https://customfields.bonify.io/dashboard/hornit-dev.myshopify.com/products/configure/166291/edit
+{% endcomment %}
+{% if product.metafields.custom_fields["info_area_title_two"] != blank %}
+  <div class="custom-field custom-field__info-area-title-two custom-field__type--text">
+    <h3 class="custom-field--title">Info Area Title Two</h3>
+    <div class="custom-field--value">
+      {{ product.metafields.custom_fields["info_area_title_two"] }}
+    </div>
+  </div>
+{% endif %}

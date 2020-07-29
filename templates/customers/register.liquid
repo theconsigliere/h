@@ -1,0 +1,54 @@
+<div class="extra-page" id="register-page">
+    <div class="page-header">
+        <div class="inner">
+            <h2 class="page-title ta-center yellow uppercase">{{ 'customer.register.title' | t }}</h2>
+            <h6 class="page-title ta-center white">{{ 'customer.activate_account.subtext' | t }}</h6>
+        </div>
+    </div>
+
+    <section class="sales-enquiry">
+        <div class="inner">
+            <div class="contact-area">
+
+                <div class="form">
+                    {% form 'create_customer' %}
+
+                        {% for field in form.errors %}
+                            {% if field == 'form' %}
+                                <h6 class="red">{{ form.errors.messages[field] }}</h6>
+                            {% else %}
+                                <h6 class="red">{{ form.errors.translated_fields[field] }}
+                                    -
+                                    {{ form.errors.messages[field] }}</h6>
+                            {% endif %}
+                        {% endfor %}
+
+
+                        <div class="main-contact-area">
+
+                            <label for="FirstName">{{ 'customer.register.first_name' | t }}</label>
+                            <input type="text" name="customer[first_name]" id="FirstName" {% if form.first_name %} value="{{ form.first_name }}" {% endif %} autofocus>
+
+                            <label for="LastName">{{ 'customer.register.last_name' | t }}</label>
+                            <input type="text" name="customer[last_name]" id="LastName" {% if form.last_name %} value="{{ form.last_name }}" {% endif %}>
+
+                            <label for="Email">{{ 'customer.register.email' | t }}</label>
+                            <input type="email" name="customer[email]" id="Email" class="{% if form.errors contains 'email' %} input--error{% endif %}" {% if form.email %} value="{{ form.email }}" {% endif %} autocorrect="off" autocapitalize="off">
+
+                            <label for="CreatePassword">{{ 'customer.register.password' | t }}</label>
+                            <input type="password" name="customer[password]" id="CreatePassword" class="{% if form.errors contains 'password' %} input--error{% endif %}">
+
+
+                            <input type="submit" value="{{ 'customer.register.submit' | t }}" class="block-button">
+                        </div>
+
+
+                    {% endform %}
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+</div>

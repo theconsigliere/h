@@ -1,0 +1,185 @@
+<div class="extra-page" id="account-page">
+
+	<div class="page-header">
+		<div class="inner">
+			<h2 class="page-title ta-center yellow uppercase">{{ 'customer.account.title' | t }}</h2>
+
+			<div class="address-button">
+				<div class="block-button" type="button">{{ 'layout.customer.log_out' | t | customer_logout_link }}</div>
+			</div>
+
+		</div>
+	</div>
+
+	<section class="account-section">
+		<div class="inner">
+			<div class="account-information">
+				<div class="account-main">
+					<div class="account-main-item">
+						<h4 class='uppercase font-bolder'>{{ 'customer.orders.title' | t }}</h4>
+
+						{% paginate customer.orders by 20 %}
+							{% if customer.orders.size != 0 %}
+
+								<table class="responsive-table">
+									<thead>
+										<tr>
+                                            <th> </th>
+											<th>{{ 'customer.orders.order_number' | t }}</th>
+											<th>{{ 'customer.orders.date' | t }}</th>
+											<th>{{ 'customer.orders.payment_status' | t }}</th>
+											<th>{{ 'customer.orders.fulfillment_status' | t }}</th>
+											<th>{{ 'customer.orders.total' | t }}</th>
+										</tr>
+									</thead>
+									<tbody>
+										{% for order in customer.orders %}
+											<tr>
+												<td>
+													{% for item in order.line_items %}
+														{{ item.image | img_url: '500x500' | img_tag: 'Order Item', 'order-image lazyload' }}
+													{% endfor %}
+												</td>
+												<td data-label="{{ 'customer.orders.order_number' | t }}">
+													<a href="{{ order.customer_url }}" class="btn btn--secondary btn--small">{{ order.name }}</a>
+												</td>
+												<td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | date: format: 'abbreviated_date' }}</td>
+												<td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
+												<td data-label="{{ 'customer.orders.fulfillment_status' | t }}">{{ order.fulfillment_status_label }}</td>
+												<td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money }}</td>
+												
+											</tr>
+										</td>
+									</tbody>
+								</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+
+				{% else %}
+
+					<p>{{ 'customer.orders.none' | t }}</p>
+
+				{% endif %}
+				{% if paginate.pages > 1 %}
+					{% include 'pagination' %}
+				{% endif %}
+			{% endpaginate %}
+		</div>
+		<div class="account-main-item">
+			<h4 class='uppercase font-bolder'>{{ 'customer.account.details' | t }}</h4>
+
+			{{ customer.default_address | format_address }}
+
+			
+				<a class="block-button" href="/account/addresses">{{ 'customer.account.view_addresses' | t }}
+					({{ customer.addresses_count }})</a>
+			
+		</div>
+
+	</div>
+	<div class="account-sidebar">
+
+		<div class="support-inner">
+
+			<h4 class='uppercase font-bolder'>{{ 'general.shop.support' | t }}</h4>
+
+			<div class="support-link-item">
+				<a href="/pages/faqs">
+					<div class="support-item-image">
+
+
+						<div class="support-text">
+							<div class="support-icon">
+								<div class=" faqs"></div>
+							</div>
+							<p class="font-bolder uppercase">FAQ's</p>
+						</div>
+
+					</div>
+				</a>
+			</div>
+
+			<div class="support-link-item">
+				<a href="/pages/delivery-returns">
+					<div class="support-item-image">
+
+
+						<div class="support-text">
+							<div class="support-icon">
+								<div class=" delivery-returns"></div>
+							</div>
+							<p class="font-bolder uppercase">Delivery &amp; Returns</p>
+						</div>
+
+					</div>
+				</a>
+			</div>
+
+			<div class="support-link-item">
+				<a href="/pages/contact-us">
+					<div class="support-item-image">
+
+
+						<div class="support-text">
+							<div class="support-icon">
+								<div class=" contact-us"></div>
+							</div>
+							<p class="font-bolder uppercase">Contact Us</p>
+						</div>
+
+					</div>
+				</a>
+			</div>
+
+			<div class="support-link-item">
+				<a href="/pages/video-library">
+					<div class="support-item-image">
+
+
+						<div class="support-text">
+							<div class="support-icon">
+								<div class=" video-library"></div>
+							</div>
+							<p class="font-bolder uppercase">Video Library</p>
+						</div>
+
+					</div>
+				</a>
+			</div>
+
+			<div class="support-link-item">
+				<a href="/pages/legal">
+					<div class="support-item-image">
+
+
+						<div class="support-text">
+							<div class="support-icon">
+								<div class=" legal"></div>
+							</div>
+							<p class="font-bolder uppercase">Legal</p>
+						</div>
+
+					</div>
+				</a>
+			</div>
+
+			<div class="support-link-item">
+				<a href="/pages/sales-enquiries">
+					<div class="support-item-image">
+
+
+						<div class="support-text">
+							<div class="support-icon">
+								<div class=" sales-enquiries"></div>
+							</div>
+							<p class="font-bolder uppercase">Sales Enquiries</p>
+						</div>
+
+					</div>
+				</a>
+			</div>
+		</div>
+
+	</div>
+</div></div></section></div>

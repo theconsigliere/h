@@ -1,0 +1,50 @@
+{% schema %}
+
+{
+    "name": "Title Section",
+    "class": "page-title-section",
+    "blocks": [
+        {
+            "type": "title",
+            "name": "Title Section",
+            "settings": [
+                {
+                    "id": "title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Page Title"
+                }, {
+                    "id": "contentdesc",
+                    "type": "textarea",
+                    "label": "Text Description"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "content",
+            "name": "Display Text Section"
+        }
+    ]
+}
+
+{% endschema %}
+
+<section>
+
+    {% for block in section.blocks %}
+
+        <div class="title-section" id="page__title_section">
+            {% if block.settings.title != blank %}
+                <h3 class="uppercase">{{ block.settings.title }}</h3>
+            {% endif %}
+
+            {%- comment -%}{{ 'underline.svg' | asset_url | img_tag: 'Background', 'underline-svg' }}{%- endcomment -%}
+            <h6 class="p-fade">{{ block.settings.contentdesc }}</h6>
+        </div>
+
+
+    {% endfor %}
+
+</section>

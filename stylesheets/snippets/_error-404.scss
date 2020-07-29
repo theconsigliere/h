@@ -1,0 +1,28 @@
+#error-404 {
+  background-color: $light-white;
+  align-items: flex-start;
+
+  .inner-404 {
+    width: 100%;
+    @include space-between;
+
+    .item-404 {
+      width: 50%;
+      @include space-center;
+
+      .item-404-inner {
+        width: 80%;
+      }
+
+      .search-form {
+        width: 100%;
+        max-width: 600px;
+        margin: $offset-global 0;
+      }
+
+      .button {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

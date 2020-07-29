@@ -1,0 +1,59 @@
+{% schema %}
+
+{
+    "name": "Helmet Blog Section",
+    "class": "helmet-blog",
+    "blocks": [
+        {
+            "type": "blog-article-item",
+            "name": "Add Blog Article",
+            "settings": [
+                {
+                    "type": "article",
+                    "id": "featured_article",
+                    "label": "Article to feature on the home page"
+                }
+            ]
+        }
+    ]
+}
+
+{% endschema %}
+
+<div class="article-sidebar">
+    <div class="article-sidebar-inner">
+
+        {% for block in section.blocks %}
+
+
+            {% assign article = articles[block.settings.featured_article] %}
+
+            {% if article %}
+
+                <a aria-label="Read more about {{article.title }}" href="{{ article.url }}">
+                    <div class="blog_item">
+
+                        <img alt="{{article.title }}" data-src="{{ article.image.src | img_url: '1024x' }}" class="lazyload article_image">
+                        <div class="grid-product__meta">
+                            <div class="article__content-meta">
+
+                                <div class="blog_item_text">
+                                    {%- comment -%} <p>{{ article.published_at  | date: format: 'abbreviated_date' }}</p>{%- endcomment -%}
+                                    <h6>{{article.title }}</h6>
+                                </div>
+
+                                <div class="block-button">Click to read</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+            {% endif %}
+
+
+        {% endfor %}
+
+
+    </div>
+</div>

@@ -1,0 +1,87 @@
+{% schema %}
+
+{
+    "name": "Contact",
+    "class": "contact-page",
+    "blocks": [
+        {
+            "type": "contact-info",
+            "name": "Contact Employee Section",
+            "settings": [
+                {
+                    "id": "contact_image",
+                    "type": "image_picker",
+                    "label": "Employee Image"
+                }, {
+                    "id": "contact_image_two",
+                    "type": "image_picker",
+                    "label": "Employee Image Two"
+                }, {
+                    "id": "name",
+                    "type": "text",
+                    "label": "Name",
+                    "placeholder": "Employee Name"
+                }, {
+                    "id": "job_title",
+                    "type": "text",
+                    "label": "Job Title",
+                    "placeholder": "Job Title"
+                }, {
+                    "id": "tel",
+                    "type": "text",
+                    "label": "Enter Telephone",
+                    "placeholder": "Insert Telephone"
+                }, {
+                    "id": "email",
+                    "type": "text",
+                    "label": "Enter Email",
+                    "placeholder": "Insert Email"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "content",
+            "name": "Contact Info"
+        }
+    ]
+}
+
+{% endschema %}
+
+
+<section class="contact-info">
+    <div class="inner contact-section">
+        {% for block in section.blocks %}
+
+            <div class="contact-profile">
+                <div class="contact-profile-image">
+                    {{ block.settings.contact_image | img_url: 'master' | img_tag: 'Contact Image', 'image-1', 'lazyload' }}
+                    {{ block.settings.contact_image_two | img_url: 'master' | img_tag: 'Contact Image', 'image-2', 'lazyload' }}
+                </div>
+
+                <div class="contact-profile-text">
+                    <h5 class="white">{{ block.settings.name }}</h5>
+                    <h6 class="white">{{ block.settings.job_title }}</h6>
+
+                    {% if block.settings.tel != blank %}
+                        <a href="tel:{{ block.settings.tel }}">
+                            <p class="white">
+                                <span class="white">T:</span>
+                                {{ block.settings.tel }}</p>
+                        </a>
+
+                    {% endif %}
+
+                    <a href="mailto:{{ block.settings.email}}">
+                        <p class="yellow">
+                            <span class="white">E:</span>
+                            {{ block.settings.email }}</p>
+                    </a>
+                </div>
+            </div>
+
+        {% endfor %}
+    </div>
+</section>

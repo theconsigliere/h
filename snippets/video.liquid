@@ -1,0 +1,15 @@
+<div class="video-pop-up-group">
+
+    <div class="pop-up-video">
+        <div class="popup-close">&#10006;</div>
+        <iframe src="{{ video_url }}?loop=1&autopause=0" width="640" height="360" frameborder="0" class="video-iframe" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+
+    <div class="block-button js-video">
+        {{ "product.clug.video" | t }}
+        {% include "inline-icon" with svg: 'play-button.svg' %}
+    </div>
+
+
+</div>

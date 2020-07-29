@@ -1,0 +1,50 @@
+<div class="extra-page" id="activate-page">
+    <div class="page-header">
+        <div class="inner">
+            <h2 class="page-title ta-center yellow uppercase">{{ 'customer.activate_account.title' | t }}</h2>
+            <h6 class="page-title ta-center white">{{ 'customer.activate_account.subtext' | t }}</h6>
+        </div>
+    </div>
+
+    <section class="sales-enquiry">
+        <div class="inner">
+            <div class="contact-area">
+
+                <div class="form">
+                    {% form 'activate_customer_password' %}
+
+                        {% for field in form.errors %}
+                            {% if field == 'form' %}
+                                <h6 class="red">{{ form.errors.messages[field] }}</h6>
+                            {% else %}
+                                <h6 class="red">{{ form.errors.translated_fields[field] }}
+                                    -
+                                    {{ form.errors.messages[field] }}</h6>
+                            {% endif %}
+                        {% endfor %}
+
+
+                        <div class="main-contact-area">
+
+                            <label class="label--hidden" for="CustomerPassword">{{ 'customer.activate_account.password' | t }}</label>
+                            <input type="password" value="" name="customer[password]" id="CustomerPassword" placeholder="{{ 'customer.activate_account.password' | t }}">
+
+                            <label class="label--hidden" for="CustomerPasswordConfirmation">{{ 'customer.activate_account.password_confirm' | t }}</label>
+                            <input type="password" value="" name="customer[password_confirmation]" id="CustomerPasswordConfirmation" placeholder="{{ 'customer.activate_account.password_confirm' | t }}">
+
+                            <div class="main-contact-buttons">
+                                <input type="submit" class="block-button" value="{{ 'customer.activate_account.submit' | t }}">
+                                <input type="submit" name="decline" class="underline-button" value="{{ 'customer.activate_account.cancel' | t }}">
+                            </div>
+                        </div>
+
+
+                    {% endform %}
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+</div>

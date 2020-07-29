@@ -1,0 +1,217 @@
+{% schema %}
+
+{
+    "name": "Support Page",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title_top",
+            "label": "Heading",
+            "default": "Custom content"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "contact-title",
+            "name": "Contact Title Section",
+            "settings": [
+                {
+                    "id": "title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Page Title"
+                }, {
+                    "id": "contentdesc",
+                    "type": "textarea",
+                    "label": "Text Description",
+                    "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+                }, {
+                    "id": "title_button_url",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "title_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }
+            ]
+        }, {
+            "type": "header",
+            "name": "Page Header",
+            "settings": [
+                {
+                    "id": "header_image",
+                    "type": "image_picker",
+                    "label": "Background Image"
+                }, {
+                    "id": "header_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Slide Title"
+                }, {
+                    "id": "header_content",
+                    "type": "textarea",
+                    "label": "Slide Content"
+                }, {
+                    "id": "header_button_url",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "header_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }
+            ]
+        }, {
+            "type": "support-pages",
+            "name": "Support Pages",
+            "settings": [
+                {
+                    "type": "link_list",
+                    "id": "support_list",
+                    "label": "Support Page lists"
+                }
+            ]
+        }
+    ]
+}
+
+{% endschema %}
+
+
+<div class="master-collection-full">
+
+	{% for block in section.blocks %}
+
+		{% case block.type %}
+
+			{% when 'header' %}
+
+
+				{% if block.settings.header_image != blank %}
+					<div class="collection-header">
+
+
+						<img data-src="{{ block.settings.header_image | img_url: 'master' }}" alt="{{ block.settings.header_image.alt }}" class="lazyload"/>
+
+						<div class="collection-header-content">
+							<h3 class="white uppercase">{{ block.settings.header_title }}</h3>
+
+							{% if block.settings.header_content != blank %}
+								<p class="white">{{ block.settings.header_content }}</p>
+							{% endif %}
+
+							{% if block.settings.header_button_url != blank %}
+								<a href="{{ block.settings.header_button_url }}" class="block-button">
+									{% if block.settings.header_button_text != blank %}
+										{{ block.settings.header_button_text }}
+									{% else %}
+										{{ "general.shop.shop_now" | t }}
+									{% endif %}
+								</a>
+							{% endif %}
+
+						</div>
+
+					</div>
+
+				{% else %}
+
+
+					<div class="no-header_content">
+						<h3 class="uppercase">{{ block.settings.header_title }}</h3>
+
+						{% if block.settings.header_content != blank %}
+							<p>{{ block.settings.header_content }}</p>
+						{% endif %}
+
+						{% if block.settings.header_button_url != blank %}
+							<a href="{{ block.settings.header_button_url }}" class="block-button">
+								{% if block.settings.header_button_text != blank %}
+									{{ block.settings.header_button_text }}
+								{% else %}
+									{{ "general.shop.shop_now" | t }}
+								{% endif %}
+							</a>
+						{% endif %}
+
+					</div>
+
+				{% endif %}
+
+
+			{% when 'support-pages' %}
+
+
+				<section class="support-pages">
+					<div class="support-inner inner">
+
+						{% assign support_list = linklists[block.settings.support_list] %}
+
+
+						{% for link in support_list.links %}
+
+							{% assign linkCollection = link.object %}
+
+							<div class="support-link-item">
+								<a href="{{ link.url }}">
+									<div class="support-item-image">
+
+
+										<div class="support-text">
+											{%- comment -%}
+												Adds icon to links
+											{%- endcomment -%}
+											<div class="support-icon">
+												<div class='{{link.url | handleize | split: 'pages-' }}'></div>
+											</div>
+											<p class="font-bolder uppercase">{{link.title }}</p>
+										</div>
+
+									</div>
+								</a>
+							</div>
+
+						{% endfor %}
+
+
+					</div>
+				</section>
+
+
+			{% when 'contact-title' %}
+
+				<div class="title-section">
+					<div class="underline"></div>
+					<h5 class="uppercase">{{ block.settings.title }}</h5>
+					<p>{{ block.settings.contentdesc }}</p>
+
+					{% if block.settings.title_button_url != blank %}
+
+						<a href="{{ block.settings.title_button_url }}" class="block-button">
+							{% if block.settings.title_button_text != blank %}
+								{{ block.settings.title_button_text }}
+							{% else %}
+								{{ "general.shop.shop_now" | t }}
+							{% endif %}
+						</a>
+
+					{% endif %}
+
+				</div>
+
+
+		{% endcase %}
+	{% endfor %}
+
+</div>
+
+{%- comment -%}
+	{% if section.blocks.size == 0 %}
+																				        {% include 'no-blocks' %}
+																				    {% endif %}
+{%- endcomment -%}</div>

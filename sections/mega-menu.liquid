@@ -1,0 +1,242 @@
+{% schema %}
+
+{
+    "name": "Mega Menu",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "show_menu",
+            "label": "Show Mega Menu",
+            "default": false
+        }
+    ],
+    "blocks": [
+        {
+            "type": "nav_item",
+            "name": "Nav Item",
+            "settings": [
+                {
+                    "id": "nav_item_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Nav Item Title"
+                }, {
+                    "id": "nav_item_title_url",
+                    "type": "url",
+                    "label": "Nav Item URL"
+                }, {
+                    "type": "checkbox",
+                    "id": "show_megamenu",
+                    "label": "Show Mega Menu for Nav Item",
+                    "default": true
+                }, {
+                    "type": "link_list",
+                    "id": "nav_list",
+                    "label": "Nav Item Menu"
+                }, {
+                    "id": "first_image",
+                    "type": "image_picker",
+                    "label": "First Block Image"
+                }, {
+                    "id": "first_color_text",
+                    "type": "select",
+                    "options": [
+                        {
+                            "value": "first-white-text",
+                            "label": "White Text"
+                        }, {
+                            "value": "first-black-text",
+                            "label": "Black Text"
+                        }
+                    ],
+                    "label": "Select Title Color"
+                }, {
+                    "id": "first_title",
+                    "type": "text",
+                    "label": "First Block Title",
+                    "placeholder": "First Block Title"
+                }, {
+                    "id": "first_url",
+                    "type": "url",
+                    "label": "First Block Item URL"
+                }, {
+                    "id": "first_text",
+                    "type": "text",
+                    "label": "First Block Text",
+                    "placeholder": "Shop Now",
+                    "info": "Read more"
+                }, {
+                    "id": "second_image",
+                    "type": "image_picker",
+                    "label": "First Block Image"
+                }, {
+                    "id": "second_color_text",
+                    "type": "select",
+                    "options": [
+                        {
+                            "value": "second-white-text",
+                            "label": "White Text"
+                        }, {
+                            "value": "second-black-text",
+                            "label": "Black Text"
+                        }
+                    ],
+                    "label": "Select Title Color"
+                }, {
+                    "id": "second_title",
+                    "type": "text",
+                    "label": "Second Block Title",
+                    "placeholder": "Second Block Title"
+                }, {
+                    "id": "second_url",
+                    "type": "url",
+                    "label": "Second Block URL"
+                }, {
+                    "id": "second_text",
+                    "type": "text",
+                    "label": "Second Block Text",
+                    "placeholder": "Shop Now",
+                    "info": "Read more"
+                }, {
+                    "id": "third_title",
+                    "type": "text",
+                    "label": "Third Block Title",
+                    "placeholder": "Image Item Title"
+                }, {
+                    "id": "third_url",
+                    "type": "url",
+                    "label": "Third Block URL"
+                }, {
+                    "id": "third_text",
+                    "type": "text",
+                    "label": "Third Block Text",
+                    "placeholder": "Shop Now",
+                    "info": "Read more"
+                }
+            ]
+        }
+    ]
+}
+
+{% endschema %}
+
+{% if section.settings.show_menu %}
+
+	<div class="header-nav-list">
+		<ul class="nav">
+			{% for block in section.blocks %}
+				<li class='nav_item'>
+
+					{% if block.settings.show_megamenu %}
+
+						<p class='text-link mega_item  mobile_item'>{{ block.settings.nav_item_title }}
+
+							<span class='header-icon'>
+								<i class="down"></i>
+							</span>
+
+						</p>
+
+						<div class="mega-menu-full">
+							<div class="mega-menu-group">
+								<div class="nav-column-first">
+
+									<div class="nav_first">
+										<a class='first-link' href="{{ block.settings.nav_item_title_url }}">{{ block.settings.nav_item_title }}</a>
+									</div>
+
+									{% assign linkListHandle = block.settings.nav_list %}
+									{% include 'nav-list', handle: linkListHandle, class: 'mega-menu-list' %}
+
+
+								</div>
+								<div class="nav-column-box-group">
+									<div class="nav-column">
+										<a href="{{ block.settings.first_url }}">
+											<div class="nav-item-image">
+												{% if block.settings.first_image != blank %}
+													<img data-src="{{ block.settings.first_image | img_url: 'master' }}" alt="{{ block.settings.first_image.alt }}" class="lazyload"/>
+
+
+													<div class="nav-item-image-text">
+														{% if block.settings.first_color_text == 'first-white-text' %}
+
+															<h5 class='uppercase white'>{{ block.settings.first_title }}</h5>
+															<p class='uppercase white'>{{ block.settings.first_text }}</p>
+
+														{% elsif block.settings.first_color_text == 'first-black-text' %}
+
+															<h5 class='uppercase'>{{ block.settings.first_title }}</h5>
+															<p class='uppercase'>{{ block.settings.first_text }}</p>
+
+														{% endif %}
+													</div>
+												{% endif %}
+												<div class="item-overlay"></div>
+											</div>
+										</a>
+									</div>
+									<div class="nav-column">
+										<a href="{{ block.settings.second_url }}">
+											<div class="nav-item-image">
+												{% if block.settings.second_image != blank %}
+													<img data-src="{{ block.settings.second_image | img_url: 'master' }}" alt="{{ block.settings.second_image.alt }}" class="lazyload"/>
+
+													<div class="nav-item-image-text">
+														{% if block.settings.second_color_text == 'second-white-text' %}
+
+															<h5 class='uppercase white'>{{ block.settings.second_title }}</h5>
+															<p class='uppercase white'>{{ block.settings.second_text }}</p>
+
+														{% elsif block.settings.second_color_text == 'second-black-text' %}
+
+															<h5 class='uppercase'>{{ block.settings.second_title }}</h5>
+															<p class='uppercase'>{{ block.settings.second_text }}</p>
+
+														{% endif %}
+													</div>
+
+												{% endif %}
+												<div class="item-overlay"></div>
+											</div>
+										</a>
+									</div>
+									<div class="nav-column nav-third-column">
+										<div class="nav-item-third">
+
+											<div class="third-text">
+												<div class="nav-item-image-text">
+													<div class="nav-tg">
+														<h5 class='uppercase'>{{ block.settings.third_title }}</h5>
+														{% if block.settings.third_url != blank %}
+															<a href="{{ block.settings.third_url }}" class='black-button uppercase'>
+																{{ block.settings.third_text }}
+															</a>
+														{% endif %}
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					{% else %}
+
+						<a class='text-link mega_item mobile_item' href="{{ block.settings.nav_item_title_url }}">{{ block.settings.nav_item_title }}</a>
+
+					{% endif %}
+
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+{% else %}
+
+	{% comment %}
+		Menu links, define handle for navList variable within nav-list.liquid. This is important as we can use the same loop menu code for both footer and main-menu menu's
+	{% endcomment %}
+	{% include 'nav-list', handle: 'main-menu', class: 'header-nav-list' %}
+{% endif %}

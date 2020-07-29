@@ -1,0 +1,75 @@
+<div class="extra-page" id="sales-page">
+    <div class="page-header">
+        <div class="inner">
+            <h4 class="page-title ta-center yellow uppercase">{{ page.title }}</h4>
+            <div class="page-content white">{{ page.content }}</div>
+        </div>
+    </div>
+
+    <section class="sales-enquiry">
+        <div class="inner">
+            {% form 'contact' %}
+                {% if form.posted_successfully? %}
+                    <div class="contact-form-info">
+                        <h6>Thank you for your contact</h6>
+                    </div>
+                {% endif %}
+
+                <div class="contact-form-info">
+                    {% for field in form.errors %}
+                        {% if field == 'form' %}
+                            <h6 class="red">{{ form.errors.messages[field] }}</h6>
+                        {% else %}
+                            <h6 class="red">{{ form.errors.translated_fields[field] }}
+                                -
+                                {{ form.errors.messages[field] }}</h6>
+                        {% endif %}
+                    {% endfor %}
+
+                </div>
+
+
+                <div class="main-contact">
+                    <div class="form-item">
+                        <label for="ContactFormName">Company Name</label>
+                        <input id="ContactFormName" name="contact[name]" placeholder="Company Name" type="text"/>
+                        <label for="ContactFormAddress">Address</label>
+                        <input id="ContactFormAddress" name="contact[address]" placeholder="Address" type="text"/>
+                        <label for="ContactFormCountry">Country</label>
+                        <input id="ContactFormCountry" name="contact[country]" placeholder="Country" type="text"/>
+                        <label for="ContactFormEmail">Email</label>
+                        <input id="ContactFormEmail" name="contact[email]" placeholder="Email" type="text"/>
+                        <label for="ContactFormCompany">Choose a Company Type</label>
+                        <select id="ContactFormCompany" name="contact[company]">
+                            <option>Retailer</option>
+                            <option>Distributor</option>
+                            <option>Agent</option>
+                        </select>
+                        <label for="ContactFormMessage">Message</label>
+                        <input id="ContactFormMessage" name="contact[message]" placeholder="Message" type="text"/>
+                    </div>
+                    <div class="form-item">
+                        <label for="ContactFormContact">Contact Name</label>
+                        <input id="ContactFormContact" name="contact[contact]" placeholder="Contact Name" type="text"/>
+                        <label for="ContactFormZip">Zip/Post Code</label>
+                        <input id="ContactFormZip" name="contact[zip]" placeholder="Zip/Post Code" type="text"/>
+                        <label for="ContactFormWebsite">Website</label>
+                        <input id="ContactFormWebsite" name="contact[website]" placeholder="Website" type="text"/>
+                        <label for="ContactFormTelephone">Telephone</label>
+                        <input id="ContactFormTelephone" name="contact[telephone]" placeholder="Telephone" type="text"/>
+                        <label for="ContactFormIndustry">Choose a Industry Sector</label>
+                        <select id="ContactFormIndustry" name="contact[industry]">
+                            <option>Toy</option>
+                            <option>Gift</option>
+                            <option>Cycle</option>
+                            <option>Sport</option>
+                            <option>Gadget</option>
+                            <option>Other</option>
+                        </select>
+                        <input type="submit" class="block-button" value="{{ 'contact.form.send' | t }}">
+                    </div>
+                </div>
+            {% endform %}
+        </div>
+    </section>
+</div>
