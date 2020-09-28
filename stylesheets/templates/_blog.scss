@@ -191,13 +191,14 @@
 
   .title_section {
     padding-bottom: 2rem;
+
     * {
       text-align: center;
     }
   }
 
   .blog-grid {
-    @include space-flexstart-row;
+    @include flexstart-flexstart;
     flex-wrap: wrap;
 
     .blog_item {

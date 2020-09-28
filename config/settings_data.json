@@ -4,7 +4,7 @@
     "currency_format": "money_with_currency_format",
     "supported_currencies": "GBP USD",
     "default_currency": "GBP",
-    "favicon": "shopify:\/\/shop_images\/hornit-favicon.png",
+    "favicon": "shopify:\/\/shop_images\/h.png",
     "checkout_header_image": "shopify:\/\/shop_images\/checkout.png",
     "checkout_logo_image": "shopify:\/\/shop_images\/hornitlogo.png",
     "checkout_logo_position": "left",
@@ -281,7 +281,12 @@
               "content": "",
               "button_url": "shopify:\/\/collections\/adults",
               "button_text": "Shop Now",
-              "text_position": "left-aligned"
+              "text_position": "left-aligned",
+              "riders_name": "Andrei Burton",
+              "riders_url": "https:\/\/www.saltrock.com\/blogs\/profile\/andrei-burton",
+              "riders_tag_text": "hips.cult.foster",
+              "riders_logo": "shopify:\/\/shop_images\/white-red.png",
+              "riders_backlink": ""
             }
           },
           "1584964086505": {
@@ -295,63 +300,88 @@
               "content": "",
               "button_url": "shopify:\/\/collections\/clug",
               "button_text": "Shop Now",
-              "text_position": "left-aligned"
+              "text_position": "left-aligned",
+              "riders_name": "",
+              "riders_url": "",
+              "riders_tag_text": "plank.crusher.hobbies",
+              "riders_logo": "shopify:\/\/shop_images\/white-red.png",
+              "riders_backlink": "https:\/\/what3words.com\/plank.crusher.hobbies"
             }
           },
           "1584955781171-0": {
             "type": "slide",
             "settings": {
               "image": "shopify:\/\/shop_images\/hero-wallpaper-04_ec35e595-c78c-4c80-8f17-cca05c92a6b9.jpg",
-              "portrait_image": "shopify:\/\/shop_images\/fd_clug_copy_7.jpg",
+              "portrait_image": "shopify:\/\/shop_images\/5.jpg",
               "select_product_logo": "yellow-clug",
               "product_checkbox": false,
               "title": "Made siMPLE",
               "content": "",
               "button_url": "shopify:\/\/collections\/clug",
               "button_text": "Shop Now",
-              "text_position": "left-aligned"
+              "text_position": "left-aligned",
+              "riders_name": "Rachel Atherton",
+              "riders_url": "#",
+              "riders_tag_text": "kneeled.knee.paramedic",
+              "riders_logo": "shopify:\/\/shop_images\/white-red.png",
+              "riders_backlink": "https:\/\/what3words.com\/kneeled.knee.paramedic"
             }
           },
           "1588347713147": {
             "type": "slide",
             "settings": {
               "image": "shopify:\/\/shop_images\/hero-wallpaper-02_6b0dfb00-fe25-4cdd-86ed-0f0dff1413d3.jpg",
-              "portrait_image": "shopify:\/\/shop_images\/hero_clug_copy_9_82a0eb95-9616-40d0-9e96-e3fd7c0ea2bc.jpg",
+              "portrait_image": "shopify:\/\/shop_images\/3.jpg",
               "select_product_logo": "hornit-db140",
               "product_checkbox": false,
               "title": "Be hEARD",
               "content": "",
               "button_url": "shopify:\/\/products\/hornit-db140",
               "button_text": "",
-              "text_position": "left-aligned"
+              "text_position": "left-aligned",
+              "riders_name": "The Trackstand King",
+              "riders_url": "#",
+              "riders_tag_text": "amused.types.idea",
+              "riders_logo": "shopify:\/\/shop_images\/white-red.png",
+              "riders_backlink": "https:\/\/what3words.com\/amused.types.idea"
             }
           },
           "1588347751591": {
             "type": "slide",
             "settings": {
               "image": "shopify:\/\/shop_images\/hero-wallpaper-03_8dc03502-0ff7-432a-8ee1-4cb4a74326c6.jpg",
-              "portrait_image": "shopify:\/\/shop_images\/fd_clug_copy_10.jpg",
+              "portrait_image": "shopify:\/\/shop_images\/2.jpg",
               "select_product_logo": "hornit-nano",
               "product_checkbox": true,
               "title": "hAVE fuN!",
               "content": "",
               "button_url": "shopify:\/\/collections\/mini-hornit-nano",
               "button_text": "",
-              "text_position": "left-aligned"
+              "text_position": "left-aligned",
+              "riders_name": "",
+              "riders_url": "",
+              "riders_tag_text": "",
+              "riders_logo": "",
+              "riders_backlink": ""
             }
           },
           "1588347805653": {
             "type": "slide",
             "settings": {
               "image": "shopify:\/\/shop_images\/hero-wallpaper-01.jpg",
-              "portrait_image": "shopify:\/\/shop_images\/hero_clug_copy_8.jpg",
+              "portrait_image": "shopify:\/\/shop_images\/1.jpg",
               "select_product_logo": "hornit-helmets",
               "product_checkbox": true,
               "title": "Stay safe",
               "content": "",
               "button_url": "shopify:\/\/collections\/kids-helmets",
               "button_text": "",
-              "text_position": "left-aligned"
+              "text_position": "left-aligned",
+              "riders_name": "",
+              "riders_url": "",
+              "riders_tag_text": "braked.cherubs.strays",
+              "riders_logo": "shopify:\/\/shop_images\/white-red.png",
+              "riders_backlink": "https:\/\/what3words.com\/braked.cherubs.strays"
             }
           }
         },
@@ -374,7 +404,7 @@
           "1585049961362-0": {
             "type": "category",
             "settings": {
-              "image": "shopify:\/\/shop_images\/cate.jpg",
+              "image": "shopify:\/\/shop_images\/6.jpg",
               "title": "Adults Horns & Lights",
               "content": "Bring safety into your own hands with the worlds loudest bike horn and worlds loudest light.",
               "button_url": "shopify:\/\/collections\/horns-lights",
@@ -554,21 +584,21 @@
             "settings": {
               "contact_image": "shopify:\/\/shop_images\/tom2_2.jpg",
               "contact_image_two": "shopify:\/\/shop_images\/Tom_copy.png",
-              "name": "Tom de Pelet",
+              "name": "Tom",
               "job_title": "Hornit-in-Chief",
               "tel": "",
               "email": "tom@thehornit.com"
             }
           },
-          "1587928499545": {
+          "1587929255042": {
             "type": "contact-info",
             "settings": {
-              "contact_image": "shopify:\/\/shop_images\/Ivan_Profile_Pic_Website_sml_1.jpg",
-              "contact_image_two": "shopify:\/\/shop_images\/Ivan_Profile_Pic_Website_rollover.jpg",
-              "name": "Ivan Fanning",
-              "job_title": "Graphic Design",
-              "tel": "07387809981",
-              "email": "ivan@thehornit.com"
+              "contact_image": "shopify:\/\/shop_images\/Gigi_2.png",
+              "contact_image_two": "shopify:\/\/shop_images\/gigi_2_4e207c71-bff6-4a20-8db5-fba6dd0a9375.png",
+              "name": "Gigi",
+              "job_title": "Customer Service",
+              "tel": "07307 168822",
+              "email": "gigi@thehornit.com"
             }
           },
           "1587929135604": {
@@ -576,7 +606,7 @@
             "settings": {
               "contact_image": "shopify:\/\/shop_images\/finished_Georgia_2.png",
               "contact_image_two": "shopify:\/\/shop_images\/Georgia2_copy.png",
-              "name": "Georgia Harwood",
+              "name": "Georgia",
               "job_title": "Product Development",
               "tel": "07944 384 827",
               "email": "georgia@thehornit.com"
@@ -587,7 +617,7 @@
             "settings": {
               "contact_image": "shopify:\/\/shop_images\/Hels_new.png",
               "contact_image_two": "shopify:\/\/shop_images\/Hels_1.png",
-              "name": "Heledd Thomas",
+              "name": "Hels",
               "job_title": "Sales",
               "tel": "07805 781958",
               "email": "hels@thehornit.com"
@@ -598,7 +628,7 @@
             "settings": {
               "contact_image": "shopify:\/\/shop_images\/Katie_NEW.png",
               "contact_image_two": "shopify:\/\/shop_images\/katie.png",
-              "name": "Katie de Pelet",
+              "name": "Katie",
               "job_title": "PR & Marketing Director",
               "tel": "07870 623 416",
               "email": "katie@thehornit.com"
@@ -609,21 +639,21 @@
             "settings": {
               "contact_image": "shopify:\/\/shop_images\/Robyn_New.png",
               "contact_image_two": "shopify:\/\/shop_images\/tkd_22.jpg",
-              "name": "Robyn Clifford",
+              "name": "Robyn",
               "job_title": "Marketing",
               "tel": "07468 534651",
               "email": "robyn@thehornit.com"
             }
           },
-          "1587929255042": {
+          "1587928499545": {
             "type": "contact-info",
             "settings": {
-              "contact_image": "shopify:\/\/shop_images\/Gigi_2.png",
-              "contact_image_two": "shopify:\/\/shop_images\/gigi_2_4e207c71-bff6-4a20-8db5-fba6dd0a9375.png",
-              "name": "Gigi Tomlin",
-              "job_title": "Customer Relations",
-              "tel": "07307 168822",
-              "email": "gigi@thehornit.com"
+              "contact_image": "shopify:\/\/shop_images\/Ivan_Profile_Pic_Website_sml_1.jpg",
+              "contact_image_two": "shopify:\/\/shop_images\/Ivan_Profile_Pic_Website_rollover.jpg",
+              "name": "Ivan",
+              "job_title": "Graphic Design",
+              "tel": "07387809981",
+              "email": "ivan@thehornit.com"
             }
           },
           "1593787820504": {
@@ -631,22 +661,34 @@
             "settings": {
               "contact_image": "shopify:\/\/shop_images\/Claire.png",
               "contact_image_two": "shopify:\/\/shop_images\/claire_jump.jpg",
-              "name": "Claire Blondel-Yerby",
+              "name": "Claire",
               "job_title": "Operations",
               "tel": "07928383127",
               "email": "claire@thehornit.com"
+            }
+          },
+          "1599215556754": {
+            "type": "contact-info",
+            "settings": {
+              "contact_image": "shopify:\/\/shop_images\/louis_square.jpg",
+              "contact_image_two": "",
+              "name": "Louis",
+              "job_title": "Product Design",
+              "tel": "",
+              "email": "louis@thehornit.com"
             }
           }
         },
         "block_order": [
           "1587927208608",
-          "1587928499545",
+          "1587929255042",
           "1587929135604",
           "1587929212909",
           "1587929169764",
           "1592577607750",
-          "1587929255042",
-          "1593787820504"
+          "1587928499545",
+          "1593787820504",
+          "1599215556754"
         ],
         "settings": {}
       },
@@ -723,6 +765,28 @@
               "nav_item_title": "Support",
               "nav_item_title_url": "shopify:\/\/pages\/support",
               "show_megamenu": false,
+              "nav_list": "support-menu",
+              "first_image": "",
+              "first_color_text": "first-white-text",
+              "first_title": "",
+              "first_url": "",
+              "first_text": "",
+              "second_image": "",
+              "second_color_text": "second-white-text",
+              "second_title": "",
+              "second_url": "",
+              "second_text": "",
+              "third_title": "Contact Us",
+              "third_url": "shopify:\/\/pages\/contact-us",
+              "third_text": "Contact"
+            }
+          },
+          "1586256513101": {
+            "type": "nav_item",
+            "settings": {
+              "nav_item_title": "What Cyclist are you?",
+              "nav_item_title_url": "shopify:\/\/pages\/what-cyclist-are-you",
+              "show_megamenu": false,
               "nav_list": "",
               "first_image": "",
               "first_color_text": "first-white-text",
@@ -739,11 +803,11 @@
               "third_text": ""
             }
           },
-          "1586256513101": {
+          "1599470017989": {
             "type": "nav_item",
             "settings": {
-              "nav_item_title": "What Cyclist are you?",
-              "nav_item_title_url": "shopify:\/\/pages\/what-cyclist-are-you",
+              "nav_item_title": "Videos",
+              "nav_item_title_url": "shopify:\/\/pages\/video-library",
               "show_megamenu": false,
               "nav_list": "",
               "first_image": "",
@@ -789,6 +853,7 @@
           "1586249484522",
           "1586256487666",
           "1586256513101",
+          "1599470017989",
           "1586256523083"
         ],
         "settings": {
@@ -977,7 +1042,7 @@
               "clug_cat_button_text_3": "View Product",
               "clug_cat_image_4": "shopify:\/\/shop_images\/Untitled-1.jpg",
               "clug_cat_title_4": "CLUG mtb XL",
-              "clug_cat_desc_4": "Fits tyres 58mm-69mm (2.3-2.7\")",
+              "clug_cat_desc_4": "Fits tyres 58mm-69mm (2.45-2.7\")",
               "clug_cat_button_url_4": "shopify:\/\/products\/hornit-clug-mtb-xl",
               "clug_cat_button_text_4": "View Product",
               "clug_cat_image_5": "shopify:\/\/shop_images\/CLUG-IMAGES-02.jpg",
@@ -987,11 +1052,22 @@
               "clug_cat_button_text_5": "View Product"
             }
           },
+          "1596025005811": {
+            "type": "info-block",
+            "settings": {
+              "info_color": "#ed2c85",
+              "info_image": "shopify:\/\/shop_images\/DSC073391.jpg",
+              "info_checkbox": false,
+              "info_title": "DOES THE STATED SIZE ON YOUR TYRE FALL BETWEEN 57-61MM (2.3-2.4”)?",
+              "info_content": "If your tyre indicates it is in this range then it is best to go for the CLUG mtb. Tyre manufacturers almost always exaggerate their MTB tyre sizes whereas we use ACTUAL tyre size. The mtb will be a beautifully snug fit and the mtb XL will be a little loose.",
+              "info_video_url": ""
+            }
+          },
           "1587821799133": {
             "type": "info-block",
             "settings": {
               "info_color": "#e9e9e9",
-              "info_image": "shopify:\/\/shop_images\/CLUG_collections.jpg",
+              "info_image": "shopify:\/\/shop_images\/Website_Tyre_Width_Chart.png",
               "info_checkbox": true,
               "info_title": "How to measure your clug",
               "info_content": "We designed CLUG to be a great fit with just about every bike tyre out there. We sell five versions of the CLUG - one to fit standard road bike tyres between \n23 and 32mm (1” - 1.25”) and one to fit hybrid tyres between 33 and 43 mm (1.3” - 1.7”). \nWe also have three different MTB CLUG's to fit fat mountain bike tyres between 1.75 - 3.2’’ (44mm and 81mm). To correctly measure your tyre to find the correct size of Hornit CLUG, click the button below and view the video.",
@@ -1022,14 +1098,14 @@
             "type": "faq",
             "settings": {
               "faq_title": "FAQ'S",
-              "faq_question_1": "What is CLUG ?",
-              "faq_desc_1": "Hornit CLUG is the world’s smallest bike rack. It uses the floor to store your bike, all you have to do is roll\nyour bike up and ‘CLUG’ it in!",
-              "faq_question_2": "What measurement do I need to find to work out which CLUG size I need?",
-              "faq_desc_2": "The main measurement we need is your tyre width. This is the key measurement in making sure you buy the correct sized CLUG.\nYou can use callipers or if you don’t have a pair of those then follow the\ninstructions in this short video below!",
-              "faq_question_3": "I can’t drill into my wall. Would tape work?",
-              "faq_desc_3": "Unfortunately, tape won’t work as it is not strong enough. We do however have a new product launching soon which may be able to help. Keep an eye out! If you wish to subscribe to our emails to get a first look.",
-              "faq_question_4": "What if my tyre has a slow puncture?",
-              "faq_desc_4": "We\nsuggest that\nyou to check your tyres every few weeks just in case you have\npicked up a slow\npuncture. If you do have a slow puncture, fix it first before using your CLUG.",
+              "faq_question_1": "What is CLUG?",
+              "faq_desc_1": "CLUG is the world’s smallest bike rack and works with your floor to store your bike. You can CLUG vertically or horizontally.",
+              "faq_question_2": "Which size CLUG do I need?",
+              "faq_desc_2": "The critical measurement is your ACTUAL tyre width. Armed with this measurement pick CLUG with the appropriate range. To make things more complicated than they should be, especially for MTB riders, tyre manufacturers often overstate their tyre sizes. For example, a tyre stated to be 2.4” will often measure 2.2”. If that's the case, please go for the CLUG mtb (rather than the CLUG mtb XL) as you will appreciate the snugger fit. The easiest way to measure tyre width is with callipers.",
+              "faq_question_3": "Can you use two CLUG’s to store the bike off the ground?",
+              "faq_desc_3": "Sadly not! CLUGs don't work that way. CLUGs are made to work with your floor to store your bike. You should use one only CLUG per bike.",
+              "faq_question_4": "What sizes are there?",
+              "faq_desc_4": "We have made five different sizes to fit tyres starting from 23mm (1”) all the way up to 81mm (3.2”). The five sizes are: roadie, hybrid, mtb, mtb XL, and plus. Have a look on our CLUG page to work out which size CLUG you need. If your tyre states its 2.3” or 2.4” then it will very likely have an actual size of around 2.2” and we strongly recommend you opt for the CLUG mtb size.",
               "faq_button_url": "shopify:\/\/pages\/faqs",
               "faq_button_text": "CLUG FAQ'S"
             }
@@ -1039,6 +1115,7 @@
           "1587470583235",
           "1587485498523",
           "1589471496008",
+          "1596025005811",
           "1587821799133",
           "1587821855996",
           "1587485273537",
@@ -1104,7 +1181,7 @@
             "settings": {
               "cyclist_title": "What cyclist are you?",
               "cyclist_hashtag": "#whatcyclistareyou",
-              "cyclist_contentdesc": "Designed to satisfy your riding experience, our innovative, style-savvy accessories will keep you safe whether you’re a professional rider or casual biker. We’re here to guide you through the maze and explain which Hornit cycling accessories we recommend for your kind of ride."
+              "cyclist_contentdesc": "Our innovative, style-savvy accessories are designed to enhance your riding experience, whether you’re a pro or casual rider. Here is a guide to which Hornit cycling accessories we recommend for your ride."
             }
           },
           "1588328113103": {
@@ -1113,7 +1190,7 @@
               "cyclist_color": "#ffffff",
               "cyclist_image": "shopify:\/\/shop_images\/what-cyclist-are-you-02.jpg",
               "cyclist_title": "Mountain Biker",
-              "cyclist_content": "If you’re serious about mountain biking, you should get serious about mountain bike maintenance. Enter CLUG... From cleaning and lubing to replacing your brake pads, keeping up appearances is easy with CLUG. We have three different MTB CLUGs to fit fat mountain bike tyres between 1.8 - 3.2’' (43mm and 81mm).",
+              "cyclist_content": "Use Hornit CLUG to store your MTB or to create a useful washdown station. We have three different sizes to fit mountain bike tyres between 1.8 - 3.2’' (43mm and 81mm).",
               "collection": "mountain-biker",
               "max_products": 5
             }
@@ -1124,7 +1201,7 @@
               "cyclist_color": "#ffffff",
               "cyclist_image": "shopify:\/\/shop_images\/what-cyclist-are-you-04.jpg",
               "cyclist_title": "Road Cyclist",
-              "cyclist_content": "We have something special just for you. The CLUG Roadie is designed to fit tyre width 23mm - 32mm or 1” - 1.25”- get yourself the worlds smallest bike rack! When you are on the roads we have a range of products to keep you safe including, the world's loudest horn, the dB140 and the world's brightest horn, the Hornit LITE.",
+              "cyclist_content": "We have a range of products to keep you safe on the roads including, the dB140, the world's loudest horn, as well as the Hornit LITE, the world's brightest horn. Don't forget to pick up a CLUG Roadie. This simple storage solution is designed to fit tyre width 23mm - 32mm or 1” - 1.25”.",
               "collection": "road-biker",
               "max_products": 3
             }
@@ -1135,7 +1212,7 @@
               "cyclist_color": "#ffffff",
               "cyclist_image": "shopify:\/\/shop_images\/what-cyclist-are-you-01.jpg",
               "cyclist_title": "Commuter",
-              "cyclist_content": "The Hornit combo of the world’s loudest cycle horn, light and world’s smallest bike rack CLUG will keep you safe on the roads and stylish at home. You could even have a look at bike balls, the world's most overconfident rear light!",
+              "cyclist_content": "Safety is a priority on your morning and evening commute. Which is why we have created the world's loudest bike horn - the dB140 - and the world's loudest bike light - the Hornit LITE. Designed to alert distracted drivers and pedestrians to your presence, these products put you firmly in control of your own safety.",
               "collection": "commuter",
               "max_products": 6
             }
@@ -1194,15 +1271,15 @@
               "product_url": "",
               "product_text": "",
               "faq_question_1": "Why don’t you deliver to my country?",
-              "faq_desc_1": "Please forgive us. We used to ship to almost every country in the world, but a combination of unreliable postal services and, in some cases, light-fingered customs officials meant that it was simply no longer worth the frustration for all concerned.  However, we have an extensive international distribution network so if we don't ship to your country please contact us and we will try and put you in contact with a local retailer who can!",
+              "faq_desc_1": "Please forgive us. We used to ship to almost every country in the world, but a combination of unreliable postal services and, in some cases, light-fingered customs officials meant that it was simply no longer worth the frustration for all concerned.  However, we have an extensive international distribution network so if we don’t ship to your country please contact us and we will try and put you in contact with a local retailer who can!",
               "faq_question_2": "I haven’t received an order confirmation, why is this?",
-              "faq_desc_2": "Every order receives an auto-confirmation. Please double-check your junk\/spam folder as they all too frequently end up in there. If you still can't find it, contact us and we will resend another one.",
+              "faq_desc_2": "Every order receives an auto-confirmation. Please double-check your junk\/spam folder as they all too frequently end up in there. If you still can’t find it, contact us and we will resend another one.",
               "faq_question_3": "How long does it take to send?",
-              "faq_desc_3": "Orders received before 11am UK time will be sent out the same day. Orders received after 11am UK time will be sent out the next working day. Standard UK delivery will be delivered within 1-5 days. Express UK delivery will be delivered within 1-2 days. European and Worldwide may take 7-10 days. Please note we do not deliver over the weekend.",
+              "faq_desc_3": "Orders received before 11am UK time will be sent out the same day. Orders received after 11am UK time will be sent out the next working day. Standard UK delivery will be delivered within 1-5 days. Express UK delivery will be delivered within 1-2 days. European and Worldwide may take 7-10 days. Please note we do not pick or send orders over the weekend.",
               "faq_question_4": "Where does Hornit ship from?",
               "faq_desc_4": "We ship all orders (except the USA and Canada) from our warehouse in the UK. For deliveries to the USA and Canada we have a warehouse in Columbus, Ohio.",
-              "faq_question_5": "",
-              "faq_desc_5": "",
+              "faq_question_5": "I haven’t received tracking?",
+              "faq_desc_5": "UK Tracking will come from Diamond Logistics based in Plymouth. You should receive tracking from them. If you haven't please email info@thehornit.com and we will be able to help.",
               "faq_question_6": "",
               "faq_desc_6": "",
               "faq_question_7": "",
@@ -1252,9 +1329,9 @@
               "product_url": "shopify:\/\/collections\/clug",
               "product_text": "See Product",
               "faq_question_1": "What is CLUG?",
-              "faq_desc_1": "What is CLUG?\nCLUG is the world’s smallest bike rack and works with your floor to store your bike. You can CLUG vertically or horizontally.",
+              "faq_desc_1": "CLUG is the world’s smallest bike rack and works with your floor to store your bike. You can CLUG vertically or horizontally.",
               "faq_question_2": "Which size CLUG do I need?",
-              "faq_desc_2": "The critical measurement is your ACTUAL tyre width. Armed with this measurement pick CLUG with the appropriate range. To make things more complicated than they should be, especially for MTB riders, tyre manufacturers often overstate their tyre sizes. For example, a tyre stated to be 2.4” will often measure 2.2”. If that's the case, please go for the CLUG mtb (rather than the CLUG mtb XL) as you will appreciate the snugger fit. The easiest way to measure tyre width is with callipers.",
+              "faq_desc_2": "The critical measurement is your ACTUAL tyre width. Armed with this measurement pick CLUG with the appropriate range. To make things more complicated than they should be, especially for MTB riders, tyre manufacturers often overstate their tyre sizes. For example, a tyre stated to be 2.4” will often measure 2.2”. If that's the case, please go for the CLUG mtb (rather than the CLUG mtb XL) as you will appreciate the snugger fit. The easiest way to measure tyre width is with callipers. To watch a video on how to measure, click here.",
               "faq_question_3": "How is it best to store my bike using CLUG?",
               "faq_desc_3": "CLUG is built to store your bike in two ways. The first way is to store it vertically. The second way is to store it horizontally. To store vertically roll your bike up so it’s on its back wheel. Once it is lined up vertically beneath the CLUG, push the front wheel into the CLUG. You cannot CLUG a bike vertically with the front wheel on the floor because the front wheel will twist and the bike will fall down! To store horizontally roll your rear tyre (backwards) into the CLUG, making sure the bike is perfectly straight. You cannot CLUG a bike horizontally with the front wheel in the CLUG because the front wheel will twist.",
               "faq_question_4": "Can CLUG hang my bike in the air? Can the wheels be off the ground?",
@@ -1292,7 +1369,7 @@
               "faq_question_20": "My rear wheel is dirtying my wall, how can I prevent this from happening?",
               "faq_desc_20": "All good things come to those who wait. We’ve designed a wipe clean, re-usable mud pad that we expect to launch in the September of 2020. The special micro-suction pad can be removed and re-used and won't pull off your paint.",
               "faq_question_21": "Can I rely on the tyre size stated on the tyre?",
-              "faq_desc_21": "Sadly not! Road tyre stated sizes do tend to be accurate. However, when it comes to MTB tyres manufacturers almost always exaggerate the size by as much as 0.1-0.2”. This is why you should go by ACTUAL tyre size, not the stated tyre size, especially if you are at the upper or lower limit of a given CLUG size. In practice if a tyre is stated to be 2.3-2.4” it will probably measure 2.1-2.25”. This means that you should definitely go for the CLUG mtb (rather than the CLUG mtb XL) to ensure a snug fit – the mtb XL will be loose.",
+              "faq_desc_21": "Sadly not! Road tyre stated sizes do tend to be accurate. However, when it comes to MTB tyres manufacturers almost always exaggerate the size by as much as 0.1-0.2”. This is why you should go by ACTUAL tyre size, not the stated tyre size, especially if you are at the upper or lower limit of a given CLUG size. In practice if a tyre is stated to be 2.3-2.4” it will probably measure 2.1-2.25”. This means that you should definitely go for the CLUG mtb (rather than the CLUG mtb XL) to ensure a snug fit – the mtb XL will be loose. See this short video on how to measure tyre width if you don't have callipers to hand.",
               "faq_question_22": "Can I mount CLUG on drywall?",
               "faq_desc_22": "If you have a roadie or hybrid size, the answer is yes you can. Please use the patented Toggler wall plugs supplied. We go to great lengths to source these from the USA as they are the best we have found. If you have the mtb, mtb XL or the plus size then the answer is no. The reason is that larger, ‘nobblier’ mountain bike tyres exert a much greater pull force on the CLUG and the dry wall is unlikely to cope.",
               "faq_question_23": "Can I mount CLUG at an angle?",
@@ -1304,7 +1381,7 @@
           "1588434111405": {
             "type": "Faq-Section",
             "settings": {
-              "section_id": "db140",
+              "section_id": "dB140",
               "faq_image": "shopify:\/\/shop_images\/ADULT-IMAGES_db140.jpg",
               "faq_title": "db140",
               "product_url": "shopify:\/\/products\/hornit-db140",
@@ -1312,39 +1389,39 @@
               "faq_question_1": "How loud is it?",
               "faq_desc_1": "The Hornit dB140 is 140 decibels making it the world’s loudest bike horn!",
               "faq_question_2": "Why is it so loud?",
-              "faq_desc_2": "It’s simple. The louder the horn the safer you are: the louder the horn the further away and the more quickly you get a motorist’s or a pedestrian’s attention and the more likely it is to be effective in all road conditions (diesel engines, tyre noise, wind...). And once they know you’re there they won't pull out or step out in front of you. All vehicles in the world have a horn by law because it makes drivers and pedestrians safer and yet for some reason the most vulnerable road user of all has historically had to make do with a bell. Being armed with a loud horn ironically makes cycling far less stressful as you know you can make yourself heard when it really matters.",
+              "faq_desc_2": "It’s simple. The louder the horn the safer you are: the louder the horn the further away and the more quickly you get a motorist’s or a pedestrian’s attention and the more likely it is to be effective in all road conditions (diesel engines, tyre noise, wind...). And once they know you’re there they won't pull out or step out in front of you. All vehicles in the world have a horn by law because it makes drivers and pedestrians safer and yet for some reason the most vulnerable road user of all has historically had to make do with a bell. Being armed with a loud horn ironically makes cycling far less stressful as you know you can make yourself heard when it really matters, fewer road users get in your way, you have to brake less and you don’t have to shout at people.",
               "faq_question_3": "Why does it have two different sounds?",
-              "faq_desc_3": "The piercing duo-tone sound is designed to be heard through car windows and above the ambient noise. The secondary car-horn 'park mode' sound it more of a traditional beep-beep which is less audible on the road, but works much better for pedestrians in a park or on a trail. You can easily change the sound mode by pressing the “H” button at the rear of the main unit.",
+              "faq_desc_3": "The piercing duo-tone sound is designed to be heard through car windows and above the ambient noise. The secondary car-horn 'park mode' sound it more of a traditional ‘beep’ sound which is less audible on the road but works much better for pedestrians in a park or on a trail. You change the sound mode by pressing the “H” button at the rear of the main unit.",
               "faq_question_4": "Why does one of the sounds on the dB140 sound like a tweeting bird?",
-              "faq_desc_4": "Some trail riders and mountain bikers have said that the piercing 140dB sound actually sounds like a tweeting bird. On the road it alerts drivers and pedestrians perfectly – they hear a noise and look\/cease the dangerous manoeuvre they are about to carry out because sub-consciously they know they are doing something that’s potentially dangerous. However, in a forest or on a trail walkers sub-consciously are in their own safe worlds and the piercing mode at a distance can sound like a tweeting bird. For that reason, it’s much better to switch to the car-horn mode as pedestrians will  associate the ‘beep-beep’ with a vehicle will therefore be much more likely to look round and move out of your way.",
+              "faq_desc_4": "Some trail riders and mountain bikers have said that the piercing 140dB sound actually sounds like a tweeting bird when they’re riding off-road. On the road it alerts drivers and pedestrians perfectly – they hear a noise and look\/cease the dangerous manoeuvre they are about to carry out because sub-consciously they know they are doing something that’s potentially dangerous. However, in a forest or on a trail, walkers sub-consciously are in their own safe worlds and the piercing mode at a distance can sound like a tweeting bird. For that reason, it’s much better to switch to the car-horn mode as pedestrians will associate the ‘beep’ sound with a vehicle will therefore be much more likely to look round and move out of your way.",
               "faq_question_5": "How do pedestrians react?",
-              "faq_desc_5": "The great thing about the Hornit dB140 is that you can warn pedestrians a long way in advance. Pedestrians often use their ears as much as their eyes to cross a roads (especially if they are crossing a quiet road), but sub-consciously aware that they are potentially in danger. Therefore hearing a piercing sound will immediately cause them to look up and see you. If you alert a pedestrian in advance they can simply continue crossing or step back to let you pass without having to break or change direction. If you use a quiet bell or quiet horn or warn them too late, then the pedestrian will likely not look up until you are virtually on top of them and that’s when they freeze and\/or step into your way. It’s helpful to remember that the Hornit is not actually that loud when the sound reaches the pedestrian’s ears so use it in advance, giving them time to look up, see you and move calmly out of the way – it won't come across as aggressive. That said, you should always be prepared for a pedestrian not to move as you expect and ride accordingly.",
+              "faq_desc_5": "The great thing about the Hornit dB140 is that you can warn pedestrians a long way in advance. Pedestrians often use their ears as much as their eyes to cross a roads (especially if they are crossing a quiet road), but sub-consciously they are aware that they are potentially in danger. Therefore hearing a piercing sound will immediately cause them to look up and see you. If you alert a pedestrian in advance they can simply continue crossing or step back to let you pass without you having to brake or swerve. If you use a quiet bell or quiet horn or warn them too late, then the pedestrian will likely not look up until you are virtually on top of them and that’s when they freeze and\/or step into your way. It’s helpful to remember that the Hornit is not actually that loud when the sound reaches the pedestrian’s ears so don’t be afraid to use it in advance, giving them time to look up, see you and move calmly out of the way – it won't come across as aggressive. That said, you should always be prepared for a pedestrian not to move as you expect and ride accordingly.",
               "faq_question_6": "Can I use a New Style Trigger with an Old Style unit?",
               "faq_desc_6": "Unfortunately, an old style unit will only work with old style triggers and vice versa. We updated it to improve reliability. If you have any questions please email us at info@thehornit.com and we will gladly help you out.",
               "faq_question_7": "Is it legal?",
-              "faq_desc_7": "Yes. There are currently no restrictions governing noise levels of horns on bicycles in the UK, USA, Australia or any of the other 44 countries we distribute our products in. Very few countries have legislated in this area with the exception of Germany. If you have a Hornit dB140 in Germany then be sure to use it off-road only. For some anomalous reason this wonderfully pro-cycling nation has an antiquated law that only bike bells may be used. We are lobbying Angel Merkel hard.",
+              "faq_desc_7": "Yes. There are currently no restrictions governing noise levels of horns on bicycles in the UK, USA, Australia or any of the other 44 countries we distribute our products in. Very few countries have legislated in this area with the exception of Germany. If you have a Hornit dB140 in Germany then be sure to use it off-road only. For some anomalous reason this wonderfully pro-cycling nation has an antiquated law that only bike bells may be used. We are lobbying Angel Merkel.",
               "faq_question_8": "Is it safe for my ears?",
               "faq_desc_8": "Yes. The sound of the dB140 is mainly projected forwards. Cyclists will only hear ~100-104dB when in use (which is about the same as going to a rock concert for a few seconds). Clearly it is up to the rider to use the Hornit responsibly and to weigh up the risks of having a crash against any possible ear drum damage.",
               "faq_question_9": "Is it safe for children to use?",
-              "faq_desc_9": "The dB140 is not a toy and riders under the age of 16 should probably not use the Hornit due to their more sensitive ears and the increased likelihood of irresponsible use. That said, we strongly believe in letting people decide what risks they want to take so if your child is cycling to school and has to ride on a busy road then I would regard it to be as essential as using a helmet: preventing an accident altogether is preferable to having your head protected in an accident you could have avoided had you been able to warn another road user you were there! For young children we have our award winning Hornit Mini and Hornit Nano which are made for fun (please see below!)",
+              "faq_desc_9": "The dB140 is not a toy and riders under the age of 16 should not use the Hornit due to their more sensitive ears and the increased likelihood of irresponsible use. That said, we strongly believe in letting people decide what risks they want to take so if your child is cycling to school and has to ride on a busy road then we would regard it to be as essential as using a helmet: preventing an accident altogether is preferable to having your head protected in an accident you could have avoided had you been able to warn another road user you were there! For young children we have our award winning Hornit Mini and Hornit Nano which are made for fun riding!",
               "faq_question_10": "How do I know it will fit my bike?",
-              "faq_desc_10": "Our dB140 fit almost every bike. In fact in 10 years no one has ever said their Hornit dB140 is incompatible with their bike. The trigger is made of a durable stretchy rubber strap which fits around normal handlebars. The main mount unit with its rubber strap allows you to mount the horn in an easy and convenient position on your handlebars. Have a look at our instructions (which are also available online) if you want to look into it further. If you get your dB140 and it doesn’t fit, please Contact Us and we will help you further.",
+              "faq_desc_10": "Our dB140 fit almost every bike. In fact in 10 years no one has ever said their Hornit dB140 is incompatible with their bike. The trigger is made of a durable stretchy rubber strap which fits around normal handlebars. The main mount unit with its rubber strap allows you to mount the horn in an easy and convenient position on your handlebars. Have a look at our instructions (which are also available online) if you want to look into it further. If you get your dB140 and it doesn’t fit, please contact us and we will help you further.",
               "faq_question_11": "Will it get stolen?",
-              "faq_desc_11": "The dB140 is the same as any other valuable bike accessory and can get stolen, so please take the main horn unit with you when you park up. It’s fine to disconnect and leave the trigger on your bike. The chances of someone taking a wire are negligible.",
+              "faq_desc_11": "The dB140 is the same as any other valuable bike accessory and can get stolen, so please take the main horn unit with you when you park up. It’s fine to disconnect and leave the trigger on your bike. We cannot guarantee it, but the chances of someone taking a lone wire are negligible.",
               "faq_question_12": "How is it powered?",
-              "faq_desc_12": "The dB140 is powered by 2 AAA Batteries should last you for up to 18 months with “normal use”. We consider “normal use” to be 6 x 1 second blasts a day 5 days a week. In practice you’re very unlikely to use it this often. It is very easy to change the batteries, simply unscrew the batter cover change the batteries and screw the cover back on.",
+              "faq_desc_12": "The dB140 is powered by 2 AAA Batteries should last you for up to 18 months with “normal use”. We consider “normal use” to be 6 x 1 second blasts a day 5 days a week. In practice you’re very unlikely to use it this often. It is very easy to change the batteries, simply unscrew the battery cover, change the batteries and screw the cover back on.",
               "faq_question_13": "Are the batteries included?",
               "faq_desc_13": "Yes. We include batteries with all of our products.",
               "faq_question_14": "Can I use rechargeable batteries?",
-              "faq_desc_14": "Unfortunately, rechargeable batteries typically have a lower voltage, meaning that less sound is generated. However, battery technology is changing all the time so it’s fine to test and see whether there’s a difference in the sound. If you are looking for a rechargeable horn, have a look at  our product, Hornit Lite.",
+              "faq_desc_14": "Unfortunately, rechargeable batteries typically have a lower voltage, meaning that less sound is generated. However, battery technology is changing all the time so it’s fine to test and see whether there’s a difference in the sound. If you are looking for a rechargeable horn, have a look at our Hornit Lite.",
               "faq_question_15": "Is it waterproof?",
               "faq_desc_15": "Our Hornit dB140 is water resistant and is tested to work even in torrential rain. The IP rating is IP44. If you live in a humid climate we suggest you take it indoors with you to help prevent moisture getting inside over time. It is not 100% waterproof because water will get into the battery cover if it is submerged or mounted upside down.",
               "faq_question_16": "Can I buy one in the shops?",
               "faq_desc_16": "Yes. You can find the Hornit dB140 in all good cycle stores in the UK and abroad.",
-              "faq_question_17": "What is the returns policy?",
-              "faq_desc_17": "We want you to be really happy with your purchase, so if you have any problems let us know and we will try and helps as best as possible! You can see our Returns policy by looking at Delivery and Returns. We have a 2-year returns warranty on all of our products. Accidents happen and so if you are outside of our warranty period, you can easily get a replacement part (e.g. trigger) by checking out our 'spare parts'  in the header above.",
-              "faq_question_18": "Can I save space by clugging my bikes alternately ‘one front wheel up one front wheel down’?",
-              "faq_desc_18": "No, you cannot CLUG vertically with the front wheel on the ground. It MUST be the back wheel on the ground, otherwise gravity will cause your handlebars to twist and the bike will fall out.",
+              "faq_question_17": "",
+              "faq_desc_17": "",
+              "faq_question_18": "",
+              "faq_desc_18": "",
               "faq_question_19": "",
               "faq_desc_19": "",
               "faq_question_20": "",
@@ -1362,37 +1439,37 @@
           "1588436436521": {
             "type": "Faq-Section",
             "settings": {
-              "section_id": "hornit-lite",
+              "section_id": "Hornit lite",
               "faq_image": "shopify:\/\/shop_images\/ADULT-IMAGES_lite.jpg",
               "faq_title": "Hornit Lite",
               "product_url": "shopify:\/\/products\/hornit-lite",
               "product_text": "see Product",
               "faq_question_1": "How loud is it?",
-              "faq_desc_1": "The Hornit LITE is the world’s loudest bike light, and brother to the dB140. Due to the restrictions introduced by combining the light with the horn the Hornit LITE emits 120 decibels.",
+              "faq_desc_1": "The Hornit LITE is the world’s loudest bike light, and brother to the dB140. Due to the restrictions introduced by combining the light with the horn the Hornit LITE emits 120 decibels. The Hornit dB140 emits 140 decibels.",
               "faq_question_2": "How come it isn’t as loud as the dB140?",
-              "faq_desc_2": "We wanted to make a product which combines both elements of road safety, sight and sound and had compromise a slight compromise on the sound level of the horn in order to have a super bright light. At 120 decibels the horn still enables riders to actively alert drivers and pedestrians.",
+              "faq_desc_2": "We wanted to make a product which combines both elements of road safety: sight and sound. We had to compromise on the sound level of the horn in order to have a super bright light. At 120 decibels the horn still enables riders to actively alert drivers and pedestrians.",
               "faq_question_3": "Why does it have multiple sounds?",
-              "faq_desc_3": "The Hornit LITE has 5 horn modes which can be switched between by holding the trigger down for 4 seconds. We strongly recommend the piercing mode or the whistle when riding in  traffc. We’d recommend the car horn sound or whiste when riding on a trail or footpath.\n<br>\n<ul>\n<li>Piercing Mode at 120dB<\/li>\n<li>High Pitch at 112dB<\/li>\n<li>Whistle at 114dB<\/li>\n<li>Beep Beep at 95dB<\/li>\n<li>Car Horn at 101dB<\/li>\n<\/ul>",
-              "faq_question_4": "Can I use a New Style Trigger with an Old Style unit?",
-              "faq_desc_4": "An old style unit will only work with old style triggers and vice versa. If you have any questions please email us and we will gladly help you out info@thehornit.com.",
-              "faq_question_5": "Is it legal?",
-              "faq_desc_5": "Yes. There are currently no restrictions governing noise levels of horns on bicycles in the UK, USA, Australia or any of the other 44 countries we distribute our products in. Very few countries have legislated in this area with the exception of Germany. If you have a Hornit dB140 in Germany then be sure to use it off-road only. For some anomalous reason this wonderfully pro-cycling nation has an antiquated law that only bike bells may be used. We are lobbying Angel Merkel hard.",
+              "faq_desc_3": "The Hornit LITE has 5 horn modes which can be switched between by holding the trigger down for 4 seconds. We strongly recommend the piercing mode or the whistle when riding in traffic. We’d recommend the car horn sound or whistle when riding on a trail or footpath.\nPiercing Mode at 120dB\nHigh Pitch at 112dB\nWhistle at 114dB\nBeep Beep at 95dB\nCar Horn at 101dB",
+              "faq_question_4": "Is it legal?",
+              "faq_desc_4": "Yes. There are currently no restrictions governing noise levels of horns on bicycles in the UK, USA, Australia or any of the other 44 countries we distribute our products in. Very few countries have legislated in this area with the exception of Germany. If you have a Hornit dB140 in Germany then be sure to use it off-road only. For some anomalous reason this wonderfully pro-cycling nation has an antiquated law that only bike bells may be used. We are lobbying Angel Merkel.",
+              "faq_question_5": "Is it safe for my ears?",
+              "faq_desc_5": "Yes. The sound of the dB140 is mainly projected downwards. Cyclists will only hear ~94-98dB when in use (which is about the same as going to a rock concert and standing at the back for a few seconds). Clearly it is up to the rider to use the Hornit responsibly and to weigh up the risks of having a crash against any possible ear drum damage.",
               "faq_question_6": "Is it safe for my ears?",
               "faq_desc_6": "Yes. The sound of the dB140 is mainly projected downwards. Cyclists will only hear ~94-98dB when in use (which is about the same as going to a rock concert and standing at the back for a few seconds). Clearly it is up to the rider to use the Hornit responsibly and to weigh up the risks of having a crash against any possible ear drum damage.",
               "faq_question_7": "Is it safe for children to use?",
-              "faq_desc_7": "The Hornit LITE is not a toy and riders under the age of 16 should probably not use the Hornit LITEdue to their more sensitive ears and the increased likelihood of irresponsible use. That said, we strongly believe in letting people decide what risks they want to take so if your child is cycling to school and has to ride on a busy road then I would regard it to be as essential as using a helmet: preventing an accident altogether is preferable to having your head protected in an accident you could have avoided had you been able to warn another road user you were there! For young children we have our award winning Hornit Mini and Hornit Nano which are made for fun.",
+              "faq_desc_7": "The Hornit LITE is not a toy and riders under the age of 16 should not use the Hornit LITE due to their more sensitive ears and the increased likelihood of irresponsible use. That said, we strongly believe in letting people decide what risks they want to take so if your child is cycling to school and has to ride on a busy road then we would regard it to be as essential as using a helmet: preventing an accident altogether is preferable to having your head protected in an accident you could have avoided had you been able to warn another road user you were there! For young children we have our award winning Hornit Mini and Hornit Nano.",
               "faq_question_8": "How do I know it will fit my bike?",
               "faq_desc_8": "Hornit LITE will fit the majority of bikes as the trigger is made of a durable stretchy rubber strap which fits around normal handlebars. The main unit allows you to mount the horn in an easy and convenient position on your handlebars. Have a look at our instructions (which are also available online) if you want to look into it further. If you get your LITE and it doesn’t fit, please Contact US and we can help you further.",
               "faq_question_9": "Will it get stolen?",
-              "faq_desc_9": "The LITE is the same as any other valuable bike accessory and can get stolen, so please take the whole unit with you when you park up. It’s fine to disconnect and leave the trigger on your bike. The chances of someone taking a wire are negligible.",
+              "faq_desc_9": "The LITE is the same as any other valuable bike accessory and can get stolen, so please take the whole unit with you when you park up.",
               "faq_question_10": "How is it powered?",
               "faq_desc_10": "The Hornit LITE is our uses a 1,200 mAh Li-Po battery which is micro USB rechargeable. Simply plug it in for 90 minutes and once fully charged can be used for up to 9 hours 30 mins hours of run time.",
               "faq_question_11": "Is it waterproof?",
               "faq_desc_11": "The LITE is water resistant and is tested to work in torrential rain and high humidity. The IP rating is IP44. If you live in a humid climate we suggest you take it indoors with you to help prvent moisture from getting inside over time. It is not 100% waterproof as water can get in if fully submerged.",
               "faq_question_12": "Can I buy one in the shops?",
               "faq_desc_12": "Yes. You can find the Hornit dB140 in all good cycle stores in the UK and abroad.",
-              "faq_question_13": "What is the returns policy?",
-              "faq_desc_13": "We want you to be really happy with your purchase, so if you have any problems with your Hornit LITE let us know and we will try and help as best as possible! You can see our Returns policy by looking at Delivery and Returns. We have a 2-year returns warranty on all of our products. Accidents happen and so if you are outside of our warranty period, you can easily get a replacement part (e.g. trigger) by looking on our website.",
+              "faq_question_13": "",
+              "faq_desc_13": "",
               "faq_question_14": "",
               "faq_desc_14": "",
               "faq_question_15": "",
@@ -1420,39 +1497,39 @@
           "1588437234829": {
             "type": "Faq-Section",
             "settings": {
-              "section_id": "hornit-mini",
+              "section_id": "hornit Mini",
               "faq_image": "shopify:\/\/shop_images\/minis.jpg",
-              "faq_title": "Mini Hornit",
+              "faq_title": "Hornit Mini",
               "product_url": "shopify:\/\/collections\/mini-hornit",
               "product_text": "See Product",
               "faq_question_1": "Is it loud?",
               "faq_desc_1": "Our Hornit Mini is toy-tested to make it safe for children’s sensitive ears, and so it much quieter than the Hornit dB140 and Hornit LITE which are designed to be heard by drivers in heavy traffic. The decibel range is 75-80dB. There are 3 volume settings – loud, medium and quiet. Just press the sting at the rear of the main unit.",
               "faq_question_2": "Why don’t you make it louder?",
-              "faq_desc_2": "It’s a toy! The Mini (and Nano) use a speaker rather than a piezo buzzer so the volume is necessarily restricted by the speaker capacity. In addition, the Hornit Mini is toy-tested to make it safe for children’s sensitive ears. The Hornit Mini isn’t made for safety when cycling or scootering on main roads. Children love to let their imaginations run wild when they use it pretending to be racing cars, animals, police so it doesn’t need to be loud!",
+              "faq_desc_2": "It’s a toy! The Mini (and Nano) use a speaker rather than a piezo buzzer so the volume is necessarily restricted by the speaker capacity. In addition, the Hornit Mini is toy-tested to make it safe for children’s sensitive ears. The Hornit Mini isn’t made for safety when cycling or scootering on main roads. Children love to let their imaginations run wild when they use it pretending to be racing cars, animals, emergency vehicles etc. so it doesn’t need to be loud!",
               "faq_question_3": "How long is battery life?",
               "faq_desc_3": "This clearly varies depending on use. The 2x AAA batteries last for up to 7 hours on a constant light mode and up to 12 hours on flashing mode. This is less than the Nano because at 12 lumens the Mini is brighter.",
               "faq_question_4": "How do I obtain replacement parts?",
-              "faq_desc_4": "We have a 2-year warranty on all of our products so if you are within this period contact us on info@thehornit.com. Accidents do happen and so if you are outside of our warranty period, you can easily get a replacement part in the Hornit Mini area of our website. \nWhat are the sounds effects on the Hornit Mini?\n<br>\nOn the Mini there are 25 different sound effects. These are:\nBike Bell, Olé Trumpet, Racing Cars, Police Siren, Motorbike, Laser, Helicopter, Fire Engine, Fart, Magic Spell, Aeroplane, Hooter, Burp, Wolf, Rooster, Lion, Elephant, Horse, Hornet, Magic Carpet, Firework, Reversing Truck, Train, Klaxon, Zapper.\n<br>\nWe went to extraordinary lengths for 6 months to bring you all the sound effects and to ensure they are as fun and realistic as possible, to help kids imaginations run free! Originally one week was given to the task! It was one of those...",
-              "faq_question_5": "Why is there an optional remote trigger?",
-              "faq_desc_5": "On a scooter, the child’s hands are much closer together and so a remote trigger isn’t normally needed for their thumbs to safely reach the buttons. However, on a bike, it’s rarely easy to mount the Hornit Mini next to their hounds so the trigger enable them to make the sounds safely (without having to take their hands off the handlebars).",
-              "faq_question_6": "How bright are the lights?",
-              "faq_desc_6": "The lights are 12 lumens, which is the same (and in many cases better) than other safety lights on the market. They are designed to make your child more visible in low light such during winter school runs!",
-              "faq_question_7": "How does it fit to my bike\/scooter?",
-              "faq_desc_7": "The two stretchy wings fit around all bikes and scooter handlebars and will keep the Hornit Mini securely in place. It has been designed so children can mount and remove the Hornit Mini in seconds.",
-              "faq_question_8": "How strong are the wings?",
-              "faq_desc_8": "We know that the combination of the cycling and toy environments mean our products have to be strong. The wings are tested to withstand a dead weight of 10kg weight on them so to break them you have to really want to! That said, rubber can tear easily if it comes into contact with a sharp object so take care to avoid nicks or cuts on the wings.",
-              "faq_question_9": "What does the ‘sting’ do?",
-              "faq_desc_9": "The ‘sting’ button at the rear of the Mini Hornit is the volume button.\nTo change the volume, press the sting. The volume cycles through from loud to medium to quiet and round again. The volume setting you are on is indicated by the loudness of the beep sound it makes each time you press it.",
-              "faq_question_10": "Will it get stolen if I leave it on my bike?",
-              "faq_desc_10": "Minis are hot property! We strongly advise that the Hornit Mini is not left unattended on a bike or scooter because it is so easy to remove. If your child rides to school with it, put it in their backpack and let them show their friends! If that isn’t possible then, switch it off and take it back with you.",
-              "faq_question_11": "How waterproof is it?",
-              "faq_desc_11": "The Hornit Mini will be fine in light rain and possibly even heavy rain provided that the water doesn’t get into the internal parts (through the lens). If it is raining, we recommend that the front is tilted down slightly so that water can’t get inside. The speaker does actually work underwater, however the other internal parts may malfunction after getting wet. Try shaking out any excess water if anything gets inside. Water damage isn’t covered by our warranty so try and avoid letting kids use it as a submarine in puddles!",
-              "faq_question_12": "How durable is the Hornit Mini?",
-              "faq_desc_12": "For peace of mind we give a 2 year warranty. We have tested the Hornit Mini in extreme weather (simulated in ovens and freezers), subjected it to wear and tear tests and generally put it through its paces. The wings can withstand a 10kg deadweight attached to them, and all units tested worked after being dropped from 10m up onto concrete. The trigger should be treated with care. Make sure your children aren’t using it as a rope swing as it can only support up to 1kg before snapping!",
-              "faq_question_13": "Can I buy one in the shops?",
-              "faq_desc_13": "The product is available in multiple stores in the UK, USA, Europe and across the world. If it’s not available in your local store please tell them they are missing out. You can buy online from our website, Amazon or from Evans Cycles.",
-              "faq_question_14": "What is the returns policy?",
-              "faq_desc_14": "We want you to be really happy with your purchase, so if you have any problems let us know and we will try and helps as best as possible! You can see our returns policy by looking at Delivery and Returns. We have a 2-year returns warranty on all of our products.",
+              "faq_desc_4": "We have a 2-year warranty on all of our products so if you are within this period contact us on info@thehornit.com. Accidents do happen and so if you are outside of our warranty period, you can easily get a replacement part in the Hornit Mini area of our website.",
+              "faq_question_5": "What are the sounds effects on the Hornit Mini?",
+              "faq_desc_5": "On the Mini there are 25 different sound effects. These are: Bike Bell, Olé Trumpet, Racing Cars, Police Siren, Motorbike, Laser, Helicopter, Fire Engine, Fart, Magic Spell, Aeroplane, Hooter, Burp, Wolf, Rooster, Lion, Elephant, Horse, Hornet, Magic Carpet, Firework, Reversing Truck, Train, Klaxon, Zapper.\n\nWe went to extraordinary lengths for 6 months to bring you all the sound effects and to ensure they are as fun and realistic as possible including enlisting the services of professional trumpeters and sound engineers, to help kids imaginations run free! Originally one week was given to the task! It was one of those...",
+              "faq_question_6": "Why is there an optional remote trigger?",
+              "faq_desc_6": "On a scooter, the child’s hands are much closer together and so a remote trigger isn’t normally needed for their thumbs to safely reach the buttons. However, on a bike, it’s rarely easy to mount the Hornit Mini next to their hands so the trigger enables them to make the selected sound safely (without having to take their hands off the handlebars).",
+              "faq_question_7": "How bright are the lights?",
+              "faq_desc_7": "The lights are 12 lumens, which is the same (and in many cases better) than other safety lights on the market. They are designed to make your child more visible in low light such during winter school runs!",
+              "faq_question_8": "How does it fit to my bike\/scooter?",
+              "faq_desc_8": "The two stretchy wings fit around all bikes and scooter handlebars and will keep the Hornit Mini securely in place. It has been designed so children can mount and remove the Hornit Mini in seconds.",
+              "faq_question_9": "How strong are the wings?",
+              "faq_desc_9": "We know that the combination of the cycling and toy environments mean our products have to be strong. The wings are tested to withstand a dead weight of 10kg weight on them so to break them you have to really want to! That said, rubber can tear easily if it comes into contact with a sharp object so take care to avoid nicks or cuts on the wings.",
+              "faq_question_10": "What does the ‘sting’ do?",
+              "faq_desc_10": "The ‘sting’ button at the rear of the Mini Hornit is the volume button.\nTo change the volume, press the sting. The volume cycles through from loud to medium to quiet and round again. The volume setting you are on is indicated by the loudness of the beep sound it makes each time you press it.",
+              "faq_question_11": "Will it get stolen if I leave it on my bike?",
+              "faq_desc_11": "Minis are hot property! We strongly advise that the Hornit Mini is not left unattended on a bike or scooter because it is so easy to remove. If your child rides to school with it, put it in their backpack and let them show their friends! If that isn’t possible then, we recommend taking it off and taking it with you.",
+              "faq_question_12": "How waterproof is it?",
+              "faq_desc_12": "The Hornit Mini will be fine in light rain and possibly even heavy rain provided that the water doesn’t get into the internal parts (through the lens). If it is raining, we recommend that the front is tilted down slightly so that water can’t get inside. The speaker does actually work underwater (we discovered that during testing), however the other internal parts may malfunction after getting wet. Try shaking out any excess water if anything gets inside. Water damage isn’t covered by our warranty so try and avoid letting kids use it as a submarine in puddles!",
+              "faq_question_13": "How durable is the Hornit Mini?",
+              "faq_desc_13": "For peace of mind we give a 2 year warranty. We have tested the Hornit Mini in extreme weather (simulated in ovens and freezers), subjected it to wear and tear tests and generally put it through its paces. The wings can withstand a 10kg deadweight attached to them, and all units tested worked after being dropped from 5m up onto concrete. The trigger should be treated with care. Make sure your children aren’t using it as a rope swing as it can only support up to 1kg before snapping!",
+              "faq_question_14": "Can I buy one in the shops?",
+              "faq_desc_14": "The product is available in multiple stores in the UK, USA, Europe and across the world. If it’s not available in your local store please tell them they are missing out. You can buy online from our website, Amazon or from Evans Cycles.",
               "faq_question_15": "",
               "faq_desc_15": "",
               "faq_question_16": "",
@@ -1484,19 +1561,19 @@
               "product_url": "shopify:\/\/collections\/kids-helmets",
               "product_text": "See PRODUCT",
               "faq_question_1": "How many designs do you sell and what are they?",
-              "faq_desc_1": "We currently have 12 helmet designs. These include: Unicorns, Sloth, Lazy Llama, Chiller Spider, Pug Puppies, Commander, Aviator, Polka Dot, Hammerhead, Head Candy, Stealth and Wayfarer.",
-              "faq_question_2": "What do the sizes mean",
-              "faq_desc_2": "Size Chart\n<ul>\n<li>Small (48-53cm)<\/li>\n<li>Medium (54-58cm)<\/li>\n<\/ul>\n<br>\nOur Helmets generally fit children aged 3+. This isn’t a rule though as it is all to do with your child’s head size so please measure up!",
+              "faq_desc_1": "We currently have 12 helmet designs. These are: Unicorns, Sloth, Lazy Llama, Chiller Spider, Pug Puppies, Commander, Aviator, Polka Dot, Hammerhead, Head Candy, Stealth and Wayfarer.",
+              "faq_question_2": "What do the sizes mean?",
+              "faq_desc_2": "The measurement (in cm) refers to the circumference around the largest part of the rider’s head (approximately 1cm above the rider’s eyebrows). Our helmets generally fit children aged 3+. This isn’t a rule though – actual sizing is critical - so please measure up!  Check our sizing guide on the helmet product pages!",
               "faq_question_3": "How do I measure my child’s head to check for the right size?",
-              "faq_desc_3": "We have written a handy blog about how exactly to measure your kids head.",
+              "faq_desc_3": "We have written a handy blog about how exactly to measure your kids head.<a href=\"https:\/\/hornit.com\/blogs\/news\/how-do-i-find-out-my-kids-helmet-size\"><b>Click here to read more<\/b><\/a>",
               "faq_question_4": "Are the helmets adjustable?",
-              "faq_desc_4": "Yes! We have a ring adjuster at the back of the helmet (with an integrated LED light) which can will tighten or loosen to ensure the helmet fits snuggly to your child’s head. The straps that clip under the chin are also adjustable. The ring adjuster should be tightened until the fit is firm, but comfortable and the chin strap should fir snugly under the chin.",
+              "faq_desc_4": "Yes! We have a ring adjuster at the back of the helmet (with an integrated LED light) which tightens and loosens to ensure the helmet fits snuggly to you’re the rider’s head. The straps that clip under the chin are also adjustable. The ring adjuster should be tightened until the fit is firm, but comfortable and the chin strap should fit snugly under the chin.",
               "faq_question_5": "My child has had a fall and hit their helmet on the ground - can I still use it?",
-              "faq_desc_5": "No. If the helmet has suffered a large impact (even if there is no visible damage) or when it shows obvious signs of wear and tear you should discard or replace it. It is recommended that helmets are replaced after 4-5 years after initial use or within 8 years of production.",
+              "faq_desc_5": "No. If the helmet has suffered an impact (even if there is no visible damage), or when it shows obvious signs of wear and tear, you should discard and replace it. It is recommended that helmets are replaced after 4-5 years after initial use or within 8 years of production.",
               "faq_question_6": "The batteries in my LED light have stopped working, what do I do?",
-              "faq_desc_6": "If your LED light at the back of the helmet has stopped working, then it almost certainly needs new batteried. Unscrew the two small screws and put in 2 new AG3 batteries or 1 new CR2032 battery depending on which LED you have. If this doesn’t fix the problem, then Contact Us and we will help!",
+              "faq_desc_6": "If your LED light at the back of the helmet has stopped working, then it almost certainly needs new batteries. Unscrew the two small screws and put in 2 new AG3 batteries or 1 new CR2032 battery depending on which LED you have. If this doesn’t fix the problem, then Contact Us and we will help!",
               "faq_question_7": "The helmet does not fit my child’s head very well, what should I do?",
-              "faq_desc_7": "It is important that the helmet is a good fit. Make sure the adjustable straps and bezel are fitting well on your child's head. If you are having any issues please contact us!",
+              "faq_desc_7": "It can happen, not all head shapes are the same and while our helmet is designed to fit as many heads as possible, for some it might not work. It is really important that the helmet is a good fit. We’d far rather you protected your child’s head properly so will happily accept returns for a full refund.",
               "faq_question_8": "",
               "faq_desc_8": "",
               "faq_question_9": "",
@@ -1542,35 +1619,35 @@
               "product_url": "shopify:\/\/collections\/mini-hornit-nano",
               "product_text": "SEE PRODUCT",
               "faq_question_1": "Is it loud?",
-              "faq_desc_1": "Our Hornit Mini is toy-tested to make it safe for children’s sensitive ears, and so it much quieter than the Hornit dB140 and Hornit LITE which are designed to be heard by drivers in heavy traffic. The decibel range is 75-80dB.",
+              "faq_desc_1": "Our Hornit Nano is toy-tested to make it safe for children’s sensitive ears, and so it much quieter than the Hornit dB140 and Hornit LITE which are designed to be heard by drivers in heavy traffic. The decibel range is 75-80dB.",
               "faq_question_2": "Why don’t you make it louder?",
-              "faq_desc_2": "It’s a toy! The Nano (and Mini) use a speaker rather than a piezo buzzer so the volume is necessarily restricted by the speaker capacity. In addition, the Hornit Mini is toy-tested to make it safe for children’s sensitive ears. The Hornit Nano isn’t made for safety when cycling or scootering on main roads. Children love to let their imaginations run wild when they use it pretending to be racing cars, animals, police so it doesn’t need to be loud!",
+              "faq_desc_2": "It’s a toy! The Nano (and Mini) use a speaker rather than a piezo buzzer so the volume is necessarily restricted by the speaker capacity. In addition, the Hornit Nano is toy-tested to make it safe for children’s sensitive ears. The Hornit Nano isn’t made for safety when cycling or scootering on main roads. Children love to let their imaginations run wild when they use it pretending to be racing cars, animals, emergency vehicles etc. so it doesn’t need to be loud!",
               "faq_question_3": "How long is battery life?",
               "faq_desc_3": "This clearly varies depending on use. The 2x AAA batteries last for up to 17 hours 45 minutes on a constant light mode and up to 58 hours on flashing mode.",
-              "faq_question_4": "How do I obtain replacement parts?",
-              "faq_desc_4": "We have a 2-year warranty on all of our products. Accidents do happen and so if you are outside of our warranty period, you can easily get a replacement part. Please see 'kids spare parts' under kids in the header above.",
-              "faq_question_5": "What are the sounds effects on the Hornit Nano?",
-              "faq_desc_5": "On the Nano there are 25 different sound effects. These are:\nBike Bell, Hooter, Ole Trumpet, Dixie Horn, Racing Cars, Laser, Firework, Police Car, Burp, Fart, Magic Spell, Magic Carpet, Wolf, Train, Reversing Truck\n<br>\nWe have tried to make the sound effects as fun and realistic as possible, to help kids imaginations run free!",
-              "faq_question_6": "Why is there a remote trigger on the Hornit Mini, but not the Hornit Nano?",
-              "faq_desc_6": "The Nano is primarily aimed at the scooter riders because the child’s hands will be right next to where the Nano mounts on the handlebars. The Mini Hornit was designed for both scooters and bikes, meaning the child can mount the larger Hornit Mini anywhere towards the middle of the handlebars and make the sounds without having to take their hands off the handlebar grips. The Nano still works for bikes as it’s narrower than the Mini.",
-              "faq_question_7": "Can I use the trigger for the Hornit Mini on the Hornit Nano anyway?",
-              "faq_desc_7": "No! Unfortunately not.  If it’s a trigger you want then go for the Mini!",
-              "faq_question_8": "How bright are the lights?",
-              "faq_desc_8": "The 3 light settings are 6 lumens which is less than the Mini, but it means the batteries last a lot longer (58 hours in our tests as opposed to 12 hours for the Mini. If you are looking for a brighter children’s light, then have a look at our Hornit Mini which has a 12 Lumen light. Both the Nano and Mini are designed to make your child more visible in low light conditions such as the early morning school run!",
-              "faq_question_9": "How does it fit to my bike\/scooter?",
-              "faq_desc_9": "The stretchy wing fits around all kids bikes and scooter handlebars. It has been designed so children can mount and remove the Nano in seconds.",
-              "faq_question_10": "How strong is the wing?",
-              "faq_desc_10": "A 2kg deadweight can be held by the wing so to break it you have to really want to!  That said, rubber can tear easily if it comes into contact with a sharp object so take care to avoid nicks or cuts on the wings.",
-              "faq_question_11": "Will it get stolen if I leave it on my bike?",
-              "faq_desc_11": "Nanos are hot property! We strongly advise that the Hornit Nano is not left unattended on a bike or scooter because it is so easy to remove. If your child rides to school with it, put it in their backpack and let them show their friends! If that isn’t possible then, switch it off and take it back with you.",
-              "faq_question_12": "How waterproof is it?",
-              "faq_desc_12": "The Hornit Nano will be fine in light rain and possibly even heavy rain provided that the water doesn’t get into the internal parts. If it is raining, we recommend that the front is tilted down slightly so that water can’t get inside. The speaker does actually work underwater, but if this is tried the other internal parts may malfunction. Try shaking out any excess water if anything gets inside. Water damage isn’t covered by our warranty so try and avoid letting kids use it as a submarine in puddles!",
-              "faq_question_13": "How durable is the Hornit Nano?",
-              "faq_desc_13": "For peace of mind we give a 2 year warranty. We have tested the Hornit Mini in extreme weather (simulated in ovens and freezers), subjected it to wear and tear tests and generally put it through its paces. The wing can withstand a 2kg deadweight attached to it, and all units tested worked after being dropped from 5m up onto concrete.",
-              "faq_question_14": "Can I buy one in the shops?",
-              "faq_desc_14": "The product is available in multiple stores in the UK, USA, Europe and across the world. If it’s not available in your local store, please tell them they are missing out! You can buy online from our website, Amazon or from Evans Cycles.",
-              "faq_question_15": "What is the returns policy?",
-              "faq_desc_15": "We want you to be really happy with your purchase, so if you have any problems let us know and we will try and helps as best as possible! You can see our returns policy by looking at Delivery and Returns page on our website. We have a 2year returns warranty on all of our products.",
+              "faq_question_4": "What are the sounds effects on the Hornit Nano?",
+              "faq_desc_4": "On the Nano there are 25 different sound effects. These are:\nBike Bell, Hooter, Ole Trumpet, Dixie Horn, Racing Cars, Laser, Firework, Police Car, Burp, Fart, Magic Spell, Magic Carpet, Wolf, Train, Reversing Truck\n\nWe have tried to make the sound effects as fun and realistic as possible, to help kids imaginations run free!",
+              "faq_question_5": "Why is there a remote trigger on the Hornit Mini, but not the Hornit Nano?",
+              "faq_desc_5": "The Nano is primarily aimed at the scooter riders because the child’s hands will be right next to where the Nano mounts on the handlebars. The Hornit Mini was designed for both scooters and bikes, meaning the child can mount the larger Hornit Mini anywhere towards the middle of the handlebars and make the selected sound without having to take their hands off the handlebars. The Nano is still an option for bikes as it’s narrower than the Mini and can be mounted on the handlebar grip.",
+              "faq_question_6": "Can I use the trigger for the Hornit Mini on the Hornit Nano?",
+              "faq_desc_6": "No! Unfortunately not. If it’s a trigger set up you want then go for the Mini!",
+              "faq_question_7": "How bright are the lights?",
+              "faq_desc_7": "The 3 light settings are 6 lumens which is less than the Mini, but it means the batteries last a lot longer (58 hours in our tests as opposed to 12 hours for the Mini). If you are looking for a brighter children’s light, then have a look at our Hornit Mini which has a 12 Lumen light. Both the Nano and Mini are designed to make your child more visible in low light conditions such as the early morning or evening, winter school run!",
+              "faq_question_8": "How does it fit to my bike\/scooter?",
+              "faq_desc_8": "The stretchy wing fits around all kids bikes and scooter handlebars. It has been designed so children can mount and remove the Nano in seconds.",
+              "faq_question_9": "How strong is the wing?",
+              "faq_desc_9": "A 2kg deadweight can be held by the wing so to break it you have to really want to!  That said, rubber can tear easily if it comes into contact with a sharp object so take care to avoid nicks or cuts on the wing.",
+              "faq_question_10": "Will it get stolen if I leave it on my bike?",
+              "faq_desc_10": "Nanos are hot property! We strongly advise that the Hornit Nano is not left unattended on a bike or scooter because it is so easy to remove. If your child rides to school with it, put it in their backpack and let them show their friends! If that isn’t possible then, it’s best to take it with you.",
+              "faq_question_11": "How waterproof is it?",
+              "faq_desc_11": "The Hornit Nano will be fine in the rain, provided that the water doesn’t get into the internal parts. If it is raining, we recommend that the front is tilted down slightly so that water can’t get inside through the front lens. The speaker actually works underwater (which we discovered during testing), but if the internal parts do get wet, they may malfunction. Try shaking out any excess water if anything gets inside and drying thoroughly on a radiator. Water damage isn’t covered by our warranty so try and avoid letting kids use it as a mini submarine in puddles!",
+              "faq_question_12": "How durable is the Hornit Nano?",
+              "faq_desc_12": "For peace of mind we give a 2 year warranty. We have tested the Hornit Nano in extreme weather (simulated in ovens and freezers), subjected it to wear and tear tests and generally put it through its paces. The wing can withstand a 2kg deadweight attached to it, and all units tested worked after being dropped from 5m up onto concrete.",
+              "faq_question_13": "Can I buy one in the shops?",
+              "faq_desc_13": "The product is available in multiple stores in the UK, USA, Europe and across the world. If it’s not available in your local store, please tell them they are missing out! You can buy online from our website, Amazon or from Evans Cycles.",
+              "faq_question_14": "",
+              "faq_desc_14": "",
+              "faq_question_15": "",
+              "faq_desc_15": "",
               "faq_question_16": "",
               "faq_desc_16": "",
               "faq_question_17": "",
@@ -1606,16 +1683,6 @@
       "video-library": {
         "type": "video-library",
         "blocks": {
-          "1589189928105": {
-            "type": "header",
-            "settings": {
-              "header_image": "",
-              "header_title": "Video Library",
-              "header_content": "",
-              "header_button_url": "",
-              "header_button_text": ""
-            }
-          },
           "1589190108708": {
             "type": "video",
             "settings": {
@@ -1699,7 +1766,6 @@
           }
         },
         "block_order": [
-          "1589189928105",
           "1589190108708",
           "1589190553699",
           "1589190626830",
@@ -1756,7 +1822,7 @@
           "1591103507722": {
             "type": "store",
             "settings": {
-              "store_url": "https:\/\/us.thehornit.com\/",
+              "store_url": "http:\/\/us.hornit.com",
               "store_currency": "$",
               "store_flag": "shopify:\/\/shop_images\/x31_3_Stripe_US_Flags.png",
               "current_store": false
@@ -1796,6 +1862,129 @@
           "1592219300153"
         ],
         "settings": {}
+      },
+      "1599660578378": {
+        "type": "page-moving-list",
+        "blocks": {
+          "1599660583694": {
+            "type": "title",
+            "settings": {
+              "title": "Have a question?",
+              "desc": "Checkout our Frequently asked questions",
+              "link": "shopify:\/\/pages\/faqs",
+              "linktitle": "Faqs"
+            }
+          }
+        },
+        "block_order": [
+          "1599660583694"
+        ],
+        "settings": {}
+      },
+      "bike-collection": {
+        "type": "bike-collection",
+        "blocks": {
+          "1600786091372": {
+            "type": "kids-header",
+            "settings": {
+              "header_image": "shopify:\/\/shop_images\/header.jpg",
+              "logo_product_logo": "hornit-airo",
+              "header_title": "the world’s lightest balance bike",
+              "header_content": "Weighing just 2.95kg starting your little one out on their cycling \njourney is easier for them than ever before!",
+              "header_button_url": "",
+              "header_button_text": ""
+            }
+          },
+          "1600786517409": {
+            "type": "clug-category",
+            "settings": {
+              "clug_cat_title": "Choose your AIRO",
+              "clug_cat_desc": "Lighter than all 23 comparable competitors. We searched long and hard for a lighter balance bike and the only ones \nwe found were made with plastic wheels and uncomfortable foam tyres. Not all balance bikes are created equal.",
+              "clug_cat_image_1": "shopify:\/\/shop_images\/SIDE1400_0215658d-3638-496b-9a79-ad4fb1c5afcb.jpg",
+              "clug_cat_title_1": "Hornit Airo - Orca White",
+              "clug_cat_desc_1": "Set your little one free with the Hammer Yellow AIRO! Levitatingly light* (2.95kg) and seriously stylish.",
+              "clug_cat_button_url_1": "shopify:\/\/products\/hornit-airo-orca-white",
+              "clug_cat_button_text_1": "Shop Now",
+              "clug_cat_image_2": "shopify:\/\/shop_images\/SIDE1400.jpg",
+              "clug_cat_title_2": "Hornit Airo - Hot Chilli Red",
+              "clug_cat_desc_2": "Set your little one free with the Hammer Yellow AIRO! Levitatingly light* (2.95kg) and seriously stylish.",
+              "clug_cat_button_url_2": "shopify:\/\/products\/hornit-airo-hot-chilli-red",
+              "clug_cat_button_text_2": "Shop Now",
+              "clug_cat_image_3": "shopify:\/\/shop_images\/1400side.jpg",
+              "clug_cat_title_3": "Hornit Airo - Hammer Yellow",
+              "clug_cat_desc_3": "Set your little one free with the Hammer Yellow AIRO! Levitatingly light* (2.95kg) and seriously stylish.",
+              "clug_cat_button_url_3": "shopify:\/\/products\/hornit-airo-hammer-yellow",
+              "clug_cat_button_text_3": "Shop Now",
+              "clug_cat_image_4": "shopify:\/\/shop_images\/SIDE.jpg",
+              "clug_cat_title_4": "Hornit Airo - Candy Floss Pink",
+              "clug_cat_desc_4": "Set your little one free with the Hammer Yellow AIRO! Levitatingly light* (2.95kg) and seriously stylish.",
+              "clug_cat_button_url_4": "shopify:\/\/products\/hornit-airo-candy-floss-pink",
+              "clug_cat_button_text_4": "Shop Now"
+            }
+          },
+          "1600856265600": {
+            "type": "disclaimer",
+            "settings": {
+              "disclaimer_image_one": "shopify:\/\/shop_images\/Group_899_2x_6e5b5ce0-178c-4af2-be79-990e69063f09.png",
+              "disclaimer_title_one": "THE WORLD’S LIGHTEST BALANCE BIKE",
+              "disclaimer_content_one": "made from a super lightweight, ultra-hard-wearing magnesium \nalloy, at 2.95kg this balance bike is levitatingly light!",
+              "disclaimer_image_two": "shopify:\/\/shop_images\/001-ribbon_2x_92a1253d-1274-4c42-ad87-604220dd8df1.png",
+              "disclaimer_title_two": "LIFETIME WARRANTY",
+              "disclaimer_content_two": "we are so confident in the quality of the AIRO frame and forks \nthat we offer a lifetime warranty meaning all your children will be \nable to start their cycling journey on the same bike! See the lifetime \nwarranty registration card included in the box for full details."
+            }
+          },
+          "1600856330740": {
+            "type": "colour-section",
+            "settings": {
+              "colour_section_title": "Colour your airo",
+              "cycle_color_one": "#ee263e",
+              "colour_title_one": "HOT CHILLI RED",
+              "colour_content_one": "Bold and fiery with a gloss finish, this is the hottest balance bike around!",
+              "cycle_color_two": "#ffffff",
+              "colour_title_two": "ORCA WHITE",
+              "colour_content_two": "Understated and distinctive, the black and white matt finish will go with the snappiest of urban street stylers!",
+              "cycle_color_three": "#efbbf0",
+              "colour_title_three": "CANDY FLOSS PINK",
+              "colour_content_three": "Sassy, with a gloss finish and a hint of \nsparkle for when only pink will do!",
+              "cycle_color_four": "#ffc400",
+              "colour_title_four": "HAMMER YELLOW",
+              "colour_content_four": "Striking, with a slick matte finish, this bike will stand out from the crowd (like its namesake the Yellowhammer bird)!"
+            }
+          },
+          "1600787008559": {
+            "type": "info-block",
+            "settings": {
+              "info_color": "#efbbf0",
+              "info_image": "shopify:\/\/shop_images\/Mask_Group_10dsg9.jpg",
+              "info_checkbox": false,
+              "info_title": "Beautifully Sleek design",
+              "info_content": "the grip taped footrests are contoured into the frame \nfor easy freewheeling, air-filled tyres for a smoother ride and a \npadded stem for extra protection. Fully safety tested by\n TÜVRheinland® for children aged 18months+ (EN71). CE approved.",
+              "info_video_url": ""
+            }
+          },
+          "1600787051940": {
+            "type": "info-block",
+            "settings": {
+              "info_color": "#ee263e",
+              "info_image": "shopify:\/\/shop_images\/vdsav.jpg",
+              "info_checkbox": false,
+              "info_title": "EASY TO ASSEMBLE & ADJUST",
+              "info_content": "with just three bolts to tighten (or four if you include adjusting \nthe seat!), your little one will be riding in minutes. The adjustable \nseat means the AIRO is suitable for a child with an inside leg \nmeasurement of 30-54cm (see below). The Allen key is included.",
+              "info_video_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "1600786091372",
+          "1600786517409",
+          "1600856265600",
+          "1600856330740",
+          "1600787008559",
+          "1600787051940"
+        ],
+        "settings": {
+          "title_top": "Hornit Airo"
+        }
       }
     },
     "content_for_index": [
@@ -1805,6 +1994,7 @@
       "1587410620470",
       "1588343515341",
       "1585053047514",
+      "1599660578378",
       "1587387706197"
     ]
   },

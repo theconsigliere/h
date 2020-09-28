@@ -110,6 +110,30 @@
                         }
                     ],
                     "label": "How do you want to align text?"
+                }, {
+                    "id": "riders_name",
+                    "type": "text",
+                    "label": "Text",
+                    "info": "Riders name you want to give credit to",
+                    "placeholder": "Andrei Burton"
+                }, {
+                    "id": "riders_url",
+                    "type": "url",
+                    "label": "Link to Riders Website"
+                }, {
+                    "id": "riders_tag_text",
+                    "type": "text",
+                    "label": "Riders Tag Text",
+                    "placeholder": "Website"
+                }, {
+                    "type": "image_picker",
+                    "id": "riders_logo",
+                    "info": "Displays at 32px x 32px",
+                    "label": "Logo image"
+                }, {
+                    "id": "riders_backlink",
+                    "type": "url",
+                    "label": "Backlink to what 3 words"
                 }
             ]
         }
@@ -218,7 +242,38 @@
                             {% endif %}
                         </a>
                     {% endif %}
+
+
                 </div>
+
+
+                <div class="rider_credit">
+                    <div class="rider__credit-inner">
+                        <a href="{{ block.settings.riders_url }}" class="rider-link">
+
+                            {% if block.settings.riders_name != blank %}
+                                <p>Rider:
+                                    {{ block.settings.riders_name }}</p>
+                            {% endif %}
+                        </a>
+
+
+                        {% if block.settings.riders_logo != blank %}
+                            <a href="{{ block.settings.riders_backlink }}" class="riders__extra">
+                                <div class="riders-image">
+                                    <img data-src="{{ block.settings.riders_logo | img_url: 'master' }}" alt="{{ block.settings.riders_logo.alt }}" class="lazyload"/>
+                                </div>
+                                {% if block.settings.riders_tag_text != blank %}
+                                    <p>{{ block.settings.riders_tag_text }}</p>
+                                {% endif %}
+                            </a>
+                        {% endif %}
+
+
+                    </div>
+                </div>
+
+
             </div>
         {% endfor %}
     </div>

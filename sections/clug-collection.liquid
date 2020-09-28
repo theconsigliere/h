@@ -1,393 +1,392 @@
 {% schema %}
 
 {
-"name": "Clug Collection Page",
-"settings": [
-{
-"type": "text",
-"id": "title_top",
-"label": "Heading",
-"default": "Custom content"
-}
-],
-"blocks": [
-{
-"type": "slideshow",
-"name": "Clug Slideshow",
-"settings": [
-{
-"id": "autoplay",
-"type": "checkbox",
-"label": "Autoplay Slideshow",
-"default": true
-}, {
-"id": "autoplay_speed",
-"type": "range",
-"min": 2000,
-"max": 8000,
-"step": 500,
-"unit": "ms",
-"label": "Autoplay Speed",
-"default": 5000
-}, {
-"id": "clug_product_logo",
-"type": "select",
-"options": [
-{
-"value": "no-logo",
-"label": "Nothing Selected"
-}, {
-"value": "white-clug",
-"label": "White Clug Logo"
-}, {
-"value": "black-clug",
-"label": "Black Clug Logo"
-}
-],
-"label": "Select Product Logos"
-}, {
-"id": "slideshow_title",
-"type": "text",
-"label": "Title",
-"placeholder": "Slide Title"
-}, {
-"id": "slideshow_content",
-"type": "textarea",
-"label": "Slide Content"
-}, {
-"id": "slideshow_button_url",
-"type": "url",
-"label": "Button URL"
-}, {
-"id": "slideshow_button_text",
-"type": "text",
-"label": "Button Text",
-"placeholder": "Shop Now",
-"info": "Defaults to \"Shop Now\""
-}, {
-"id": "cl1_image",
-"type": "image_picker",
-"label": "First Clug Image"
-}
-]
-}, {
-"type": "clug-category",
-"name": "Clug Category Slideshow",
-"settings": [
-{
-"id": "clug_cat_title",
-"type": "text",
-"label": "Title",
-"placeholder": "Title"
-}, {
-"id": "clug_cat_desc",
-"type": "textarea",
-"label": "Content"
-}, {
-"id": "clug_cat_image_1",
-"type": "image_picker",
-"label": "Clug Type Image"
-}, {
-"id": "clug_cat_title_1",
-"type": "text",
-"label": "Title",
-"placeholder": "Title"
-}, {
-"id": "clug_cat_desc_1",
-"type": "textarea",
-"label": "Content"
-}, {
-"id": "clug_cat_button_url_1",
-"type": "url",
-"label": "Button URL"
-}, {
-"id": "clug_cat_button_text_1",
-"type": "text",
-"label": "Button Text",
-"placeholder": "Shop Now",
-"info": "Defaults to \"Shop Now\""
-}, {
-"id": "clug_cat_image_2",
-"type": "image_picker",
-"label": "Clug Type Image"
-}, {
-"id": "clug_cat_title_2",
-"type": "text",
-"label": "Title",
-"placeholder": "Title"
-}, {
-"id": "clug_cat_desc_2",
-"type": "textarea",
-"label": "Content"
-}, {
-"id": "clug_cat_button_url_2",
-"type": "url",
-"label": "Button URL"
-}, {
-"id": "clug_cat_button_text_2",
-"type": "text",
-"label": "Button Text",
-"placeholder": "Shop Now",
-"info": "Defaults to \"Shop Now\""
-}, {
-"id": "clug_cat_image_3",
-"type": "image_picker",
-"label": "Clug Type Image"
-}, {
-"id": "clug_cat_title_3",
-"type": "text",
-"label": "Title",
-"placeholder": "Title"
-}, {
-"id": "clug_cat_desc_3",
-"type": "textarea",
-"label": "Content"
-}, {
-"id": "clug_cat_button_url_3",
-"type": "url",
-"label": "Button URL"
-}, {
-"id": "clug_cat_button_text_3",
-"type": "text",
-"label": "Button Text",
-"placeholder": "Shop Now",
-"info": "Defaults to \"Shop Now\""
-}, {
-"id": "clug_cat_image_4",
-"type": "image_picker",
-"label": "Clug Type Image"
-}, {
-"id": "clug_cat_title_4",
-"type": "text",
-"label": "Title",
-"placeholder": "Title"
-}, {
-"id": "clug_cat_desc_4",
-"type": "textarea",
-"label": "Content"
-}, {
-"id": "clug_cat_button_url_4",
-"type": "url",
-"label": "Button URL"
-}, {
-"id": "clug_cat_button_text_4",
-"type": "text",
-"label": "Button Text",
-"placeholder": "Shop Now",
-"info": "Defaults to \"Shop Now\""
-}, {
-"id": "clug_cat_image_5",
-"type": "image_picker",
-"label": "Clug Type Image"
-}, {
-"id": "clug_cat_title_5",
-"type": "text",
-"label": "Title",
-"placeholder": "Title"
-}, {
-"id": "clug_cat_desc_5",
-"type": "textarea",
-"label": "Content"
-}, {
-"id": "clug_cat_button_url_5",
-"type": "url",
-"label": "Button URL"
-}, {
-"id": "clug_cat_button_text_5",
-"type": "text",
-"label": "Button Text",
-"placeholder": "Shop Now",
-"info": "Defaults to \"Shop Now\""
-}
-]
-}, {
-"type": "reviews",
-"name": "Reviews",
-"settings": [
-{
-"id": "review_image1",
-"type": "image_picker",
-"label": "Background Image"
-}, {
-"id": "review_image2",
-"type": "image_picker",
-"label": "Background Image"
-}, {
-"id": "review_image3",
-"type": "image_picker",
-"label": "Background Image"
-}, {
-"id": "review_image4",
-"type": "image_picker",
-"label": "Background Image"
-}, {
-"id": "review_image5",
-"type": "image_picker",
-"label": "Background Image"
-}, {
-"id": "review_image6",
-"type": "image_picker",
-"label": "Background Image"
-}
-]
-}, {
-"type": "title",
-"name": "Title Section",
-"settings": [
-{
-"id": "title",
-"type": "text",
-"label": "Section Title",
-"placeholder": "Section Title"
-}, {
-"id": "hashtag",
-"type": "text",
-"label": "Hashtag Title",
-"placeholder": "Hashtag Title"
-}, {
-"id": "title_image",
-"type": "image_picker",
-"label": "Clug Group image"
-}, {
-"id": "contentdesc",
-"type": "textarea",
-"label": "Text Description",
-"default": "<p>Use this text to share information about your brand with your customers. Describe a product, share
-	announcements, or welcome customers to your store.</p>"
-}
-]
-}, {
-"type": "faq",
-"name": "Faq Section",
-"settings": [
-{
-"id": "faq_title",
-"type": "text",
-"label": "Faq Title",
-"placeholder": "FAQ Title"
-}, {
-"id": "faq_question_1",
-"type": "text",
-"label": "FAQ Title",
-"placeholder": "FAQ Question Title"
-}, {
-"id": "faq_desc_1",
-"type": "textarea",
-"label": "FAQ Question"
-}, {
-"id": "faq_question_2",
-"type": "text",
-"label": "FAQ Question Title",
-"placeholder": "FAQ Question Title"
-}, {
-"id": "faq_desc_2",
-"type": "textarea",
-"label": "FAQ Question"
-}, {
-"id": "faq_question_3",
-"type": "text",
-"label": "FAQ Question Title",
-"placeholder": "FAQ Question Title"
-}, {
-"id": "faq_desc_3",
-"type": "textarea",
-"label": "FAQ Question"
-}, {
-"id": "faq_question_4",
-"type": "text",
-"label": "FAQ Question Title",
-"placeholder": "FAQ Question Title"
-}, {
-"id": "faq_desc_4",
-"type": "textarea",
-"label": "FAQ Question"
-}, {
-"id": "faq_button_url",
-"type": "url",
-"label": "Button URL"
-}, {
-"id": "faq_button_text",
-"type": "text",
-"label": "Button Text",
-"placeholder": "Read More"
-}
-]
-}, {
-"type": "video",
-"name": "Video",
-"limit": 1,
-"settings": [
-{
-"id": "video_image",
-"type": "image_picker",
-"label": "Vide Hero Image"
-}, {
-"id": "video_title",
-"type": "text",
-"label": "Title",
-"placeholder": "Video Title"
-}, {
-"id": "video_desc",
-"type": "textarea",
-"label": "Text Description"
-}, {
-"id": "video_link",
-"type": "url",
-"label": "Link to Library"
-}, {
-"id": "video_url",
-"type": "video_url",
-"label": "Video URL",
-"accept": [
-"youtube",
-"vimeo"
-],
-"default": "https://youtu.be/o0HGtxPc454",
-"info": "Text",
-"placeholder": "Add your video link here"
-}
-]
-}, {
-"type": "info-block",
-"name": "Info Block",
-"settings": [
-{
-"type": "color",
-"id": "info_color",
-"label": "Background color",
-"default": "#24272c"
-}, {
-"id": "info_image",
-"type": "image_picker",
-"label": "Background Image"
-}, {
-"type": "checkbox",
-"id": "info_checkbox",
-"default": false,
-"label": "Do you need the text to be black? "
-}, {
-"id": "info_title",
-"type": "text",
-"label": "Title",
-"placeholder": "Defaults to Collection Title"
-}, {
-"id": "info_content",
-"type": "textarea",
-"label": "Content"
-}, {
-"id": "info_video_url",
-"type": "video_url",
-"label": "Video URL",
-"accept": [
-"youtube",
-"vimeo"
-],
-"placeholder": "Add your video link here"
-}
-]
-}
-]
-}
+    "name": "Clug Collection Page",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title_top",
+            "label": "Heading",
+            "default": "Custom content"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "slideshow",
+            "name": "Clug Slideshow",
+            "settings": [
+                {
+                    "id": "autoplay",
+                    "type": "checkbox",
+                    "label": "Autoplay Slideshow",
+                    "default": true
+                }, {
+                    "id": "autoplay_speed",
+                    "type": "range",
+                    "min": 2000,
+                    "max": 8000,
+                    "step": 500,
+                    "unit": "ms",
+                    "label": "Autoplay Speed",
+                    "default": 5000
+                }, {
+                    "id": "clug_product_logo",
+                    "type": "select",
+                    "options": [
+                        {
+                            "value": "no-logo",
+                            "label": "Nothing Selected"
+                        }, {
+                            "value": "white-clug",
+                            "label": "White Clug Logo"
+                        }, {
+                            "value": "black-clug",
+                            "label": "Black Clug Logo"
+                        }
+                    ],
+                    "label": "Select Product Logos"
+                }, {
+                    "id": "slideshow_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Slide Title"
+                }, {
+                    "id": "slideshow_content",
+                    "type": "textarea",
+                    "label": "Slide Content"
+                }, {
+                    "id": "slideshow_button_url",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "slideshow_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }, {
+                    "id": "cl1_image",
+                    "type": "image_picker",
+                    "label": "First Clug Image"
+                }
+            ]
+        }, {
+            "type": "clug-category",
+            "name": "Clug Category Slideshow",
+            "settings": [
+                {
+                    "id": "clug_cat_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Title"
+                }, {
+                    "id": "clug_cat_desc",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "clug_cat_image_1",
+                    "type": "image_picker",
+                    "label": "Clug Type Image"
+                }, {
+                    "id": "clug_cat_title_1",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Title"
+                }, {
+                    "id": "clug_cat_desc_1",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "clug_cat_button_url_1",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "clug_cat_button_text_1",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }, {
+                    "id": "clug_cat_image_2",
+                    "type": "image_picker",
+                    "label": "Clug Type Image"
+                }, {
+                    "id": "clug_cat_title_2",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Title"
+                }, {
+                    "id": "clug_cat_desc_2",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "clug_cat_button_url_2",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "clug_cat_button_text_2",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }, {
+                    "id": "clug_cat_image_3",
+                    "type": "image_picker",
+                    "label": "Clug Type Image"
+                }, {
+                    "id": "clug_cat_title_3",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Title"
+                }, {
+                    "id": "clug_cat_desc_3",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "clug_cat_button_url_3",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "clug_cat_button_text_3",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }, {
+                    "id": "clug_cat_image_4",
+                    "type": "image_picker",
+                    "label": "Clug Type Image"
+                }, {
+                    "id": "clug_cat_title_4",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Title"
+                }, {
+                    "id": "clug_cat_desc_4",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "clug_cat_button_url_4",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "clug_cat_button_text_4",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }, {
+                    "id": "clug_cat_image_5",
+                    "type": "image_picker",
+                    "label": "Clug Type Image"
+                }, {
+                    "id": "clug_cat_title_5",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Title"
+                }, {
+                    "id": "clug_cat_desc_5",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "clug_cat_button_url_5",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "clug_cat_button_text_5",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }
+            ]
+        }, {
+            "type": "reviews",
+            "name": "Reviews",
+            "settings": [
+                {
+                    "id": "review_image1",
+                    "type": "image_picker",
+                    "label": "Background Image"
+                }, {
+                    "id": "review_image2",
+                    "type": "image_picker",
+                    "label": "Background Image"
+                }, {
+                    "id": "review_image3",
+                    "type": "image_picker",
+                    "label": "Background Image"
+                }, {
+                    "id": "review_image4",
+                    "type": "image_picker",
+                    "label": "Background Image"
+                }, {
+                    "id": "review_image5",
+                    "type": "image_picker",
+                    "label": "Background Image"
+                }, {
+                    "id": "review_image6",
+                    "type": "image_picker",
+                    "label": "Background Image"
+                }
+            ]
+        }, {
+            "type": "title",
+            "name": "Title Section",
+            "settings": [
+                {
+                    "id": "title",
+                    "type": "text",
+                    "label": "Section Title",
+                    "placeholder": "Section Title"
+                }, {
+                    "id": "hashtag",
+                    "type": "text",
+                    "label": "Hashtag Title",
+                    "placeholder": "Hashtag Title"
+                }, {
+                    "id": "title_image",
+                    "type": "image_picker",
+                    "label": "Clug Group image"
+                }, {
+                    "id": "contentdesc",
+                    "type": "textarea",
+                    "label": "Text Description",
+                    "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+				                }
+				            ]
+				        }, {
+				            "type": "faq",
+				            "name": "Faq Section",
+				            "settings": [
+				                {
+				                    "id": "faq_title",
+				                    "type": "text",
+				                    "label": "Faq Title",
+				                    "placeholder": "FAQ Title"
+				                }, {
+				                    "id": "faq_question_1",
+				                    "type": "text",
+				                    "label": "FAQ Title",
+				                    "placeholder": "FAQ Question Title"
+				                }, {
+				                    "id": "faq_desc_1",
+				                    "type": "textarea",
+				                    "label": "FAQ Question"
+				                }, {
+				                    "id": "faq_question_2",
+				                    "type": "text",
+				                    "label": "FAQ Question Title",
+				                    "placeholder": "FAQ Question Title"
+				                }, {
+				                    "id": "faq_desc_2",
+				                    "type": "textarea",
+				                    "label": "FAQ Question"
+				                }, {
+				                    "id": "faq_question_3",
+				                    "type": "text",
+				                    "label": "FAQ Question Title",
+				                    "placeholder": "FAQ Question Title"
+				                }, {
+				                    "id": "faq_desc_3",
+				                    "type": "textarea",
+				                    "label": "FAQ Question"
+				                }, {
+				                    "id": "faq_question_4",
+				                    "type": "text",
+				                    "label": "FAQ Question Title",
+				                    "placeholder": "FAQ Question Title"
+				                }, {
+				                    "id": "faq_desc_4",
+				                    "type": "textarea",
+				                    "label": "FAQ Question"
+				                }, {
+				                    "id": "faq_button_url",
+				                    "type": "url",
+				                    "label": "Button URL"
+				                }, {
+				                    "id": "faq_button_text",
+				                    "type": "text",
+				                    "label": "Button Text",
+				                    "placeholder": "Read More"
+				                }
+				            ]
+				        }, {
+				            "type": "video",
+				            "name": "Video",
+				            "limit": 1,
+				            "settings": [
+				                {
+				                    "id": "video_image",
+				                    "type": "image_picker",
+				                    "label": "Vide Hero Image"
+				                }, {
+				                    "id": "video_title",
+				                    "type": "text",
+				                    "label": "Title",
+				                    "placeholder": "Video Title"
+				                }, {
+				                    "id": "video_desc",
+				                    "type": "textarea",
+				                    "label": "Text Description"
+				                }, {
+				                    "id": "video_link",
+				                    "type": "url",
+				                    "label": "Link to Library"
+				                }, {
+				                    "id": "video_url",
+				                    "type": "video_url",
+				                    "label": "Video URL",
+				                    "accept": [
+				                        "youtube",
+				                        "vimeo"
+				                    ],
+				                    "default": "https://youtu.be/o0HGtxPc454",
+				                    "info": "Text",
+				                    "placeholder": "Add your video link here"
+				                }
+				            ]
+				        }, {
+				            "type": "info-block",
+				            "name": "Info Block",
+				            "settings": [
+				                {
+				                    "type": "color",
+				                    "id": "info_color",
+				                    "label": "Background color",
+				                    "default": "#24272c"
+				                }, {
+				                    "id": "info_image",
+				                    "type": "image_picker",
+				                    "label": "Background Image"
+				                }, {
+				                    "type": "checkbox",
+				                    "id": "info_checkbox",
+				                    "default": false,
+				                    "label": "Do you need the text to be black? "
+				                }, {
+				                    "id": "info_title",
+				                    "type": "text",
+				                    "label": "Title",
+				                    "placeholder": "Defaults to Collection Title"
+				                }, {
+				                    "id": "info_content",
+				                    "type": "textarea",
+				                    "label": "Content"
+				                }, {
+				                    "id": "info_video_url",
+				                    "type": "video_url",
+				                    "label": "Video URL",
+				                    "accept": [
+				                        "youtube",
+				                        "vimeo"
+				                    ],
+				                    "placeholder": "Add your video link here"
+				                }
+				            ]
+				        }
+				    ]
+				}
 
 {% endschema %}
 
@@ -396,492 +395,474 @@
 
 	{% for block in section.blocks %}
 
-	{% case block.type %}
+		{% case block.type %}
 
 
-	{% when 'slideshow' %}
+			{% when 'slideshow' %}
 
 
-	<div class="hero-collection-hero">
+				<div class="hero-collection-hero">
 
 
-		<div class="hero-content">
-			<div class="hero-content-inner">
+					<div class="hero-content">
+						<div class="hero-content-inner">
 
-				{% if block.settings.clug_product_logo == 'white-clug' %}
-				<img data-src="{{ 'white-clug-logo.svg' | asset_url }}" alt="Clug Logo"
-					class="clug-product-logo lazyload" />
+							{% if block.settings.clug_product_logo == 'white-clug' %}
+								<img data-src="{{ 'white-clug-logo.svg' | asset_url }}" alt="Clug Logo" class="clug-product-logo lazyload"/>
 
-				{% elsif block.settings.clug_product_logo == 'black-clug' %}
-				<img data-src="{{ 'black-clug-logo.svg' | asset_url }}" alt="Clug Logo"
-					class="clug-product-logo lazyload" />
-				{% endif %}
+							{% elsif block.settings.clug_product_logo == 'black-clug' %}
+								<img data-src="{{ 'black-clug-logo.svg' | asset_url }}" alt="Clug Logo" class="clug-product-logo lazyload"/>
+							{% endif %}
 
-				{% if block.settings.slideshow_title != blank  %}
-				<h1 class="white uppercase">{{ block.settings.slideshow_title }}</h1>
-				{% endif %}
+							{% if block.settings.slideshow_title != blank  %}
+								<h1 class="white uppercase">{{ block.settings.slideshow_title }}</h1>
+							{% endif %}
 
 
-				<h6 class="white" id='clug-hero-text'>{{ block.settings.slideshow_content }}</h6>
+							<h6 class="white" id='clug-hero-text'>{{ block.settings.slideshow_content }}</h6>
+
+						</div>
+
+						<div class="hero-button-inner">
+							{% if block.settings.slideshow_button_url != blank %}
+								<a href="{{ block.settings.slideshow_button_url }}" class="button">
+									{% if block.settings.button_text != blank %}
+										{{ block.settings.slideshow_button_text }}
+									{% else %}
+										{{ "general.shop.shop_now" | t }}
+									{% endif %}
+								</a>
+							{% endif %}
+						</div>
+					</div>
+
+
+					<div class="clug-color-stripe">
+						<div class=" color-stripes orange"></div>
+						<div class=" color-stripes green"></div>
+						<div class=" color-stripes blue"></div>
+						<div class=" color-stripes pink"></div>
+						<div class=" color-stripes grey"></div>
+					</div>
+
+
+					<div class="hero-img">
+
+
+						<img data-src="{{ block.settings.cl1_image | img_url: 'master' }}" alt="{{ block.settings.cl1_image.alt }}" class="lazyload"/>
+
+
+					</div>
+
+				</div>
 
 			</div>
 
-			<div class="hero-button-inner">
-				{% if block.settings.slideshow_button_url != blank %}
-				<a href="{{ block.settings.slideshow_button_url }}" class="button">
-					{% if block.settings.button_text != blank %}
-					{{ block.settings.slideshow_button_text }}
-					{% else %}
-					{{ "general.shop.shop_now" | t }}
-					{% endif %}
+
+		{% when 'reviews' %}
+
+			<div class="review-group">
+
+				<div class="review-inner inner">
+
+
+					<img data-src="{{ block.settings.review_image1 | img_url: 'master' }}" alt="{{ block.settings.review_image1.alt }}" class="lazyload"/>
+
+					<img data-src="{{ block.settings.review_image2 | img_url: 'master' }}" alt="{{ block.settings.review_image2.alt }}" class="lazyload"/>
+
+					<img data-src="{{ block.settings.review_image3 | img_url: 'master' }}" alt="{{ block.settings.review_image3.alt }}" class="lazyload"/>
+
+					<img data-src="{{ block.settings.review_image4 | img_url: 'master' }}" alt="{{ block.settings.review_image1.alt }}" class="lazyload"/>
+
+					<img data-src="{{ block.settings.review_image5 | img_url: 'master' }}" alt="{{ block.settings.review_image2.alt }}" class="lazyload"/>
+
+					<img data-src="{{ block.settings.review_image6 | img_url: 'master' }}" alt="{{ block.settings.review_image3.alt }}" class="lazyload"/>
+
+				</div>
+
+			</div>
+
+
+		{% when 'title' %}
+
+
+			<div class="title-section">
+				<h3 class="uppercase">{{ block.settings.title }}</h3>
+				<p>{{ block.settings.hashtag }}</p>
+
+				{% if block.settings.title_image != blank %}
+
+					<div class="title-image">
+						<img data-src="{{ block.settings.title_image | img_url: 'master' }}" alt="{{ block.settings.title_image.alt }}" class="lazyload"/>
+					</div>
+
+				{% endif %}
+
+
+				<p class='clug-text clug-block-text'>{{ block.settings.contentdesc }}</p>
+
+
+			</div>
+
+
+		{% when 'clug-category' %}
+
+			<section class="clug-categories" id='clug-category'>
+				<div class="title-section">
+					<h4 class="uppercase">{{ block.settings.clug_cat_title }}</h4>
+					<p class='clug-block-text'>{{ block.settings.clug_cat_desc }}</p>
+				</div>
+
+
+				<div class="clug-category-slideshow">
+
+					{%- comment -%}
+						{% include 'slider-buttons' %}
+					{%- endcomment -%}
+
+
+					<div class="clug-cat-item">
+						<a href="{{ block.settings.clug_cat_button_url_1 }}">
+							<img data-src="{{ block.settings.clug_cat_image_1 | img_url: 'master' }}" alt="{{ block.settings.clug_cat_image_1.alt }}" class="lazyload"/>
+						</a>
+						<div class="clug-cat-text">
+
+							{%- comment -%}Make first word bold{%- endcomment -%}
+							{% assign first_word = block.settings.clug_cat_title_1 | truncatewords: 1, '' %}
+
+							{% assign rest_of_words = block.settings.clug_cat_title_1  | remove_first: first_word %}
+
+							<div class="clug-info-row">
+								<div class="clug-info-item-text">
+									<h4 class=' font-light'>
+										<span class='font-bolder '>{{ first_word }}</span>
+										{{ rest_of_words }}</h4>
+
+
+									<p class=''>{{ block.settings.clug_cat_desc_1 }}</p>
+								</div>
+								<div class="clug-info-item-button">
+
+									{% if block.settings.clug_cat_button_url_1 != blank %}
+										<a href="{{ block.settings.clug_cat_button_url_1 }}" class='block-button'>
+											{{ block.settings.clug_cat_button_text_1 }}
+										</a>
+									{% endif %}
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<div class="clug-cat-item">
+						<a href="{{ block.settings.clug_cat_button_url_2 }}">
+							<img data-src="{{ block.settings.clug_cat_image_2 | img_url: 'master' }}" alt="{{ block.settings.clug_cat_image_2.alt }}" class="lazyload"/>
+						</a>
+						<div class="clug-cat-text">
+
+							{%- comment -%}Make first word bold{%- endcomment -%}
+							{% assign first_word = block.settings.clug_cat_title_2 | truncatewords: 1, '' %}
+
+							{% assign rest_of_words = block.settings.clug_cat_title_2  | remove_first: first_word %}
+
+							<div class="clug-info-row">
+								<div class="clug-info-item-text">
+									<h4 class=' font-light'>
+										<span class='font-bolder '>{{ first_word }}</span>
+										{{ rest_of_words }}</h4>
+
+
+									<p class=''>{{ block.settings.clug_cat_desc_2 }}</p>
+								</div>
+								<div class="clug-info-item-button">
+
+									{% if block.settings.clug_cat_button_url_5 != blank %}
+										<a href="{{ block.settings.clug_cat_button_url_2 }}" class='block-button'>
+											{{ block.settings.clug_cat_button_text_2 }}
+										</a>
+									{% endif %}
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<div class="clug-cat-item">
+						<a href="{{ block.settings.clug_cat_button_url_3 }}">
+							<img data-src="{{ block.settings.clug_cat_image_3 | img_url: 'master' }}" alt="{{ block.settings.clug_cat_image_3.alt }}" class="lazyload"/>
+						</a>
+						<div class="clug-cat-text">
+
+							{%- comment -%}Make first word bold{%- endcomment -%}
+							{% assign first_word = block.settings.clug_cat_title_3 | truncatewords: 1, '' %}
+
+							{% assign rest_of_words = block.settings.clug_cat_title_3  | remove_first: first_word %}
+
+							<div class="clug-info-row">
+								<div class="clug-info-item-text">
+									<h4 class=' font-light'>
+										<span class='font-bolder '>{{ first_word }}</span>
+										{{ rest_of_words }}</h4>
+
+
+									<p class=''>{{ block.settings.clug_cat_desc_3 }}</p>
+								</div>
+								<div class="clug-info-item-button">
+
+									{% if block.settings.clug_cat_button_url_5 != blank %}
+										<a href="{{ block.settings.clug_cat_button_url_3 }}" class='block-button'>
+											{{ block.settings.clug_cat_button_text_3 }}
+										</a>
+									{% endif %}
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<div class="clug-cat-item">
+						<a href="{{ block.settings.clug_cat_button_url_4 }}">
+							<img data-src="{{ block.settings.clug_cat_image_4 | img_url: 'master' }}" alt="{{ block.settings.clug_cat_image_4.alt }}" class="lazyload"/>
+						</a>
+						<div class="clug-cat-text">
+
+							{%- comment -%}Make first word bold{%- endcomment -%}
+							{% assign first_word = block.settings.clug_cat_title_4 | truncatewords: 1, '' %}
+
+							{% assign rest_of_words = block.settings.clug_cat_title_4  | remove_first: first_word %}
+
+							<div class="clug-info-row">
+								<div class="clug-info-item-text">
+									<h4 class=' font-light'>
+										<span class='font-bolder '>{{ first_word }}</span>
+										{{ rest_of_words }}</h4>
+
+
+									<p class=''>{{ block.settings.clug_cat_desc_4 }}</p>
+								</div>
+								<div class="clug-info-item-button">
+
+									{% if block.settings.clug_cat_button_url_4 != blank %}
+										<a href="{{ block.settings.clug_cat_button_url_4 }}" class='block-button'>
+											{{ block.settings.clug_cat_button_text_4 }}
+										</a>
+									{% endif %}
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<div class="clug-cat-item">
+						<a href="{{ block.settings.clug_cat_button_url_5 }}">
+							<img data-src="{{ block.settings.clug_cat_image_5 | img_url: 'master' }}" alt="{{ block.settings.clug_cat_image_5.alt }}" class="lazyload"/>
+						</a>
+						<div class="clug-cat-text">
+
+
+							{%- comment -%}Make first word bold{%- endcomment -%}
+							{% assign first_word = block.settings.clug_cat_title_5 | truncatewords: 1, '' %}
+
+							{% assign rest_of_words = block.settings.clug_cat_title_5  | remove_first: first_word %}
+
+
+							<div class="clug-info-row">
+								<div class="clug-info-item-text">
+									<h4 class=' font-light'>
+										<span class='font-bolder '>{{ first_word }}</span>
+										{{ rest_of_words }}</h4>
+
+
+									<p class=''>{{ block.settings.clug_cat_desc_5 }}</p>
+								</div>
+								<div class="clug-info-item-button">
+
+									{% if block.settings.clug_cat_button_url_5 != blank %}
+										<a href="{{ block.settings.clug_cat_button_url_5 }}" class='block-button'>
+											{{ block.settings.clug_cat_button_text_5 }}
+										</a>
+									{% endif %}
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+
+				</div>
+
+			</section>
+
+
+		{% when 'info-block' %}
+
+			<section class="collection-product-block-section">
+				<div class="collection-product-block-inner">
+					<div class="collection-product-block" style="background-color: {{ block.settings.info_color }};">
+
+
+						<div class="collection-product-block-item collection-block-text">
+
+							<div class="collection-product-text-inner">
+								{% if block.settings.info_checkbox %}
+
+									<h3 class="uppercase">{{ block.settings.info_title }}</h3>
+
+									<p class='p-fade clug-block-text'>{{ block.settings.info_content }}</p>
+
+									{% if block.settings.info_video_url != blank %}
+
+
+										{%- comment -%}pass url into video snippet{%- endcomment -%}
+
+
+										{% include "video" with video_url: block.settings.info_video_url %}
+
+									{% endif %}
+
+
+								{% else %}
+
+									<h3 class="white uppercase">{{ block.settings.info_title }}</h3>
+
+									<p class="white p-fade clug-block-text">{{ block.settings.info_content }}</p>
+
+									{% if block.settings.info_video_url != blank %}
+
+										{% include "video" with video_url: block.settings.info_video_url %}
+
+									{% endif %}
+
+
+								{% endif %}
+
+							</div>
+
+						</div>
+
+
+						<div class="collection-product-block-item collection-block-image">
+
+							<img data-src="{{ block.settings.info_image | img_url: 'master' }}" alt="{{ block.settings.product_image.alt }}" class="lazyload"/>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+		{% when 'video' %}
+
+			<section class="page-video-section">
+
+				<a href="{{ block.settings.video_link }}" class='video-link'>
+					<div class="page-video-image">
+						<img data-src="{{ block.settings.video_image | img_url: 'master' }}" alt="{{ block.settings.video_image.alt }}" class="lazyload"/>
+					</div>
+
 				</a>
-				{% endif %}
-			</div>
-		</div>
 
 
-		<div class="clug-color-stripe">
-			<div class=" color-stripes orange"></div>
-			<div class=" color-stripes green"></div>
-			<div class=" color-stripes blue"></div>
-			<div class=" color-stripes pink"></div>
-			<div class=" color-stripes grey"></div>
-		</div>
+				<div class="page-video-section-title">
 
-
-		<div class="hero-img">
-
-
-			<img data-src="{{ block.settings.cl1_image | img_url: 'master' }}" alt="{{ block.settings.cl1_image.alt }}"
-				class="lazyload" />
-
-
-		</div>
-
-	</div>
-
-</div>
-
-
-{% when 'reviews' %}
-
-<div class="review-group">
-
-	<div class="review-inner inner">
-
-
-		<img data-src="{{ block.settings.review_image1 | img_url: 'master' }}"
-			alt="{{ block.settings.review_image1.alt }}" class="lazyload" />
-
-		<img data-src="{{ block.settings.review_image2 | img_url: 'master' }}"
-			alt="{{ block.settings.review_image2.alt }}" class="lazyload" />
-
-		<img data-src="{{ block.settings.review_image3 | img_url: 'master' }}"
-			alt="{{ block.settings.review_image3.alt }}" class="lazyload" />
-
-		<img data-src="{{ block.settings.review_image4 | img_url: 'master' }}"
-			alt="{{ block.settings.review_image1.alt }}" class="lazyload" />
-
-		<img data-src="{{ block.settings.review_image5 | img_url: 'master' }}"
-			alt="{{ block.settings.review_image2.alt }}" class="lazyload" />
-
-		<img data-src="{{ block.settings.review_image6 | img_url: 'master' }}"
-			alt="{{ block.settings.review_image3.alt }}" class="lazyload" />
-
-	</div>
-
-</div>
-
-
-{% when 'title' %}
-
-
-<div class="title-section">
-	<h3 class="uppercase">{{ block.settings.title }}</h3>
-	<p>{{ block.settings.hashtag }}</p>
-
-	{% if block.settings.title_image != blank %}
-
-	<div class="title-image">
-		<img data-src="{{ block.settings.title_image | img_url: 'master' }}" alt="{{ block.settings.title_image.alt }}"
-			class="lazyload" />
-	</div>
-
-	{% endif %}
-
-
-	<p class='clug-text clug-block-text'>{{ block.settings.contentdesc }}</p>
-
-
-</div>
-
-
-{% when 'clug-category' %}
-
-<section class="clug-categories" id='clug-category'>
-	<div class="title-section">
-		<h4 class="uppercase">{{ block.settings.clug_cat_title }}</h4>
-		<p class='clug-block-text'>{{ block.settings.clug_cat_desc }}</p>
-	</div>
-
-
-	<div class="clug-category-slideshow">
-
-		{%- comment -%}
-		{% include 'slider-buttons' %}
-		{%- endcomment -%}
-
-
-		<div class="clug-cat-item">
-			<a href="{{ block.settings.clug_cat_button_url_1 }}">
-				<img data-src="{{ block.settings.clug_cat_image_1 | img_url: 'master' }}"
-					alt="{{ block.settings.clug_cat_image_1.alt }}" class="lazyload" />
-			</a>
-			<div class="clug-cat-text">
-
-				{%- comment -%}Make first word bold{%- endcomment -%}
-				{% assign first_word = block.settings.clug_cat_title_1 | truncatewords: 1, '' %}
-
-				{% assign rest_of_words = block.settings.clug_cat_title_1  | remove_first: first_word %}
-
-				<div class="clug-info-row">
-					<div class="clug-info-item-text">
-						<h4 class=' font-light'>
-							<span class='font-bolder '>{{ first_word }}</span>
-							{{ rest_of_words }}</h4>
-
-
-						<p class=''>{{ block.settings.clug_cat_desc_1 }}</p>
+					<div class="video-icon">
+						{% include "inline-icon" with svg: 'play-button.svg' %}
 					</div>
-					<div class="clug-info-item-button">
 
-						{% if block.settings.clug_cat_button_url_1 != blank %}
-						<a href="{{ block.settings.clug_cat_button_url_1 }}" class='block-button'>
-							{{ block.settings.clug_cat_button_text_1 }}
-						</a>
+
+					<h4 class="white uppercase">{{ block.settings.video_title }}
+					</h4>
+					<p class="white p-fade">{{ block.settings.video_desc }}
+					</p>
+				</div>
+
+
+			</section>
+
+
+		{% when 'faq' %}
+
+
+			<section class="tab-section" id='faqs'>
+				<div class="inner">
+					<h3 class="text-align uppercase">{{ block.settings.faq_title }}</h3>
+
+					<div class="tabs">
+
+						<div class="tab">
+							<input type="checkbox" class="tab-input">
+
+							<label class="tab-label">
+								<p class='black'>{{ block.settings.faq_question_1 }}</p>
+							</label>
+							<div class="tab-content">
+								<p>{{ block.settings.faq_desc_1 }}</p>
+							</div>
+
+						</div>
+
+						<div class="tab">
+							<input type="checkbox" class="tab-input">
+
+							<label class="tab-label">
+								<p class='black'>{{ block.settings.faq_question_2 }}</p>
+							</label>
+							<div class="tab-content">
+								<p>{{ block.settings.faq_desc_2 }}</p>
+							</div>
+
+						</div>
+						<div class="tab">
+							<input type="checkbox" class="tab-input">
+
+							<label class="tab-label">
+								<p class='black'>{{ block.settings.faq_question_3 }}</p>
+							</label>
+							<div class="tab-content">
+								<p>{{ block.settings.faq_desc_3 }}</p>
+							</div>
+
+						</div>
+						<div class="tab">
+							<input type="checkbox" class="tab-input">
+
+							<label class="tab-label">
+								<p class='black'>{{ block.settings.faq_question_4 }}</p>
+							</label>
+							<div class="tab-content">
+								<p>{{ block.settings.faq_desc_4 }}</p>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="tabs-button">
+						{% if block.settings.faq_button_url != blank %}
+							<a href="{{ block.settings.faq_button_url }}" class="block-button">
+								{% if block.settings.faq_button_text != blank %}
+									{{ block.settings.faq_button_text }}
+								{% else %}
+									{{ "general.shop.shop_now" | t }}
+								{% endif %}
+							</a>
 						{% endif %}
 					</div>
-				</div>
 
-
-			</div>
-		</div>
-
-		<div class="clug-cat-item">
-			<a href="{{ block.settings.clug_cat_button_url_2 }}">
-				<img data-src="{{ block.settings.clug_cat_image_2 | img_url: 'master' }}"
-					alt="{{ block.settings.clug_cat_image_2.alt }}" class="lazyload" />
-			</a>
-			<div class="clug-cat-text">
-
-				{%- comment -%}Make first word bold{%- endcomment -%}
-				{% assign first_word = block.settings.clug_cat_title_2 | truncatewords: 1, '' %}
-
-				{% assign rest_of_words = block.settings.clug_cat_title_2  | remove_first: first_word %}
-
-				<div class="clug-info-row">
-					<div class="clug-info-item-text">
-						<h4 class=' font-light'>
-							<span class='font-bolder '>{{ first_word }}</span>
-							{{ rest_of_words }}</h4>
-
-
-						<p class=''>{{ block.settings.clug_cat_desc_2 }}</p>
-					</div>
-					<div class="clug-info-item-button">
-
-						{% if block.settings.clug_cat_button_url_5 != blank %}
-						<a href="{{ block.settings.clug_cat_button_url_2 }}" class='block-button'>
-							{{ block.settings.clug_cat_button_text_2 }}
-						</a>
-						{% endif %}
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-
-		<div class="clug-cat-item">
-			<a href="{{ block.settings.clug_cat_button_url_3 }}">
-				<img data-src="{{ block.settings.clug_cat_image_3 | img_url: 'master' }}"
-					alt="{{ block.settings.clug_cat_image_3.alt }}" class="lazyload" />
-			</a>
-			<div class="clug-cat-text">
-
-				{%- comment -%}Make first word bold{%- endcomment -%}
-				{% assign first_word = block.settings.clug_cat_title_3 | truncatewords: 1, '' %}
-
-				{% assign rest_of_words = block.settings.clug_cat_title_3  | remove_first: first_word %}
-
-				<div class="clug-info-row">
-					<div class="clug-info-item-text">
-						<h4 class=' font-light'>
-							<span class='font-bolder '>{{ first_word }}</span>
-							{{ rest_of_words }}</h4>
-
-
-						<p class=''>{{ block.settings.clug_cat_desc_3 }}</p>
-					</div>
-					<div class="clug-info-item-button">
-
-						{% if block.settings.clug_cat_button_url_5 != blank %}
-						<a href="{{ block.settings.clug_cat_button_url_3 }}" class='block-button'>
-							{{ block.settings.clug_cat_button_text_3 }}
-						</a>
-						{% endif %}
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-
-		<div class="clug-cat-item">
-			<a href="{{ block.settings.clug_cat_button_url_4 }}">
-				<img data-src="{{ block.settings.clug_cat_image_4 | img_url: 'master' }}"
-					alt="{{ block.settings.clug_cat_image_4.alt }}" class="lazyload" />
-			</a>
-			<div class="clug-cat-text">
-
-				{%- comment -%}Make first word bold{%- endcomment -%}
-				{% assign first_word = block.settings.clug_cat_title_4 | truncatewords: 1, '' %}
-
-				{% assign rest_of_words = block.settings.clug_cat_title_4  | remove_first: first_word %}
-
-				<div class="clug-info-row">
-					<div class="clug-info-item-text">
-						<h4 class=' font-light'>
-							<span class='font-bolder '>{{ first_word }}</span>
-							{{ rest_of_words }}</h4>
-
-
-						<p class=''>{{ block.settings.clug_cat_desc_4 }}</p>
-					</div>
-					<div class="clug-info-item-button">
-
-						{% if block.settings.clug_cat_button_url_4 != blank %}
-						<a href="{{ block.settings.clug_cat_button_url_4 }}" class='block-button'>
-							{{ block.settings.clug_cat_button_text_4 }}
-						</a>
-						{% endif %}
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-
-		<div class="clug-cat-item">
-			<a href="{{ block.settings.clug_cat_button_url_5 }}">
-				<img data-src="{{ block.settings.clug_cat_image_5 | img_url: 'master' }}"
-					alt="{{ block.settings.clug_cat_image_5.alt }}" class="lazyload" />
-			</a>
-			<div class="clug-cat-text">
-
-
-				{%- comment -%}Make first word bold{%- endcomment -%}
-				{% assign first_word = block.settings.clug_cat_title_5 | truncatewords: 1, '' %}
-
-				{% assign rest_of_words = block.settings.clug_cat_title_5  | remove_first: first_word %}
-
-
-				<div class="clug-info-row">
-					<div class="clug-info-item-text">
-						<h4 class=' font-light'>
-							<span class='font-bolder '>{{ first_word }}</span>
-							{{ rest_of_words }}</h4>
-
-
-						<p class=''>{{ block.settings.clug_cat_desc_5 }}</p>
-					</div>
-					<div class="clug-info-item-button">
-
-						{% if block.settings.clug_cat_button_url_5 != blank %}
-						<a href="{{ block.settings.clug_cat_button_url_5 }}" class='block-button'>
-							{{ block.settings.clug_cat_button_text_5 }}
-						</a>
-						{% endif %}
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-
-
-	</div>
-
-</section>
-
-
-{% when 'info-block' %}
-
-<section class="collection-product-block-section">
-	<div class="collection-product-block-inner">
-		<div class="collection-product-block" style="background-color: {{ block.settings.info_color }};">
-
-
-			<div class="collection-product-block-item collection-block-text">
-
-				<div class="collection-product-text-inner">
-					{% if block.settings.info_checkbox %}
-
-					<h3 class="uppercase">{{ block.settings.info_title }}</h3>
-
-					<p class='p-fade clug-block-text'>{{ block.settings.info_content }}</p>
-
-					{% if block.settings.info_video_url != blank %}
-
-
-					{%- comment -%}pass url into video snippet{%- endcomment -%}
-
-
-					{% include "video" with video_url: block.settings.info_video_url %}
-
-					{% endif %}
-
-
-					{% else %}
-
-					<h3 class="white uppercase">{{ block.settings.info_title }}</h3>
-
-					<p class="white p-fade clug-block-text">{{ block.settings.info_content }}</p>
-
-					{% if block.settings.info_video_url != blank %}
-
-					{% include "video" with video_url: block.settings.info_video_url %}
-
-					{% endif %}
-
-
-					{% endif %}
 
 				</div>
 
-			</div>
+			</section>
 
-
-			<div class="collection-product-block-item collection-block-image">
-
-				<img data-src="{{ block.settings.info_image | img_url: 'master' }}"
-					alt="{{ block.settings.product_image.alt }}" class="lazyload" />
-
-			</div>
-
-		</div>
-
-	</div>
-</section>
-
-
-{% when 'video' %}
-
-<section class="page-video-section">
-
-	<a href="{{ block.settings.video_link }}" class='video-link'>
-		<div class="page-video-image">
-			<img data-src="{{ block.settings.video_image | img_url: 'master' }}"
-				alt="{{ block.settings.video_image.alt }}" class="lazyload" />
-		</div>
-
-	</a>
-
-
-	<div class="page-video-section-title">
-
-		<div class="video-icon">
-			{% include "inline-icon" with svg: 'play-button.svg' %}
-		</div>
-
-
-		<h4 class="white uppercase">{{ block.settings.video_title }}
-		</h4>
-		<p class="white p-fade">{{ block.settings.video_desc }}
-		</p>
-	</div>
-
-
-</section>
-
-
-{% when 'faq' %}
-
-
-<section class="tab-section" id='faqs'>
-	<div class="inner">
-		<h3 class="text-align uppercase">{{ block.settings.faq_title }}</h3>
-
-		<div class="tabs">
-
-			<div class="tab">
-				<input type="checkbox" class="tab-input">
-
-				<label class="tab-label">
-					<p class='black'>{{ block.settings.faq_question_1 }}</p>
-				</label>
-				<div class="tab-content">
-					<p>{{ block.settings.faq_desc_1 }}</p>
-				</div>
-
-			</div>
-
-			<div class="tab">
-				<input type="checkbox" class="tab-input">
-
-				<label class="tab-label">
-					<p class='black'>{{ block.settings.faq_question_2 }}</p>
-				</label>
-				<div class="tab-content">
-					<p>{{ block.settings.faq_desc_2 }}</p>
-				</div>
-
-			</div>
-			<div class="tab">
-				<input type="checkbox" class="tab-input">
-
-				<label class="tab-label">
-					<p class='black'>{{ block.settings.faq_question_3 }}</p>
-				</label>
-				<div class="tab-content">
-					<p>{{ block.settings.faq_desc_3 }}</p>
-				</div>
-
-			</div>
-			<div class="tab">
-				<input type="checkbox" class="tab-input">
-
-				<label class="tab-label">
-					<p class='black'>{{ block.settings.faq_question_4 }}</p>
-				</label>
-				<div class="tab-content">
-					<p>{{ block.settings.faq_desc_4 }}</p>
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="tabs-button">
-			{% if block.settings.faq_button_url != blank %}
-			<a href="{{ block.settings.faq_button_url }}" class="block-button">
-				{% if block.settings.faq_button_text != blank %}
-				{{ block.settings.faq_button_text }}
-				{% else %}
-				{{ "general.shop.shop_now" | t }}
-				{% endif %}
-			</a>
-			{% endif %}
-		</div>
-
-
-	</div>
-
-</section>
-
-{% endcase %}
-{% endfor %}
-</div>
-</div>{%- comment -%}{% if block.blocks.size == 0 %}
-{% include 'no-blocks' %}
-{% endif %}{%- endcomment -%}</div>
+		{% endcase %}
+	{% endfor %}
+</div></div>{%- comment -%}{% if block.blocks.size == 0 %}
+										        {% include 'no-blocks' %}
+										    {% endif %}{%- endcomment -%}</div>

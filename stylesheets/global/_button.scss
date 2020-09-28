@@ -335,3 +335,32 @@
 .article-button {
   margin: 0 auto;
 }
+
+
+#mhaRnProduct {
+
+  .email-when-available {
+    padding: 20px !important;
+    background: $black !important;
+    width: 100% !important;
+    letter-spacing: 2px;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: $yellow !important;
+      color: $black !important;
+    }
+  }
+
+}
+
+
+.preorder-now-active {
+
+  button {
+    background: #24272C;
+    color: $white;
+  }
+}

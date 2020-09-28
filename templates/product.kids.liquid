@@ -57,6 +57,13 @@
 
                 <h2 class="kids-header-font uppercase product-title">{{ product.title }}</h2>
 
+                {%- comment -%}Yotpo star rating {%- endcomment -%}
+
+
+                {% include 'yotpo-star-rating' %}
+
+                {%- comment -%}end of yotpo star rating {%- endcomment -%}
+
 
                 <div class="product-short-desc">
 
@@ -380,6 +387,18 @@
 
         {%- comment -%}FAQ Section End{%- endcomment -%}
 
+        {%- comment -%}Review Section
+
+        <div class="reviews">
+            <div class="inner">
+                {% include 'yotpo-reviews' %}
+            </div>
+
+        </div>
+{%- endcomment -%}
+
+        {%- comment -%}End of Review Section{%- endcomment -%}
+
 
         {%- comment -%}Video Section{%- endcomment -%}
 
@@ -404,8 +423,11 @@
 						                    </div>
 					{%- endcomment -%}
 
-                    <h4 class="white uppercase">Find out more
-                    </h4>
+                    {% if product.metafields.custom_fields["video_section_title"] != blank %}
+                        <h4 class="white uppercase">
+                            {{ product.metafields.custom_fields["video_section_title"] }}
+                        </h4>
+                    {% endif %}
 
 
                     {%- comment -%}pass url into video snippet{%- endcomment -%}
@@ -430,7 +452,7 @@
 
     {% comment %}
 		if we are in product more.liquid re assign collection
-	{% endcomment %}
+    {% endcomment %}
 
 
     <div class="collection">

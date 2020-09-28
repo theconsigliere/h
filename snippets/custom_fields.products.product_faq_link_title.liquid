@@ -1,0 +1,13 @@
+{% comment %}
+  DO NOT MODIFY THIS FILE DIRECTLY. THIS FILE WILL BE OVERWRITTEN.
+  YOU CAN MODIFY THE LIQUID CODE FOR THIS CUSTOM FIELD HERE:
+  https://customfields.bonify.io/dashboard/hornit-dev.myshopify.com/products/configure/208477/edit
+{% endcomment %}
+{% if product.metafields.custom_fields["product_faq_link_title"] != blank %}
+  <div class="custom-field custom-field__product-faq-link-title custom-field__type--text">
+    <h3 class="custom-field--title">Product FAQ Link Title</h3>
+    <div class="custom-field--value">
+      {{ product.metafields.custom_fields["product_faq_link_title"] }}
+    </div>
+  </div>
+{% endif %}

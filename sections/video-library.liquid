@@ -42,35 +42,6 @@
                     "placeholder": "Add your video link here"
                 }
             ]
-        }, {
-            "type": "header",
-            "name": "Page Header",
-            "settings": [
-                {
-                    "id": "header_image",
-                    "type": "image_picker",
-                    "label": "Background Image"
-                }, {
-                    "id": "header_title",
-                    "type": "text",
-                    "label": "Title",
-                    "placeholder": "Slide Title"
-                }, {
-                    "id": "header_content",
-                    "type": "textarea",
-                    "label": "Slide Content"
-                }, {
-                    "id": "header_button_url",
-                    "type": "url",
-                    "label": "Button URL"
-                }, {
-                    "id": "header_button_text",
-                    "type": "text",
-                    "label": "Button Text",
-                    "placeholder": "Shop Now",
-                    "info": "Defaults to \"Shop Now\""
-                }
-            ]
         }
     ]
 }
@@ -80,89 +51,47 @@
 
 <div class="master-collection-full">
 
-	{% for block in section.blocks %}
 
-		{% case block.type %}
-
-            {% when 'header' %}
-            
-            {% if block.settings.header_image != blank %}
-            <div class="collection-header">
+    <div class="no-header_content">
+        <h3 class="uppercase">{{ page.title }}</h3>
+    </div>
 
 
-                <img data-src="{{ block.settings.header_image | img_url: 'master' }}" alt="{{ block.settings.header_image.alt }}" class="lazyload"/>
+    <div class="video-library-grid">
 
-                <div class="collection-header-content">
-                    <h3 class="white uppercase">{{ block.settings.header_title }}</h3>
-
-                    {% if block.settings.header_content != blank %}
-                        <p class="white">{{ block.settings.header_content }}</p>
-                    {% endif %}
-
-                    {% if block.settings.header_button_url != blank %}
-                        <a href="{{ block.settings.header_button_url }}" class="block-button">
-                            {% if block.settings.header_button_text != blank %}
-                                {{ block.settings.header_button_text }}
-                            {% else %}
-                                {{ "general.shop.shop_now" | t }}
-                            {% endif %}
-                        </a>
-                    {% endif %}
-
-                </div>
-
-            </div>
-
-        {% else %}
+        {% for block in section.blocks %}
 
 
-            <div class="no-header_content">
-                <h3 class="uppercase">{{ block.settings.header_title }}</h3>
-
-                {% if block.settings.header_content != blank %}
-                    <p>{{ block.settings.header_content }}</p>
-                {% endif %}
-
-                {% if block.settings.header_button_url != blank %}
-                    <a href="{{ block.settings.header_button_url }}" class="block-button">
-                        {% if block.settings.header_button_text != blank %}
-                            {{ block.settings.header_button_text }}
-                        {% else %}
-                            {{ "general.shop.shop_now" | t }}
-                        {% endif %}
-                    </a>
-                {% endif %}
-
-            </div>
-
-        {% endif %}
+            {% case block.type %}
 
 
+                {% when 'video' %}
 
 
-			{% when 'video' %}
+                    <section class="video-library-section" id='{{ block.settings.video_id }}'>
+                        <div class="video-inner">
 
 
-				<section class="video-library-section" id='{{ block.settings.video_id }}'>
-					<div class="video-inner">
+                            <div class="video-library-item">
+                                <iframe data-src="{{ block.settings.video_url }}?loop=1&autopause=0" class="lazyload" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="title-section">
+                                <h5 class="uppercase">{{ block.settings.video_title }}</h5>
+                                <p class="p-fade">{{ block.settings.video_desc }}
+                                </p>
+                            </div>
 
 
-						<div class="video-library-item">
-							<iframe data-src="{{ block.settings.video_url }}?loop=1&autopause=0" class="lazyload" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-						</div>
-
-						<div class="title-section">
-							<h3 class="uppercase">{{ block.settings.video_title }}</h3>
-							<p class="p-fade">{{ block.settings.video_desc }}
-							</p>
-						</div>
+                        </div>
+                    </section>
 
 
-					</div>
-				</section>
+            {% endcase %}
 
 
-		{% endcase %}
-	{% endfor %}
+        {% endfor %}
 
-</div></div>
+    </div>
+
+</div>

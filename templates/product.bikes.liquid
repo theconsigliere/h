@@ -13,8 +13,8 @@
                     {% for image in product.images %}
 
                         {% comment %}
-					if one image available, single image shown
-					{% endcomment %}
+                    if one image available, single image shown
+                {% endcomment %}
                         <div class="single-image">
                             <img src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}">
                         </div>
@@ -25,8 +25,8 @@
                     {% for image in product.images %}
 
                         {% comment %}
-					if one image available, single image shown
-					{% endcomment %}
+                    if one image available, single image shown
+                {% endcomment %}
                         <div class="single-image">
                             <img src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}">
                         </div>
@@ -34,8 +34,8 @@
 
                 </div>
                 {% comment %}
-				if images available multiple image slideshow
-				{% endcomment %}
+            if images available multiple image slideshow
+        {% endcomment %}
                 {% if product.images.size > 1 %}
                     {% include 'slider-buttons' %}
 
@@ -53,26 +53,12 @@
 
             <div class="product-actions">
 
-                {%- comment -%}Breadcrumbs{%- endcomment -%}
-
                 <nav aria-label="breadcrumbs" class="breadcrumb" role="navigation">
-
-
-                    <span>
-                        {% for collection in product.collections %}
-                            {% if collection.handle == 'helmets' %}
-                                {{ collection.title | link_to: collection.url }}
-                            {% endif %}
-                        {% endfor %}
-                    </span>
-
+                    {{ product.collections[0].title | link_to: product.collections[0].url }}
                     <span aria-hidden="true">&rsaquo;</span>
                     <span class="current-page">{{ product.title }}</span>
-
                 </nav>
 
-
-                {%- comment -%}Breadcrumbs End{%- endcomment -%}
 
                 <h2 class="kids-header-font uppercase product-title">{{ product.title }}</h2>
 
@@ -98,23 +84,22 @@
                         <p>{{ product.metafields.custom_fields["shortdesc_desc"] }}</p>
                     {% endif %}
 
-
                 </div>
 
-                {%- comment -%}Helmet disclaimer{%- endcomment -%}
+                {%- comment -%}Warranty disclaimer{%- endcomment -%}
 
-                {% if product.metafields.custom_fields["helmet_size_title"] != blank %}
+                {% if product.metafields.custom_fields["bike_warranty_title"] != blank %}
 
                     <div class="mtb__notice">
-                        <div class="orange notice_top"></div>
+                        <div class="pink notice_top"></div>
                         <div class="helmet__inner">
 
                             <p class="uppercase font-bolder">
-                                {{ product.metafields.custom_fields["helmet_size_title"] }}
+                                {{ product.metafields.custom_fields["bike_warranty_title"] }}
                             </p>
 
-                            {% if product.metafields.custom_fields["helmet_size_description"]  != blank %}
-                                <p>{{ product.metafields.custom_fields["helmet_size_description"] }}</p>
+                            {% if product.metafields.custom_fields["bike_warranty_description"]  != blank %}
+                                <p>{{ product.metafields.custom_fields["bike_warranty_description"] }}</p>
                             {% endif %}
 
                         </div>
@@ -124,75 +109,13 @@
 
                 {% endif %}
 
-                {%- comment -%}Helmet Sizing{%- endcomment -%}
-
-                {% if product.metafields.custom_fields["helmet_sizing_pop-up"] != blank %}
-                    <div class="video-pop-up-group">
-
-                        <div class="pop-up-video">
-                            <div class="popup-close">&#10006;</div>
-                            <div class="pop-up-image">
-                                <img data-src="{{ product.metafields.custom_fields["helmet_sizing_pop-up"] }}" class="lazyload image-popup"/>
-                            </div>
-
-                        </div>
-
-                        <div class="grey-button js-video">
-                            Sizing Guide
-                        </div>
-
-                    </div>
-
-                {% endif %}
-
-
-                {%- comment -%}Music Player{%- endcomment -%}
-
-
-                {% if product.metafields.custom_fields["music_player_group"] != blank %}
-                    <div class="music-player">
-                        <img src="{{ 'check-sounds.svg' | asset_url }}" class="player-img">
-                        <div class="bbplayer">
-                            <div class="controls">
-                                <span class="bb-rewind">
-                                    <img src="{{ 'rewind.svg' | asset_url }}">
-                                </span>
-                                <span class="bb-play"></span>
-                                <span class="bb-forward">
-                                    <img src="{{ 'forward.svg' | asset_url }}">
-                                </span>
-                                <span class="bb-trackTime"></span>
-                                <p class="black">/</p>
-                                <span class="bb-trackLength"></span>
-
-                            </div>
-
-                            <div class="player-title">
-                                <span class="bb-trackTitle"></span>
-                            </div>
-                            <audio>
-
-                                {% assign separator = "|###|" %}
-                                {% assign music_player_mp3_array = product.metafields.custom_fields["music_player_mp3"] | split: separator %}
-                                {% assign fc_keys = product.metafields.custom_fields["music_player_group"] | split: "," %}
-                                {% for i in fc_keys %}
-                                    {% assign index = i | plus: 0 %}
-                                    <source src="{{ music_player_mp3_array[index] }}" type="audio/mp3"/>
-                                {% endfor %}
-
-                            </audio>
-                        </div>
-
-                    </div>
-
-
-                {% endif %}
-
-                {%- comment -%}End of Music Player{%- endcomment -%}
 
                 {% include 'add-to-cart-form' %}
+                {% if product.metafields.custom_fields["stock_due_disclaimer"] != blank %}
+                    <p>{{ product.metafields.custom_fields["stock_due_disclaimer"] }}</p>
+                {% endif %}
                 {%- comment -%}
-				<div class="payment-options">
+								<div class="payment-options">
 					{{ 'payment-options.png' | asset_url | img_tag }}
 				</div>
 				{%- endcomment -%}
@@ -218,11 +141,10 @@
 
                     <div class="product-description">
                         {% comment %}
-						this has been set above by the description_array
+							this has been set above by the description_array
 						{% endcomment %}
                         {% if product.metafields.custom_fields["product_description_title"] != blank %}
-                            <h1 class="kids-header-font uppercase">
-                                {{ product.metafields.custom_fields["product_description_title"] }}</h1>
+                            <h1 class="kids-header-font uppercase">{{ product.metafields.custom_fields["product_description_title"] }}</h1>
                         {% endif %}
 
                         <p>{{ description }}</p>
@@ -483,10 +405,10 @@
 
                 <div class="video-section-title">
                     {%- comment -%}
-				<div class="video-icon">
-					{% include "inline-icon" with svg: 'play-button.svg' %}
-				</div>
-				{%- endcomment -%}
+						<div class="video-icon">
+						                        {% include "inline-icon" with svg: 'play-button.svg' %}
+						                    </div>
+					{%- endcomment -%}
 
                     {% if product.metafields.custom_fields["video_section_title"] != blank %}
                         <h4 class="white uppercase">
@@ -516,8 +438,8 @@
     {% comment %}End Product Bottom{% endcomment %}
 
     {% comment %}
-	if we are in product more.liquid re assign collection
-	{% endcomment %}
+		if we are in product more.liquid re assign collection
+    {% endcomment %}
 
 
     <div class="collection">

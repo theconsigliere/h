@@ -28,12 +28,9 @@
 {% endif %}
 
 
-<!-- if Product out of stock -->
 
-{% unless product.available %}
-<div id='mhaRnProduct'></div>
-{% endunless %}<form
-id="add-to-cart-form" action="/cart/add" method="post" enctype="multipart/form-data" data-variants="{{ variants_with_quantity_json | url_param_escape }}">
+
+<form id="add-to-cart-form" action="/cart/add" method="post" enctype="multipart/form-data" data-variants="{{ variants_with_quantity_json | url_param_escape }}">
 
 <!-- only show select if we have multiple variants -->
 
@@ -88,4 +85,26 @@ id="add-to-cart-form" action="/cart/add" method="post" enctype="multipart/form-d
 			{{ product.price | money }}
 		{% endif %}
 	</span>
-</button></form>
+</button>
+
+<!-- if Product out of stock  (see application.js)-->
+
+{% if can_add_to_cart != true %}
+
+
+<div id='mhaRnProduct'></div>
+
+{% endif %}
+
+
+
+</form>
+
+
+<!-- Do you have a question? -->
+
+{% if product.metafields.custom_fields["product_faq_link"] != blank %}  
+
+<a class='plain-button' href="{{ product.metafields.custom_fields["product_faq_link"] }}">{{ product.metafields.custom_fields["product_faq_link_title"] }} </a>
+ 
+ {% endif %}

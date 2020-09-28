@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>{{ page_title }}</title>
-		<meta charset="utf-8"/>
-		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
-		<meta name="description" content="{{ page_description | escape }}"/>
-		<link rel="canonical" href="{{ canonical_url }}"/>
+    <head>
+        <title>{{ page_title }}</title>
+        <meta charset="utf-8"/>
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+        <meta name="description" content="{{ page_description | escape }}"/>
+        <link rel="canonical" href="{{ canonical_url }}"/>
+            <link rel="alternate" hreflang="x-default" href="{{ canonical_url | replace: shop.domain, 'hornit.com' }}" />
+<link rel="alternate" href="{{ canonical_url | replace: shop.domain, 'hornit.com' }}" hreflang="en" />
+<link rel="alternate" href="{{ canonical_url | replace: shop.domain, 'us.hornit.com' }}" hreflang="en-us" />
 
-		{%- comment -%}Favicon!{%- endcomment -%}
-		{% if settings.favicon != blank %}
-			<link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png"/>
-		{% endif %}
+        {%- comment -%}Favicon!{%- endcomment -%}
+        {% if settings.favicon != blank %}
+            <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png"/>
+        {% endif %}
 
-		<meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport"/>
-		{{
+        <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport"/>
+        {{
       content_for_header
     }}
-		<!-- Header hook for plugins -->
-		{{
+        <!-- Header hook for plugins -->
+        {{
       "application.scss" | asset_url | stylesheet_tag
-    }}
-	</head>
-	<body>
-		{% include "header" %}
+	}}
+        <!-- Yotpo -->
+        <script type="text/javascript">
+            (function e() {
+                var e = document.createElement("script");
+                e.type = "text/javascript",
+                e.async = true,
+                e.src = "//staticw2.yotpo.com/sUnimvLjrmNljb4x2eC8Lp5UJNikQuyGNVKTalTh/widget.js";
+                var t = document.getElementsByTagName("script")[0];
+                t.parentNode.insertBefore(e, t)
+            })();
+        </script>
+    </head>
+    <body>
+        {% include "header" %}
 
-		<main
-			role="main">
-			<!-- <div class="page-cover"></div> -->
+        <main role="main">
+            <!-- <div class="page-cover"></div> -->
 
-			{{ content_for_layout }}
-			{% include "footer" %}
-		</main>
+            {{ content_for_layout }}
+            {% include "footer" %}
+        </main>
 
-		{% comment %}
+        {% comment %}
 			makes the page fade when mini-cart is open
 		{% endcomment %}
 
-		<div id="no-click"></div>
-		{% comment %}
+        <div id="no-click"></div>
+        {% comment %}
 			lazy load
 		{% endcomment %}
-		{{ "lazysizes.min.js" | asset_url | script_tag }}
+        {{ "lazysizes.min.js" | asset_url | script_tag }}
 
-		{{ "jquery-3.3.1.min.js" | asset_url | script_tag }}
-		{% comment %}
+        {{ "jquery-3.3.1.min.js" | asset_url | script_tag }}
+        {% comment %}
 			if we have multiple currencies engaged enqueue scripts below
 		{% endcomment %}
-		{% if settings.show_multiple_currencies %}
-			{{ "//cdn.shopify.com/s/javascripts/currencies.js" | script_tag }}
-			{{ "jquery.currencies.min.js" | asset_url | script_tag }}
-		{% endif %}
-		{% include 'currencies' %}
+        {% if settings.show_multiple_currencies %}
+            {{ "//cdn.shopify.com/s/javascripts/currencies.js" | script_tag }}
+            {{ "jquery.currencies.min.js" | asset_url | script_tag }}
+        {% endif %}
+        {% include 'currencies' %}
 
-		<script src="https://player.vimeo.com/api/player.js"></script>
-		{{ "video.js" | asset_url | script_tag }}
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        {{ "video.js" | asset_url | script_tag }}
 
-		{{ "slick.min.js" | asset_url | script_tag }}
-		{{ "slideshow.js" | asset_url | script_tag }}
-		{{ "search.js" | asset_url | script_tag }}
-		{{ "currency-picker.js" | asset_url | script_tag }}
-		{{ "application.js" | asset_url | script_tag }}
-		{{ "drag-scroll.js" | asset_url | script_tag }}
+        {{ "slick.min.js" | asset_url | script_tag }}
+        {{ "slideshow.js" | asset_url | script_tag }}
+        {{ "search.js" | asset_url | script_tag }}
+        {{ "currency-picker.js" | asset_url | script_tag }}
+        {{ "application.js" | asset_url | script_tag }}
+        {{ "drag-scroll.js" | asset_url | script_tag }}
 
-		{{ "animation.js" | asset_url | script_tag }}
-		{{ "header.js" | asset_url | script_tag }}
+        {{ "animation.js" | asset_url | script_tag }}
+        {{ "header.js" | asset_url | script_tag }}
 
-		{% if template contains 'product' %}
-			{{ "bbplayer.js" | asset_url | script_tag }}
-		{% endif %}
-	{% include 'hulkapps-restock' %}</body>
+        {% if template contains 'product' %}
+            {{ "bbplayer.js" | asset_url | script_tag }}
+        {% endif %}
+
+
+        {% include 'hulkapps-restock' %}{% render 'preorder-now' %}
+  </body>
 </html>

@@ -1,192 +1,200 @@
 <div class="product-page" id="page-product">
 
 
-	{% comment %}Begin Product Top{% endcomment %}
-	<div id="product-top">
+    {% comment %}Begin Product Top{% endcomment %}
+    <div id="product-top">
 
 
-		<div class="product-top-inner">
-			<div class="product-images js-product-slideshow">
+        <div class="product-top-inner">
+            <div class="product-images js-product-slideshow">
 
 
-				<div class="slides js-slides">
-					{% for image in product.images %}
+                <div class="slides js-slides">
+                    {% for image in product.images %}
 
-						{% comment %}
+                        {% comment %}
 							if one image available, single image shown
 						{% endcomment %}
-						<div class="single-image">
-							<img src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}">
-						</div>
-					{% endfor %}
-				</div>
+                        <div class="single-image">
+                            <img src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}">
+                        </div>
+                    {% endfor %}
+                </div>
 
-				<div class="slider-nav">
-					{% for image in product.images %}
+                <div class="slider-nav">
+                    {% for image in product.images %}
 
-						{% comment %}
+                        {% comment %}
 							if one image available, single image shown
 						{% endcomment %}
-						<div class="single-image">
-							<img src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}">
-						</div>
-					{% endfor %}
+                        <div class="single-image">
+                            <img src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}">
+                        </div>
+                    {% endfor %}
 
-				</div>
-				{% comment %}
+                </div>
+                {% comment %}
 					if images available multiple image slideshow
 				{% endcomment %}
-				{% if product.images.size > 1 %}
-					{% include 'slider-buttons' %}
+                {% if product.images.size > 1 %}
+                    {% include 'slider-buttons' %}
 
-					<div class="image-counter">
-						<span class="js-current-slide">
-							1
-						</span>
-						of
-						{{ product.images.size }}
-					</div>
-				{% endif %}
+                    <div class="image-counter">
+                        <span class="js-current-slide">
+                            1
+                        </span>
+                        of
+                        {{ product.images.size }}
+                    </div>
+                {% endif %}
 
-			</div>
-
-
-			<div class="product-actions">
-
-				{%- comment -%}Breadcrumbs{%- endcomment -%}
-
-				<nav aria-label="breadcrumbs" class="breadcrumb" role="navigation">
+            </div>
 
 
-					<span>
-						{% for collection in product.collections %}
-							{% if collection.handle == 'clug' %}
-								{{ collection.title | link_to: collection.url }}
-							{% endif %}
-						{% endfor %}
-					</span>
+            <div class="product-actions">
 
-					<span aria-hidden="true">&rsaquo;</span>
-					<span class="current-page">{{ product.title }}</span>
+                {%- comment -%}Breadcrumbs{%- endcomment -%}
 
-				</nav>
+                <nav aria-label="breadcrumbs" class="breadcrumb" role="navigation">
 
 
-				{%- comment -%}Breadcrumbs End{%- endcomment -%}
+                    <span>
+                        {% for collection in product.collections %}
+                            {% if collection.handle == 'clug' %}
+                                {{ collection.title | link_to: collection.url }}
+                            {% endif %}
+                        {% endfor %}
+                    </span>
+
+                    <span aria-hidden="true">&rsaquo;</span>
+                    <span class="current-page">{{ product.title }}</span>
+
+                </nav>
 
 
-				<h3 class="uppercase product-title">{{ product.title }}</h3>
+                {%- comment -%}Breadcrumbs End{%- endcomment -%}
 
 
-				<div class="product-short-desc">
+                <h3 class="uppercase product-title">{{ product.title }}</h3>
 
 
-					{% if product.metafields.custom_fields["shortdesc_title"] != blank %}
-						<p class="uppercase font-bolder">
-							{{ product.metafields.custom_fields["shortdesc_title"] }}
-						</p>
-					{% endif %}
+                {%- comment -%}Yotpo star rating {%- endcomment -%}
 
 
-					{% if product.metafields.custom_fields["shortdesc_desc"] != blank %}
-						<p>{{ product.metafields.custom_fields["shortdesc_desc"] }}</p>
-					{% endif %}
+                {% include 'yotpo-star-rating' %}
+
+                {%- comment -%}end of yotpo star rating {%- endcomment -%}
 
 
-				</div>
-
-				{%- comment -%}If product is MTB or MTB XL display notice{%- endcomment -%}
-
-				{% if product.handle contains 'mtb-xl'  %}
+                <div class="product-short-desc">
 
 
-					<div class="mtb__notice">
-						<div class="pink notice_top"></div>
-						<div class="notice__inner">
-							<div class="inner_item">
-								{% if product.metafields.custom_fields["mtb_notice_title"] != blank %}
-									<p class="uppercase font-bolder">{{ product.metafields.custom_fields["mtb_notice_title"] }}</p>
-								{% endif %}
-								{% if product.metafields.custom_fields["mtb_notice_description"] != blank %}
-									<p>{{ product.metafields.custom_fields["mtb_notice_description"] }}</p>
-								{% endif %}
-							</div>
-							<div class="inner_item">
-								<a class="grey-button" href="{{ product.url }}#mtb_notice">Read more
-								</a>
-							</div>
+                    {% if product.metafields.custom_fields["shortdesc_title"] != blank %}
+                        <p class="uppercase font-bolder">
+                            {{ product.metafields.custom_fields["shortdesc_title"] }}
+                        </p>
+                    {% endif %}
 
 
-						</div>
-
-					</div>
-
-
-				{% elsif product.handle contains 'mtb' %}
-
-					<div class="mtb__notice">
-						<div class="blue notice_top"></div>
-						<div class="notice__inner">
-							<div class="inner_item">
-								{% if product.metafields.custom_fields["mtb_notice_title"] != blank %}
-									<p class="uppercase font-bolder">{{ product.metafields.custom_fields["mtb_notice_title"] }}</p>
-								{% endif %}
-								{% if product.metafields.custom_fields["mtb_notice_description"] != blank %}
-									<p>{{ product.metafields.custom_fields["mtb_notice_description"] }}</p>
-								{% endif %}
-							</div>
-							<div class="inner_item">
-								<a class="grey-button" href="{{ product.url }}#mtb_notice">Read more
-								</a>
-							</div>
-						</div>
-					</div>
-
-				{% endif %}
+                    {% if product.metafields.custom_fields["shortdesc_desc"] != blank %}
+                        <p>{{ product.metafields.custom_fields["shortdesc_desc"] }}</p>
+                    {% endif %}
 
 
-				{% include 'add-to-cart-form' %}
+                </div>
 
-				{%- comment -%}
+                {%- comment -%}If product is MTB or MTB XL display notice{%- endcomment -%}
+
+                {% if product.handle contains 'mtb-xl'  %}
+
+
+                    <div class="mtb__notice">
+                        <div class="pink notice_top"></div>
+                        <div class="notice__inner">
+                            <div class="inner_item">
+                                {% if product.metafields.custom_fields["mtb_notice_title"] != blank %}
+                                    <p class="uppercase font-bolder">{{ product.metafields.custom_fields["mtb_notice_title"] }}</p>
+                                {% endif %}
+                                {% if product.metafields.custom_fields["mtb_notice_description"] != blank %}
+                                    <p>{{ product.metafields.custom_fields["mtb_notice_description"] }}</p>
+                                {% endif %}
+                            </div>
+                            <div class="inner_item">
+                                <a class="grey-button" href="{{ product.url }}#mtb_notice">Read more
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                {% elsif product.handle contains 'mtb' %}
+
+                    <div class="mtb__notice">
+                        <div class="blue notice_top"></div>
+                        <div class="notice__inner">
+                            <div class="inner_item">
+                                {% if product.metafields.custom_fields["mtb_notice_title"] != blank %}
+                                    <p class="uppercase font-bolder">{{ product.metafields.custom_fields["mtb_notice_title"] }}</p>
+                                {% endif %}
+                                {% if product.metafields.custom_fields["mtb_notice_description"] != blank %}
+                                    <p>{{ product.metafields.custom_fields["mtb_notice_description"] }}</p>
+                                {% endif %}
+                            </div>
+                            <div class="inner_item">
+                                <a class="grey-button" href="{{ product.url }}#mtb_notice">Read more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endif %}
+
+
+                {% include 'add-to-cart-form' %}
+
+                {%- comment -%}
 					<div class="payment-options">
 																																																												{{ 'payment-options.png' | asset_url | img_tag }}
 																																																											</div>
 				{%- endcomment -%}
 
 
-			</div>
+            </div>
 
-		</div>
-	</div>
-	{% comment %}End Product Top{% endcomment %}
+        </div>
+    </div>
+    {% comment %}End Product Top{% endcomment %}
 
-	{% comment %}Begin Product Bottom{% endcomment %}
-	<div id="product-bottom">
+    {% comment %}Begin Product Bottom{% endcomment %}
+    <div id="product-bottom">
 
 
-		<section class="product-content-section">
+        <section class="product-content-section">
 
-			{% include "product-shipping-returns" %}
+            {% include "product-shipping-returns" %}
 
-			<div class="inner">
+            <div class="inner">
 
-				<div class="info-section description">
+                <div class="info-section description">
 
-					<div class="product-description">
-						{% comment %}
+                    <div class="product-description">
+                        {% comment %}
 							this has been set above by the description_array
 						{% endcomment %}
-						{% if product.metafields.custom_fields["product_description_title"] != blank %}
-							<h3>{{ product.metafields.custom_fields["product_description_title"] }}</h3>
-						{% endif %}
-						<p>{{ description }}</p>
+                        {% if product.metafields.custom_fields["product_description_title"] != blank %}
+                            <h3>{{ product.metafields.custom_fields["product_description_title"] }}</h3>
+                        {% endif %}
+                        <p>{{ description }}</p>
 
 
-					</div>
-				</div>
+                    </div>
+                </div>
 
-			</div>
-			{%- comment -%}
+            </div>
+            {%- comment -%}
 				<div class="product-section-inner">
 																																																																																																																																
 																																																																																				                    <div class="info-section shipping">
@@ -201,343 +209,358 @@
 																																																																																				    
 																																																																																				                </div>
 			{%- endcomment -%}
-		</section>
+        </section>
 
 
-		{%- comment -%}Product images{%- endcomment -%}
+        {%- comment -%}Product images{%- endcomment -%}
 
-		{% if product.metafields.custom_fields["product_image_one" != blank %}
-			<section class=" product-content-section image-section">
+        {% if product.metafields.custom_fields["product_image_one" != blank %}
+            <section class=" product-content-section image-section">
 
 
-				<div class="product-section-inner">
+                <div class="product-section-inner">
 
 
-					<div class="image-item">
-						<img src="{{ product.metafields.custom_fields["product_image_one"] }}" class="lazyload"/>
-					</div>
+                    <div class="image-item">
+                        <img src="{{ product.metafields.custom_fields["product_image_one"] }}" class="lazyload"/>
+                    </div>
 
-					{% if product.metafields.custom_fields["product_image_two"] != blank %}
-						<div class="image-item">
-							<img src="{{ product.metafields.custom_fields["product_image_two"] }}" class="lazyload"/>
-						</div>
-					{% endif %}
+                    {% if product.metafields.custom_fields["product_image_two"] != blank %}
+                        <div class="image-item">
+                            <img src="{{ product.metafields.custom_fields["product_image_two"] }}" class="lazyload"/>
+                        </div>
+                    {% endif %}
 
-					{% if product.metafields.custom_fields["product_image_three"] != blank %}
-						<div class="image-item">
-							<img src="{{ product.metafields.custom_fields["product_image_three"] }}" class="lazyload"/>
-						</div>
-					{% endif %}
+                    {% if product.metafields.custom_fields["product_image_three"] != blank %}
+                        <div class="image-item">
+                            <img src="{{ product.metafields.custom_fields["product_image_three"] }}" class="lazyload"/>
+                        </div>
+                    {% endif %}
 
 
-				</div>
+                </div>
 
-			</section>
+            </section>
 
-		{% endif %}
+        {% endif %}
 
 
-		{%- comment -%}End Product images{%- endcomment -%}
+        {%- comment -%}End Product images{%- endcomment -%}
 
-		{%- comment -%}Info Area{%- endcomment -%}
+        {%- comment -%}Info Area{%- endcomment -%}
 
-		{% if product.metafields.custom_fields["info_area_title"] != blank %}
+        {% if product.metafields.custom_fields["info_area_title"] != blank %}
 
-			<section class=" product-content-section info-area">
+            <section class=" product-content-section info-area">
 
 
-				<div class="product-section-inner">
+                <div class="product-section-inner">
 
 
-					<div class="info-area-item">
+                    <div class="info-area-item">
 
-						<h6 class="font-bolder uppercase">
-							{{ product.metafields.custom_fields["info_area_title"] }}
-						</h6>
+                        <h6 class="font-bolder uppercase">
+                            {{ product.metafields.custom_fields["info_area_title"] }}
+                        </h6>
 
-						{% if product.metafields.custom_fields["info_area_description"] != blank %}
-							<p>{{ product.metafields.custom_fields["info_area_description"] }}</p>
+                        {% if product.metafields.custom_fields["info_area_description"] != blank %}
+                            <p>{{ product.metafields.custom_fields["info_area_description"] }}</p>
 
-						{% endif %}
+                        {% endif %}
 
-					</div>
+                    </div>
 
 
-					{% if product.metafields.custom_fields["info_area_title_two"] != blank %}
-						<div class="info-area-item">
+                    {% if product.metafields.custom_fields["info_area_title_two"] != blank %}
+                        <div class="info-area-item">
 
-							<h6 class="font-bolder uppercase">
-								{{ product.metafields.custom_fields["info_area_title_two"] }}
-							</h6>
+                            <h6 class="font-bolder uppercase">
+                                {{ product.metafields.custom_fields["info_area_title_two"] }}
+                            </h6>
 
-							{% if product.metafields.custom_fields["info_area_description_two"] != blank %}
-								<p>{{ product.metafields.custom_fields["info_area_description_two"] }}</p>
+                            {% if product.metafields.custom_fields["info_area_description_two"] != blank %}
+                                <p>{{ product.metafields.custom_fields["info_area_description_two"] }}</p>
 
-							{% endif %}
+                            {% endif %}
 
-						</div>
+                        </div>
 
-					{% endif %}
+                    {% endif %}
 
-				</div>
+                </div>
 
 
-			</section>
+            </section>
 
-		{% endif %}
+        {% endif %}
 
 
-		{%- comment -%}If mtb or mtb xl, display full notice{%- endcomment -%}
+        {%- comment -%}If mtb or mtb xl, display full notice{%- endcomment -%}
 
-		<section class="inner " id="mtb_notice">
+        <section class="inner " id="mtb_notice">
 
-			{% if product.handle contains 'mtb-xl'  %}
+            {% if product.handle contains 'mtb-xl'  %}
 
 
-				<div class="mtb__notice full_notice_center">
-					<div class="pink notice_top"></div>
-					<div class="full_notice__inner">
-						{% if product.metafields.custom_fields["mtb_notice_title"] != blank %}
-							<h4 class="uppercase font-bolder">{{ product.metafields.custom_fields["mtb_notice_title"] }}</h4>
-						{% endif %}
-						{% if product.metafields.custom_fields["mtb_notice_description"] != blank %}
-							<p>{{ product.metafields.custom_fields["mtb_full_description"] }}</p>
-						{% endif %}
-					</div>
-				</div>
+                <div class="mtb__notice full_notice_center">
+                    <div class="pink notice_top"></div>
+                    <div class="full_notice__inner">
+                        {% if product.metafields.custom_fields["mtb_notice_title"] != blank %}
+                            <h4 class="uppercase font-bolder">{{ product.metafields.custom_fields["mtb_notice_title"] }}</h4>
+                        {% endif %}
+                        {% if product.metafields.custom_fields["mtb_notice_description"] != blank %}
+                            <p>{{ product.metafields.custom_fields["mtb_full_description"] }}</p>
+                        {% endif %}
+                    </div>
+                </div>
 
 
-			{% elsif product.handle contains 'mtb' %}
+            {% elsif product.handle contains 'mtb' %}
 
-				<div class="mtb__notice full_notice_center">
-					<div class="blue notice_top"></div>
+                <div class="mtb__notice full_notice_center">
+                    <div class="blue notice_top"></div>
 
-					<div class="full_notice__inner">
+                    <div class="full_notice__inner">
 
 
-						{% if product.metafields.custom_fields["mtb_notice_title"] != blank %}
-							<h4 class="uppercase font-bolder">{{ product.metafields.custom_fields["mtb_notice_title"] }}</h4>
-						{% endif %}
-						{% if product.metafields.custom_fields["mtb_notice_description"] != blank %}
-							<p>{{ product.metafields.custom_fields["mtb_full_description"] }}</p>
-						{% endif %}
+                        {% if product.metafields.custom_fields["mtb_notice_title"] != blank %}
+                            <h4 class="uppercase font-bolder">{{ product.metafields.custom_fields["mtb_notice_title"] }}</h4>
+                        {% endif %}
+                        {% if product.metafields.custom_fields["mtb_notice_description"] != blank %}
+                            <p>{{ product.metafields.custom_fields["mtb_full_description"] }}</p>
+                        {% endif %}
 
-					</div>
-				</div>
+                    </div>
+                </div>
 
-			{% endif %}
+            {% endif %}
 
-		</section>
+        </section>
 
-		{%- comment -%}End Mtb or mtb xl full notice{%- endcomment -%}
+        {%- comment -%}End Mtb or mtb xl full notice{%- endcomment -%}
 
 
-		{%- comment -%}install instructions{%- endcomment -%}
+        {%- comment -%}install instructions{%- endcomment -%}
 
-		{% if product.metafields.custom_fields["install_instructions"] != blank %}
+        {% if product.metafields.custom_fields["install_instructions"] != blank %}
 
 
-			<div class="button-section">
-				<a href="{{ product.metafields.custom_fields["install_instructions"] }}" class="grey-button" target="new">
-					{{ 'product.clug.install' | t }}
-				</a>
-			</div>
+            <div class="button-section">
+                <a href="{{ product.metafields.custom_fields["install_instructions"] }}" class="grey-button" target="new">
+                    {{ 'product.clug.install' | t }}
+                </a>
+            </div>
 
-		{% endif %}
+        {% endif %}
 
 
-		{%- comment -%}End info area{%- endcomment -%}
+        {%- comment -%}End info area{%- endcomment -%}
 
 
-		{%- comment -%}Information List{%- endcomment -%}
+        {%- comment -%}Information List{%- endcomment -%}
 
-		{% if product.metafields.custom_fields["information_list"] != blank %}
+        {% if product.metafields.custom_fields["information_list"] != blank %}
 
-			<section class=" product-content-section info-list" id="clug_product_info">
+            <section class=" product-content-section info-list" id="clug_product_info">
 
-				<h4 class="uppercase ta-center ">Further Information</h4>
+                <h4 class="uppercase ta-center ">Further Information</h4>
 
-				<div class="inner">
+                <div class="inner">
 
 
-					<div class="info-list-inner">
+                    <div class="info-list-inner">
 
-						{{ product.metafields.custom_fields["information_list"] }}
+                        {{ product.metafields.custom_fields["information_list"] }}
 
 
-					</div>
+                    </div>
 
-				</div>
+                </div>
 
-			</section>
+            </section>
 
 
-		{% endif %}
+        {% endif %}
 
 
-		{%- comment -%}Information list end{%- endcomment -%}
+        {%- comment -%}Information list end{%- endcomment -%}
 
 
-		{%- comment -%}FAQ Section{%- endcomment -%}
+        {%- comment -%}FAQ Section{%- endcomment -%}
 
-		{% if product.metafields.custom_fields["faq_section"] == 1 %}
+        {% if product.metafields.custom_fields["faq_section"] == 1 %}
 
-			<section class="tab-section" id="faqs">
-				<div class="inner">
-					<h3 class="text-align uppercase">Frequently Asked Questions</h3>
+            <section class="tab-section" id="faqs">
+                <div class="inner">
+                    <h3 class="text-align uppercase">Frequently Asked Questions</h3>
 
-					<div class="tabs">
+                    <div class="tabs">
 
-						{% if product.metafields.custom_fields["faq_question"] != blank %}
-							<div class="tab">
+                        {% if product.metafields.custom_fields["faq_question"] != blank %}
+                            <div class="tab">
 
-								<input class="tab-input" type="checkbox"/>
+                                <input class="tab-input" type="checkbox"/>
 
-								<label class="tab-label">
-									<p class="black">{{ product.metafields.custom_fields["faq_question"] }}</p>
-								</label>
+                                <label class="tab-label">
+                                    <p class="black">{{ product.metafields.custom_fields["faq_question"] }}</p>
+                                </label>
 
-								{% if product.metafields.custom_fields["faq_answer"] != blank %}
-									<div class="tab-content">
-										<p>{{ product.metafields.custom_fields["faq_answer"] }}</p>
-									</div>
-								{% endif %}
+                                {% if product.metafields.custom_fields["faq_answer"] != blank %}
+                                    <div class="tab-content">
+                                        <p>{{ product.metafields.custom_fields["faq_answer"] }}</p>
+                                    </div>
+                                {% endif %}
 
-							</div>
+                            </div>
 
-						{% endif %}
+                        {% endif %}
 
-						{% if product.metafields.custom_fields["faq_question_2"] != blank %}
+                        {% if product.metafields.custom_fields["faq_question_2"] != blank %}
 
-							<div class="tab">
-								<input class="tab-input" type="checkbox"/>
+                            <div class="tab">
+                                <input class="tab-input" type="checkbox"/>
 
-								<label class="tab-label">
-									<p class="black">{{ product.metafields.custom_fields["faq_question_2"] }}</p>
-								</label>
+                                <label class="tab-label">
+                                    <p class="black">{{ product.metafields.custom_fields["faq_question_2"] }}</p>
+                                </label>
 
-								{% if product.metafields.custom_fields["faq_answer_2"] != blank %}
-									<div class="tab-content">
-										<p>{{ product.metafields.custom_fields["faq_answer_2"] }}</p>
-									</div>
-								{% endif %}
+                                {% if product.metafields.custom_fields["faq_answer_2"] != blank %}
+                                    <div class="tab-content">
+                                        <p>{{ product.metafields.custom_fields["faq_answer_2"] }}</p>
+                                    </div>
+                                {% endif %}
 
-							</div>
+                            </div>
 
-						{% endif %}
+                        {% endif %}
 
-						{% if product.metafields.custom_fields["faq_question_3"] != blank %}
+                        {% if product.metafields.custom_fields["faq_question_3"] != blank %}
 
-							<div class="tab">
+                            <div class="tab">
 
-								<input class="tab-input" type="checkbox"/>
-								<label class="tab-label">
-									<p class="black">{{ product.metafields.custom_fields["faq_question_3"] }}</p>
-								</label>
+                                <input class="tab-input" type="checkbox"/>
+                                <label class="tab-label">
+                                    <p class="black">{{ product.metafields.custom_fields["faq_question_3"] }}</p>
+                                </label>
 
 
-								{% if product.metafields.custom_fields["faq_answer_3"] != blank %}
-									<div class="tab-content">
-										<p>{{ product.metafields.custom_fields["faq_answer_3"] }}</p>
-									</div>
-								{% endif %}
-							</div>
+                                {% if product.metafields.custom_fields["faq_answer_3"] != blank %}
+                                    <div class="tab-content">
+                                        <p>{{ product.metafields.custom_fields["faq_answer_3"] }}</p>
+                                    </div>
+                                {% endif %}
+                            </div>
 
-						{% endif %}
+                        {% endif %}
 
-						{% if product.metafields.custom_fields["faq_question_4"] != blank %}
+                        {% if product.metafields.custom_fields["faq_question_4"] != blank %}
 
-							<div class="tab">
+                            <div class="tab">
 
-								<input class="tab-input" type="checkbox"/>
-								<label class="tab-label">
-									<p class="black">{{ product.metafields.custom_fields["faq_question_4"] }}</p>
-								</label>
+                                <input class="tab-input" type="checkbox"/>
+                                <label class="tab-label">
+                                    <p class="black">{{ product.metafields.custom_fields["faq_question_4"] }}</p>
+                                </label>
 
 
-								{% if product.metafields.custom_fields["faq_answer_4"] != blank %}
-									<div class="tab-content">
-										<p>{{ product.metafields.custom_fields["faq_answer_4"] }}</p>
-									</div>
-								{% endif %}
-							</div>
+                                {% if product.metafields.custom_fields["faq_answer_4"] != blank %}
+                                    <div class="tab-content">
+                                        <p>{{ product.metafields.custom_fields["faq_answer_4"] }}</p>
+                                    </div>
+                                {% endif %}
+                            </div>
 
-						{% endif %}
-					</div>
+                        {% endif %}
+                    </div>
 
-					{% if product.metafields.custom_fields["faq_button_link"] != blank %}
-						<div class="tabs-button">
-							<a class="block-button" href="{{ product.metafields.custom_fields["faq_button_link"] }}">SEE FAQ'S
-							</a>
-						</div>
-					{% endif %}
+                    {% if product.metafields.custom_fields["faq_button_link"] != blank %}
+                        <div class="tabs-button">
+                            <a class="block-button" href="{{ product.metafields.custom_fields["faq_button_link"] }}">SEE FAQ'S
+                            </a>
+                        </div>
+                    {% endif %}
 
 
-				</div>
-			</section>
+                </div>
+            </section>
 
-		{% endif %}
+        {% endif %}
 
 
-		{%- comment -%}FAQ Section End{%- endcomment -%}
+        {%- comment -%}FAQ Section End{%- endcomment -%}
 
+        {%- comment -%}Review Section
 
-		{%- comment -%}Video Section{%- endcomment -%}
+        <div class="reviews">
+            <div class="inner">
+                {% include 'yotpo-reviews' %}
+            </div>
 
-		{% if product.metafields.custom_fields["video_url"] != blank %}
+        </div>
+{%- endcomment -%}
 
-			<section class="video-section">
+        {%- comment -%}End of Review Section{%- endcomment -%}
 
-				{%- comment -%}Fullscreen Product image{%- endcomment -%}
-				{% if product.metafields.custom_fields["product_image_full_screen"] != blank %}
 
-					<img src="{{ product.metafields.custom_fields["product_image_full_screen"] }}" class="lazyload"/>
-				{% endif %}
+        {%- comment -%}Video Section{%- endcomment -%}
 
-				{%- comment -%}End of fullscreen Product Image{%- endcomment -%}
+        {% if product.metafields.custom_fields["video_url"] != blank %}
 
+            <section class="video-section">
 
-				<div class="video-section-title">
-					{%- comment -%}
+                {%- comment -%}Fullscreen Product image{%- endcomment -%}
+                {% if product.metafields.custom_fields["product_image_full_screen"] != blank %}
+
+                    <img src="{{ product.metafields.custom_fields["product_image_full_screen"] }}" class="lazyload"/>
+                {% endif %}
+
+                {%- comment -%}End of fullscreen Product Image{%- endcomment -%}
+
+
+                <div class="video-section-title">
+                    {%- comment -%}
 						<div class="video-icon">
 																																																																									                        {% include "inline-icon" with svg: 'play-button.svg' %}
 																																																																									                    </div>
 					{%- endcomment -%}
 
-					<h4 class="white uppercase">How to measure your tyre
-					</h4>
+                    {% if product.metafields.custom_fields["video_section_title"] != blank %}
+                        <h4 class="white uppercase">
+                            {{ product.metafields.custom_fields["video_section_title"] }}
+                        </h4>
+                    {% endif %}
 
 
-					{%- comment -%}pass url into video snippet{%- endcomment -%}
-					{% include "video" with video_url: product.metafields.custom_fields["video_url"] %}
+                    {%- comment -%}pass url into video snippet{%- endcomment -%}
+                    {% include "video" with video_url: product.metafields.custom_fields["video_url"] %}
 
 
-				</div>
+                </div>
 
 
-			</section>
+            </section>
 
-		{% endif %}
-
-
-		{%- comment -%}End Video Section{%- endcomment -%}
-
-	</div>
+        {% endif %}
 
 
-	<div class="collection">
+        {%- comment -%}End Video Section{%- endcomment -%}
 
-		{%- comment -%}
+    </div>
+
+
+    <div class="collection">
+
+        {%- comment -%}
 			Output clug products
 		{%- endcomment -%}
-		{% for collection in product.collections %}
+        {% for collection in product.collections %}
 
-			{% if collection.handle == 'hornit-clug' %}
-				{% include 'product-more' with collection: collection, exclude: product.handle %}
-			{% endif %}
+            {% if collection.handle == 'hornit-clug' %}
+                {% include 'product-more' with collection: collection, exclude: product.handle %}
+            {% endif %}
 
-		{% endfor %}
-	</div>
+        {% endfor %}
+    </div>
 
 
 </div>

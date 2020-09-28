@@ -126,10 +126,13 @@
 
   .product-title {
     margin-top: $line-global;
+    margin-bottom: $line-global;
+
   }
 
   #add-to-cart-form {
     margin-top: $line-global * 2;
+    margin-bottom: 5px;
   }
 
   .product-option-row {
@@ -662,4 +665,14 @@
     }
   }
 
+}
+
+// reivews
+
+.reviews {
+  margin: 5vh 0;
+}
+
+.yotpo.bottomLine {
+  margin-bottom: 15px;
 }

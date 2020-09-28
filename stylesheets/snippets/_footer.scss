@@ -127,6 +127,7 @@
     .payment-options {
       margin: 0 auto;
       max-width: 100%;
+
       @media (min-width: #{$screen-lg}) {
         margin: 5vh 0;
         max-width: 80%;
@@ -197,16 +198,31 @@
 
 .copyright-info {
   margin: 0 auto;
-  font-size: 0.8rem;
+  font-size: 8px;
+  text-align: center;
+
+  @media (min-width: #{$screen-sm}) {
+    font-size: 10px;
+  }
 
   @media (min-width: #{$screen-lg}) {
     margin: 0;
+    font-size: 0.8rem;
   }
 
   .colophon {
     color: $black;
-    font-size: 0.8rem;
+    font-size: 8px;
     font-weight: 400;
+
+    @media (min-width: #{$screen-sm}) {
+      font-size: 10px;
+    }
+
+    @media (min-width: #{$screen-lg}) {
+      font-size: 0.8rem;
+    }
+
   }
 }
 
@@ -252,6 +268,7 @@
 #mc_embed_signup form {
   padding: 0;
 }
+
 .text-white .button,
 .text-white #mc_embed_signup .button {
   background: transparent;

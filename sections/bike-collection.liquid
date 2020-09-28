@@ -1,0 +1,785 @@
+{% schema %}
+
+{
+    "name": "Hornit Airo Page",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title_top",
+            "label": "Heading",
+            "default": "Custom content"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "kids-header",
+            "name": "Page Header",
+            "settings": [
+                {
+                    "id": "header_image",
+                    "type": "image_picker",
+                    "label": "Background Image"
+                }, {
+                    "id": "logo_product_logo",
+                    "type": "select",
+                    "options": [
+                        {
+                            "value": "hornit-airo",
+                            "label": "Airo Logo"
+                        }
+                    ],
+                    "label": "Select Product Logos"
+                }, {
+                    "id": "header_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Slide Title"
+                }, {
+                    "id": "header_content",
+                    "type": "textarea",
+                    "label": "Slide Content"
+                }, {
+                    "id": "header_button_url",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "header_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }
+            ]
+        }, {
+            "type": "clug-category",
+            "name": "Clug Category Slideshow",
+            "settings": [
+                {
+                    "id": "clug_cat_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Title"
+                }, {
+                    "id": "clug_cat_desc",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "clug_cat_image_1",
+                    "type": "image_picker",
+                    "label": "Clug Type Image"
+                }, {
+                    "id": "clug_cat_title_1",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Title"
+                }, {
+                    "id": "clug_cat_desc_1",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "clug_cat_button_url_1",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "clug_cat_button_text_1",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }, {
+                    "id": "clug_cat_image_2",
+                    "type": "image_picker",
+                    "label": "Clug Type Image"
+                }, {
+                    "id": "clug_cat_title_2",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Title"
+                }, {
+                    "id": "clug_cat_desc_2",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "clug_cat_button_url_2",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "clug_cat_button_text_2",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }, {
+                    "id": "clug_cat_image_3",
+                    "type": "image_picker",
+                    "label": "Clug Type Image"
+                }, {
+                    "id": "clug_cat_title_3",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Title"
+                }, {
+                    "id": "clug_cat_desc_3",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "clug_cat_button_url_3",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "clug_cat_button_text_3",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }, {
+                    "id": "clug_cat_image_4",
+                    "type": "image_picker",
+                    "label": "Clug Type Image"
+                }, {
+                    "id": "clug_cat_title_4",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Title"
+                }, {
+                    "id": "clug_cat_desc_4",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "clug_cat_button_url_4",
+                    "type": "url",
+                    "label": "Button URL"
+                }, {
+                    "id": "clug_cat_button_text_4",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }
+            ]
+        }, {
+            "type": "title",
+            "name": "Title Section",
+            "settings": [
+                {
+                    "id": "title",
+                    "type": "text",
+                    "label": "Section Title",
+                    "placeholder": "Section Title"
+                }, {
+                    "id": "hashtag",
+                    "type": "text",
+                    "label": "Hashtag Title",
+                    "placeholder": "Hashtag Title"
+                }, {
+                    "id": "title_image",
+                    "type": "image_picker",
+                    "label": "Clug Group image"
+                }, {
+                    "id": "contentdesc",
+                    "type": "textarea",
+                    "label": "Text Description",
+                    "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+                }
+            ]
+        }, {
+            "type": "video",
+            "name": "Video",
+            "limit": 1,
+            "settings": [
+                {
+                    "id": "video_image",
+                    "type": "image_picker",
+                    "label": "Vide Hero Image"
+                }, {
+                    "id": "video_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Video Title"
+                }, {
+                    "id": "video_desc",
+                    "type": "textarea",
+                    "label": "Text Description"
+                }, {
+                    "id": "video_link",
+                    "type": "url",
+                    "label": "Link to Library"
+                }, {
+                    "id": "video_url",
+                    "type": "video_url",
+                    "label": "Video URL",
+                    "accept": [
+                        "youtube",
+                        "vimeo"
+                    ],
+                    "default": "https://youtu.be/o0HGtxPc454",
+                    "info": "Text",
+                    "placeholder": "Add your video link here"
+                }
+            ]
+        }, {
+            "type": "colour-section",
+            "name": "Colour Section",
+            "settings": [
+                {
+                    "id": "colour_section_title",
+                    "type": "text",
+                    "label": "Colour Section Title"
+                }, {
+                    "type": "color",
+                    "id": "cycle_color_one",
+                    "label": "color",
+                    "default": "#ffffff"
+                }, {
+                    "id": "colour_title_one",
+                    "type": "text",
+                    "label": "Colour Title"
+                }, {
+                    "id": "colour_content_one",
+                    "type": "textarea",
+                    "label": "Colour Content"
+                }, {
+                    "type": "color",
+                    "id": "cycle_color_two",
+                    "label": "color",
+                    "default": "#ffffff"
+                }, {
+                    "id": "colour_title_two",
+                    "type": "text",
+                    "label": "Colour Title"
+                }, {
+                    "id": "colour_content_two",
+                    "type": "textarea",
+                    "label": "Colour Content"
+                }, {
+                    "type": "color",
+                    "id": "cycle_color_three",
+                    "label": "color",
+                    "default": "#ffffff"
+                }, {
+                    "id": "colour_title_three",
+                    "type": "text",
+                    "label": "Colour Title"
+                }, {
+                    "id": "colour_content_three",
+                    "type": "textarea",
+                    "label": "Colour Content"
+                }, {
+                    "type": "color",
+                    "id": "cycle_color_four",
+                    "label": "color",
+                    "default": "#ffffff"
+                }, {
+                    "id": "colour_title_four",
+                    "type": "text",
+                    "label": "Colour Title"
+                }, {
+                    "id": "colour_content_four",
+                    "type": "textarea",
+                    "label": "Colour Content"
+                }
+            ]
+        }, {
+            "type": "disclaimer",
+            "name": "Disclaimer Text",
+            "settings": [
+                {
+                    "id": "disclaimer_image_one",
+                    "type": "image_picker",
+                    "label": "Disclaimer Image"
+                }, {
+                    "id": "disclaimer_title_one",
+                    "type": "text",
+                    "label": "Disclaimer Title"
+                }, {
+                    "id": "disclaimer_content_one",
+                    "type": "textarea",
+                    "label": "Disclaimer Content"
+                }, {
+                    "id": "disclaimer_image_two",
+                    "type": "image_picker",
+                    "label": "Disclaimer Image"
+                }, {
+                    "id": "disclaimer_title_two",
+                    "type": "text",
+                    "label": "Disclaimer Title"
+                }, {
+                    "id": "disclaimer_content_two",
+                    "type": "textarea",
+                    "label": "Disclaimer Content"
+                }
+            ]
+        }, {
+            "type": "info-block",
+            "name": "Info Block",
+            "settings": [
+                {
+                    "type": "color",
+                    "id": "info_color",
+                    "label": "Background color",
+                    "default": "#24272c"
+                }, {
+                    "id": "info_image",
+                    "type": "image_picker",
+                    "label": "Background Image"
+                }, {
+                    "type": "checkbox",
+                    "id": "info_checkbox",
+                    "default": false,
+                    "label": "Do you need the text to be black? "
+                }, {
+                    "id": "info_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Defaults to Collection Title"
+                }, {
+                    "id": "info_content",
+                    "type": "textarea",
+                    "label": "Content"
+                }, {
+                    "id": "info_video_url",
+                    "type": "video_url",
+                    "label": "Video URL",
+                    "accept": [
+                        "youtube",
+                        "vimeo"
+                    ],
+                    "placeholder": "Add your video link here"
+                }
+            ]
+        }
+    ]
+}
+
+{% endschema %}
+
+
+<div class="master-collection-full">
+
+	{% for block in section.blocks %}
+
+        {% case block.type %}
+        
+            {% when 'kids-header' %}
+
+            <div class="collection-header bike-header">
+
+                <img data-src="{{ block.settings.header_image | img_url: 'master' }}" alt="{{ block.settings.header_image.alt }}" class="lazyload"/>
+
+                <div class="hornit-kids-icon">
+                    {{ 'hornit-kids-icon.svg' | asset_url | img_tag: 'Hornit Kids Logo' }}
+                </div>
+
+                <div class="collection-header-content kids-header-content airo-header-content">
+
+                    {% if block.settings.logo_product_logo == 'hornit-airo' %}
+                        <img data-src="{{ 'hornit-airo.svg' | asset_url }}" alt="Clug Logo" class="airo-product-logo lazyload"/>
+                    {% endif %}
+
+
+                    <h2 class="white uppercase kids-header-font">{{ block.settings.header_title }}</h2>
+
+                    {% if block.settings.header_content != blank %}
+                        <p class="white airo-desc">{{ block.settings.header_content }}</p>
+                    {% endif %}
+
+                    {% if block.settings.header_button_url != blank %}
+                        <a href="{{ block.settings.header_button_url }}" class="block-button">
+                            {% if block.settings.header_button_text != blank %}
+                                {{ block.settings.header_button_text }}
+                            {% else %}
+                                {{ "general.shop.shop_now" | t }}
+                            {% endif %}
+                        </a>
+                    {% endif %}
+
+                </div>
+
+            </div>
+
+        {% when 'colour-section' %}
+
+        {% if block.settings.cycle_color_one != blank %}
+
+        <section class="colour-section">
+
+            <div class="title-section">
+
+                <h2 class="kids-header-font uppercase">{{ block.settings.colour_section_title }}</h2>
+            </div>
+            <div class="colour-inner">
+
+                <div class="colour-item">
+                    <div class="colour-colour">
+                    <div class="colour-circle" style='background-color: {{ block.settings.cycle_color_one }};'></div>
+                    </div>
+                    <div class="colour-content">
+                        <h6 class="kids-header-font">{{ block.settings.colour_title_one }}</h6>
+                        <p>{{ block.settings.colour_content_one }}</p>
+                    </div>
+                </div>
+
+                {% if block.settings.cycle_color_two != blank %}
+                <div class="colour-item">
+                    <div class="colour-colour">
+                    <div class="colour-circle" style='background-color: {{ block.settings.cycle_color_two }};'></div>
+                    </div>
+                    <div class="colour-content">
+                        <h6 class="kids-header-font">{{ block.settings.colour_title_two }}</h6>
+                        <p>{{ block.settings.colour_content_two }}</p>
+                    </div>
+                </div>
+
+                {% endif %}
+
+                {% if block.settings.cycle_color_three != blank %}
+                <div class="colour-item">
+                    <div class="colour-colour">
+                    <div class="colour-circle" style='background-color: {{ block.settings.cycle_color_three }};'></div>
+                    </div>
+                    <div class="colour-content">
+                        <h6 class="kids-header-font">{{ block.settings.colour_title_three }}</h6>
+                        <p>{{ block.settings.colour_content_three }}</p>
+                    </div>
+                </div>
+
+                {% endif %}
+
+                {% if block.settings.cycle_color_four != blank %}
+                <div class="colour-item">
+                    <div class="colour-colour">
+                    <div class="colour-circle" style='background-color: {{ block.settings.cycle_color_four }};'></div>
+                    </div>
+                    <div class="colour-content">
+                        <h6 class="kids-header-font">{{ block.settings.colour_title_four }}</h6>
+                        <p>{{ block.settings.colour_content_four }}</p>
+                    </div>
+                </div>
+
+                {% endif %}
+           
+            </div>
+        </section>
+
+        {% endif %}
+
+
+        {% when 'disclaimer' %}
+
+        <section class="dislaimer-section">
+
+            <div class="disclaimer-group">
+                <div class="disclaimer-item">
+                    
+                    {% if block.settings.disclaimer_image_one != blank %}
+                        <div class="disclaimer-image">
+                            <img data-src="{{ block.settings.disclaimer_image_one | img_url: 'master' }}" alt="{{ block.settings.disclaimer_image_one.alt }}" class="lazyload"/>
+                        </div>
+                    {% endif %}
+                 
+                    {% if block.settings.disclaimer_title_one != blank %}
+                        <div class="disclaimer-content">
+                            <div class="disclaimer-inner">
+                                <h4 class="uppercase kids-header-font ">{{ block.settings.disclaimer_title_one }}</h4>
+                                <p>{{ block.settings.disclaimer_content_one }}</p>
+                            </div>
+                        </div>
+                    {% endif %}
+
+                </div>
+
+                <div class="disclaimer-item">
+                    
+                    {% if block.settings.disclaimer_image_two != blank %}
+                        <div class="disclaimer-image">
+                            <img data-src="{{ block.settings.disclaimer_image_two | img_url: 'master' }}" alt="{{ block.settings.disclaimer_image_two.alt }}" class="lazyload"/>
+                        </div>
+                    {% endif %}
+                 
+                    {% if block.settings.disclaimer_title_two != blank %}
+                        <div class="disclaimer-content">
+                            <div class="disclaimer-inner">
+                                <h4 class="uppercase kids-header-font ">{{ block.settings.disclaimer_title_two }}</h4>
+                                <p>{{ block.settings.disclaimer_content_two }}</p>
+                            </div>
+                        </div>
+                    {% endif %}
+
+                    </div>
+
+            </div>
+        </section>
+
+
+
+
+
+		{% when 'title' %}
+
+
+			<div class="title-section">
+
+
+				<h2 class="kids-header-font uppercase">{{ block.settings.title }}</h2>
+				<p>{{ block.settings.hashtag }}</p>
+
+				{% if block.settings.title_image != blank %}
+
+					<div class="title-image">
+						<img data-src="{{ block.settings.title_image | img_url: 'master' }}" alt="{{ block.settings.title_image.alt }}" class="lazyload"/>
+					</div>
+
+				{% endif %}
+
+
+				<p class='clug-text clug-block-text'>{{ block.settings.contentdesc }}</p>
+
+
+			</div>
+
+
+		{% when 'clug-category' %}
+
+			<section class="clug-categories" id='clug-category'>
+				<div class="title-section">
+					<h4 class="uppercase">{{ block.settings.clug_cat_title }}</h4>
+					<p class='clug-block-text'>{{ block.settings.clug_cat_desc }}</p>
+				</div>
+
+
+				<div class="clug-category-slideshow">
+
+					{%- comment -%}
+						{% include 'slider-buttons' %}
+					{%- endcomment -%}
+
+
+					<div class="clug-cat-item">
+						<a href="{{ block.settings.clug_cat_button_url_1 }}">
+							<img data-src="{{ block.settings.clug_cat_image_1 | img_url: 'master' }}" alt="{{ block.settings.clug_cat_image_1.alt }}" class="lazyload"/>
+						</a>
+						<div class="clug-cat-text">
+
+							{%- comment -%}Make first word bold{%- endcomment -%}
+							{% assign first_word = block.settings.clug_cat_title_1 | truncatewords: 1, '' %}
+
+							{% assign rest_of_words = block.settings.clug_cat_title_1  | remove_first: first_word %}
+
+							<div class="clug-info-row">
+								<div class="clug-info-item-text  airo-item-text">
+									<h4 class='kids-header-font'>
+										{{ block.settings.clug_cat_title_1 }}</h4>
+
+									<p class=''>{{ block.settings.clug_cat_desc_1 }}</p>
+								</div>
+								<div class="clug-info-item-button">
+
+									{% if block.settings.clug_cat_button_url_1 != blank %}
+										<a href="{{ block.settings.clug_cat_button_url_1 }}" class='block-button'>
+											{{ block.settings.clug_cat_button_text_1 }}
+										</a>
+									{% endif %}
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<div class="clug-cat-item">
+						<a href="{{ block.settings.clug_cat_button_url_2 }}">
+							<img data-src="{{ block.settings.clug_cat_image_2 | img_url: 'master' }}" alt="{{ block.settings.clug_cat_image_2.alt }}" class="lazyload"/>
+						</a>
+						<div class="clug-cat-text">
+
+							{%- comment -%}Make first word bold{%- endcomment -%}
+							{% assign first_word = block.settings.clug_cat_title_2 | truncatewords: 1, '' %}
+
+							{% assign rest_of_words = block.settings.clug_cat_title_2  | remove_first: first_word %}
+
+							<div class="clug-info-row">
+								<div class="clug-info-item-text airo-item-text">
+									<h4 class='kids-header-font'>
+										{{ block.settings.clug_cat_title_2 }}</h4>
+
+									<p class=''>{{ block.settings.clug_cat_desc_2 }}</p>
+								</div>
+								<div class="clug-info-item-button">
+
+									{% if block.settings.clug_cat_button_url_2 != blank %}
+										<a href="{{ block.settings.clug_cat_button_url_2 }}" class='block-button'>
+											{{ block.settings.clug_cat_button_text_2 }}
+										</a>
+									{% endif %}
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<div class="clug-cat-item">
+						<a href="{{ block.settings.clug_cat_button_url_3 }}">
+							<img data-src="{{ block.settings.clug_cat_image_3 | img_url: 'master' }}" alt="{{ block.settings.clug_cat_image_3.alt }}" class="lazyload"/>
+						</a>
+						<div class="clug-cat-text">
+
+							{%- comment -%}Make first word bold{%- endcomment -%}
+							{% assign first_word = block.settings.clug_cat_title_3 | truncatewords: 1, '' %}
+
+							{% assign rest_of_words = block.settings.clug_cat_title_3  | remove_first: first_word %}
+
+							<div class="clug-info-row">
+								<div class="clug-info-item-text airo-item-text">
+									<h4 class='kids-header-font'>
+										{{ block.settings.clug_cat_title_3 }}</h4>
+
+
+									<p class=''>{{ block.settings.clug_cat_desc_3 }}</p>
+								</div>
+								<div class="clug-info-item-button">
+
+									{% if block.settings.clug_cat_button_url_3 != blank %}
+										<a href="{{ block.settings.clug_cat_button_url_3 }}" class='block-button'>
+											{{ block.settings.clug_cat_button_text_3 }}
+										</a>
+									{% endif %}
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<div class="clug-cat-item">
+						<a href="{{ block.settings.clug_cat_button_url_4 }}">
+							<img data-src="{{ block.settings.clug_cat_image_4 | img_url: 'master' }}" alt="{{ block.settings.clug_cat_image_4.alt }}" class="lazyload"/>
+						</a>
+						<div class="clug-cat-text">
+
+							{%- comment -%}Make first word bold{%- endcomment -%}
+							{% assign first_word = block.settings.clug_cat_title_4 | truncatewords: 1, '' %}
+
+							{% assign rest_of_words = block.settings.clug_cat_title_4  | remove_first: first_word %}
+
+							<div class="clug-info-row">
+								<div class="clug-info-item-text airo-item-text">
+									<h4 class='kids-header-font'>
+										{{ block.settings.clug_cat_title_4 }}</h4>
+
+
+									<p class=''>{{ block.settings.clug_cat_desc_4 }}</p>
+								</div>
+								<div class="clug-info-item-button">
+
+									{% if block.settings.clug_cat_button_url_4 != blank %}
+										<a href="{{ block.settings.clug_cat_button_url_4 }}" class='block-button'>
+											{{ block.settings.clug_cat_button_text_4 }}
+										</a>
+									{% endif %}
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+
+			</section>
+
+
+		{% when 'info-block' %}
+
+			<section class="collection-product-block-section">
+				<div class="collection-product-block-inner">
+					<div class="collection-product-block" style="background-color: {{ block.settings.info_color }};">
+
+
+						<div class="collection-product-block-item collection-block-text">
+
+							<div class="collection-product-text-inner">
+								{% if block.settings.info_checkbox %}
+
+									<h3 class="uppercase kids-header-font">{{ block.settings.info_title }}</h3>
+
+									<p class='p-fade clug-block-text'>{{ block.settings.info_content }}</p>
+
+									{% if block.settings.info_video_url != blank %}
+
+
+										{%- comment -%}pass url into video snippet{%- endcomment -%}
+
+
+										{% include "video" with video_url: block.settings.info_video_url %}
+
+									{% endif %}
+
+
+								{% else %}
+
+									<h3 class="white uppercase kids-header-font">{{ block.settings.info_title }}</h3>
+
+									<p class="white p-fade clug-block-text">{{ block.settings.info_content }}</p>
+
+									{% if block.settings.info_video_url != blank %}
+
+										{% include "video" with video_url: block.settings.info_video_url %}
+
+									{% endif %}
+
+
+								{% endif %}
+
+							</div>
+
+						</div>
+
+
+						<div class="collection-product-block-item collection-block-image">
+
+							<img data-src="{{ block.settings.info_image | img_url: 'master' }}" alt="{{ block.settings.product_image.alt }}" class="lazyload"/>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+		{% when 'video' %}
+
+			<section class="page-video-section">
+
+				<a href="{{ block.settings.video_link }}" class='video-link'>
+					<div class="page-video-image">
+						<img data-src="{{ block.settings.video_image | img_url: 'master' }}" alt="{{ block.settings.video_image.alt }}" class="lazyload"/>
+					</div>
+
+				</a>
+
+
+				<div class="page-video-section-title">
+
+					<div class="video-icon">
+						{% include "inline-icon" with svg: 'play-button.svg' %}
+					</div>
+
+
+					<h4 class="white uppercase">{{ block.settings.video_title }}
+					</h4>
+					<p class="white p-fade">{{ block.settings.video_desc }}
+					</p>
+				</div>
+
+
+			</section>
+
+
+
+		{% endcase %}
+	{% endfor %}
+</div></div>{%- comment -%}{% if block.blocks.size == 0 %}
+										        {% include 'no-blocks' %}
+										    {% endif %}{%- endcomment -%}</div>

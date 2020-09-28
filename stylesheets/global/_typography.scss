@@ -5,24 +5,29 @@
 
 @font-face {
   font-family: "meatloaf";
-  src: url("../assets/meatloaf_solid-webfont.woff2") format("woff2"),
+  src: local('meatloaf'), local('meatloaf'), url("../assets/meatloaf_solid-webfont.woff2") format("woff2"),
     url("../assets/meatloaf_solid-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
+
 @font-face {
   font-family: "kg";
-  src: url("../assets/kghowmanytimes-webfont.woff2") format("woff2"),
+  src: local('kghowmanytimes'), local('kghowmanytimes'), url("../assets/kghowmanytimes-webfont.woff2") format("woff2"),
     url("../assets/kghowmanytimes-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-$headline-font: "din-2014", sans-serif;
-$text-font: "din-2014", sans-serif;
-$kids-headline-font: "meatloaf", sans-serif !important;
-$kids-sub-headline-font: "kg", sans-serif !important;
+$headline-font: "din-2014",
+sans-serif;
+$text-font: "din-2014",
+sans-serif;
+$kids-headline-font: "meatloaf",
+sans-serif !important;
+$kids-sub-headline-font: "kg",
+sans-serif !important;
 
 b,
 strong {
@@ -245,8 +250,14 @@ h2.kids-header-font {
 
 .p-large {
   font-family: $text-font;
-  font-size: $type-body-lg;
-  line-height: $line-global * 2;
+  font-size: 1.2rem;
+  line-height: $line-global;
+
+  @media (min-width: #{$screen-lg}) {
+    font-size: $type-body-lg;
+    line-height: $line-global * 2;
+
+  }
 }
 
 .small-p {
@@ -257,6 +268,7 @@ a {
   text-decoration: none;
   color: $text-color;
   margin-bottom: 0;
+
   &:hover {
     color: $black;
   }
@@ -270,6 +282,7 @@ a {
   font-family: $text-font;
   color: $text-color;
   fill: currentColor;
+
   &:hover {
     color: $black;
   }

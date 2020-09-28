@@ -28,8 +28,10 @@ $timing: 1s;
 
 // Font ---------------------------------------------------------- */
 
-$headline-font: "din-2014", sans-serif;
-$text-font: "din-2014", sans-serif;
+$headline-font: "din-2014",
+sans-serif;
+$text-font: "din-2014",
+sans-serif;
 
 $type-headline-lg: 40px;
 $type-headline-med: 20px;
@@ -73,3 +75,14 @@ $offset-global: $gutter-global;
 $header-height: 100px;
 
 $button-height: $line-global * 2;
+
+
+.yellow-nav-item {
+    .mega_item {
+        color: $yellow !important;
+
+        .header-icon .down {
+            color: $yellow !important;
+        }
+    }
+}
