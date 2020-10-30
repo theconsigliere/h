@@ -1,0 +1,70 @@
+{% schema %}
+
+{
+    "name": "Confidence Banner",
+    "class": "page-title-section",
+    "blocks": [
+        {
+            "type": "title",
+            "name": "Banner Section",
+            "settings": [
+                {
+                    "id": "icon",
+                    "type": "image_picker",
+                    "label": "Banner icon"
+                },
+                {
+                    "id": "title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Page Title"
+                }, {
+                    "id": "contentdesc",
+                    "type": "textarea",
+                    "label": "Text Description"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "banner",
+            "name": "Confidence Banner"
+        }
+    ]
+}
+
+{% endschema %}
+
+<section class='confidence-banner'>
+
+   <div class="confid-inner">
+    {% for block in section.blocks %}
+
+    <div class="banner-section">
+
+        <div class="banner-icon">
+
+            <img data-src="{{ block.settings.icon | img_url: 'master' }}" alt="{{ block.settings.icon.alt }}" class="lazyload"/>
+
+        </div>
+
+        {% if block.settings.title != blank %}
+
+            <div class="banner-text">
+            
+                <p class='white'>{{ block.settings.title }}</p>
+                <p class='small-p'>{{ block.settings.contentdesc }}</p>
+            
+            </div>
+
+        {% endif %}
+
+       
+    </div>
+
+
+{% endfor %}
+
+   </div>
+</section>

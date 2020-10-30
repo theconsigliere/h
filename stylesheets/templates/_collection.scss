@@ -1244,3 +1244,14 @@
 .colour-content {
   text-align: center;
 }
+
+
+.bike-title-section {
+  margin-top: 10vh;
+
+  @media (min-width: #{$screen-md}) {
+margin-top: initial;
+  }
+
+
+}

@@ -107,23 +107,31 @@
   }
 
   .contact-us {
-    background-image: image-url("003-email.png");
+    background-image: url("003-email.png");
   }
 
   .privacy-policy {
-    background-image: image-url("006-help.png");
+    background-image: url("006-help.png");
   }
 
-  .legal {
-    background-image: image-url("005-list.png");
+  .legal, .policies-shipping-policy {
+    background-image: url("005-list.png");
   }
 
   .delivery-returns {
-    background-image: image-url("004-send.png");
+    background-image: url("004-send.png");
   }
 
   .sales-enquiries {
-    background-image: image-url("001-user.png");
+    background-image: url("001-user.png");
+  }
+
+  .warranty-information {
+    background-image: url("009-clip.png");
+  }
+
+  .register-warranty {
+    background-image: url("008-reliable.png");
   }
 }
 

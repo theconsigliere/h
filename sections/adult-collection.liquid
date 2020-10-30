@@ -286,7 +286,7 @@
 
                 <div class="collection-header">
 
-                    <img src="{{ block.settings.header_image | img_url: 'master' }}" alt="{{ block.settings.header_image.alt }}"/>
+                    <img data-src="{{ block.settings.header_image | img_url: 'master' }}" alt="{{ block.settings.header_image.alt }}" class='lazyload'/>
 
                     <div class="collection-header-content">
                         <h1 class="white uppercase">{{ block.settings.header_title }}</h1>

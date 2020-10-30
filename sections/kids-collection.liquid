@@ -129,6 +129,9 @@
                         }, {
                             "value": "hornit-nano",
                             "label": "Hornit Nano Logo"
+                        }, {
+                            "value": "hornit-airo",
+                            "label": "Hornit Airo Logo"
                         }
                     ],
                     "label": "Select Product Logos"
@@ -378,7 +381,10 @@
 										{% elsif block.settings.select_kids_product_logo == 'hornit-mini' %}
 											<img data-src="{{ 'hornit-mini.svg' | asset_url }}" alt="Hornit Mini Logo" class="lazyload hero-product-logo"/>
 										{% elsif block.settings.select_kids_product_logo == 'hornit-nano' %}
-											<img data-src="{{ 'hornit-nano.svg' | asset_url }}" alt="Hornit Nano Logo" class="lazyload hero-product-logo"/>
+                                            <img data-src="{{ 'hornit-nano.svg' | asset_url }}" alt="Hornit Nano Logo" class="lazyload hero-product-logo"/>
+                                            
+                                        {% elsif block.settings.select_kids_product_logo == 'hornit-airo' %}
+											<img data-src="{{ 'hornit-airo.svg' | asset_url }}" alt="Hornit Airo Logo" class="lazyload hero-product-logo"/>
 										{% endif %}
 									</div>
 

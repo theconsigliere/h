@@ -16,7 +16,7 @@
 							if one image available, single image shown
 						{% endcomment %}
                         <div class="single-image">
-                            <img src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}">
+                            <img data-src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}" class='lazyload'>
                         </div>
                     {% endfor %}
                 </div>
@@ -28,7 +28,7 @@
 							if one image available, single image shown
 						{% endcomment %}
                         <div class="single-image">
-                            <img src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}">
+                            <img data-src="{{ image.src | img_url: '1000x' }}" alt="{{ image.alt | escape }}" class='lazyload'>
                         </div>
                     {% endfor %}
 
@@ -97,7 +97,7 @@
 
 
                     {% if product.metafields.custom_fields["shortdesc_desc"] != blank %}
-                        <p>{{ product.metafields.custom_fields["shortdesc_desc"] }}</p>
+                        <p class='small-p'>{{ product.metafields.custom_fields["shortdesc_desc"] }}</p>
                     {% endif %}
 
 
@@ -116,7 +116,7 @@
                                     <p class="uppercase font-bolder">{{ product.metafields.custom_fields["mtb_notice_title"] }}</p>
                                 {% endif %}
                                 {% if product.metafields.custom_fields["mtb_notice_description"] != blank %}
-                                    <p>{{ product.metafields.custom_fields["mtb_notice_description"] }}</p>
+                                    <p class='small-p'>{{ product.metafields.custom_fields["mtb_notice_description"] }}</p>
                                 {% endif %}
                             </div>
                             <div class="inner_item">
@@ -140,7 +140,7 @@
                                     <p class="uppercase font-bolder">{{ product.metafields.custom_fields["mtb_notice_title"] }}</p>
                                 {% endif %}
                                 {% if product.metafields.custom_fields["mtb_notice_description"] != blank %}
-                                    <p>{{ product.metafields.custom_fields["mtb_notice_description"] }}</p>
+                                    <p class='small-p'>{{ product.metafields.custom_fields["mtb_notice_description"] }}</p>
                                 {% endif %}
                             </div>
                             <div class="inner_item">
@@ -162,11 +162,19 @@
 				{%- endcomment -%}
 
 
+                {% include 'confidence-logos' %}
+           
             </div>
 
         </div>
     </div>
+
+
+  
+
     {% comment %}End Product Top{% endcomment %}
+
+    {% include 'crosselling' %}
 
     {% comment %}Begin Product Bottom{% endcomment %}
     <div id="product-bottom">
@@ -222,18 +230,18 @@
 
 
                     <div class="image-item">
-                        <img src="{{ product.metafields.custom_fields["product_image_one"] }}" class="lazyload"/>
+                        <img data-src="{{ product.metafields.custom_fields["product_image_one"] }}" class="lazyload"/>
                     </div>
 
                     {% if product.metafields.custom_fields["product_image_two"] != blank %}
                         <div class="image-item">
-                            <img src="{{ product.metafields.custom_fields["product_image_two"] }}" class="lazyload"/>
+                            <img data-src="{{ product.metafields.custom_fields["product_image_two"] }}" class="lazyload"/>
                         </div>
                     {% endif %}
 
                     {% if product.metafields.custom_fields["product_image_three"] != blank %}
                         <div class="image-item">
-                            <img src="{{ product.metafields.custom_fields["product_image_three"] }}" class="lazyload"/>
+                            <img data-src="{{ product.metafields.custom_fields["product_image_three"] }}" class="lazyload"/>
                         </div>
                     {% endif %}
 
@@ -511,7 +519,7 @@
                 {%- comment -%}Fullscreen Product image{%- endcomment -%}
                 {% if product.metafields.custom_fields["product_image_full_screen"] != blank %}
 
-                    <img src="{{ product.metafields.custom_fields["product_image_full_screen"] }}" class="lazyload"/>
+                    <img data-src="{{ product.metafields.custom_fields["product_image_full_screen"] }}" class="lazyload"/>
                 {% endif %}
 
                 {%- comment -%}End of fullscreen Product Image{%- endcomment -%}
@@ -564,3 +572,25 @@
 
 
 </div>
+
+<!--Yotpo Main Widget-->
+<div class="yotpo yotpo-main-widget" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}" data-price="{{ variant.price | money_without_currency }}"
+data-currency=“{{ shop.currency }}” data-description=“{{ product.description | escape }}“>
+{%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
+ {%- assign time_now = ‘now’ | date: ‘%s’ %}
+ {%- assign yotpo_live_time = shop.metafields.yotpo.yotpo_live | date: ‘%s’ %}
+ {%- assign diff_seconds_from_live = time_now | minus: yotpo_live_time %}
+ {%- assign yotpo_main_widget_last_updated = product.metafields.yotpo.main_widget_update_time | date: ‘%s’ %}
+ {%- assign diff_seconds_from_last_main_widget_update = time_now | minus: yotpo_main_widget_last_updated %}
+ {%- if yotpo_live_time and diff_seconds_from_live < 86400 or yotpo_main_widget_last_updated and diff_seconds_from_last_main_widget_update < 86400 -%}
+  {%- assign yotpo_main_widget_obsolete = false %}
+ {%- else %}
+  {%- assign yotpo_main_widget_obsolete = true %}
+ {%- endif %}
+ {%- if yotpo_offload_content == ‘yes’ and yotpo_main_widget_obsolete != true -%}
+  {%- for field in product.metafields.yotpo_reviews -%}
+   {{ field | last }}
+  {%- endfor -%}
+ {%- endif %}
+</div>
+<!--End of Yotpo Main Widget-->

@@ -54,23 +54,23 @@
   .left-aligned {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
 
-    @media (min-width: #{$screen-lg}) {
-      align-items: flex-start;
-    }
+    // @media (min-width: #{$screen-lg}) {
+    //   align-items: flex-start;
+    // }
 
     * {
       text-shadow: $drop-shadow;
       margin: 0;
-      text-align: center;
+      text-align: left;
       width: 100%;
 
-      @media (min-width: #{$screen-lg}) {
-        text-align: left;
-      }
+      // @media (min-width: #{$screen-lg}) {
+      //   text-align: left;
+      // }
     }
   }
 
@@ -110,15 +110,24 @@
 
   .slide-content {
     width: 100%;
+    height: fit-content;
     position: absolute;
-    bottom: 25%;
-    padding: $offset-global;
+    bottom: 0;
+    padding: 60px 40px;
     left: 0;
     right: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, $black 0%, #24272c00 100%);
 
-    @media (min-width: #{$screen-lg}) {
+
+    @media (min-width: #{$screen-md}) {
       padding: 40px 10vw;
-      bottom: 30%;
+      background: transparent;
+
+    }
+    
+    @media (min-width: #{$screen-xl}) {
+      width: 70%;
     }
 
     p {
@@ -126,13 +135,25 @@
     }
 
     .hero-product-logo {
-      width: 180px;
-      margin-bottom: $offset-global;
+      width: 120px;
+      margin-bottom: 20px;
+
+      @media (min-width: #{$screen-md}) {
+        width: 150px;
+      }
+
+      @media (min-width: #{$screen-xl}) {
+        width: 180px;
+      }
     }
 
     .helmet-product-logo {
-      width: 220px;
-      margin-bottom: $offset-global;
+      width: 180px;
+      margin-bottom: 20px;
+
+      @media (min-width: #{$screen-md}) {
+        width: 220px;
+      }
 
       @media (min-width: #{$screen-lg}) {
         width: 300px;
@@ -184,13 +205,27 @@
 .rider_credit {
   position: absolute;
   bottom: 0;
-  right: 0;
-  width: fit-content;
+  left: 0;
+  right: auto;
+  width: 100%;
+  padding: 0 35px;
+
+  @media (min-width: #{$screen-md}) {
+    width: fit-content;
+    left: auto;
+    right: 0;
+    padding: 0;
+  }
+
 }
 
 .rider__credit-inner {
   padding: 5px;
-  @include space-center;
+  @include flexstart-flexstart;
+
+  @media (min-width: #{$screen-md}) {
+    @include space-center;
+  }
 
   * {
     margin: 0;
@@ -200,10 +235,16 @@
 }
 
 .riders-image {
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   padding: 0;
   margin-right: 5px;
+  display: flex;
+
+  @media (min-width: #{$screen-md}) {
+    width: 20px;
+    height: 20px;
+  }
 
   img {
     width: 100%;
@@ -250,7 +291,7 @@
   @media (min-width: #{$screen-xxxl}) {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    width: 70%;
+    width: 90%;
   }
 
   .category-item-group {
@@ -258,14 +299,21 @@
 
     @media (min-width: #{$screen-lg}) {
       @include space-center;
+      flex-wrap: wrap;
     }
 
     .category-link {
       flex: 1;
       width: 100%;
+      min-width: auto;
 
       @media (min-width: #{$screen-lg}) {
         width: auto;
+        min-width: 30%;
+      }
+
+      @media (min-width: #{$screen-xxl}) {
+        min-width: auto;
       }
 
       .category-item {
@@ -277,7 +325,11 @@
           margin: 0.5em;
         }
 
-        @media (min-width: #{$screen-xl}) {
+        @media (min-width: #{$screen-lg}) {
+          margin: 0.5em;
+        }
+
+        @media (min-width: #{$screen-xxl}) {
           margin: 1em;
         }
 
@@ -1103,4 +1155,127 @@
   @media (min-width: #{$screen-lg}) {
     display: none;
   }
+}
+
+
+// Confidence Banner
+
+//-------------------------------
+
+
+section.confidence-banner {
+  background: $black;
+  
+
+  .confid-inner {
+    max-width: 90%;
+    margin: 0 auto;
+    @include space-flexstart-column;
+    flex-wrap: wrap;
+    padding: 10px 0;
+
+
+    @media (min-width: #{$screen-lg}) {
+      max-width: 95%;
+      @include space-between;
+    }
+
+    @media (min-width: #{$screen-xl}) {
+      max-width: 80%;
+     
+    }
+
+
+    .banner-section {
+      flex: 1;
+      @include space-center;
+
+
+      .banner-icon {
+        padding: 15px;
+
+        @media (min-width: #{$screen-lg}) {
+          padding: 20px;
+
+        }
+
+        img {
+          width: 32px;
+
+        }
+      }
+
+      .banner-text {
+        * {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// Yotpo
+
+.yotpo {
+  max-width: 90%;
+}
+
+
+
+// faq menu
+
+.faq-menu {
+  width: 100%;
+  background: $light-white;
+  padding-top: 10px;
+  padding-bottom: 2em;
+
+  .faq-menu-inner {
+    @include space-center-column;
+
+    @media (min-width: #{$screen-lg}) {
+      @include space-center;
+      flex-wrap: wrap;
+    }
+
+    .faq-menu-item {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+
+      @media (min-width: #{$screen-lg}) {
+       width: fit-content;
+       margin: 0;
+      }
+
+    }
+
+
+    .faq-menu-item-section {
+      background: $white;
+      transition: all 0.6s ease;
+      padding: 15px 30px;
+      margin: 10px 0;
+
+      @media (min-width: #{$screen-lg}) {
+        margin: 0 10px;
+      }
+
+      p {
+        margin: 0;
+        color: $black;
+        transition: all 0.6s ease;
+      }
+
+      &:hover {
+        background: $black;
+       
+
+        p {
+          color: $white;
+        }
+      }
+    }
+  }
+
 }

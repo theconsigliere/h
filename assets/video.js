@@ -6,6 +6,7 @@ const closePopup = document.querySelectorAll('.pop-up-close')
 
 
 
+
 function displayVideoPopUp(event) {
 
     const button = event.currentTarget;
@@ -21,6 +22,18 @@ videoButton.forEach( button => {
     button.addEventListener("click", displayVideoPopUp);
 })
 
+// defer iframe
+
+function deferIframe() {
+    var iframeElem = document.getElementsByTagName('iframe');
+    for ( var i = 0; i < iframeElem.length; i++ ) {
+      if(iframeElem[i].getAttribute('data-src')) {
+        iframeElem[i].setAttribute('src',iframeElem[i].getAttribute('data-src'));
+      } 
+    } 
+  }
+  window.onload = deferIframe;
+
 
 
 
@@ -30,6 +43,8 @@ videoPopup.forEach( popup => {
    popup.addEventListener('click', function () {
        popup.classList.remove('js-display');
       let videoIframe = popup.getElementsByClassName('video-iframe')[0]
+
+
 
     //  console.log(videoIframe)
 
@@ -48,9 +63,12 @@ closePopup.forEach( close => {
 
             let videoIframe = popup.getElementsByClassName('video-iframe')[0]
 
+
+
         //    console.log(videoIframe)
 
             var player = new Vimeo.Player(videoIframe);
+
             player.pause()
       
         })

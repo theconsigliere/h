@@ -1,0 +1,24 @@
+    {%- comment -%}Crosselling section {%- endcomment -%}
+
+    {% if product.metafields.custom_fields["show_crosselling_section"] != blank %}
+
+    <div class="crosselling-section">
+
+        {% assign collection = collections[product.metafields.custom_fields["show_crosselling_section"]] %}
+        {% assign cross_sell_title = product.metafields.custom_fields["crosselling_title"]  %}
+
+        <div class="collection-list-wrap wrapper">
+
+            {% include "collection-list" with title: cross_sell_title, content:
+            block.settings.content, show_button: block.settings.show_button,
+            button_text: block.settings.button_text, max_products:
+            6 %}
+
+        </div>
+
+    
+    </div>
+
+    {% endif %}
+
+       {%- comment -%}End Crosselling section {%- endcomment -%}

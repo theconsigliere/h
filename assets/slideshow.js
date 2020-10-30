@@ -122,7 +122,7 @@ let $prevClugButton = this.find(prevButtonSelector),
 $nextClugButton = this.find(nextButtonSelector)
 
 $('.clug-category-slideshow').slick({
-  infinite: false,
+  infinite: true,
   dots: false,
   arrows: true,
   slidesToShow: 3.5,

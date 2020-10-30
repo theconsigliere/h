@@ -1,14 +1,13 @@
 // Typography
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-@import url("https://use.typekit.net/fsp3qru.css");
-
 @font-face {
-  font-family: "meatloaf";
+  font-family: "Meatloaf Solid";
   src: local('meatloaf'), local('meatloaf'), url("../assets/meatloaf_solid-webfont.woff2") format("woff2"),
     url("../assets/meatloaf_solid-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 
@@ -18,13 +17,14 @@
     url("../assets/kghowmanytimes-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 $headline-font: "din-2014",
 sans-serif;
 $text-font: "din-2014",
 sans-serif;
-$kids-headline-font: "meatloaf",
+$kids-headline-font: "Meatloaf Solid",
 sans-serif !important;
 $kids-sub-headline-font: "kg",
 sans-serif !important;
@@ -56,9 +56,10 @@ a {
 }
 
 h1 {
-  font-family: $headline-font;
+  font-family: $headline-font, sans-serif;
   font-weight: $type-bold;
   font-size: 3rem;
+  font-display: swap;
 
   @media (min-width: #{$screen-sm}) {
     font-size: 4.6rem;
@@ -70,9 +71,10 @@ h1 {
 }
 
 h2 {
-  font-family: $headline-font;
+  font-family: $headline-font, sans-serif;
   font-weight: $type-bold;
   font-size: 2.8rem;
+  font-display: swap;
 
   @media (min-width: #{$screen-md}) {
     font-size: 3.2rem;
@@ -84,9 +86,10 @@ h2 {
 }
 
 h3 {
-  font-family: $headline-font;
+  font-family: $headline-font, sans-serif;
   font-weight: $type-bold;
   font-size: 2.2rem;
+  font-display: swap;
 
   @media (min-width: #{$screen-md}) {
     font-size: 2.4rem;
@@ -104,6 +107,7 @@ h3 {
 h4 {
   font-size: 1.8rem;
   font-weight: $type-bold;
+  font-display: swap;
 
   @media (min-width: #{$screen-md}) {
     font-size: 2rem;
@@ -249,7 +253,8 @@ h2.kids-header-font {
 }
 
 .p-large {
-  font-family: $text-font;
+  font-family: $text-font, sans-serif;
+  font-display: swap;
   font-size: 1.2rem;
   line-height: $line-global;
 
@@ -279,9 +284,10 @@ a {
 }
 
 .text-link {
-  font-family: $text-font;
+  font-family: $text-font, sans-serif;
   color: $text-color;
   fill: currentColor;
+  font-display: swap;
 
   &:hover {
     color: $black;

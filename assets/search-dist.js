@@ -1,0 +1,1 @@
+let searchInputSelector=".js-search-input",searchSubmitSelector=".js-search-submit",onSearchInputKeyup=function(e){let t=$(this).closest("form").find(searchSubmitSelector),c=0===this.value.length;t.prop("disabled",c)};$(document).on("keyup",searchInputSelector,onSearchInputKeyup);

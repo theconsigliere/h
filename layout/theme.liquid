@@ -9,6 +9,7 @@
             <link rel="alternate" hreflang="x-default" href="{{ canonical_url | replace: shop.domain, 'hornit.com' }}" />
 <link rel="alternate" href="{{ canonical_url | replace: shop.domain, 'hornit.com' }}" hreflang="en" />
 <link rel="alternate" href="{{ canonical_url | replace: shop.domain, 'us.hornit.com' }}" hreflang="en-us" />
+<link rel="preload" href="https://use.typekit.net/fsp3qru.css" rel="stylesheet">
 
         {%- comment -%}Favicon!{%- endcomment -%}
         {% if settings.favicon != blank %}
@@ -20,10 +21,11 @@
       content_for_header
     }}
         <!-- Header hook for plugins -->
-        {{
-      "application.scss" | asset_url | stylesheet_tag
-	}}
-        <!-- Yotpo -->
+        <!-- Important scss -->
+        {{ "application.css" | asset_url | stylesheet_tag }}
+
+
+       
         <script type="text/javascript">
             (function e() {
                 var e = document.createElement("script");
@@ -33,7 +35,108 @@
                 var t = document.getElementsByTagName("script")[0];
                 t.parentNode.insertBefore(e, t)
             })();
-        </script>
+        </script> 
+      
+      <!-- Google Ads Remarketing Tag By FeedArmy Version 2.12 START -->
+<!-- FeedArmy tutorial found at https://feedarmy.com/adding-google-adwords-remarketing-tag-to-shopify/ -->
+
+<!-- CODE SETTINGS START -->
+<!-- CODE SETTINGS START -->
+
+<!-- Please add your Google Ads Audience Source Tag ID -->
+{% assign fa_google_ads_audience_tag_id = 1002462674 %}
+
+<!-- Please add your alpha2 code, you can find it here: https://help.shopify.com/en/api/custom-storefronts/storefront-api/reference/enum/countrycode -->
+{% assign fa_product_id_alpha2_code = 'GB' %}
+
+<!-- if you have prices such as 1,000.00 set below to true, if you have prices such as 1.000,00 set below to false -->
+{% assign fa_prices_with_decimal_separator = false %}
+
+<!-- set your product id values are default, product_id, parent_id, sku-->
+{% assign fa_product_id = default %}
+
+<!-- CODE SETTINGS END -->
+<!-- CODE SETTINGS END -->
+
+<!-- ------------------------------------ -->
+<!-- DO NOT EDIT ANYTHING BELOW THIS LINE -->
+<!-- Global site tag (gtag.js) - Ads. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-{{ fa_google_ads_audience_tag_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-{{ fa_google_ads_audience_tag_id }}');
+</script>
+<!-- Global site tag (gtag.js) - Ads. -->
+{% if fa_prices_with_decimal_separator == true %}
+	{% if template contains 'product' %}
+		{% assign fa_product_price = product.price_min | money_without_currency | remove:',' %}
+	{% elsif template contains 'cart' %}
+		{% assign fa_product_price = cart.total_price | money_without_currency | remove:',' %}
+	{% endif %}
+{% else %}
+	{% if template contains 'product' %}
+		{% assign fa_product_price = product.price_min | money_without_currency | remove:'.' | replace: ',', '.' %}
+	{% elsif template contains 'cart' %}
+		{% assign fa_product_price = cart.total_price | money_without_currency | remove:'.' | replace: ',', '.' %}
+	{% endif %}
+{% endif %}
+{% if template contains 'collection' %}
+{% assign fa_event = 'view_item_list' %}
+{% elsif template contains 'product' %}
+{% assign fa_event = 'view_item' %}
+{% elsif template contains 'search' %}
+{% assign fa_event = 'view_search_results' %}
+{% elsif template contains 'cart' %}
+{% assign fa_event = 'add_to_cart' %}
+{% elsif template contains 'index' %}
+{% assign fa_event = 'home' %}
+{% else %}
+{% assign fa_event = 'other' %}
+{% endif %}
+
+<script>
+  gtag('event', '{{ fa_event }}', {
+    'send_to': 'AW-{{ fa_google_ads_audience_tag_id }}', 
+	{% if template contains 'product' or template contains 'cart' %}'value': {{ fa_product_price }}, {% endif %}
+	{% if template contains 'product' %}
+    'items': [{
+		{% if fa_product_id == 'default' %}
+			'id': 'shopify_{{ fa_product_id_alpha2_code }}_{{ product.id }}_{% if product.variants.first.id %}{{ product.variants.first.id }}{% else %}{{ product.variants.id }}{% endif %}',
+		{% elsif fa_product_id == 'product_id' %}
+			'id': '{% if product.variants.first.id %}{{ product.variants.first.id }}{% else %}{{ product.variants.id }}{% endif %}',
+		{% elsif fa_product_id == 'parent_id' %}
+			'id': '{{ product.id }}',
+		{% elsif fa_product_id == 'sku' %}
+			'id': '{% if product.variants.first.id %}{{ product.variants.first.sku }}{% else %}{{ product.variants.sku }}{% endif %}',
+		{% endif %}
+      'google_business_vertical': 'retail'
+    }]
+	{% elsif template contains 'cart' %}
+	'items': [
+	{% for item in cart.items %}
+	{
+		{% if fa_product_id == 'default' %}
+			'id': 'shopify_{{ fa_product_id_alpha2_code }}_{{ item.product_id }}_{{ item.variant_id }}',
+		{% elsif fa_product_id == 'product_id' %}
+			'id': '{{ item.variant_id }}',
+		{% elsif fa_product_id == 'parent_id' %}
+			'id': '{{ item.product_id }}',
+		{% elsif fa_product_id == 'sku' %}
+			'id': '{{ item.sku }}',
+		{% endif %}
+      'google_business_vertical': 'retail'
+    },
+	{% endfor %}
+	]
+	{% endif %}
+  });
+</script>
+
+<!-- Google Ads Remarketing Tag By FeedArmy Version 2.12 END -->
+      
+
     </head>
     <body>
         {% include "header" %}
@@ -52,10 +155,20 @@
         <div id="no-click"></div>
         {% comment %}
 			lazy load
-		{% endcomment %}
-        {{ "lazysizes.min.js" | asset_url | script_tag }}
+    {% endcomment %}
+    <script async src="{{ 'lazysizes.min.js' | asset_url }}"></script>
+       {% comment %}  {{ "lazysizes.min.js" | asset_url | script_tag }} {% endcomment %}
 
-        {{ "jquery-3.3.1.min.js" | asset_url | script_tag }}
+       {{ "jquery-3.3.1.min.js" | asset_url | script_tag }}
+
+       <script type="text/javascript">
+      jQuery.event.special.touchstart = {
+              setup: function( _, ns, handle ){
+                  this.addEventListener("touchstart", handle, { passive: true });
+              }
+          };
+       </script>
+      
         {% comment %}
 			if we have multiple currencies engaged enqueue scripts below
 		{% endcomment %}
@@ -65,24 +178,24 @@
         {% endif %}
         {% include 'currencies' %}
 
-        <script src="https://player.vimeo.com/api/player.js"></script>
+        {{ "player.min.js" | asset_url | script_tag }}
         {{ "video.js" | asset_url | script_tag }}
 
         {{ "slick.min.js" | asset_url | script_tag }}
-        {{ "slideshow.js" | asset_url | script_tag }}
-        {{ "search.js" | asset_url | script_tag }}
+        {{ "slideshow-dist.js" | asset_url | script_tag }}
+        {{ "search-dist.js" | asset_url | script_tag }}
         {{ "currency-picker.js" | asset_url | script_tag }}
-        {{ "application.js" | asset_url | script_tag }}
+        {{ "application-dist.js" | asset_url | script_tag }}
         {{ "drag-scroll.js" | asset_url | script_tag }}
 
-        {{ "animation.js" | asset_url | script_tag }}
-        {{ "header.js" | asset_url | script_tag }}
+        {{ "animation-dist.js" | asset_url | script_tag }}
+        {{ "header-dist.js" | asset_url | script_tag }}
 
         {% if template contains 'product' %}
-            {{ "bbplayer.js" | asset_url | script_tag }}
+            {{ "bbplayer-dist.js" | asset_url | script_tag }}
         {% endif %}
 
 
-        {% include 'hulkapps-restock' %}{% render 'preorder-now' %}
+
   </body>
 </html>

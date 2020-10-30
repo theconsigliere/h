@@ -66,6 +66,9 @@
                         }, {
                             "value": "hornit-lite",
                             "label": "Hornit LITE Logo"
+                        },  {
+                            "value": "hornit-airo",
+                            "label": "Hornit Airo Logo"
                         }
                     ],
                     "label": "Select Product Logos"
@@ -80,6 +83,11 @@
                     "type": "text",
                     "label": "Title",
                     "placeholder": "Slide Title"
+                }, {
+                    "id": "subtitle",
+                    "type": "text",
+                    "label": "Subtitle",
+                    "placeholder": "Slide Subtitle"
                 }, {
                     "id": "content",
                     "type": "textarea",
@@ -202,7 +210,10 @@
                                 <img data-src="{{ 'hornit-db140.svg' | asset_url }}" alt="Hornit db140 Logo" class="hero-product-logo lazyload"/>
                             {% when "hornit-lite" %}
                                 <img data-src="{{ 'hornit-lite.svg' | asset_url }}" alt="Hornit lite Logo" class="hero-product-logo lazyload"/>
+                            {% when "hornit-airo" %}
+                                <img data-src="{{ 'hornit-airo.svg' | asset_url }}" alt="Hornit Airo Logo" class="hero-product-logo lazyload"/>
                         {% endcase %}
+
                     </div>
 
 
@@ -211,6 +222,10 @@
 
                         <div class="slide-text">
                             <h2 class="white kids-header-font uppercase">{{ block.settings.title }}</h2>
+
+                            {% if block.settings.subtitle != blank %}
+                            <h6 class="white kids-sub-header-font uppercase">{{ block.settings.subtitle }}</h6>
+                            {% endif %}
 
                             {% if block.settings.content != blank %}
                                 <p class="white kids-sub-header-font uppercase">{{ block.settings.content }}</p>
@@ -223,7 +238,7 @@
 
                         <div class="slide-text">
                             <h2 class="white uppercase">{{ block.settings.title }}</h2>
-
+                            <h6 class="white uppercase">{{ block.settings.subtitle }}</h6>
 
                             {% if block.settings.content != blank %}
                                 <p class="white uppercase">{{ block.settings.content }}</p>
@@ -252,7 +267,7 @@
                         <a href="{{ block.settings.riders_url }}" class="rider-link">
 
                             {% if block.settings.riders_name != blank %}
-                                <p>Rider:
+                                <p class='small-p'>Rider:
                                     {{ block.settings.riders_name }}</p>
                             {% endif %}
                         </a>
@@ -264,7 +279,7 @@
                                     <img data-src="{{ block.settings.riders_logo | img_url: 'master' }}" alt="{{ block.settings.riders_logo.alt }}" class="lazyload"/>
                                 </div>
                                 {% if block.settings.riders_tag_text != blank %}
-                                    <p>{{ block.settings.riders_tag_text }}</p>
+                                    <p class='small-p'>{{ block.settings.riders_tag_text }}</p>
                                 {% endif %}
                             </a>
                         {% endif %}

@@ -609,11 +609,13 @@ p.announcement-bar__message {
 
 #toggle {
   @include space-between;
-  width: 28px;
-  height: 25px;
+  width: 22px;
+  height: 20px;
 
   @media (min-width: #{$screen-md}) {
     display: block;
+    width: 28px;
+    height: 25px;
     margin: 30px 20px 10px;
   }
 
@@ -627,11 +629,22 @@ p.announcement-bar__message {
   content: "";
   position: absolute;
   left: 0;
-  top: -9px;
+}
+
+#toggle span:before {
+  top: -7px;
+
+  @media (min-width: #{$screen-md}) {
+    top: -9px;
+  }
 }
 
 #toggle span:after {
-  top: 9px;
+  top: 7px;
+
+  @media (min-width: #{$screen-md}) {
+    top: 9px;
+  }
 }
 
 #toggle span {
@@ -657,11 +670,21 @@ p.announcement-bar__message {
 #toggle.on span:before {
   transform: rotate(45deg) translate(5px, 5px);
   background-color: $yellow;
+  top: -7px;
+
+  @media (min-width: #{$screen-md}) {
+    top: -9px;
+  }
 }
 
 #toggle.on span:after {
   transform: rotate(-45deg) translate(7px, -8px);
   background-color: $yellow;
+  top: 9.5px;
+
+  @media (min-width: #{$screen-md}) {
+    top: 9px;
+  }
 }
 
 .mobile-nav {

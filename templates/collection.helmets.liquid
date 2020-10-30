@@ -5,7 +5,7 @@
     <div id="page-collection">
         {% if collection.image %}
             <div id="collection-image">
-                <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}" class="lazyload"/>
+                <img data-src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}" class="lazyload"/>
             </div>
         {% endif %}
 

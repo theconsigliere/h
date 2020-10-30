@@ -377,7 +377,7 @@
                     {% endif %}
 
 
-                    <h2 class="white uppercase kids-header-font">{{ block.settings.header_title }}</h2>
+                    <h3 class="white uppercase kids-header-font">{{ block.settings.header_title }}</h3>
 
                     {% if block.settings.header_content != blank %}
                         <p class="white airo-desc">{{ block.settings.header_content }}</p>
@@ -403,7 +403,8 @@
 
         <section class="colour-section">
 
-            <div class="title-section">
+            <div class="title-section ">
+
 
                 <h2 class="kids-header-font uppercase">{{ block.settings.colour_section_title }}</h2>
             </div>
@@ -541,7 +542,7 @@
 		{% when 'clug-category' %}
 
 			<section class="clug-categories" id='clug-category'>
-				<div class="title-section">
+				<div class="title-section bike-title-section">
 					<h4 class="uppercase">{{ block.settings.clug_cat_title }}</h4>
 					<p class='clug-block-text'>{{ block.settings.clug_cat_desc }}</p>
 				</div>

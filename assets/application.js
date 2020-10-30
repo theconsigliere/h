@@ -170,12 +170,15 @@ let ajaxify = {
     alert(data.status + " - " + data.message + ": " + data.description);
   },
   onCartButtonClick: function (event) {
+
+    
     let isCartOpen = $("html").hasClass("mini-cart-open"),
       // no mini-cart if we are on cart page, 'window.location.href.indexOf' returns an integer so we have to check it doesn't return -1
       isInCart = window.location.href.indexOf("/cart") !== -1;
 
     if (!isInCart) {
       event.preventDefault();
+
       if (!isCartOpen) {
         ajaxify.openCart();
       } else {
@@ -192,10 +195,16 @@ let ajaxify = {
   },
 
   openCart: function () {
-    $("html").addClass("mini-cart-open");
+
+    //$('.crosselling-section').addClass('js-crosselling-open')
+    
+      $("html").addClass("mini-cart-open");
+ 
   },
   closeCart: function () {
-    $("html").removeClass("mini-cart-open");
+
+      $("html").removeClass("mini-cart-open");
+    
   },
   init: function () {
     $(document).on("submit", addToCartFormSelector, ajaxify.onAddToCart);

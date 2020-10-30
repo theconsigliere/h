@@ -35,6 +35,9 @@
       "price_low_high": "Price, Low - High",
       "price_high_low": "Price, High - Low",
       "clear": "Clear"
+    },
+    "crosselling": {
+      "title": "You may also like"
     }
   },
   "cart": {
@@ -55,6 +58,14 @@
     }
   },
   "product": {
+    "confidence": {
+      "warranty": "Warranty",
+      "warranty_desc": "As standard with all products",
+      "uk_delivery": "Free UK Delivery",
+      "uk_delivery_desc": "When you spend over £14.50",
+      "money": "Money Back Guarantee",
+      "money_desc": "Free 60-day return policy"
+    },
     "card": {
       "options_styles_singular": "{{ optionCount }} option \/ {{ styleCount }} style",
       "sizes_styles_singular": "{{ optionCount }} option \/ {{ styleCount }} sizes",

@@ -110,10 +110,14 @@
   background: $yellow;
 
   .footer-bottom-inner {
-    @include space-between;
+    @include space-between-column;
     padding: 5px;
     width: 95%;
     margin: 0 auto;
+
+    @media (min-width: #{$screen-lg}) {
+      @include space-between;
+    }
   }
 }
 
@@ -194,6 +198,36 @@
 
 .colophon {
   color: $black;
+}
+
+// payment logos
+
+.payment-icon {
+  width: 2em;
+  margin: 0 5px;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 3.125em;
+    margin: 0;
+  }
+
+
+}
+
+.payment-list-logos {
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+  li {
+margin: 0;
+@include space-center;
+
+    &:before {
+      content: "";
+      padding-right: 0;
+  }
+  }
 }
 
 .copyright-info {
@@ -282,8 +316,9 @@
 }
 
 .mc-field-group {
-  width: 100%;
+  width: 100% !important;
 }
+
 
 input.required {
   background: transparent;
@@ -304,4 +339,28 @@ input.required {
   @media (min-width: #{$screen-lg}) {
     text-align: left;
   }
+}
+
+
+.ql-editor {
+  p {
+    color: $white !important;
+  }
+}
+
+.TextInput__FormStyledTextInput-sc-1o6de9f-0 {
+  background: $black !important;
+  color: $white !important;
+}
+
+.Button__FormStyledButton-p2mbjt-0 {
+  background: $yellow !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  color: $black !important;
+}
+
+.klaviyo-form-XeF9jQ.klaviyo-form.form-version-cid-1 {
+  width: 90%;
+  margin: 0 auto;
 }

@@ -1,0 +1,14 @@
+{% comment %}
+  DO NOT MODIFY THIS FILE DIRECTLY. THIS FILE WILL BE OVERWRITTEN.
+  YOU CAN MODIFY THE LIQUID CODE FOR THIS CUSTOM FIELD HERE:
+  https://customfields.bonify.io/dashboard/hornit-dev.myshopify.com/products/configure/226700/edit
+{% endcomment %}
+{% if product.metafields.custom_fields["show_crosselling_section"] != blank %}
+  <div class="custom-field custom-field__show-crosselling-section custom-field__type--collection-reference">
+    <h3 class="custom-field--title">Show Crosselling Section</h3>
+    <div class="custom-field--value">  
+      {% assign collection_ref = collections[product.metafields.custom_fields["show_crosselling_section"]] %}
+      {{ collection_ref.title | link_to: collection_ref.url }}
+    </div>
+  </div>
+{% endif %}
