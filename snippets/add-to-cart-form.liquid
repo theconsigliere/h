@@ -74,6 +74,43 @@
 
 <!-- add to cart button, disabled if we have multiple variants that have not been picked -->
 
+{%- assign compare_at_price = product.compare_at_price -%}
+{%- assign price = product.price -%}
+{%- assign price_varies = product.price_varies -%}
+{%- assign available = product.available -%}
+
+{%- assign money_price = price | money -%}
+
+{%- comment -%} 
+<div class="product-price">
+	 {{ product.price | money }}
+</div>
+{%- endcomment -%}
+
+
+<div class="product-page-price-box">
+{% if compare_at_price > price %}
+	{% if price_varies %}
+	<span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+	<div class="product-price-sale"><p>{{ 'products.product.was' | t }} </p>{{ compare_at_price | money }}</div>
+	<span class="product-price__price product-price__sale">
+	<div class="product-price"> <p>{{ 'products.product.now' | t }} </p> <h6>{{ money_price }}</h6></div>
+
+	</span>
+	{% else %}
+	<span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+	<div class="product-price-sale"><p>{{ 'products.product.was' | t }} </p>{{ compare_at_price | money }}</div>
+	<span class="product-price__price product-price__sale">
+	<div class="product-price"> <p>{{ 'products.product.now' | t }} </p> <h6>{{ money_price }}</h6></div>
+
+	</span>
+	{% endif %}
+
+{% endif %}
+</div>
+
+
+
 <button type="submit" name="add" id="add-to-cart-button" class="button-cta block-button" {% if can_add_to_cart != true %} disabled {% endif %}>
 	{{ 'product.form.submit' | t }}
 	&ndash;

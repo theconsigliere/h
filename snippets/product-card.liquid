@@ -110,9 +110,56 @@
                     {% endif %}
 
                 </div>
+
+
+
+              
+                {%- assign compare_at_price = product.compare_at_price -%}
+                {%- assign price = product.price -%}
+                {%- assign price_varies = product.price_varies -%}
+                {%- assign available = product.available -%}
+
+              {%- assign money_price = price | money -%}
+
+                {%- comment -%} 
                 <div class="product-price">
-                    {{ product.price | money }}
+                     {{ product.price | money }}
                 </div>
+                {%- endcomment -%}
+
+                
+<div class="product-price-box">
+    {% if compare_at_price > price %}
+    {% if price_varies %}
+        <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+        <div class="product-price-sale">{{ compare_at_price | money }}</div>
+        <span class="product-price__price product-price__sale">
+        <div class="product-price">{{ money_price }}</div>
+      {%- comment -%}  <span class="product-price__sale-label">{{ 'products.product.on_sale' | t }}</span>{%- endcomment -%}
+        </span>
+    {% else %}
+        <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+        <div class="product-price-sale">{{ compare_at_price | money }}</div>
+        <span class="product-price__price product-price__sale">
+            <div class="product-price">{{ money_price }}</div>
+        {%- comment -%}  <span class="product-price__sale-label">{{ 'products.product.on_sale' | t }}</span>{%- endcomment -%}
+        </span>
+    {% endif %}
+    {% else %}
+
+    {% if price_varies %}
+         <div class="product-price-sale">{{ money_price }}</div>
+    {% else %}
+        <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+         <div class="product-price">{{ money_price }}</div>
+    {% endif %}
+{% endif %}
+</div>
+               
+
+
+
+
             </div>
 
         </div>

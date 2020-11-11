@@ -57,6 +57,19 @@
       "currency_note_html": "We process all orders in {{ currency }}. While the contents of your cart are currently displayed in <span class=\"js-active-currency\"><\/span>, the checkout will use {{ currency }} at the current exchange rate."
     }
   },
+  "products": {
+    "product": {
+      "regular_price": "Regular price",
+      "sold_out": "Sold out",
+      "unavailable": "Unavailable",
+      "on_sale": "Sale",
+      "was": "Was",
+      "now": "Now",
+      "quantity": "Quantity",
+      "add_to_cart": "Add to cart",
+      "back_to_collection": "Back to {{ title }}"
+    }
+  },
   "product": {
     "confidence": {
       "warranty": "Warranty",

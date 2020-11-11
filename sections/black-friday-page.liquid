@@ -1,0 +1,163 @@
+{% schema %}
+
+{
+    "name": "Black Friday Page",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title_top",
+            "label": "Heading",
+            "default": "Page Title"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "bf-title",
+            "name": "Title Section",
+            "settings": [
+            {
+                "id": "background_image",
+                "type": "image_picker",
+                "label": "Background Image"
+            },
+                     {
+                    "id": "cyclist_hashtag",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Title"
+                }, {
+                    "id": "cyclist_contentdesc",
+                    "type": "textarea",
+                    "label": "Text Description",
+                    "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+		                }
+		            ]
+		        }, {
+		            "type": "bf-block",
+		            "name": "Black Friday Block",
+		            "settings": [
+		                {
+		                    "type": "color",
+		                    "id": "cyclist_color",
+		                    "label": "Background color",
+		                    "default": "#24272c"
+		                }, {
+		                    "id": "cyclist_image",
+		                    "type": "image_picker",
+		                    "label": "Background Image"
+		                }, {
+		                    "id": "cyclist_title",
+		                    "type": "text",
+		                    "label": "Title",
+		                    "placeholder": "Defaults to Collection Title"
+		                }, {
+		                    "id": "cyclist_content",
+		                    "type": "textarea",
+		                    "label": "Content"
+		                }, {
+		                    "id": "collection",
+		                    "type": "collection",
+		                    "label": "Collection"
+		                }, {
+		                    "id": "max_products",
+		                    "type": "range",
+		                    "min": 2,
+		                    "max": 6,
+		                    "step": 1,
+		                    "unit": "ct",
+		                    "label": "Products to Show",
+		                    "default": 2
+		                }
+		            ]
+		        }
+		    ]
+		}
+
+{% endschema %}
+
+
+<div class="cyclist-page-main">
+
+
+	<div class="cyclist-section-group">
+		{% for block in section.blocks %}
+
+			{% case block.type %}
+
+
+				{% when 'bf-title' %}
+
+
+					<section class="cyclist-block-section cyclist-title bf-title">
+                        <img data-src="{{ block.settings.background_image | img_url: 'master' }}" alt="{{ block.settings.background_image.alt }}" class="lazyload bf-background"/>
+
+						<div class="title-section">
+
+                            {{ 'black-friday.svg' | asset_url | img_tag: black-friday-logo }}
+
+
+							<h4 class="uppercase white">{{ block.settings.cyclist_hashtag }}</h4>
+
+							<p class="white">{{ block.settings.cyclist_contentdesc }}</p>
+						</div>
+					</section>
+
+
+				{% when 'bf-block' %}
+
+					<section class="cyclist-block-section">
+
+						<div class="cyclist-block" style="background-color: {{ block.settings.cyclist_color }};">
+
+
+							<div class="cyclist-block-item block-text">
+
+								<div class="cyclist-text-inner">
+
+
+									<div class="cyclist-block-title">
+										<h4 class="uppercase">{{ block.settings.cyclist_title }}</h4>
+
+										<p class="p-fade">{{ block.settings.cyclist_content }}</p>
+									</div>
+
+
+									{% assign collection = collections[block.settings.collection] %}
+
+
+									<div class="cyclist-collection-list">
+										{% for product in collection.products limit: block.settings.max_products %}
+											{% comment %}
+												Exclude product from collection if we are already looking at said product
+											{% endcomment %}
+											{% unless exclude != blank and exclude contains product.handle %}
+
+												{% include 'product-card' %}
+											{% endunless %}
+										{% endfor %}
+									</div>
+
+
+								</div>
+
+							</div>
+
+
+							<div class="cyclist-block-item block-image">
+
+								<img data-src="{{ block.settings.cyclist_image | img_url: 'master' }}" alt="{{ block.settings.cyclist_image.alt }}" class="lazyload"/>
+
+							</div>
+
+						</div>
+
+
+					</section>
+
+
+			{% endcase %}
+		{% endfor %}
+	</div>
+
+
+</div>

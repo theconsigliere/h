@@ -15,6 +15,12 @@
             "type": "nav_item",
             "name": "Nav Item",
             "settings": [
+            {
+                "type": "color",
+                "id": "nav_item_color",
+                "label": "Nav Title color",
+                "default": "#ffffff"
+             },
                 {
                     "id": "nav_item_title",
                     "type": "text",
@@ -129,7 +135,7 @@
 
 					{% if block.settings.show_megamenu %}
 
-						<p class='text-link mega_item  mobile_item'>{{ block.settings.nav_item_title }}
+                <p class='text-link mega_item mobile_item' style='color:{{ block.settings.nav_item_color }};' >{{ block.settings.nav_item_title }}
 
 							<span class='header-icon'>
 								<i class="down"></i>
@@ -225,7 +231,7 @@
 
 					{% else %}
 
-						<a class='text-link mega_item mobile_item' href="{{ block.settings.nav_item_title_url }}">{{ block.settings.nav_item_title }}</a>
+						<a class='text-link mega_item mobile_item' style='color:{{ block.settings.nav_item_color }};' href="{{ block.settings.nav_item_title_url }}">{{ block.settings.nav_item_title }}</a>
 
 					{% endif %}
 

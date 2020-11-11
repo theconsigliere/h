@@ -1370,7 +1370,7 @@
           "1588432328358": {
             "type": "Faq-Section",
             "settings": {
-              "section_id": "CLUG",
+              "section_id": "clug",
               "faq_image": "shopify:\/\/shop_images\/Mask_Group_98.png",
               "faq_title": "CLUG",
               "product_url": "shopify:\/\/collections\/clug",
@@ -1486,7 +1486,7 @@
           "1588436436521": {
             "type": "Faq-Section",
             "settings": {
-              "section_id": "Hornit lite",
+              "section_id": "lite",
               "faq_image": "shopify:\/\/shop_images\/ADULT-IMAGES_lite.jpg",
               "faq_title": "Hornit Lite",
               "product_url": "shopify:\/\/products\/hornit-lite",
@@ -1544,7 +1544,7 @@
           "1588437234829": {
             "type": "Faq-Section",
             "settings": {
-              "section_id": "hornit Mini",
+              "section_id": "mini",
               "faq_image": "shopify:\/\/shop_images\/minis.jpg",
               "faq_title": "Hornit Mini",
               "product_url": "shopify:\/\/collections\/mini-hornit",
@@ -1660,7 +1660,7 @@
           "1588437757997": {
             "type": "Faq-Section",
             "settings": {
-              "section_id": "hornit-nano",
+              "section_id": "nano",
               "faq_image": "shopify:\/\/shop_images\/nano.jpg",
               "faq_title": "Hornit Nano",
               "product_url": "shopify:\/\/collections\/mini-hornit-nano",
@@ -1718,7 +1718,7 @@
           "1600943837481": {
             "type": "Faq-Section",
             "settings": {
-              "section_id": "hornit-airo",
+              "section_id": "airo",
               "faq_image": "shopify:\/\/shop_images\/Mask_Group_6.jpg",
               "faq_title": "Hornit Airo",
               "product_url": "shopify:\/\/collections\/hornit-airo",
@@ -1772,6 +1772,64 @@
               "faq_question_24": "",
               "faq_desc_24": ""
             }
+          },
+          "301f2d87-3525-4308-9962-f63b3aa423e3": {
+            "type": "Faq-Section",
+            "settings": {
+              "section_id": "",
+              "faq_image": "shopify:\/\/shop_images\/Macy_downhill_web.jpg",
+              "faq_title": "Hornit Team Jersey",
+              "product_url": "shopify:\/\/products\/hornit-team-jersey-by-little-rider",
+              "product_text": "see product",
+              "faq_question_1": "What sizes do you sell?",
+              "faq_desc_1": "We have Jerseys for kids aged 2-5. Take a look at our size guide on the Jersey page for specific sizes.",
+              "faq_question_2": "Are they personalised?",
+              "faq_desc_2": "No unfortunately not. You may have seen a few photographs of some children with their names on their backs. This was for a one off photoshoot. The jerseys on the site will be identical in every way to these, just without the personalisation.",
+              "faq_question_3": "What fabric are they made from?",
+              "faq_desc_3": "Our jerseys are made of 100% polyester for extra durability while riding.",
+              "faq_question_4": "",
+              "faq_desc_4": "",
+              "faq_question_5": "",
+              "faq_desc_5": "",
+              "faq_question_6": "",
+              "faq_desc_6": "",
+              "faq_question_7": "",
+              "faq_desc_7": "",
+              "faq_question_8": "",
+              "faq_desc_8": "",
+              "faq_question_9": "",
+              "faq_desc_9": "",
+              "faq_question_10": "",
+              "faq_desc_10": "",
+              "faq_question_11": "",
+              "faq_desc_11": "",
+              "faq_question_12": "",
+              "faq_desc_12": "",
+              "faq_question_13": "",
+              "faq_desc_13": "",
+              "faq_question_14": "",
+              "faq_desc_14": "",
+              "faq_question_15": "",
+              "faq_desc_15": "",
+              "faq_question_16": "",
+              "faq_desc_16": "",
+              "faq_question_17": "",
+              "faq_desc_17": "",
+              "faq_question_18": "",
+              "faq_desc_18": "",
+              "faq_question_19": "",
+              "faq_desc_19": "",
+              "faq_question_20": "",
+              "faq_desc_20": "",
+              "faq_question_21": "",
+              "faq_desc_21": "",
+              "faq_question_22": "",
+              "faq_desc_22": "",
+              "faq_question_23": "",
+              "faq_desc_23": "",
+              "faq_question_24": "",
+              "faq_desc_24": ""
+            }
           }
         },
         "block_order": [
@@ -1782,7 +1840,8 @@
           "1588437234829",
           "1588436188865",
           "1588437757997",
-          "1600943837481"
+          "1600943837481",
+          "301f2d87-3525-4308-9962-f63b3aa423e3"
         ],
         "settings": {}
       },
@@ -2168,7 +2227,7 @@
           "adafac37-cb6d-490f-8d2f-8f2daecb54ff": {
             "type": "faq-block",
             "settings": {
-              "faq_url": "#CLUG-faq",
+              "faq_url": "#clug-faq",
               "faq_t_section": "Clug"
             }
           },
@@ -2189,7 +2248,7 @@
           "39ba7d0d-230a-4924-913c-8e19e27d0649": {
             "type": "faq-block",
             "settings": {
-              "faq_url": "#Mini-faq",
+              "faq_url": "#mini-faq",
               "faq_t_section": "Hornit Mini"
             }
           },
@@ -2203,15 +2262,21 @@
           "ae91aeb0-0996-4374-9083-b8be3e32c997": {
             "type": "faq-block",
             "settings": {
-              "faq_url": "#hornit-nano-faq",
+              "faq_url": "#nano-faq",
               "faq_t_section": "Hornit Nano"
             }
           },
           "62d64ecf-3b10-4a20-bd0a-538254d8f579": {
             "type": "faq-block",
             "settings": {
-              "faq_url": "#hornit-airo-faq",
+              "faq_url": "#airo-faq",
               "faq_t_section": "Hornit Airo"
+            }
+          },
+          "9cc53e45-021b-4b2b-8f05-9e2011caa8d6": {
+            "type": "faq-block",
+            "settings": {
+              "faq_t_section": "Jersey"
             }
           }
         },
@@ -2222,9 +2287,65 @@
           "39ba7d0d-230a-4924-913c-8e19e27d0649",
           "594cebed-d217-4729-add7-194415abddb1",
           "ae91aeb0-0996-4374-9083-b8be3e32c997",
-          "62d64ecf-3b10-4a20-bd0a-538254d8f579"
+          "62d64ecf-3b10-4a20-bd0a-538254d8f579",
+          "9cc53e45-021b-4b2b-8f05-9e2011caa8d6"
         ],
         "settings": {}
+      },
+      "black-friday-page": {
+        "type": "black-friday-page",
+        "blocks": {
+          "0699e241-cb7e-4a3d-a9a4-c74ad95bd203": {
+            "type": "bf-title",
+            "settings": {
+              "background_image": "shopify:\/\/shop_images\/26684-_Converted.png",
+              "cyclist_hashtag": "Black Friday",
+              "cyclist_contentdesc": "<p>Looking forward to Black Friday 2020? So are we! On this page you will find our best Black Friday deals.<\/p>"
+            }
+          },
+          "876c35b1-f6f3-437b-b7a7-284dc0e77098": {
+            "type": "bf-block",
+            "settings": {
+              "cyclist_color": "#ffffff",
+              "cyclist_image": "shopify:\/\/shop_images\/Mask_Group_10dsg9_146bf242-f675-40f8-98a2-7339ca19e2f3.jpg",
+              "cyclist_title": "Balance Bike Black Friday deals 2020",
+              "cyclist_content": "Looking forward to Black Friday 2020? So are we! On this page you will find our best balance bike Black Friday deals.\n\nThere's plenty of preparation to be done, but in the meantime, visit our website and explore our range of bicycle accessories, including Horns & Lights, Helmets and Bike Storage.",
+              "collection": "balance-bikes",
+              "max_products": 6
+            }
+          },
+          "b5bb5c88-1551-4062-b9e1-696b2bc256ae": {
+            "type": "bf-block",
+            "settings": {
+              "cyclist_color": "#ffffff",
+              "cyclist_image": "shopify:\/\/shop_images\/group.jpg",
+              "cyclist_title": "Kids Helmets Black Friday deals 2020",
+              "cyclist_content": "Looking forward to Black Friday 2020? So are we! On this page you will find our best kids helmets Black Friday deals.\n\nThere's plenty of preparation to be done, but in the meantime, visit our website and explore our range of bicycle accessories, including Horns & Lights, Helmets and Bike Storage.",
+              "collection": "helmets",
+              "max_products": 6
+            }
+          },
+          "1202336b-ebbf-4e73-a1de-03da4d1c874c": {
+            "type": "bf-block",
+            "settings": {
+              "cyclist_color": "#ffffff",
+              "cyclist_image": "shopify:\/\/shop_images\/hornit-clug.jpg",
+              "cyclist_title": "Bike Storage Black Friday deals 2020",
+              "cyclist_content": "Looking forward to Black Friday 2020? So are we! On this page you will find our best bike storage Black Friday deals.\n\nThere's plenty of preparation to be done, but in the meantime, visit our website and explore our range of bicycle accessories, including Horns & Lights, Helmets and Bike Storage.",
+              "collection": "clug",
+              "max_products": 6
+            }
+          }
+        },
+        "block_order": [
+          "0699e241-cb7e-4a3d-a9a4-c74ad95bd203",
+          "876c35b1-f6f3-437b-b7a7-284dc0e77098",
+          "b5bb5c88-1551-4062-b9e1-696b2bc256ae",
+          "1202336b-ebbf-4e73-a1de-03da4d1c874c"
+        ],
+        "settings": {
+          "title_top": "Page Title"
+        }
       }
     },
     "content_for_index": [

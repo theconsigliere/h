@@ -163,7 +163,7 @@
     }
 
     .inline-icon {
-      margin-top: 0.7em;
+    //  margin-top: 0.7em;
     }
   }
 
@@ -673,9 +673,31 @@
   margin: 5vh 0;
 }
 
-.yotpo.bottomLine {
-  margin-bottom: 15px;
+.yotpo {
+  .yotpo-bottomline {
+    align-items: center;
+  
+    .yotpo-stars {
+      margin-right: 5px;
+  
+  
+      .yotpo-icon-star {
+        font-size: 7px !important;
+  
+        @media (min-width: #{$screen-md}) {
+          font-size: 12px !important;
+           }
+  
+        @media (min-width: #{$screen-lg}) {
+       font-size: 17.5px !important;
+        }
+  
+  
+      }
+    }
+  }
 }
+
 
 
 // Confidence Banner
@@ -826,3 +848,53 @@ display: block;
   opacity: 1;
 }
 
+.product-price-sale {
+  .money {
+    text-decoration: line-through;
+    opacity: 0.8;
+  }
+}
+
+.product-price-box {
+  display: flex;
+  align-items: center;
+
+  * {
+    margin: 0 5px;
+  }
+}
+
+
+.product-page-price-box {
+
+  display: flex;
+  align-items: center;
+
+  .product-price-sale {
+    display: flex;
+    align-items: center;
+
+    * {
+      margin: 0;
+    }
+
+      .money {
+        margin: 0 5px;
+      }
+  }
+
+  .product-price {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+
+    * {
+      margin: 0;
+    }
+
+    .money {
+      margin: 0 5px;
+    }
+  }
+
+}
