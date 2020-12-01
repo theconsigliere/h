@@ -110,19 +110,32 @@
 </div>
 
 
+{% if product.available != true %}
 
-<button type="submit" name="add" id="add-to-cart-button" class="button-cta block-button" {% if can_add_to_cart != true %} disabled {% endif %}>
-	{{ 'product.form.submit' | t }}
-	&ndash;
-	<span class="js-price" data-default-price="{{ product.price | money }}">
+		<button type="submit" name="add" id="add-to-cart-button" class="button-cta block-button" disabled>
+			<span class="js-price">{{'product.form.sold_out' | t }}</span>
+		</button>
 
-		{% if has_multiple_options or has_multiple_variants %}
-			{{ current_variant.price | money }}
-		{% else %}
-			{{ product.price | money }}
-		{% endif %}
-	</span>
-</button>
+
+{% else %}
+
+		<button type="submit" name="add" id="add-to-cart-button" class="button-cta block-button" {% if can_add_to_cart != true %} disabled {% endif %}>
+			{{ 'product.form.submit' | t }}
+			&ndash;
+			<span class="js-price" data-default-price="{{ product.price | money }}">
+
+				{% if has_multiple_options or has_multiple_variants %}
+					{{ current_variant.price | money }}
+				{% else %}
+					{{ product.price | money }}
+				{% endif %}
+			</span>
+		</button>
+	
+	
+{% endif %}
+
+
 
 <!-- if Product out of stock  (see application.js)-->
 

@@ -69,6 +69,9 @@
                         },  {
                             "value": "hornit-airo",
                             "label": "Hornit Airo Logo"
+                        },  {
+                            "value": "black-friday",
+                            "label": "Black Friday Logo"
                         }
                     ],
                     "label": "Select Product Logos"
@@ -212,6 +215,8 @@
                                 <img data-src="{{ 'hornit-lite.svg' | asset_url }}" alt="Hornit lite Logo" class="hero-product-logo lazyload"/>
                             {% when "hornit-airo" %}
                                 <img data-src="{{ 'hornit-airo.svg' | asset_url }}" alt="Hornit Airo Logo" class="hero-product-logo lazyload"/>
+                            {% when "black-friday" %}
+                                <img data-src="{{ 'black-friday.svg' | asset_url }}" alt="Black Friday Logo" class="black-friday lazyload"/>
                         {% endcase %}
 
                     </div>

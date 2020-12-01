@@ -67,7 +67,8 @@
       "now": "Now",
       "quantity": "Quantity",
       "add_to_cart": "Add to cart",
-      "back_to_collection": "Back to {{ title }}"
+      "back_to_collection": "Back to {{ title }}",
+      "out_of_stock": "Out of Stock"
     }
   },
   "product": {
@@ -111,7 +112,7 @@
     "form": {
       "submit": "Add to Cart",
       "quantity": "Quantity",
-      "sold_out": "Sold Out"
+      "sold_out": "Out of Stock"
     },
     "more": {
       "vendor": "by {{ vendor }}"

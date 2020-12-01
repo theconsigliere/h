@@ -89,6 +89,7 @@ let productForm = {
       $id.val("");
       $addToCartButton.prop("disabled", true);
       $emailButton.css("display", "block")
+      priceHtml = '<span class="money">Out of Stock</span>';
     }
 
     $price.html(priceHtml);

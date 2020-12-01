@@ -348,19 +348,25 @@ input.required {
   }
 }
 
-.TextInput__FormStyledTextInput-sc-1o6de9f-0 {
-  background: $black !important;
-  color: $white !important;
+
+.klaviyo-form-XeF9jQ {
+
+  .TextInput__FormStyledTextInput-sc-1o6de9f-0 {
+    background: $black !important;
+    color: $white !important;
+  }
+  
+  .Button__FormStyledButton-p2mbjt-0 {
+    background: $yellow !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    color: $black !important;
+  }
+  
+  .klaviyo-form-XeF9jQ.klaviyo-form.form-version-cid-1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
 }
 
-.Button__FormStyledButton-p2mbjt-0 {
-  background: $yellow !important;
-  text-transform: uppercase !important;
-  letter-spacing: 2px !important;
-  color: $black !important;
-}
-
-.klaviyo-form-XeF9jQ.klaviyo-form.form-version-cid-1 {
-  width: 90%;
-  margin: 0 auto;
-}

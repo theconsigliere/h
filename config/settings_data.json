@@ -123,8 +123,8 @@
           "home_page_only": false,
           "announcement_bar_color": "#ffd200",
           "announcement_bar_text_color": "#000000",
-          "text": "free UK shipping over £14.50",
-          "link": "shopify:\/\/collections\/hornit-airo"
+          "text": "Black Friday Sale",
+          "link": "https:\/\/hornit.com\/pages\/black-friday"
         }
       },
       "1585057655068": {
@@ -187,7 +187,6 @@
               "header_image": "shopify:\/\/shop_images\/kids-header.jpg",
               "header_title": "Start your adventure!",
               "header_content": "FOR BIKES & SCOOTERS",
-              "header_button_url": "",
               "header_button_text": ""
             }
           },
@@ -282,6 +281,23 @@
       "1584955781171": {
         "type": "slideshow",
         "blocks": {
+          "04d54473-48a5-499a-9dd0-2eae6562c4e6": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/black-friday.jpg",
+              "portrait_image": "shopify:\/\/shop_images\/black-friday-mobile.jpg",
+              "select_product_logo": "no-logo",
+              "product_checkbox": false,
+              "title": "",
+              "subtitle": "",
+              "content": "",
+              "button_url": "https:\/\/hornit.com\/pages\/black-friday",
+              "button_text": "Shop Now",
+              "text_position": "left-aligned",
+              "riders_name": "",
+              "riders_tag_text": ""
+            }
+          },
           "1601048182995": {
             "type": "slide",
             "settings": {
@@ -415,6 +431,7 @@
           }
         },
         "block_order": [
+          "04d54473-48a5-499a-9dd0-2eae6562c4e6",
           "1601048182995",
           "1584964086505",
           "1584955781171-0",
@@ -782,6 +799,7 @@
           "1586184310215": {
             "type": "nav_item",
             "settings": {
+              "nav_item_color": "#ffffff",
               "nav_item_title": "Adults",
               "nav_item_title_url": "shopify:\/\/collections\/adults",
               "show_megamenu": true,
@@ -804,6 +822,7 @@
           "1586249484522": {
             "type": "nav_item",
             "settings": {
+              "nav_item_color": "#ffffff",
               "nav_item_title": "Kids",
               "nav_item_title_url": "shopify:\/\/collections\/kids",
               "show_megamenu": true,
@@ -826,6 +845,7 @@
           "1586256487666": {
             "type": "nav_item",
             "settings": {
+              "nav_item_color": "#ffffff",
               "nav_item_title": "Support",
               "nav_item_title_url": "shopify:\/\/pages\/support",
               "show_megamenu": false,
@@ -841,26 +861,10 @@
               "third_text": "Contact"
             }
           },
-          "1586256513101": {
-            "type": "nav_item",
-            "settings": {
-              "nav_item_title": "What Cyclist are you?",
-              "nav_item_title_url": "shopify:\/\/pages\/what-cyclist-are-you",
-              "show_megamenu": false,
-              "nav_list": "",
-              "first_color_text": "first-white-text",
-              "first_title": "",
-              "first_text": "",
-              "second_color_text": "second-white-text",
-              "second_title": "",
-              "second_text": "",
-              "third_title": "",
-              "third_text": ""
-            }
-          },
           "1599470017989": {
             "type": "nav_item",
             "settings": {
+              "nav_item_color": "#ffffff",
               "nav_item_title": "Videos",
               "nav_item_title_url": "shopify:\/\/pages\/video-library",
               "show_megamenu": false,
@@ -878,6 +882,7 @@
           "1586256523083": {
             "type": "nav_item",
             "settings": {
+              "nav_item_color": "#ffffff",
               "nav_item_title": "About",
               "nav_item_title_url": "shopify:\/\/pages\/about",
               "show_megamenu": true,
@@ -896,15 +901,33 @@
               "third_url": "shopify:\/\/blogs\/news",
               "third_text": "Read More"
             }
+          },
+          "658841bb-4be8-48ab-9373-5a82319b47b3": {
+            "type": "nav_item",
+            "settings": {
+              "nav_item_color": "#ffffff",
+              "nav_item_title": "Black Friday",
+              "nav_item_title_url": "shopify:\/\/pages\/black-friday",
+              "show_megamenu": false,
+              "nav_list": "",
+              "first_color_text": "first-white-text",
+              "first_title": "",
+              "first_text": "",
+              "second_color_text": "second-white-text",
+              "second_title": "",
+              "second_text": "",
+              "third_title": "",
+              "third_text": ""
+            }
           }
         },
         "block_order": [
           "1586184310215",
           "1586249484522",
           "1586256487666",
-          "1586256513101",
           "1599470017989",
-          "1586256523083"
+          "1586256523083",
+          "658841bb-4be8-48ab-9373-5a82319b47b3"
         ],
         "settings": {
           "show_menu": true
@@ -1724,7 +1747,7 @@
               "product_url": "shopify:\/\/collections\/hornit-airo",
               "product_text": "See Product",
               "faq_question_1": "What size should I get?",
-              "faq_desc_1": "Our Hornit AIRO is available in one size and includes an adjustable seat post which means the AIRO can grow as your child does. The AIRO is suitable for a child with an inside leg measurement of 38-52cm (approximately 18 months to 5 years).",
+              "faq_desc_1": "Our Hornit AIRO is available in one size and includes an adjustable seat post which means the AIRO can grow as your child does. The AIRO is suitable for a child with an inside leg measurement of 30cm to 48cm (11.8\" to 18.9”)(approximately 18 months to 5 years).",
               "faq_question_2": "How high should the seat be?",
               "faq_desc_2": "The seat height should be adjusted so that when the child is sitting on the seat with their feet flat on the ground, they have slight bend in the knees. For long-distance striding on smooth surfaces, you can raise this slightly. For obstacles, tricks, and off-road riding, the saddle should be adjusted for slightly more bend in the knees.",
               "faq_question_3": "What are the tyres made from?",
@@ -2091,7 +2114,7 @@
               "clug_cat_button_text_3": "Shop now",
               "clug_cat_image_4": "shopify:\/\/shop_images\/hornit-airo-pink-bike.png",
               "clug_cat_title_4": "Hornit Airo - Candy Floss Pink",
-              "clug_cat_desc_4": "£119",
+              "clug_cat_desc_4": "£99",
               "clug_cat_button_url_4": "shopify:\/\/products\/hornit-airo-candy-floss-pink",
               "clug_cat_button_text_4": "Shop now"
             }
@@ -2143,7 +2166,7 @@
               "info_image": "shopify:\/\/shop_images\/vdsav.jpg",
               "info_checkbox": false,
               "info_title": "EASY TO ASSEMBLE & ADJUST",
-              "info_content": "With just three bolts to tighten (or four if you include adjusting \nthe seat!), your little one will be riding in minutes. The adjustable \nseat means the AIRO is suitable for a child with an inside leg \nmeasurement of 38-52cm. The Allen key is included.",
+              "info_content": "With just three bolts to tighten (or four if you include adjusting \nthe seat!), your little one will be riding in minutes. The adjustable seat means the AIRO is suitable for a child with an inside leg \nmeasurement of 30cm to 48cm (11.8\" to 18.9”). The Allen key is included.",
               "info_video_url": "https:\/\/player.vimeo.com\/video\/471311014"
             }
           }
@@ -2303,24 +2326,13 @@
               "cyclist_contentdesc": "<p>Looking forward to Black Friday 2020? So are we! On this page you will find our best Black Friday deals.<\/p>"
             }
           },
-          "876c35b1-f6f3-437b-b7a7-284dc0e77098": {
-            "type": "bf-block",
-            "settings": {
-              "cyclist_color": "#ffffff",
-              "cyclist_image": "shopify:\/\/shop_images\/Mask_Group_10dsg9_146bf242-f675-40f8-98a2-7339ca19e2f3.jpg",
-              "cyclist_title": "Balance Bike Black Friday deals 2020",
-              "cyclist_content": "Looking forward to Black Friday 2020? So are we! On this page you will find our best balance bike Black Friday deals.\n\nThere's plenty of preparation to be done, but in the meantime, visit our website and explore our range of bicycle accessories, including Horns & Lights, Helmets and Bike Storage.",
-              "collection": "balance-bikes",
-              "max_products": 6
-            }
-          },
           "b5bb5c88-1551-4062-b9e1-696b2bc256ae": {
             "type": "bf-block",
             "settings": {
               "cyclist_color": "#ffffff",
-              "cyclist_image": "shopify:\/\/shop_images\/group.jpg",
+              "cyclist_image": "shopify:\/\/shop_images\/finished_group_shot.jpg",
               "cyclist_title": "Kids Helmets Black Friday deals 2020",
-              "cyclist_content": "Looking forward to Black Friday 2020? So are we! On this page you will find our best kids helmets Black Friday deals.\n\nThere's plenty of preparation to be done, but in the meantime, visit our website and explore our range of bicycle accessories, including Horns & Lights, Helmets and Bike Storage.",
+              "cyclist_content": "Why not get your little ones a helmet this Black Friday? Painstakingly designed to look stylish & fun (or quietly understated in the case of Stealth!), Hornit helmets are fully adjustable, comfortable, lightweight and actually something children will want to wear.",
               "collection": "helmets",
               "max_products": 6
             }
@@ -2329,19 +2341,42 @@
             "type": "bf-block",
             "settings": {
               "cyclist_color": "#ffffff",
-              "cyclist_image": "shopify:\/\/shop_images\/hornit-clug.jpg",
+              "cyclist_image": "shopify:\/\/shop_images\/clug_10efe2e2-79f7-4f60-a3ca-207ae1ecaf3e.jpg",
               "cyclist_title": "Bike Storage Black Friday deals 2020",
-              "cyclist_content": "Looking forward to Black Friday 2020? So are we! On this page you will find our best bike storage Black Friday deals.\n\nThere's plenty of preparation to be done, but in the meantime, visit our website and explore our range of bicycle accessories, including Horns & Lights, Helmets and Bike Storage.",
+              "cyclist_content": "Hornit CLUG is the world's smallest bike rack. Working with the floor to store your bike, CLUG holds all bikes with tyre sizes 23-81mm (1-3.2\"), vertically or horizontally.",
               "collection": "clug",
               "max_products": 6
+            }
+          },
+          "876c35b1-f6f3-437b-b7a7-284dc0e77098": {
+            "type": "bf-block",
+            "settings": {
+              "cyclist_color": "#ffffff",
+              "cyclist_image": "shopify:\/\/shop_images\/MiniHornit595.jpg",
+              "cyclist_title": "Mini Black Friday deals 2020",
+              "cyclist_content": "The Hornit Mini is the world's wildest bike horn! With 25 sounds and 6 light modes, the Mini will light up their imaginations almost as much as it lights the way ahead ... in flashing green and white.",
+              "collection": "mini-hornit",
+              "max_products": 6
+            }
+          },
+          "0b7b42d4-48e1-4ad6-a6a1-f0cc8be52150": {
+            "type": "bf-block",
+            "settings": {
+              "cyclist_color": "#ffffff",
+              "cyclist_image": "shopify:\/\/shop_images\/Macy_Downhill_High_Res.jpg",
+              "cyclist_title": "AIRO BLACK FRIDAY DEALS 2020",
+              "cyclist_content": "The Hornit AIRO really is one of the hottest balance bikes on the market. At just 2.95kg, starting your little one on their cycling journey is easier for them than ever before! The Candyfloss Pink AIRO has a glossy finish with a hint of sparkle for when only pink will do.",
+              "collection": "black-friday-airo-discount",
+              "max_products": 4
             }
           }
         },
         "block_order": [
           "0699e241-cb7e-4a3d-a9a4-c74ad95bd203",
-          "876c35b1-f6f3-437b-b7a7-284dc0e77098",
           "b5bb5c88-1551-4062-b9e1-696b2bc256ae",
-          "1202336b-ebbf-4e73-a1de-03da4d1c874c"
+          "1202336b-ebbf-4e73-a1de-03da4d1c874c",
+          "876c35b1-f6f3-437b-b7a7-284dc0e77098",
+          "0b7b42d4-48e1-4ad6-a6a1-f0cc8be52150"
         ],
         "settings": {
           "title_top": "Page Title"

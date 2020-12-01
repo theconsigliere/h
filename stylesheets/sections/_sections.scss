@@ -100,6 +100,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100% !important;
+
+    @media (min-width: #{$screen-md}) {
+      height: fit-content !important;
+    }
 
     * {
       text-shadow: $drop-shadow;
@@ -107,6 +112,7 @@
       text-align: center;
     }
   }
+
 
   .slide-content {
     width: 100%;
@@ -125,10 +131,17 @@
       background: transparent;
 
     }
-    
-    @media (min-width: #{$screen-xl}) {
-      width: 70%;
+
+
+    @media (min-width: #{$screen-lg}) {
+      padding: 60px 10vw;
+
+
     }
+    
+    // @media (min-width: #{$screen-xl}) {
+    //   width: 70%;
+    // }
 
     p {
       margin-top: $line-global;
@@ -144,6 +157,15 @@
 
       @media (min-width: #{$screen-xl}) {
         width: 180px;
+      }
+    }
+
+    .black-friday {
+      width: 70vw;
+      margin: 0 auto;
+
+      @media (min-width: #{$screen-md}) {
+        width: 50vw;
       }
     }
 
