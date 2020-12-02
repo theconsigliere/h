@@ -157,6 +157,10 @@
 			lazy load
     {% endcomment %}
     <script async src="{{ 'lazysizes.min.js' | asset_url }}"></script>
+
+    {% render 'preorder-now' %}
+
+
        {% comment %}  {{ "lazysizes.min.js" | asset_url | script_tag }} {% endcomment %}
 
        {{ "jquery-3.3.1.min.js" | asset_url | script_tag }}
@@ -187,6 +191,7 @@
         {{ "currency-picker.js" | asset_url | script_tag }}
         {{ "application-dist.js" | asset_url | script_tag }}
         {{ "drag-scroll.js" | asset_url | script_tag }}
+        
 
         {{ "animation-dist.js" | asset_url | script_tag }}
         {{ "header-dist.js" | asset_url | script_tag }}
@@ -197,9 +202,16 @@
 
 
 
+
+
   
 {% include 'swymSnippet' %}
 
-{% render 'preorder-now' %}
+{%- comment -%}
+
+{{ "popup.js" | asset_url | script_tag }}
+
+{%- endcomment -%}
+
   </body>
 </html>

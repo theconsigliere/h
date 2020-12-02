@@ -898,3 +898,131 @@ display: block;
   }
 
 }
+
+
+//------------------------------------------------------------
+// MODAL POP UP
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+
+.mymodal {
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 10;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(2, 2, 2, 0.6);
+  /* Fallback color */
+  background-color: rgba(2, 2, 2, 0.6);
+  /* Black w/ opacity */
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 2em;
+  z-index: 999;
+  width: 90%;
+  height: initial;
+
+  @media (min-width: #{$screen-md}) {
+    width: 50%;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.6rem;
+
+    @media (min-width: #{$screen-md}) {
+      font-size: 3.6rem;
+    }
+  }
+
+  p {
+    max-width: 90%;
+    text-align: center;
+
+    @media (min-width: #{$screen-md}) {
+      max-width: 70%;
+    }
+  }
+}
+
+.modal-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  width: 50px;
+
+  @media (min-width: #{$screen-md}) {
+    width: 150px;
+    margin-bottom: 2em;
+  }
+
+  .st0 {
+    fill: $black;
+  }
+}
+
+.close-group {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+
+  .close {
+    color: $black;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+
+    &:hover,
+    &:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.preorder-description {
+  background: #eafdea;
+  padding: 5px 5%;
+  margin-top: 5px;
+
+  .font-bolder {
+    margin-bottom: 5px;
+  }
+
+  .small-p {
+    margin-bottom: 0px;
+  }
+}
