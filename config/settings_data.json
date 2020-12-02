@@ -123,8 +123,7 @@
           "home_page_only": false,
           "announcement_bar_color": "#ffd200",
           "announcement_bar_text_color": "#000000",
-          "text": "Black Friday Sale",
-          "link": "https:\/\/hornit.com\/pages\/black-friday"
+          "text": "Free delivery on orders over £14.50"
         }
       },
       "1585057655068": {
@@ -281,23 +280,6 @@
       "1584955781171": {
         "type": "slideshow",
         "blocks": {
-          "04d54473-48a5-499a-9dd0-2eae6562c4e6": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/black-friday.jpg",
-              "portrait_image": "shopify:\/\/shop_images\/black-friday-mobile.jpg",
-              "select_product_logo": "no-logo",
-              "product_checkbox": false,
-              "title": "",
-              "subtitle": "",
-              "content": "",
-              "button_url": "https:\/\/hornit.com\/pages\/black-friday",
-              "button_text": "Shop Now",
-              "text_position": "left-aligned",
-              "riders_name": "",
-              "riders_tag_text": ""
-            }
-          },
           "1601048182995": {
             "type": "slide",
             "settings": {
@@ -431,7 +413,6 @@
           }
         },
         "block_order": [
-          "04d54473-48a5-499a-9dd0-2eae6562c4e6",
           "1601048182995",
           "1584964086505",
           "1584955781171-0",
@@ -656,7 +637,7 @@
               "name": "Tom",
               "job_title": "Hornit-in-Chief",
               "tel": "",
-              "email": "tom@thehornit.com"
+              "email": "info@thehornit.com"
             }
           },
           "1587929255042": {
@@ -688,7 +669,7 @@
               "contact_image_two": "shopify:\/\/shop_images\/katie.png",
               "name": "Katie",
               "job_title": "PR & Marketing Director",
-              "tel": "07870 623 416",
+              "tel": "07870 623416",
               "email": "katie@thehornit.com"
             }
           },
@@ -699,7 +680,7 @@
               "contact_image_two": "shopify:\/\/shop_images\/Georgia2_copy.png",
               "name": "Georgia",
               "job_title": "Product Development",
-              "tel": "07944 384 827",
+              "tel": "07944 384827",
               "email": "georgia@thehornit.com"
             }
           },
@@ -721,7 +702,7 @@
               "contact_image_two": "shopify:\/\/shop_images\/doggo.jpg",
               "name": "Ben",
               "job_title": "Marketing",
-              "tel": "07882563653",
+              "tel": "07882 563653",
               "email": "ben@thehornit.com"
             }
           },
@@ -743,7 +724,7 @@
               "contact_image_two": "shopify:\/\/shop_images\/Ivan_Profile_Pic_Website_rollover.jpg",
               "name": "Ivan",
               "job_title": "Graphic Design",
-              "tel": "07387809981",
+              "tel": "07387 809981",
               "email": "ivan@thehornit.com"
             }
           },
@@ -754,7 +735,7 @@
               "contact_image_two": "shopify:\/\/shop_images\/claire_jump.jpg",
               "name": "Claire",
               "job_title": "Operations",
-              "tel": "07928383127",
+              "tel": "07928 383127",
               "email": "claire@thehornit.com"
             }
           }
@@ -901,24 +882,6 @@
               "third_url": "shopify:\/\/blogs\/news",
               "third_text": "Read More"
             }
-          },
-          "658841bb-4be8-48ab-9373-5a82319b47b3": {
-            "type": "nav_item",
-            "settings": {
-              "nav_item_color": "#ffffff",
-              "nav_item_title": "Black Friday",
-              "nav_item_title_url": "shopify:\/\/pages\/black-friday",
-              "show_megamenu": false,
-              "nav_list": "",
-              "first_color_text": "first-white-text",
-              "first_title": "",
-              "first_text": "",
-              "second_color_text": "second-white-text",
-              "second_title": "",
-              "second_text": "",
-              "third_title": "",
-              "third_text": ""
-            }
           }
         },
         "block_order": [
@@ -926,8 +889,7 @@
           "1586249484522",
           "1586256487666",
           "1599470017989",
-          "1586256523083",
-          "658841bb-4be8-48ab-9373-5a82319b47b3"
+          "1586256523083"
         ],
         "settings": {
           "show_menu": true
@@ -2114,7 +2076,7 @@
               "clug_cat_button_text_3": "Shop now",
               "clug_cat_image_4": "shopify:\/\/shop_images\/hornit-airo-pink-bike.png",
               "clug_cat_title_4": "Hornit Airo - Candy Floss Pink",
-              "clug_cat_desc_4": "£99",
+              "clug_cat_desc_4": "£119",
               "clug_cat_button_url_4": "shopify:\/\/products\/hornit-airo-candy-floss-pink",
               "clug_cat_button_text_4": "Shop now"
             }
