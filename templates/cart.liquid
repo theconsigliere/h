@@ -1,29 +1,62 @@
+
+
+
 <div class="extra-page" id="page-cart">
 
+    <div class="cart-header">
 
-    <div class="cart-bottom" id="cart-bottom">
-        <div class="cart-item-one">
+        <h4 class="uppercase ta-center">{{ 'cart.filled.title' | t }}</h4>
 
-            {{ 'cart.jpg' | asset_url | img_tag }}
+    </div>
 
+    <div class="cart-frame">
 
-        </div>
-        <div class="cart-item-two">
-            <div class="cart-item-inner">
+        <div class="cart-main-contents">
 
-                <h4 class="uppercase ta-center">{{ 'cart.filled.title' | t }}</h4>
+            <div class="cart-main-contents-inner">
+                <div class="cart-upper">
 
+                    <div class="basket-header">
 
-                <div class="cart-page-contents js-cart-page-contents" data-cart-item-count="{{ cart.item_count }}">
-                    {% include 'cart-contents' %}
+                        <h6 class="uppercase font-bolder ta-center">{{ 'cart.filled.basket' | t }}</h6>
+
+                        {% include 'confidence-logos' %}
+                    </div>
+
+                    <div class="cart-page-contents js-cart-page-contents" data-cart-item-count="{{ cart.item_count }}">
+                       
+                        <div class="main-cart-content-section">
+                            {% include 'cart-contents' %}
+                        </div>
+
+                        <div class="cart-bottom-contents">
+                            {% section 'cart-collection' %}
+                        </div>
+                      
+                    </div>
+
                 </div>
 
-
-                {% section 'cart-collection' %}
             </div>
 
 
         </div>
 
+
+
+
+    
+       </div>
+
+       <div class="cart-recommendations-main">
+
+        <div class="cart-recommendations-inner">
+            {% section 'cart-recommendations' %}
+        </div>
+
     </div>
+
+  
+
 </div>
+

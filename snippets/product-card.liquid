@@ -1,5 +1,5 @@
 <div class="product-card">
-    <a class="link-to-product" href="{{ product.url | within: collection }}">
+
         {% if product.featured_image %}
         <div class="card-image">
 
@@ -23,8 +23,13 @@
                 {% endif %}
             </div>
 
+
+            <div class="quick-view-button"><a class="quick-view black-button" data-handle="{{ product.handle }}" href="javascript:void(0);">Quick View</a></div>
+
         </div>
         {% endif %}
+
+        <a class="link-to-product" href="{{ product.url | within: collection }}">
 
         <div class="card-info">
             <div class="card-info-top">
@@ -129,6 +134,9 @@
 
                 
 <div class="product-price-box">
+
+   
+
     {% if compare_at_price > price %}
     {% if price_varies %}
         <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>

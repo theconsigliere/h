@@ -50,6 +50,8 @@
     },
     "filled": {
       "title": "Your Cart",
+      "basket": "Your Basket",
+      "reccomendation": "Before you check out have you considered?",
       "mini_cart_title": "Continue",
       "subtotal": "Subtotal",
       "update": "Update",

@@ -161,18 +161,16 @@
     {% render 'preorder-now' %}
 
 
+
        {% comment %}  {{ "lazysizes.min.js" | asset_url | script_tag }} {% endcomment %}
 
        {{ "jquery-3.3.1.min.js" | asset_url | script_tag }}
+ 
 
-       <script type="text/javascript">
-      jQuery.event.special.touchstart = {
-              setup: function( _, ns, handle ){
-                  this.addEventListener("touchstart", handle, { passive: true });
-              }
-          };
-       </script>
-      
+
+
+
+
         {% comment %}
 			if we have multiple currencies engaged enqueue scripts below
 		{% endcomment %}
@@ -182,6 +180,12 @@
         {% endif %}
         {% include 'currencies' %}
 
+                {%- comment -%}quikcview{%- endcomment -%}
+
+
+       
+
+
         {{ "player.min.js" | asset_url | script_tag }}
         {{ "video.js" | asset_url | script_tag }}
 
@@ -189,6 +193,8 @@
         {{ "slideshow-dist.js" | asset_url | script_tag }}
         {{ "search-dist.js" | asset_url | script_tag }}
         {{ "currency-picker.js" | asset_url | script_tag }}
+        {{ "//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js" | script_tag }}
+        {{ '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css' | stylesheet_tag }}
         {{ "application-dist.js" | asset_url | script_tag }}
         {{ "drag-scroll.js" | asset_url | script_tag }}
         
@@ -199,6 +205,13 @@
         {% if template contains 'product' %}
             {{ "bbplayer-dist.js" | asset_url | script_tag }}
         {% endif %}
+
+        <script>
+          {% capture content %}{% include 'quickview' %}{% endcapture %}
+          var content = {{ content | json }};
+        </script>
+
+
 
 
 

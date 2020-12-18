@@ -17,8 +17,15 @@
                     </div>
                     <div class="main-contact-buttons">
                         <button class="underline-button" name="update" type="submit">{{ 'cart.filled.update' | t }}</button>
-                        <a class="black-button" href="/cart">{{ 'cart.filled.title' | t }}</a>
-                        <button class="block-button" name="checkout" type="submit">{{ 'cart.filled.mini_cart_title' | t }}</button>
+                    
+                        {% if template == 'cart' %}
+                            <button class="block-button" name="checkout" type="submit">{{ 'cart.filled.mini_cart_title' | t }}</button>
+                        {% else %}
+                            <a class="black-button" href="/cart">{{ 'cart.filled.title' | t }}</a>
+                        {% endif %}
+                        {%- comment -%}
+                       
+                        {%- endcomment -%}
                     </div>
 
                 </div>

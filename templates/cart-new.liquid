@@ -1,0 +1,83 @@
+
+
+
+<div class="extra-page" id="page-cart">
+
+    <div class="cart-header">
+
+        <h4 class="uppercase ta-center">{{ 'cart.filled.title' | t }}</h4>
+
+    </div>
+    <div class="cart-frame">
+
+        <div class="cart-main-contents">
+
+            <div class="cart-main-contents-inner">
+                <div class="cart-upper">
+
+                    <div class="basket-header">
+
+                        <h6 class="uppercase ta-center">{{ 'cart.filled.basket' | t }}</h6>
+
+                        {% include 'confidence-logos' %}
+                    </div>
+
+                    <div class="cart-page-contents js-cart-page-contents" data-cart-item-count="{{ cart.item_count }}">
+                        {% include 'cart-contents' %}
+                    </div>
+
+                </div>
+
+
+                <div class="cart-lower">
+                    {% section 'cart-collection' %}
+                  
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-reccomendations">
+
+            <div class="cart-reccomendations-inner">
+             
+                {% section 'product-recommendations' %}
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{%- comment -%}cart old{%- endcomment -%}
+
+<div class="extra-page" id="page-cart">
+
+
+    <div class="cart-bottom" id="cart-bottom">
+        <div class="cart-item-one">
+
+            {{ 'cart.jpg' | asset_url | img_tag }}
+
+
+        </div>
+        <div class="cart-item-two">
+            <div class="cart-item-inner">
+
+                <h4 class="uppercase ta-center">{{ 'cart.filled.title' | t }}</h4>
+
+
+                <div class="cart-page-contents js-cart-page-contents" data-cart-item-count="{{ cart.item_count }}">
+                    {% include 'cart-contents' %}
+                </div>
+
+
+                {% section 'cart-collection' %}
+            </div>
+
+
+        </div>
+
+    </div>
+</div>

@@ -123,7 +123,8 @@
           "home_page_only": false,
           "announcement_bar_color": "#ffd200",
           "announcement_bar_text_color": "#000000",
-          "text": "Free delivery on orders over £14.50"
+          "text": "Last order dates before Christmas. Click here.",
+          "link": "shopify:\/\/pages\/delivery-returns"
         }
       },
       "1585057655068": {
@@ -823,23 +824,22 @@
               "third_text": "Shop Now"
             }
           },
-          "1586256487666": {
+          "cf0c49e2-2a15-4951-b105-9a98855f6a47": {
             "type": "nav_item",
             "settings": {
               "nav_item_color": "#ffffff",
-              "nav_item_title": "Support",
-              "nav_item_title_url": "shopify:\/\/pages\/support",
+              "nav_item_title": "What cyclist are you?",
+              "nav_item_title_url": "shopify:\/\/pages\/what-cyclist-are-you",
               "show_megamenu": false,
-              "nav_list": "support-menu",
+              "nav_list": "",
               "first_color_text": "first-white-text",
               "first_title": "",
               "first_text": "",
               "second_color_text": "second-white-text",
               "second_title": "",
               "second_text": "",
-              "third_title": "Contact Us",
-              "third_url": "shopify:\/\/pages\/contact-us",
-              "third_text": "Contact"
+              "third_title": "",
+              "third_text": ""
             }
           },
           "1599470017989": {
@@ -858,6 +858,25 @@
               "second_text": "",
               "third_title": "",
               "third_text": ""
+            }
+          },
+          "1586256487666": {
+            "type": "nav_item",
+            "settings": {
+              "nav_item_color": "#ffffff",
+              "nav_item_title": "Support",
+              "nav_item_title_url": "shopify:\/\/pages\/support",
+              "show_megamenu": false,
+              "nav_list": "support-menu",
+              "first_color_text": "first-white-text",
+              "first_title": "",
+              "first_text": "",
+              "second_color_text": "second-white-text",
+              "second_title": "",
+              "second_text": "",
+              "third_title": "Contact Us",
+              "third_url": "shopify:\/\/pages\/contact-us",
+              "third_text": "Contact"
             }
           },
           "1586256523083": {
@@ -887,8 +906,9 @@
         "block_order": [
           "1586184310215",
           "1586249484522",
-          "1586256487666",
+          "cf0c49e2-2a15-4951-b105-9a98855f6a47",
           "1599470017989",
+          "1586256487666",
           "1586256523083"
         ],
         "settings": {
@@ -1014,7 +1034,7 @@
             "settings": {
               "insta_image_one": "shopify:\/\/shop_images\/clugin.jpg",
               "insta_title": "Share your adventures",
-              "hashtag": "From the road to the gram, we want to see your Hornit accessories in action. Share your snaps using #Hornit",
+              "hashtag": "From the road to the gram, we want to see your Hornit accessories in action. Share your snaps using #Hornit.",
               "insta_button_url": "https:\/\/www.instagram.com\/thehornit\/",
               "insta_button_text": "Follow Hornit",
               "kids_insta_button_url": "https:\/\/www.instagram.com\/minihornit\/",
@@ -1300,18 +1320,18 @@
             "type": "Faq-Section",
             "settings": {
               "section_id": "general",
-              "faq_title": "General FAQ'S",
+              "faq_title": "General FAQs",
               "product_text": "",
               "faq_question_1": "Why don’t you deliver to my country?",
               "faq_desc_1": "Please forgive us. We used to ship to almost every country in the world, but a combination of unreliable postal services and, in some cases, light-fingered customs officials meant that it was simply no longer worth the frustration for all concerned.  However, we have an extensive international distribution network so if we don’t ship to your country please contact us and we will try and put you in contact with a local retailer who can!",
-              "faq_question_2": "I haven’t received an order confirmation, why is this?",
+              "faq_question_2": "Why haven’t I received an order confirmation?",
               "faq_desc_2": "Every order receives an auto-confirmation. Please double-check your junk\/spam folder as they all too frequently end up in there. If you still can’t find it, contact us and we will resend another one.",
               "faq_question_3": "How long does it take to send?",
-              "faq_desc_3": "Orders received before 11am UK time will be sent out the same day. Orders received after 11am UK time will be sent out the next working day. Standard UK delivery will be delivered within 1-5 days. Express UK delivery will be delivered within 1-2 days. European and Worldwide may take 7-10 days. Please note we do not pick or send orders over the weekend.",
+              "faq_desc_3": "Orders received before 11am UK time will be sent out the same day. Orders received after 11am UK time will be sent out the next working day. Standard UK delivery will be delivered within 1-5 days (3-5 days during busy period). European and Worldwide may take 7-10 days. Please note we do not pick or send orders over the weekend.",
               "faq_question_4": "Where does Hornit ship from?",
               "faq_desc_4": "We ship all orders (except the USA and Canada) from our warehouse in the UK. For deliveries to the USA and Canada we have a warehouse in Columbus, Ohio.",
               "faq_question_5": "I haven’t received tracking?",
-              "faq_desc_5": "UK Tracking will come from Diamond Logistics based in Plymouth. You should receive tracking from them. If you haven't please email info@thehornit.com and we will be able to help.",
+              "faq_desc_5": "UK Tracking will come from Diamond Logistics based in Plymouth. You should receive tracking from them. Please check your junk folder if your email security settings are high. If you haven't received an email from Diamond Logistics please email info@thehornit.com and we will be able to help.",
               "faq_question_6": "",
               "faq_desc_6": "",
               "faq_question_7": "",
@@ -1363,17 +1383,17 @@
               "faq_question_1": "What is CLUG?",
               "faq_desc_1": "CLUG is the world’s smallest bike rack and works with your floor to store your bike. You can CLUG vertically or horizontally.",
               "faq_question_2": "Which size CLUG do I need?",
-              "faq_desc_2": "The critical measurement is your ACTUAL tyre width. Armed with this measurement pick CLUG with the appropriate range. To make things more complicated than they should be, especially for MTB riders, tyre manufacturers often overstate their tyre sizes. For example, a tyre stated to be 2.4” will often measure 2.2”. If that's the case, please go for the CLUG mtb (rather than the CLUG mtb XL) as you will appreciate the snugger fit. The easiest way to measure tyre width is with callipers. To watch a video on how to measure, click here.",
+              "faq_desc_2": "The critical measurement is your ACTUAL tyre width. Armed with this measurement pick CLUG with the appropriate range. To make things more complicated than they should be, especially for MTB riders, tyre manufacturers often overstate their tyre sizes. For example, a tyre stated to be 2.4” will often measure 2.2”. If that's the case, please go for the CLUG mtb (rather than the CLUG mtb XL) as you will appreciate the snugger fit. The easiest way to measure tyre width is with callipers. Visit the 'Videos' section to find out how to measure.",
               "faq_question_3": "How is it best to store my bike using CLUG?",
-              "faq_desc_3": "CLUG is built to store your bike in two ways. The first way is to store it vertically. The second way is to store it horizontally. To store vertically roll your bike up so it’s on its back wheel. Once it is lined up vertically beneath the CLUG, push the front wheel into the CLUG. You cannot CLUG a bike vertically with the front wheel on the floor because the front wheel will twist and the bike will fall down! To store horizontally roll your rear tyre (backwards) into the CLUG, making sure the bike is perfectly straight. You cannot CLUG a bike horizontally with the front wheel in the CLUG because the front wheel will twist.",
-              "faq_question_4": "Can CLUG hang my bike in the air? Can the wheels be off the ground?",
+              "faq_desc_3": "CLUG is designed to store your bike vertically or horizontally, depending on your space. CLUG should always sit just above the mid-point of the wheel.  \n\n\nWhen using CLUG for vertical storage, this helps to keep your handlebars straight. Roll the bike into an upright position so that the rear wheel is resting on the floor (which should be stable and flat!) against the wall vertically beneath the CLUG. Then line up the front tyre so that it rests against the jaws of the CLUG before giving it a good nudge into the CLUG.  Please note that you cannot store a bike vertically with CLUG if the front wheel is on the floor because it will swivel, and the bike will fall! \n\n\nFor horizontal storage, the rear wheel is reversed into the CLUG, just above the mid-point of the wheel, ensuring that the bike is perfectly straight.  Please note that when using CLUG for horizontal storage you cannot 'clug' the front tyre because it will swivel. CLUG might be clever but it can't be expected to hold a bike upright if it is mounted to the floor instead of the wall!\"",
+              "faq_question_4": "Can CLUG hang my bike in the air with it's wheels off the ground??",
               "faq_desc_4": "No, please note that CLUG cannot hang your bike, it doesn't work that way. CLUG works with your floor to store your bike. That said CLUG has been used by the likes of Schwalbe and Profile Design to store spare wheels neatly and accessibly.",
-              "faq_question_5": "Can you use two CLUG’s to store the bike off the ground?",
-              "faq_desc_5": "Sadly not! CLUGs don't work that way. CLUGs are made to work with your floor to store your bike. You should use one only CLUG per bike.",
+              "faq_question_5": "If I change tyres do I need a whole new CLUG or can I just switch the inner gripper",
+              "faq_desc_5": "Each CLUG size has a gripper that uniquely matches it's clipper, so they cannot be interchanged.  Each CLUG size accommodates a range of tyre widths so, unless the width difference is significant, you may not need to switch CLUG sizes.  The CLUG mtb and CLUG mtb XL sizes share the same screw footprint so if you are switching between different size mtb tyres you won't need to drill any more holes in the wall.",
               "faq_question_6": "Do I need two CLUGs - for the front and back wheels?",
               "faq_desc_6": "No! 1 CLUG does the job just fine.",
               "faq_question_7": "What sizes are there?",
-              "faq_desc_7": "We have made five different sizes to fit tyres starting from 23mm (1”) all the way up to 81mm (3.2”). The five sizes are: roadie, hybrid, mtb, mtb XL, and plus. Have a look on our CLUG page to work out which size CLUG you need. If your tyre states its 2.3” or 2.4” then it will very likely have an actual size of around 2.2” and we strongly recommend you opt for the CLUG mtb size.",
+              "faq_desc_7": "CLUG comes in 5 different sizes, accommodating all tyre widths between 23mm (1\") to 81mm (3.2\").  Take a look at our ‘Bike Storage’ section to see which size you need for your tyre. If your tyre width sits in the middle of two CLUG sizes, we advise you to go with the smaller size CLUG. A tight fit is a good fit!  Note, if your tyre width is 2.3 - 2.4\" you will find the CLUG mtb a securer fit than the CLUG mtb XL.",
               "faq_question_8": "I ordered a CLUG using your measurement guidelines for actual tyre width but it looks too small for my tyre?",
               "faq_desc_8": "If your tyre is at the top of the width range that your CLUG size accommodates, you will need to mount the CLUG to the wall in order to have enough pressure behind the bike to push the tyre into it.  Not an easy feat with CLUG in hand! A tight fit is a secure fit, but if you’re not sure please contact us at info@thehornit.com and we’ll be able to advise you whether or not you need to swap it for a larger size CLUG.",
               "faq_question_9": "Can I save space by clugging my bikes alternately ‘one front wheel up one front wheel down’?",
@@ -1389,7 +1409,7 @@
               "faq_question_14": "Can I store my bike vertically if my bike has hydraulic brakes?",
               "faq_desc_14": "Yes you can! Don't listen to the naysayers on this! Hydraulic brakes use liquid (either DOT fluid or mineral oil). The reason some people think this is an issue is because if there is air in the hydraulic brake system, it may cause soft brakes (meaning the brake lever can be pulled in all the way instead of having a firm and immediate response). \nHowever, the only reason this happens is if the brakes have not been properly bled, which potentially causes air bubbles in the hydraulic system. It is NOT the fault of the storage method or the brakes, but the fault of the person who bled the brakes poorly! Worst case should be that after a few pumps of the brakes the pressure will be back to normal again.\nStill not convinced? We are aware of some forum posts e.g. from someone who has multiple mountain bikes who claims that their brakes behave differently (depending on brand) even though they are all stored vertically in the same way using CLUG. In other words, it is possible that there are a few brake systems with lesser quality seals that don’t respond well, but for the vast majority it is no problem at all. Either the brakes need bleeding properly or a further explanation would be that the more expensive braking systems have better seals. Cheap brakes with poor seals may leak more readily whether hung horizontally or vertically.",
               "faq_question_15": "What if my tyre has a slow puncture?",
-              "faq_desc_15": "CLUG works by gripping your tyre so punctures will cause CLUG to let go (especially for the roadie and hybrid sizes). For the mtb and plus sizes, as long as your tyre is not at the bottom end of the that the CLUG accommodates, then the tyre wall usually keeps its shape sufficiently for your bike to remain secure. We suggest that you check your tyres regularly to avoid this happening. We will have a special (retro-fittable) strap launching in Autumn\/Winter 2020 for long term storage and complete peace of mind.",
+              "faq_desc_15": "CLUG works by gripping your tyre so punctures will cause CLUG to let go (especially for the roadie and hybrid sizes). For the mtb and plus sizes, as long as your tyre is not at the bottom end of the width-range that the CLUG accommodates, then the tyre wall usually keeps its shape sufficiently for your bike to remain secure. We suggest that you check your tyres regularly to avoid this happening. We will have a special (retro-fittable) strap launching in Spring\/Summer 2021 for long term storage and complete peace of mind.",
               "faq_question_16": "My tyre width is in the middle of two different sized CLUGS.  Which one should I go for?",
               "faq_desc_16": "Please remember to measure your ACTUAL tyre size as this may well vary significantly from the stated size. We recommend going for a tighter fit as your bike will be more secure. In particular, if your tyre states it’s a  2.3” or 2.4” tyre, then it will very likely have an actual size of around 2.2” and we strongly recommend you opt for the CLUG mtb size, not the CLUG mtb XL.",
               "faq_question_17": "Can CLUG stretch over time?",
@@ -1401,7 +1421,7 @@
               "faq_question_20": "My rear wheel is dirtying my wall, how can I prevent this from happening?",
               "faq_desc_20": "All good things come to those who wait. We’ve designed a wipe clean, re-usable mud pad that we expect to launch in the early 2021. The special micro-suction pad can be removed and re-used and won't pull off your paint.",
               "faq_question_21": "Can I rely on the tyre size stated on the tyre?",
-              "faq_desc_21": "Sadly not! Road tyre stated sizes do tend to be accurate. However, when it comes to MTB tyres manufacturers almost always exaggerate the size by as much as 0.1-0.2”. This is why you should go by ACTUAL tyre size, not the stated tyre size, especially if you are at the upper or lower limit of a given CLUG size. In practice if a tyre is stated to be 2.3-2.4” it will probably measure 2.1-2.25”. This means that you should definitely go for the CLUG mtb (rather than the CLUG mtb XL) to ensure a snug fit – the mtb XL will be loose. See this short video on how to measure tyre width if you don't have callipers to hand.",
+              "faq_desc_21": "Sadly not! Road tyre stated sizes do tend to be accurate. However, when it comes to MTB tyres manufacturers almost always exaggerate the size by as much as 0.1-0.2”. This is why you should go by ACTUAL tyre size, not the stated tyre size, especially if you are at the upper or lower limit of a given CLUG size. In practice if a tyre is stated to be 2.3-2.4” it will probably measure 2.1-2.25”. This means that you should definitely go for the CLUG mtb (rather than the CLUG mtb XL) to ensure a snug fit – the mtb XL will be loose.",
               "faq_question_22": "Can I mount CLUG on drywall?",
               "faq_desc_22": "If you have a roadie or hybrid size, the answer is yes you can. Please use the patented Toggler wall plugs supplied. We go to great lengths to source these from the USA as they are the best we have found. If you have the mtb, mtb XL or the plus size then the answer is no. The reason is that larger, ‘nobblier’ mountain bike tyres exert a much greater pull force on the CLUG and the dry wall is unlikely to cope.",
               "faq_question_23": "Can I mount CLUG at an angle?",
@@ -1597,7 +1617,7 @@
               "faq_question_2": "What do the sizes mean?",
               "faq_desc_2": "The measurement (in cm) refers to the circumference around the largest part of the rider’s head (approximately 1cm above the rider’s eyebrows). Our helmets generally fit children aged 3+. This isn’t a rule though – actual sizing is critical - so please measure up!  Check our sizing guide on the helmet product pages!",
               "faq_question_3": "How do I measure my child’s head to check for the right size?",
-              "faq_desc_3": "We have written a handy blog about how exactly to measure your kids head.<a href=\"https:\/\/hornit.com\/blogs\/news\/how-do-i-find-out-my-kids-helmet-size\"><b>Click here to read more<\/b><\/a>",
+              "faq_desc_3": "We have written a handy article about how exactly to measure your kids head. Head over to our 'Blog' section to check it out.",
               "faq_question_4": "Are the helmets adjustable?",
               "faq_desc_4": "Yes! We have a ring adjuster at the back of the helmet (with an integrated LED light) which tightens and loosens to ensure the helmet fits snuggly to you’re the rider’s head. The straps that clip under the chin are also adjustable. The ring adjuster should be tightened until the fit is firm, but comfortable and the chin strap should fit snugly under the chin.",
               "faq_question_5": "My child has had a fall and hit their helmet on the ground - can I still use it?",
@@ -1728,8 +1748,8 @@
               "faq_desc_9": "Brakes are a divisive issue! The reality is that a brake is a totally alien concept to a 18 month to 3 year old and they won’t use it even if you tell them to. They will use their feet. We debated at length whether to have one (essentially to make the parents feel better), but resisted because it gives parents a false sense of security, ironically making the child less safe. Ideally balance bikes should not be used anywhere where brakes are needed and not having a brake makes that more likely.",
               "faq_question_10": "Which way round should the forks be?",
               "faq_desc_10": "Getting the forks the right way round on your AIRO is important. The thick line decal on the side of the fork should be at the front of the bike.",
-              "faq_question_11": "Handlebars grinding?",
-              "faq_desc_11": "It means you have over-tightened the top cap bolt. Remove the protective neoprene cover and use the Allen key provided to tighten the top cap bolt. Be careful not to over-tighten as it should not restrict the steering: the handlebars should still turn smoothly. Overtightening will damage the bearings.",
+              "faq_question_11": "How tight should the handlebars be?",
+              "faq_desc_11": "Remove the protective neoprene cover and use the 5mm Allen key provided to adjust the top bolt A. It should be finger tight (to eliminate play in the headset). Be careful not to over tighten as it should not restrict the steering: the handlebars should turn freely. Overtightening will damage the bearings.",
               "faq_question_12": "",
               "faq_desc_12": "",
               "faq_question_13": "",
@@ -1856,7 +1876,7 @@
             "settings": {
               "video_id": "bike-balls",
               "video_title": "Bike Balls",
-              "video_desc": "Bike Balls - the boldest bike lights lights in the world!",
+              "video_desc": "Bike Balls - the boldest bike lights in the world!",
               "video_url": "https:\/\/player.vimeo.com\/video\/414802389"
             }
           },
@@ -1874,7 +1894,7 @@
             "settings": {
               "video_id": "hornit-db140",
               "video_title": "Hornit db140",
-              "video_desc": "The loudest bike horn in the world in action!",
+              "video_desc": "The loudest bike horn in the world, in action!",
               "video_url": "https:\/\/player.vimeo.com\/video\/414794381"
             }
           },
@@ -1892,7 +1912,7 @@
             "settings": {
               "video_id": "",
               "video_title": "How to install your clug",
-              "video_desc": "How to correctly install your Hornit CLUG",
+              "video_desc": "How to correctly install your Hornit CLUG.",
               "video_url": "https:\/\/player.vimeo.com\/video\/412705814"
             }
           },
@@ -1900,7 +1920,7 @@
             "type": "video",
             "settings": {
               "video_id": "hornit-lids",
-              "video_title": "Hornit LIds",
+              "video_title": "Hornit Lids",
               "video_desc": "Hornit Bike Helmets - your adventure starts here!",
               "video_url": "https:\/\/player.vimeo.com\/video\/414795458"
             }
@@ -1910,7 +1930,7 @@
             "settings": {
               "video_id": "hornit-nano",
               "video_title": "Hornit Nano",
-              "video_desc": "Bring your imagination to life with the Hornit Nano",
+              "video_desc": "Bring your imagination to life with the Hornit Nano.",
               "video_url": "https:\/\/player.vimeo.com\/video\/412707235"
             }
           },
@@ -1918,7 +1938,7 @@
             "type": "video",
             "settings": {
               "video_id": "mini-hornit",
-              "video_title": "Mini Hornit",
+              "video_title": "hornit mini",
               "video_desc": "The ultimate kids scooter or bike accessory!",
               "video_url": "https:\/\/player.vimeo.com\/video\/412706865"
             }
@@ -2342,6 +2362,33 @@
         ],
         "settings": {
           "title_top": "Page Title"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true
+        }
+      },
+      "cart-recommendations": {
+        "type": "cart-recommendations",
+        "blocks": {
+          "2876d81d-ca4c-4e50-9947-8f79d0451699": {
+            "type": "collection",
+            "settings": {
+              "collection": "helmets",
+              "max_products": 6,
+              "title": "have you considered?",
+              "show_button": true,
+              "button_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "2876d81d-ca4c-4e50-9947-8f79d0451699"
+        ],
+        "settings": {
+          "title": ""
         }
       }
     },
