@@ -123,7 +123,7 @@
           "home_page_only": false,
           "announcement_bar_color": "#ffd200",
           "announcement_bar_text_color": "#000000",
-          "text": "Last order dates before Christmas. Click here.",
+          "text": "Free UK delivery over £14.50",
           "link": "shopify:\/\/pages\/delivery-returns"
         }
       },
@@ -1778,18 +1778,18 @@
               "faq_desc_24": ""
             }
           },
-          "301f2d87-3525-4308-9962-f63b3aa423e3": {
+          "3c53d761-aa8e-48aa-9145-2ebc02f0c13d": {
             "type": "Faq-Section",
             "settings": {
               "section_id": "",
-              "faq_image": "shopify:\/\/shop_images\/Macy_downhill_web.jpg",
+              "faq_image": "shopify:\/\/shop_images\/Macy_Downhill_High_Res.jpg",
               "faq_title": "Hornit Team Jersey",
-              "product_url": "shopify:\/\/products\/hornit-team-jersey-by-little-rider",
-              "product_text": "see product",
+              "product_url": "https:\/\/hornit.com\/collections\/gear\/products\/hornit-team-jersey-by-little-rider",
+              "product_text": "",
               "faq_question_1": "What sizes do you sell?",
-              "faq_desc_1": "We have Jerseys for kids aged 2-5. Take a look at our size guide on the Jersey page for specific sizes.",
+              "faq_desc_1": "We have Jerseys for kids aged 2-5 years. Take a look at our size guide on the Jersey product page for specific sizes.",
               "faq_question_2": "Are they personalised?",
-              "faq_desc_2": "No unfortunately not. You may have seen a few photographs of some children with their names on their backs. This was for a one off photoshoot. The jerseys on the site will be identical in every way to these, just without the personalisation.",
+              "faq_desc_2": "No, unfortunately not. You may have seen a few photographs of some children with their names on their back. This was a one off photoshoot. The Jerseys on the site will be identical in every way to these, just without the personalisation.",
               "faq_question_3": "What fabric are they made from?",
               "faq_desc_3": "Our jerseys are made of 100% polyester for extra durability while riding.",
               "faq_question_4": "",
@@ -1846,7 +1846,7 @@
           "1588436188865",
           "1588437757997",
           "1600943837481",
-          "301f2d87-3525-4308-9962-f63b3aa423e3"
+          "3c53d761-aa8e-48aa-9145-2ebc02f0c13d"
         ],
         "settings": {}
       },
@@ -2387,9 +2387,7 @@
         "block_order": [
           "2876d81d-ca4c-4e50-9947-8f79d0451699"
         ],
-        "settings": {
-          "title": ""
-        }
+        "settings": {}
       }
     },
     "content_for_index": [

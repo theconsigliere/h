@@ -269,12 +269,15 @@ margin: 0;
 }
 
 .newsletter {
-  width: 100%;
+  width: 90%;
   margin-top: 5vh;
+  margin: 0 auto;
 
   @media (min-width: #{$screen-lg}) {
     width: 70%;
   }
+
+  
 
   @media (min-width: #{$screen-xxl}) {
     width: 50%;

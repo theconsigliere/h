@@ -494,6 +494,11 @@
     opacity: 0;
     transition: 0.3s ease-in;
     z-index: 3;
+    display: none;
+
+    @media (min-width: #{$screen-lg}) {
+     display: block;
+    }
 }
 
   &:hover {
