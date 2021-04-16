@@ -13,10 +13,10 @@
 
 .no-header_content {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 4em;
 
   @media (min-width: #{$screen-lg}) {
-    padding-top: 50px;
+    padding-top: 6em;
   }
 }
 
@@ -114,7 +114,8 @@
     background-image: url("006-help.png");
   }
 
-  .legal, .policies-shipping-policy {
+  .legal,
+  .policies-shipping-policy {
     background-image: url("005-list.png");
   }
 
@@ -541,6 +542,21 @@
   }
 }
 
+// FAQ PAGE KLARNA
+//---------------------------------
+
+.klarna-color {
+  background: #ffb3c7 !important;
+}
+
+.klarna-logo {
+  min-width: 60%;
+}
+
+.faq-menu.klarna-faq-menu {
+  padding-top: 2em;
+}
+
 // VIDEO LIBRARY
 //---------------------------------
 
@@ -551,7 +567,6 @@
   .title-section {
     max-width: 90%;
   }
-
 }
 
 .video-library-item {
@@ -572,8 +587,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
   }
 }
 
@@ -646,8 +659,7 @@
     clear: both;
     position: relative;
     z-index: 2;
-}
-
+  }
 
   .bf-background {
     position: absolute;

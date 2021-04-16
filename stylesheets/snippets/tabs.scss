@@ -111,3 +111,8 @@ input:checked {
   padding-top: 5vh;
   @include space-center;
 }
+
+.tab-content a {
+  position: relative;
+  z-index: 9;
+}

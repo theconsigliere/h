@@ -59,6 +59,7 @@
 
     @media (min-width: #{$screen-lg}) {
       margin: 0;
+      padding-left: 10px;
     }
   }
 }
@@ -210,8 +211,6 @@
     width: 3.125em;
     margin: 0;
   }
-
-
 }
 
 .payment-list-logos {
@@ -220,13 +219,13 @@
   margin-top: 5px;
 
   li {
-margin: 0;
-@include space-center;
+    margin: 0;
+    @include space-center;
 
     &:before {
       content: "";
       padding-right: 0;
-  }
+    }
   }
 }
 
@@ -256,7 +255,6 @@ margin: 0;
     @media (min-width: #{$screen-lg}) {
       font-size: 0.8rem;
     }
-
   }
 }
 
@@ -269,18 +267,16 @@ margin: 0;
 }
 
 .newsletter {
-  width: 90%;
-  margin-top: 5vh;
+  max-width: 90vw;
+  min-width: 80vw;
   margin: 0 auto;
+  margin-top: 5vh;
 
   @media (min-width: #{$screen-lg}) {
-    width: 70%;
-  }
-
-  
-
-  @media (min-width: #{$screen-xxl}) {
-    width: 50%;
+    max-width: 70%;
+    min-width: 70%;
+    margin: 0;
+    margin-top: 5vh;
   }
 
   h6 {
@@ -322,7 +318,6 @@ margin: 0;
   width: 100% !important;
 }
 
-
 input.required {
   background: transparent;
   border: 1px solid $white;
@@ -344,32 +339,82 @@ input.required {
   }
 }
 
-
 .ql-editor {
   p {
     color: $white !important;
   }
 }
 
-
 .klaviyo-form-XeF9jQ {
-
   .TextInput__FormStyledTextInput-sc-1o6de9f-0 {
     background: $black !important;
     color: $white !important;
   }
-  
+
   .Button__FormStyledButton-p2mbjt-0 {
     background: $yellow !important;
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
     color: $black !important;
   }
-  
+
   .klaviyo-form-XeF9jQ.klaviyo-form.form-version-cid-1 {
     width: 90%;
     margin: 0 auto;
   }
-
 }
 
+.ql-editor {
+  p span,
+  p strong,
+  span {
+    color: $black !important;
+  }
+}
+
+// KLARNA FOOTER
+
+.klarna-inner-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+
+  .logo-klarna_f {
+    width: 8em;
+    margin-right: 2em;
+
+    @media (min-width: #{$screen-lg}) {
+      margin-right: 6em;
+      width: 10em;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  .text-klarna_f {
+    * {
+      margin: 0;
+    }
+
+    .underline-button {
+      color: #24272c;
+      text-transform: initial;
+      letter-spacing: 0;
+      font-weight: 400;
+      padding: 10px 10px;
+      border-bottom: 2px solid $black;
+      margin-top: 10px;
+
+      &:hover {
+        background: $white;
+        color: #24272c;
+      }
+    }
+  }
+}
+
+.newsletter {
+  margin: 0 !important;
+}

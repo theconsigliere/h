@@ -72,6 +72,9 @@
                         },  {
                             "value": "black-friday",
                             "label": "Black Friday Logo"
+                        }, {
+                            "value": "klarna",
+                            "label": "klarna Logo"
                         }
                     ],
                     "label": "Select Product Logos"
@@ -217,6 +220,9 @@
                                 <img data-src="{{ 'hornit-airo.svg' | asset_url }}" alt="Hornit Airo Logo" class="hero-product-logo lazyload"/>
                             {% when "black-friday" %}
                                 <img data-src="{{ 'black-friday.svg' | asset_url }}" alt="Black Friday Logo" class="black-friday lazyload"/>
+                            {% when 'klarna' %}
+                                <img data-src="{{ 'klarna.svg' | asset_url }}" alt="klarna" class="helmet-product-logo lazyload"/>
+                            
                         {% endcase %}
 
                     </div>

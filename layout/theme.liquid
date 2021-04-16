@@ -195,7 +195,7 @@
         {{ "currency-picker.js" | asset_url | script_tag }}
         {{ "//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js" | script_tag }}
         {{ '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css' | stylesheet_tag }}
-        {{ "application-dist.js" | asset_url | script_tag }}
+        {{ "application.js" | asset_url | script_tag }}
         {{ "drag-scroll.js" | asset_url | script_tag }}
         
 
@@ -226,5 +226,6 @@
 
 {%- endcomment -%}
 
-  </body>
+  <script>window.KlarnaThemeGlobals={};{%case template.name%} {%when"product"%} window.KlarnaThemeGlobals.data_purchase_amount={{product.first_available_variant.price}};window.KlarnaThemeGlobals.productVariants={{product.variants|json}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%when"cart"%} window.KlarnaThemeGlobals.data_purchase_amount={{cart.total_price}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%endcase%}</script>
+</body>
 </html>

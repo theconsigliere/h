@@ -9,10 +9,18 @@
             "name": "Collection",
             "settings": [
                 {
-                    "id": "collection",
-                    "type": "collection",
-                    "label": "Collection"
-                }, {
+                    "id": "show_button",
+                    "type": "checkbox",
+                    "label": "Show Reccomendations?",
+                    "default": true
+                },
+                {
+                    "id": "title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Defaults to Collection Title"
+                },
+                 {
                     "id": "max_products",
                     "type": "range",
                     "min": 2,
@@ -21,22 +29,6 @@
                     "unit": "ct",
                     "label": "Products to Show",
                     "default": 2
-                }, {
-                    "id": "title",
-                    "type": "text",
-                    "label": "Title",
-                    "placeholder": "Defaults to Collection Title"
-                }, {
-                    "id": "show_button",
-                    "type": "checkbox",
-                    "label": "Show Button?",
-                    "default": true
-                }, {
-                    "id": "button_text",
-                    "type": "text",
-                    "label": "Button Text",
-                    "placeholder": "Shop Now",
-                    "info": "Defaults to \"Shop Now\""
                 }
             ]
         }
@@ -45,21 +37,128 @@
 
 {% endschema %}
 
-<section class="content-wrap">
+<div class="cart-recommendations-main">
 
+    <div class="cart-recommendations-inner">
 
-    {% for block in section.blocks %}
+        {% for block in section.blocks %}
         <div class="{{ block.type }}" {{ block.shopify_attributes }}>
 
+            {% if block.settings.show_button and cart.item_count > 0 %}
 
-            {% assign collection = collections[block.settings.collection] %}
+            {% for item in cart.items %}
+               
+                {%- comment -%}always get the product recently added to cart{%- endcomment -%}
+                {% if forloop.first == true %}
+               
+                    {% assign product_rec = item.product %}
 
-            <div class="collection-list-wrap">
-                {% include "collection-list-simple" with title: block.settings.title, max_products: block.settings.max_products %}
+                {% endif %}
 
+            {% endfor %}
+            
+             
+              
+            
+
+    <div class="collection-list">
+      
+
+
+            {% if section.settings.heading != blank %}
+           
+              <h5 class='uppercase'>{{ block.settings.title | escape }}</h2>
+           
+            {% endif %}
+
+
+          <div class="product-recommendations" data-base-url="{{ routes.product_recommendations_url }}" data-product-id="{{ product_rec.id }}" data-limit="{{ block.settings.max_products }}">
+
+            {% if recommendations.products_count > 0 %}
+
+                <div class="collection-products">
+                    {% for product in recommendations.products %}
+                    
+                    {% assign display = true %}
+                    
+                    {% for item in cart.items %}
+                        {% if item.product.id == product.id %}
+                            {% assign display = false %}
+                        {% endif %}
+                    {% endfor %}
+                    
+                    {% if display == true %}
+        
+
+                    {% include 'product-card' %}
+        
+        
+                    {% endif %}
+                    
+                    {% endfor %}
+                </div>
+
+            {% endif %}
+
+    
+
+                
             </div>
-
-
+        </div>
+             
+                  {% endif %}
         </div>
     {% endfor %}
-</section>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+{% javascript %}
+
+
+var loadProductRecommendationsIntoSection = function() {
+  // Look for an element with class 'product-recommendations'
+  var productRecommendationsSection = document.querySelector(".product-recommendations");
+  if (productRecommendationsSection === null) { return; }
+  // Read product id from data attribute
+  var productId = productRecommendationsSection.dataset.productId;
+  // Read base URL from data attribute
+  var baseUrl = productRecommendationsSection.dataset.baseUrl;
+  // Read limit from data attribute
+  var limit = productRecommendationsSection.dataset.limit;
+  // Build request URL
+  var requestUrl = baseUrl + "?section_id=product-recommendations&product_id=" + productId + "&limit=" + limit;
+  // Create request and submit it using Ajax
+  var request = new XMLHttpRequest();
+  request.open("GET", requestUrl);
+  request.onload = function() {
+
+    if (request.status >= 200 && request.status < 300) {
+      var container = document.createElement("div");
+      container.innerHTML = request.response;
+      productRecommendationsSection.parentElement.innerHTML = container.querySelector(".product-recommendations").innerHTML;
+    //  document.querySelector('.cart-recommendations')
+    }
+  };
+  request.send();
+};
+
+// Listen for changes done in the Theme Editor
+document.addEventListener("shopify:section:load", function(event) {
+  if (event.detail.sectionId === "product-recommendations") {
+    loadProductRecommendationsIntoSection();
+  }
+});
+// Fetching the recommendations on page load
+loadProductRecommendationsIntoSection();
+{% endjavascript %}
+
+
+
+

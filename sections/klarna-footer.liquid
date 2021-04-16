@@ -1,0 +1,62 @@
+{% schema %}
+{
+  "name": "Klarna info bar",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_klarna",
+      "label": "Show Klarna info bar",
+      "default": false
+    },
+    {
+        "type": "text",
+        "id": "klarna_title",
+        "label": "title",
+        "default": "Pay later with Klarna",
+        "info": "text",
+        "placeholder": "Pay later with Klarna"
+     },
+    {
+        "id": "button_url",
+        "type": "url",
+        "label": "Button URL"
+    }, {
+        "id": "button_text",
+        "type": "text",
+        "label": "Button Text",
+        "placeholder": "Shop Now",
+        "info": "Defaults to \"Shop Now\""
+    }
+  ]
+}
+{% endschema %}
+
+
+
+
+{% if section.settings.show_klarna %}
+
+
+        <div class="klarna-info-bar klarna-color">
+            <div class="klarna-inner-info">
+                <div class="logo-klarna_f">
+                    <img data-src="{{ 'klarna.svg' | asset_url }}" alt="klarna" class="klarna-logo lazyload"/>
+                </div>
+                <div class="text-klarna_f">
+
+
+                    <h6>{{ section.settings.klarna_title }}</h6>
+
+        
+                    {% if section.settings.button_url %}
+
+                    <a href="{{ section.settings.button_url }}" class="underline-button">
+                        {{ section.settings.button_text }}
+                    </a>
+
+                {% endif %}
+                </div>
+            </div>
+        </div>
+				
+{% endif %}

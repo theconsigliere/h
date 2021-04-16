@@ -1,24 +1,42 @@
     {%- comment -%}Crosselling section {%- endcomment -%}
 
-    {% if product.metafields.custom_fields["show_crosselling_section"] != blank %}
 
-    <div class="crosselling-section">
+    {% assign heading = 'You may also like' %}
+    {% assign limit = 6 %}
 
-        {% assign collection = collections[product.metafields.custom_fields["show_crosselling_section"]] %}
-        {% assign cross_sell_title = product.metafields.custom_fields["crosselling_title"]  %}
+    <div class="crosselling-section" data-base-url="{{ routes.product_recommendations_url }}" data-product-id="{{ product.id }}" data-limit="{{ limit }}" data-section-id="{{ section.id }}" data-section-type="crosselling-section">
+      
+      
+       
+        {% if recommendations.products_count > 0 %}
 
         <div class="collection-list-wrap wrapper">
+            <h5 class='uppercase'>{{ heading }}</h5>
 
-            {% include "collection-list" with title: cross_sell_title, content:
-            block.settings.content, show_button: block.settings.show_button,
-            button_text: block.settings.button_text, max_products:
-            6 %}
+            <div class="collection-list">
+                <div class="collection-block-info">
+                    <div class="collection-products">
+                        {% for product in recommendations.products %}
+                        {% include 'product-card' %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 
-    
+
+        {% endif %}
+     
     </div>
 
-    {% endif %}
+
+
+
+
+
+
+
 
        {%- comment -%}End Crosselling section {%- endcomment -%}

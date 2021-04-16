@@ -521,3 +521,31 @@ $(window).resize(function () {
 
 
 quickView()
+
+// Product Reccomendations
+
+var crossellingSection = function() {
+  var theSection = document.querySelector('.crosselling-section')
+  if (theSection === null) { return; }
+
+ // console.log(theSection)
+
+  var baseUrl = theSection.dataset.baseUrl;
+  var productId = theSection.dataset.productId;
+  var limit = theSection.dataset.limit;
+ var productRecommendationsUrlAndContainerClass = baseUrl + '?section_id=product-recommendations&limit=' + limit +
+  '&product_id=' +productId +
+  ' .product-recommendations';
+
+
+  
+
+  console.log(productRecommendationsUrlAndContainerClass)
+
+    $(theSection).load(productRecommendationsUrlAndContainerClass);
+
+};
+
+
+// fetch reccomendations on page load
+crossellingSection();
