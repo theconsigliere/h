@@ -670,17 +670,6 @@
               "email": "gigi@thehornit.com"
             }
           },
-          "1587929212909": {
-            "type": "contact-info",
-            "settings": {
-              "contact_image": "shopify:\/\/shop_images\/Hels_new.png",
-              "contact_image_two": "shopify:\/\/shop_images\/Hels_1.png",
-              "name": "Hels",
-              "job_title": "Sales",
-              "tel": "07805 781958",
-              "email": "hels@thehornit.com"
-            }
-          },
           "1587929169764": {
             "type": "contact-info",
             "settings": {
@@ -703,15 +692,15 @@
               "email": "georgia@thehornit.com"
             }
           },
-          "1599215556754": {
+          "1587929212909": {
             "type": "contact-info",
             "settings": {
-              "contact_image": "shopify:\/\/shop_images\/louis_square.jpg",
-              "contact_image_two": "shopify:\/\/shop_images\/louis_bandw.jpg",
-              "name": "Louis",
-              "job_title": "Product Design",
-              "tel": "",
-              "email": "louis@thehornit.com"
+              "contact_image": "shopify:\/\/shop_images\/Hels_new.png",
+              "contact_image_two": "shopify:\/\/shop_images\/Hels_1.png",
+              "name": "Hels",
+              "job_title": "Sales",
+              "tel": "07307 168822",
+              "email": "hels@thehornit.com"
             }
           },
           "1601998565448": {
@@ -750,26 +739,37 @@
           "1593787820504": {
             "type": "contact-info",
             "settings": {
-              "contact_image": "shopify:\/\/shop_images\/Claire.png",
-              "contact_image_two": "shopify:\/\/shop_images\/claire_jump.jpg",
-              "name": "Claire",
+              "contact_image": "shopify:\/\/shop_images\/Alex.jpg",
+              "contact_image_two": "shopify:\/\/shop_images\/20191124_145844.jpg",
+              "name": "Alex",
               "job_title": "Operations",
-              "tel": "07928 383127",
-              "email": "claire@thehornit.com"
+              "tel": "07841582762",
+              "email": "Alex@thehornit.com"
+            }
+          },
+          "1599215556754": {
+            "type": "contact-info",
+            "settings": {
+              "contact_image": "shopify:\/\/shop_images\/louis_square.jpg",
+              "contact_image_two": "shopify:\/\/shop_images\/louis_bandw.jpg",
+              "name": "Louis",
+              "job_title": "Product Design",
+              "tel": "",
+              "email": "louis@thehornit.com"
             }
           }
         },
         "block_order": [
           "1587927208608",
           "1587929255042",
-          "1587929212909",
           "1587929169764",
           "1587929135604",
-          "1599215556754",
+          "1587929212909",
           "1601998565448",
           "1592577607750",
           "1587928499545",
-          "1593787820504"
+          "1593787820504",
+          "1599215556754"
         ],
         "settings": {}
       },
@@ -1055,8 +1055,7 @@
               "hashtag": "From the road to the gram, we want to see your Hornit accessories in action. Share your snaps using #Hornit.",
               "insta_button_url": "https:\/\/www.instagram.com\/thehornit\/",
               "insta_button_text": "Follow Hornit",
-              "kids_insta_button_url": "https:\/\/www.instagram.com\/minihornit\/",
-              "kids_insta_button_text": "Follow Mini Hornit",
+              "kids_insta_button_text": "",
               "insta_image_two": "shopify:\/\/shop_images\/mini-hor.jpg"
             }
           }
@@ -1293,7 +1292,7 @@
             "type": "cyclist-block",
             "settings": {
               "cyclist_color": "#ffffff",
-              "cyclist_image": "shopify:\/\/shop_images\/fsd.jpg",
+              "cyclist_image": "shopify:\/\/shop_images\/leisure_rider.jpg",
               "cyclist_title": "Leisure Rider",
               "cyclist_content": "The coolest accessories for you and families cycling adventures. The kids will love our stylish and fun helmets, lights and horns and us adults will no longer have to worry about storage with the ingenious CLUG. Everyone’s happy!",
               "collection": "leisure-biker",
@@ -1345,7 +1344,7 @@
               "faq_question_2": "Why haven’t I received an order confirmation?",
               "faq_desc_2": "<p>Every order receives an auto-confirmation. Please double-check your junk\/spam folder as they all too frequently end up in there. If you still can’t find it, <a href=\"\/pages\/contact-us\" title=\"Contact Us\">contact us<\/a> and we will resend another one.<\/p>",
               "faq_question_3": "How long does it take to send?",
-              "faq_desc_3": "<p>Orders received before 11am UK time will be sent out the same day. Orders received after 11am UK time will be sent out the next working day. AIRO balance bikes are sent next day delivery and all other products are sent standard UK delivery which takes 1-5 days (3-5 days during busy period). European and Worldwide may take 7-10 days. Please note we do not pick or send orders over the weekend.<\/p>",
+              "faq_desc_3": "<p>Orders received before 1pm UK time will be sent out the same day. Orders received after 1pm UK time will be sent out the next working day. AIRO balance bikes are sent next day delivery and all other products are sent standard UK delivery which takes 1-5 days (3-5 days during busy period). European and Worldwide may take 7-10 days. Please note we do not pick or send orders over the weekend.<\/p>",
               "faq_question_4": "Where does Hornit ship from?",
               "faq_desc_4": "<p>We ship all orders (except the USA and Canada) from our warehouse in the UK. For deliveries to the USA and Canada we have a warehouse in Columbus, Ohio.<\/p>",
               "faq_question_5": "I haven’t received tracking?",
@@ -1417,7 +1416,7 @@
               "faq_question_9": "What size drill bit do I use for the wall plug?",
               "faq_desc_9": "<p>Roadie and Hybrid : 1\/4&quot; or 6mm.<br\/>mtb, mtb XL and mtb plus : 5\/16&quot; or 8mm.<\/p>",
               "faq_question_10": "I can’t drill into my wall. Would tape work?",
-              "faq_desc_10": "<p>Unfortunately tape won’t work as it is not strong enough. We do however have a Vacuum Mount launching in mid 2021, which may be able to help if your wall surface is smooth. Keep an eye out on <a href=\"https:\/\/www.instagram.com\/thehornit\/\" title=\"https:\/\/www.instagram.com\/thehornit\/\" target=\"_blank\">@thehornit<\/a> Instagram page.<\/p>",
+              "faq_desc_10": "<p>Tape won’t work as it is not strong enough. Check out the <a title=\"Hornit Vacuum Mount for CLUG\" href=\"\/products\/clug-vacuum-mount\">vacuum mount<\/a> for CLUG for our solution to this problem!<\/p>",
               "faq_question_11": "Can I use the CLUG to store my e-bike?",
               "faq_desc_11": "<p>CLUG is officially tested on bikes up to 13kg for the roadie and 20kg for all the other sizes. E-bikes tend to be 25kg so we cannot officially recommend it. Unofficially, if your e-bike tyre is an mtb tyre and is towards the upper end of the size range for the CLUG then it will be fine as there is a lot of friction holding it in place.<\/p>",
               "faq_question_12": "Will CLUG cause damage to carbon fibre rims?",
@@ -1446,6 +1445,64 @@
               "faq_desc_23": "<p>You can if you are a DIY guru! You need to create an attachment between the wall and CLUG at the required angle and don’t forget to make a block for your bottom tyre to rest against at the same angle. Please note the tyre must fit into the CLUG straight on and not at an angle to be effective.<\/p>",
               "faq_question_24": "How do I fit my CLUG?",
               "faq_desc_24": "<p>Decide whether you want to clug vertically or horizontally. The CLUG should always sit just above (say 25mm or 1”) the centre line of the wheel. When clugging vertically this helps keep your handlebars straight. When clugging horizontally this will help make your bike more stable. Use the drilling guide on the box to drill two holes in the right place. We designed this specially for you and the box will even catch the dust as you drill! Using the screws provided screw the clipper into the holes that you have just made. Then fit the gripper inside the clipper.<\/p>"
+            }
+          },
+          "62d34307-f101-4352-9413-7a63b15885f1": {
+            "type": "Faq-Section",
+            "settings": {
+              "section_id": "clug-mount",
+              "faq_image": "shopify:\/\/shop_images\/VM_1.jpg",
+              "faq_title": "Bike storage accessories",
+              "product_url": "shopify:\/\/collections\/bike-storage-accessories",
+              "product_text": "See product",
+              "faq_question_1": "How long will the vacuum last for?",
+              "faq_desc_1": "<p>Actual time will depend on the quality of the vacuum, the material on which you are fixing and any debris on the surface. You should test the vacuum mount first before racking your bike in case the surface is not suitable. You should also regularly check the vacuum pump indicator for signs the vacuum is being lost. The vacuum should last for a minimum 7 days on smooth glass before the vacuum pump indicator shows orange.<\/p>",
+              "faq_question_2": "How much weight can the Vacuum Mount hold?",
+              "faq_desc_2": "<p>The Vacuum Mounts have been tested to hold 55kg (121lbs). In reality they are holding only a fraction of this weight as the bicycle has to have at least one wheel on the floor at all times.<\/p>",
+              "faq_question_3": "Do I need to buy a CLUG separately?",
+              "faq_desc_3": "<p>Yes! The Vacuum Mount is compatible with all sizes of CLUG, but you do need to buy this separately.<\/p>",
+              "faq_question_4": "How do I know if the Vacuum Mount will work on my particular surface?",
+              "faq_desc_4": "<p>If the surface is smooth, non-porous and clean then you can pretty much guarantee the Vacuum Mount. On finely textured surfaces or if the surface is porous then the Vacuum Mount may only work for a short time. The only way to really find out is to test it. If it’s not for you then simply return it to us, as per our <a href=\"\/policies\/refund-policy\" title=\"Refund Policy\">refund policy<\/a>.<\/p>",
+              "faq_question_5": "",
+              "faq_desc_5": "",
+              "faq_question_6": "",
+              "faq_desc_6": "",
+              "faq_question_7": "",
+              "faq_desc_7": "",
+              "faq_question_8": "",
+              "faq_desc_8": "",
+              "faq_question_9": "",
+              "faq_desc_9": "",
+              "faq_question_10": "",
+              "faq_desc_10": "",
+              "faq_question_11": "",
+              "faq_desc_11": "",
+              "faq_question_12": "",
+              "faq_desc_12": "",
+              "faq_question_13": "",
+              "faq_desc_13": "",
+              "faq_question_14": "",
+              "faq_desc_14": "",
+              "faq_question_15": "",
+              "faq_desc_15": "",
+              "faq_question_16": "",
+              "faq_desc_16": "",
+              "faq_question_17": "",
+              "faq_desc_17": "",
+              "faq_question_18": "",
+              "faq_desc_18": "",
+              "faq_question_19": "",
+              "faq_desc_19": "",
+              "faq_question_20": "",
+              "faq_desc_20": "",
+              "faq_question_21": "",
+              "faq_desc_21": "",
+              "faq_question_22": "",
+              "faq_desc_22": "",
+              "faq_question_23": "",
+              "faq_desc_23": "",
+              "faq_question_24": "",
+              "faq_desc_24": ""
             }
           },
           "1588434111405": {
@@ -1770,12 +1827,12 @@
               "faq_desc_11": "<p>Remove the protective neoprene cover and use the 5mm Allen key provided to adjust the top bolt (marked A in the instruction booklet). It should be finger tight (to eliminate play in the headset). Be careful not to over tighten as it should not restrict the steering: the handlebars should turn freely. Overtightening will damage the bearings.<\/p>",
               "faq_question_12": "Why are the tyres in the video different to the tyres that I get with the bike?",
               "faq_desc_12": "<p>For shooting our balance bike videos we used thicker tyres as we filmed on a very dusty track. The tyres we bought were 12.5x 1.75&quot; tyres, and you can get them from a number of online sites.<\/p>",
-              "faq_question_13": "",
-              "faq_desc_13": "",
-              "faq_question_14": "",
-              "faq_desc_14": "",
-              "faq_question_15": "",
-              "faq_desc_15": "",
+              "faq_question_13": "How long does shipping take?",
+              "faq_desc_13": "<p>We ship out our AIROs next working day delivery. If you miss the 1pm cut off for your order, your order will arrive the following working day. <\/p>",
+              "faq_question_14": "Why don't you ship to the EU?",
+              "faq_desc_14": "<p>Due to increased EU duty and handling fees we have temporarily ceased international shipping. We apologise and hope we will be able to ship to our European friends again soon.<\/p>",
+              "faq_question_15": "Which size CLUG does the AIRO fit?",
+              "faq_desc_15": "<p>The AIRO tyres are 47mm and so fit into the <a href=\"\/products\/hornit-clug-mtb\" title=\"Hornit Clug MTB\">CLUG mtb<\/a><\/p>",
               "faq_question_16": "",
               "faq_desc_16": "",
               "faq_question_17": "",
@@ -1858,6 +1915,7 @@
         "block_order": [
           "1588435966226",
           "1588432328358",
+          "62d34307-f101-4352-9413-7a63b15885f1",
           "1588434111405",
           "1588436436521",
           "1588437234829",
@@ -2034,11 +2092,21 @@
               "store_flag": "shopify:\/\/shop_images\/united-kingdom-flag.png",
               "current_store": true
             }
+          },
+          "c9c208b8-2d36-4e0c-82e3-1b5725d92152": {
+            "type": "store",
+            "settings": {
+              "store_url": "https:\/\/au.hornit.com",
+              "store_currency": "$",
+              "store_flag": "shopify:\/\/shop_images\/unnamed.png",
+              "current_store": false
+            }
           }
         },
         "block_order": [
           "1591103507722",
-          "1591103556655"
+          "1591103556655",
+          "c9c208b8-2d36-4e0c-82e3-1b5725d92152"
         ],
         "settings": {}
       },
@@ -2099,23 +2167,23 @@
               "clug_cat_title": "Choose your AIRO",
               "clug_cat_desc": "Lighter than all 23 comparable competitors. We searched long and hard for a lighter balance bike and the only ones \nwe found were made with plastic wheels and uncomfortable foam tyres. \n\nNot all balance bikes are created equal.",
               "clug_cat_image_1": "shopify:\/\/shop_images\/hornit-airo-white-bike.png",
-              "clug_cat_title_1": "Hornit Airo - Orca White",
-              "clug_cat_desc_1": "£119",
+              "clug_cat_title_1": "Orca White",
+              "clug_cat_desc_1": "from £129",
               "clug_cat_button_url_1": "shopify:\/\/products\/hornit-airo-orca-white",
               "clug_cat_button_text_1": "Shop now",
               "clug_cat_image_2": "shopify:\/\/shop_images\/hornit-airo-red-bike.jpg",
-              "clug_cat_title_2": "Hornit Airo - Hot Chilli Red",
-              "clug_cat_desc_2": "£119",
+              "clug_cat_title_2": "Hot Chilli Red",
+              "clug_cat_desc_2": "from £129",
               "clug_cat_button_url_2": "shopify:\/\/products\/hornit-airo-hot-chilli-red",
               "clug_cat_button_text_2": "Shop now",
               "clug_cat_image_3": "shopify:\/\/shop_images\/hornit-airo-yellow-bike.png",
-              "clug_cat_title_3": "Hornit Airo - Hammer Yellow",
-              "clug_cat_desc_3": "£119",
+              "clug_cat_title_3": "Hammer Yellow",
+              "clug_cat_desc_3": "from £129",
               "clug_cat_button_url_3": "shopify:\/\/products\/hornit-airo-hammer-yellow",
               "clug_cat_button_text_3": "Shop now",
               "clug_cat_image_4": "shopify:\/\/shop_images\/hornit-airo-pink-bike.png",
-              "clug_cat_title_4": "Hornit Airo - Candy Floss Pink",
-              "clug_cat_desc_4": "£119",
+              "clug_cat_title_4": "Candy Floss Pink",
+              "clug_cat_desc_4": "from £129",
               "clug_cat_button_url_4": "shopify:\/\/products\/hornit-airo-candy-floss-pink",
               "clug_cat_button_text_4": "Shop now"
             }
@@ -2131,28 +2199,10 @@
               "disclaimer_content_two": "We are so confident in the quality of the AIRO frame and forks \nthat we offer a lifetime warranty meaning all your children will be \nable to start their cycling journey on the same bike!"
             }
           },
-          "1600856330740": {
-            "type": "colour-section",
-            "settings": {
-              "colour_section_title": "4 COLOURS TO CHOOSE FROM",
-              "cycle_color_one": "#ff0000",
-              "colour_title_one": "HOT CHILLI RED",
-              "colour_content_one": "Bold and fiery with a gloss finish, this is the hottest balance bike around!",
-              "cycle_color_two": "#ffffff",
-              "colour_title_two": "ORCA WHITE",
-              "colour_content_two": "Understated and distinctive, the black and white matt finish will go with the snappiest of urban street stylers!",
-              "cycle_color_three": "#f7bdf5",
-              "colour_title_three": "CANDY FLOSS PINK",
-              "colour_content_three": "Sassy, with a gloss finish and a hint of \nsparkle for when only pink will do!",
-              "cycle_color_four": "#ffc80f",
-              "colour_title_four": "HAMMER YELLOW",
-              "colour_content_four": "Striking, with a slick matte finish, this bike will stand out from the crowd (like its namesake the Yellowhammer bird)!"
-            }
-          },
           "1600787008559": {
             "type": "info-block",
             "settings": {
-              "info_color": "#f6caf7",
+              "info_color": "#e10600",
               "info_image": "shopify:\/\/shop_images\/Mask_Group_10dsg9.jpg",
               "info_checkbox": false,
               "info_title": "Beautifully Sleek design",
@@ -2163,7 +2213,7 @@
           "1600787051940": {
             "type": "info-block",
             "settings": {
-              "info_color": "#ee263e",
+              "info_color": "#2cccd3",
               "info_image": "shopify:\/\/shop_images\/vdsav.jpg",
               "info_checkbox": false,
               "info_title": "EASY TO ASSEMBLE & ADJUST",
@@ -2176,7 +2226,6 @@
           "1600786091372",
           "1600786517409",
           "1600856265600",
-          "1600856330740",
           "1600787008559",
           "1600787051940"
         ],
@@ -2255,6 +2304,12 @@
               "faq_t_section": "Clug"
             }
           },
+          "88218d01-b894-48d8-a706-c2f15a5cb3a8": {
+            "type": "faq-block",
+            "settings": {
+              "faq_t_section": "Bike storage accessories"
+            }
+          },
           "c55095a3-0554-40a4-a1fc-be921ef9ef7e": {
             "type": "faq-block",
             "settings": {
@@ -2302,17 +2357,33 @@
             "settings": {
               "faq_t_section": "Jersey"
             }
+          },
+          "584ad08c-98f5-42de-abb2-f87dabb31799": {
+            "type": "faq-block",
+            "settings": {
+              "faq_t_section": "Title"
+            }
+          },
+          "c234a09e-b320-41ef-90df-ef9df9f36517": {
+            "type": "faq-block",
+            "settings": {
+              "faq_url": "#clug-mount",
+              "faq_t_section": "Mount"
+            }
           }
         },
         "block_order": [
           "adafac37-cb6d-490f-8d2f-8f2daecb54ff",
+          "88218d01-b894-48d8-a706-c2f15a5cb3a8",
           "c55095a3-0554-40a4-a1fc-be921ef9ef7e",
           "d7640675-97d4-44f1-ac13-a9ebb2ff65ca",
           "39ba7d0d-230a-4924-913c-8e19e27d0649",
           "594cebed-d217-4729-add7-194415abddb1",
           "ae91aeb0-0996-4374-9083-b8be3e32c997",
           "62d64ecf-3b10-4a20-bd0a-538254d8f579",
-          "9cc53e45-021b-4b2b-8f05-9e2011caa8d6"
+          "9cc53e45-021b-4b2b-8f05-9e2011caa8d6",
+          "584ad08c-98f5-42de-abb2-f87dabb31799",
+          "c234a09e-b320-41ef-90df-ef9df9f36517"
         ],
         "settings": {}
       },

@@ -52,7 +52,7 @@
             ]
         }, {
             "type": "clug-category",
-            "name": "Clug Category Slideshow",
+            "name": "Airo Bike Options",
             "settings": [
                 {
                     "id": "clug_cat_title",
@@ -74,8 +74,9 @@
                     "placeholder": "Title"
                 }, {
                     "id": "clug_cat_desc_1",
-                    "type": "textarea",
-                    "label": "Content"
+                    "type": "text",
+                    "label": "price",
+                    "placeholder": "From £129"
                 }, {
                     "id": "clug_cat_button_url_1",
                     "type": "url",
@@ -97,8 +98,9 @@
                     "placeholder": "Title"
                 }, {
                     "id": "clug_cat_desc_2",
-                    "type": "textarea",
-                    "label": "Content"
+                    "type": "text",
+                    "label": "price",
+                    "placeholder": "From £129"
                 }, {
                     "id": "clug_cat_button_url_2",
                     "type": "url",
@@ -120,8 +122,9 @@
                     "placeholder": "Title"
                 }, {
                     "id": "clug_cat_desc_3",
-                    "type": "textarea",
-                    "label": "Content"
+                    "type": "text",
+                    "label": "price",
+                    "placeholder": "From £129"
                 }, {
                     "id": "clug_cat_button_url_3",
                     "type": "url",
@@ -143,8 +146,9 @@
                     "placeholder": "Title"
                 }, {
                     "id": "clug_cat_desc_4",
-                    "type": "textarea",
-                    "label": "Content"
+                    "type": "text",
+                    "label": "price",
+                    "placeholder": "From £129"
                 }, {
                     "id": "clug_cat_button_url_4",
                     "type": "url",
@@ -543,12 +547,133 @@
 
 			<section class="clug-categories" id='clug-category'>
 				<div class="title-section bike-title-section">
-					<h4 class="uppercase">{{ block.settings.clug_cat_title }}</h4>
+					<h3 class="uppercase">{{ block.settings.clug_cat_title }}</h3>
 					<p class='clug-block-text'>{{ block.settings.clug_cat_desc }}</p>
 				</div>
 
 
-				<div class="clug-category-slideshow">
+                <div class="airo-grid-section">
+                    <div class="inner_airo-grid-section">
+
+                        <div class="ai_box-item">
+                            <div class="ai_bt-img">
+                                <a href="{{ block.settings.clug_cat_button_url_1 }}">
+                                    <img data-src="{{ block.settings.clug_cat_image_1 | img_url: 'master' }}" alt="{{ block.settings.clug_cat_image_1.alt }}" class="lazyload"/>
+                                </a>
+                            </div>
+                            <div class="ai_bt-ts">
+                                <div class="inner-ai_bt-ts">
+                                    <div class="bt-ts-box">
+                                        <img data-src="{{ 'hornit-airo-black.svg' | asset_url }}" alt="Clug Logo" class="airo-product-logo lazyload"/>
+                                        <h5> {{ block.settings.clug_cat_title_1 }}</h5>
+                                        <p>{{ block.settings.clug_cat_desc_4 }}</p>
+
+                                    </div>
+                                    <div class="bt-ts-box">
+                                        {% if block.settings.clug_cat_button_url_1 != blank %}
+										<a href="{{ block.settings.clug_cat_button_url_1 }}" class='airo-button'>
+											{{ block.settings.clug_cat_button_text_1 }}
+										</a>
+									{% endif %}
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+
+                        </div>
+
+                        <div class="ai_box-item">
+                            <div class="ai_bt-img">
+                                <a href="{{ block.settings.clug_cat_button_url_2 }}">
+                                    <img data-src="{{ block.settings.clug_cat_image_2 | img_url: 'master' }}" alt="{{ block.settings.clug_cat_image_2.alt }}" class="lazyload"/>
+                                </a>
+                            </div>
+                            <div class="ai_bt-ts">
+                                <div class="inner-ai_bt-ts">
+                                    <div class="bt-ts-box">
+                                        <img data-src="{{ 'hornit-airo-black.svg' | asset_url }}" alt="Clug Logo" class="airo-product-logo lazyload"/>
+                                        <h5> {{ block.settings.clug_cat_title_2 }}</h5>
+                                        <p>{{ block.settings.clug_cat_desc_4 }}</p>
+
+                                    </div>
+                                    <div class="bt-ts-box">
+                                        {% if block.settings.clug_cat_button_url_2 != blank %}
+										<a href="{{ block.settings.clug_cat_button_url_2 }}" class='airo-button'>
+											{{ block.settings.clug_cat_button_text_2 }}
+										</a>
+									{% endif %}
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+
+                        </div>
+
+                        <div class="ai_box-item">
+                            <div class="ai_bt-img">
+                                <a href="{{ block.settings.clug_cat_button_url_3 }}">
+                                    <img data-src="{{ block.settings.clug_cat_image_3 | img_url: 'master' }}" alt="{{ block.settings.clug_cat_image_3.alt }}" class="lazyload"/>
+                                </a>
+                            </div>
+                            <div class="ai_bt-ts">
+                                <div class="inner-ai_bt-ts">
+                                    <div class="bt-ts-box">
+                                        <img data-src="{{ 'hornit-airo-black.svg' | asset_url }}" alt="Clug Logo" class="airo-product-logo lazyload"/>
+                                        <h5> {{ block.settings.clug_cat_title_3 }}</h5>
+                                        <p>{{ block.settings.clug_cat_desc_4 }}</p>
+
+                                    </div>
+                                    <div class="bt-ts-box">
+                                        {% if block.settings.clug_cat_button_url_3 != blank %}
+										<a href="{{ block.settings.clug_cat_button_url_3 }}" class='airo-button'>
+											{{ block.settings.clug_cat_button_text_3 }}
+										</a>
+									{% endif %}
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="ai_box-item">
+                            <div class="ai_bt-img">
+                                <a href="{{ block.settings.clug_cat_button_url_4 }}">
+                                    <img data-src="{{ block.settings.clug_cat_image_4 | img_url: 'master' }}" alt="{{ block.settings.clug_cat_image_4.alt }}" class="lazyload"/>
+                                </a>
+                            </div>
+                            <div class="ai_bt-ts">
+                                <div class="inner-ai_bt-ts">
+                                    <div class="bt-ts-box">
+                                        <img data-src="{{ 'hornit-airo-black.svg' | asset_url }}" alt="Clug Logo" class="airo-product-logo lazyload"/>
+                                        <h5> {{ block.settings.clug_cat_title_4 }}</h5>
+                                        <p>{{ block.settings.clug_cat_desc_4 }}</p>
+
+                                    </div>
+                                    <div class="bt-ts-box">
+                                        {% if block.settings.clug_cat_button_url_4 != blank %}
+										<a href="{{ block.settings.clug_cat_button_url_4 }}" class='airo-button'>
+											{{ block.settings.clug_cat_button_text_4 }}
+										</a>
+									{% endif %}
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+
+				<!-- <div class="clug-category-slideshow">
 
 					{%- comment -%}
 						{% include 'slider-buttons' %}
@@ -685,7 +810,7 @@
 						</div>
 					</div>
 
-				</div>
+				</div> -->
 
 			</section>
 
@@ -781,6 +906,8 @@
 
 		{% endcase %}
 	{% endfor %}
-</div></div>{%- comment -%}{% if block.blocks.size == 0 %}
+</div>{%- comment -%}{% if block.blocks.size == 0 %}
 										        {% include 'no-blocks' %}
-										    {% endif %}{%- endcomment -%}</div>
+										    {% endif %}{%- endcomment -%}
+
+                                            
