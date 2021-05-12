@@ -1,0 +1,27 @@
+
+    {% if product.template_suffix == 'bikes' %}
+
+    <div class="product-awards-div">
+
+    <img data-src="{{ 'award-airo.png' | asset_url }}" alt="Hornit Airo Award Logo" class="award-logo lazyload"/>
+        
+</div>
+    {% elsif product.template_suffix == 'clug'  %}
+
+    <div class="product-awards-div">
+        
+    <img data-src="{{ 'award-clug.png' | asset_url }}" alt="Hornit Clug Award Logo" class="award-logo lazyload"/>  
+
+</div>
+
+    {% elsif product.handle contains 'mini'  %}
+
+    <div class="product-awards-div">
+
+    <img data-src="{{ 'award-mini.png' | asset_url }}" alt="Hornit Mini Award Logo" class="award-logo lazyload"/>  
+
+</div>
+    {% else %}
+
+    {% endif %}
+

@@ -201,8 +201,8 @@
             "type": "kids-product-block",
             "settings": {
               "select_kids_product_logo": "hornit-airo",
-              "product_color": "#ee263e",
-              "product_image": "shopify:\/\/shop_images\/Mask_Group_10dsg9_146bf242-f675-40f8-98a2-7339ca19e2f3.jpg",
+              "product_color": "#04ccb8",
+              "product_image": "shopify:\/\/shop_images\/turquouse.jpg",
               "product_checkbox": false,
               "product_title": "Hornit AIRO",
               "product_sub_title": "Levitatingly light balance bikes!",
@@ -215,8 +215,8 @@
             "type": "kids-product-block",
             "settings": {
               "select_kids_product_logo": "hornit-helmets",
-              "product_color": "#8531a5",
-              "product_image": "shopify:\/\/shop_images\/helmetsz.jpg",
+              "product_color": "#e32c2b",
+              "product_image": "shopify:\/\/shop_images\/helmet_square.jpg",
               "product_checkbox": false,
               "product_title": "Kids helmets",
               "product_sub_title": "SERIOUSLY FUN LIDS FOR KIDS!",
@@ -230,7 +230,7 @@
             "settings": {
               "select_kids_product_logo": "hornit-nano",
               "product_color": "#0695d4",
-              "product_image": "shopify:\/\/shop_images\/nano.jpg",
+              "product_image": "shopify:\/\/shop_images\/MiniHornit304.jpg",
               "product_checkbox": false,
               "product_title": "Hornit Nano",
               "product_sub_title": "FOR BIKES & SCOOTERS",
@@ -284,8 +284,8 @@
           "1601048182995": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/HORNIT_080920_066.jpg",
-              "portrait_image": "shopify:\/\/shop_images\/luca.jpg",
+              "image": "shopify:\/\/shop_images\/luca_2.jpg",
+              "portrait_image": "shopify:\/\/shop_images\/HORNIT_080920_120.jpg",
               "select_product_logo": "hornit-airo",
               "product_checkbox": true,
               "title": "Balance Bikes",
@@ -301,7 +301,7 @@
           "50d7ff19-192f-4c82-8fe8-05fa58b26a63": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Group_Shot_103_Tyre_Swap.jpg",
+              "image": "shopify:\/\/shop_images\/turq1.jpg",
               "portrait_image": "shopify:\/\/shop_images\/OBILE_bf125311-4cc3-4fad-a1b2-f23287e24bc5.jpg",
               "select_product_logo": "klarna",
               "product_checkbox": false,
@@ -451,7 +451,7 @@
           "1601050571492": {
             "type": "category",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Luca_c9b3bd5c-4529-487b-bb28-72bba41dd146_1.jpg",
+              "image": "shopify:\/\/shop_images\/luca_side_profile.jpg",
               "title": "Balance Bikes",
               "content": "Not all bikes are created equal. Weighing just 2.95kg. Starting out on your cycling journey is easier than ever before! Explore the range.",
               "button_url": "shopify:\/\/collections\/hornit-airo",
@@ -501,7 +501,7 @@
           "c89aecaa-d4b5-43c8-ad82-9458cb37c380": {
             "type": "category",
             "settings": {
-              "image": "shopify:\/\/shop_images\/yellow_3.jpg",
+              "image": "shopify:\/\/shop_images\/home_4b63c7ba-466f-4039-80a2-7d13a143cc53.jpg",
               "title": "Kids Gear",
               "content": "Browse our kids gear to find our Little Rider collaboration jersey!",
               "button_url": "shopify:\/\/collections\/gear",
@@ -1292,7 +1292,7 @@
             "type": "cyclist-block",
             "settings": {
               "cyclist_color": "#ffffff",
-              "cyclist_image": "shopify:\/\/shop_images\/leisure_rider.jpg",
+              "cyclist_image": "shopify:\/\/shop_images\/luca_square.jpg",
               "cyclist_title": "Leisure Rider",
               "cyclist_content": "The coolest accessories for you and families cycling adventures. The kids will love our stylish and fun helmets, lights and horns and us adults will no longer have to worry about storage with the ingenious CLUG. Everyone’s happy!",
               "collection": "leisure-biker",
@@ -1826,7 +1826,7 @@
               "faq_question_11": "How tight should the handlebars be?",
               "faq_desc_11": "<p>Remove the protective neoprene cover and use the 5mm Allen key provided to adjust the top bolt (marked A in the instruction booklet). It should be finger tight (to eliminate play in the headset). Be careful not to over tighten as it should not restrict the steering: the handlebars should turn freely. Overtightening will damage the bearings.<\/p>",
               "faq_question_12": "Why are the tyres in the video different to the tyres that I get with the bike?",
-              "faq_desc_12": "<p>For shooting our balance bike videos we used thicker tyres as we filmed on a very dusty track. The tyres we bought were 12.5x 1.75&quot; tyres, and you can get them from a number of online sites.<\/p>",
+              "faq_desc_12": "<p>For shooting our balance bike videos we used thicker tyres as we filmed on a very dusty track. The tyres we used were 12.5x 1.75&quot; tyres, and you can buy a spare set <a href=\"\/products\/airo-off-road-tyres\" title=\"AIRO Off-Road Tyres (pair)\">here.<\/a><\/p>",
               "faq_question_13": "How long does shipping take?",
               "faq_desc_13": "<p>We ship out our AIROs next working day delivery. If you miss the 1pm cut off for your order, your order will arrive the following working day. <\/p>",
               "faq_question_14": "Why don't you ship to the EU?",
@@ -2154,7 +2154,7 @@
           "1600786091372": {
             "type": "kids-header",
             "settings": {
-              "header_image": "shopify:\/\/shop_images\/homepage.jpg",
+              "header_image": "shopify:\/\/shop_images\/luca_2.jpg",
               "logo_product_logo": "hornit-airo",
               "header_title": "Not all balance bikes are created equal",
               "header_content": "Weighing just 2.95kg, starting your little one on their cycling \njourney is easier for them than ever before!",
@@ -2165,33 +2165,49 @@
             "type": "clug-category",
             "settings": {
               "clug_cat_title": "Choose your AIRO",
-              "clug_cat_desc": "Lighter than all 23 comparable competitors. We searched long and hard for a lighter balance bike and the only ones \nwe found were made with plastic wheels and uncomfortable foam tyres. \n\nNot all balance bikes are created equal.",
-              "clug_cat_image_1": "shopify:\/\/shop_images\/hornit-airo-white-bike.png",
+              "clug_cat_desc": "Welcome to the all new, all matte range. Lighter than all 23 comparable competitors. We searched long and hard for a lighter balance bike and the only ones \nwe found were made with plastic wheels and uncomfortable foam tyres. \n\nNot all balance bikes are created equal.",
+              "clug_cat_image_1": "shopify:\/\/shop_images\/2_Side.jpg",
               "clug_cat_title_1": "Orca White",
-              "clug_cat_desc_1": "from £129",
-              "clug_cat_button_url_1": "shopify:\/\/products\/hornit-airo-orca-white",
+              "clug_cat_desc_1": "£129",
+              "clug_cat_button_url_1": "shopify:\/\/products\/hornit-airo-orca-white-1",
               "clug_cat_button_text_1": "Shop now",
-              "clug_cat_image_2": "shopify:\/\/shop_images\/hornit-airo-red-bike.jpg",
-              "clug_cat_title_2": "Hot Chilli Red",
-              "clug_cat_desc_2": "from £129",
-              "clug_cat_button_url_2": "shopify:\/\/products\/hornit-airo-hot-chilli-red",
-              "clug_cat_button_text_2": "Shop now",
-              "clug_cat_image_3": "shopify:\/\/shop_images\/hornit-airo-yellow-bike.png",
+              "clug_cat_image_2": "shopify:\/\/shop_images\/new_colour.jpg",
+              "clug_cat_title_2": "Magma Red",
+              "clug_cat_desc_2": "£129",
+              "clug_cat_button_url_2": "shopify:\/\/products\/hornit-airo-magma-red",
+              "clug_cat_button_text_2": "Shop Now",
+              "clug_cat_image_3": "shopify:\/\/shop_images\/2_Side_bb5a2b9c-d8ae-4667-ad97-24909017b8b5.jpg",
               "clug_cat_title_3": "Hammer Yellow",
-              "clug_cat_desc_3": "from £129",
-              "clug_cat_button_url_3": "shopify:\/\/products\/hornit-airo-hammer-yellow",
-              "clug_cat_button_text_3": "Shop now",
-              "clug_cat_image_4": "shopify:\/\/shop_images\/hornit-airo-pink-bike.png",
-              "clug_cat_title_4": "Candy Floss Pink",
-              "clug_cat_desc_4": "from £129",
-              "clug_cat_button_url_4": "shopify:\/\/products\/hornit-airo-candy-floss-pink",
-              "clug_cat_button_text_4": "Shop now"
+              "clug_cat_desc_3": "£129",
+              "clug_cat_button_url_3": "shopify:\/\/products\/hornit-airo-hammer-yellow-1",
+              "clug_cat_button_text_3": "Shop Now",
+              "clug_cat_image_4": "shopify:\/\/shop_images\/2_Side_NEW_colour.jpg",
+              "clug_cat_title_4": "Flamingo Pink",
+              "clug_cat_desc_4": "£129",
+              "clug_cat_button_url_4": "shopify:\/\/products\/hornit-airo-flamingo-pink",
+              "clug_cat_button_text_4": "Shop Now",
+              "clug_cat_image_5": "shopify:\/\/shop_images\/2_Side_NEW_colour.png",
+              "clug_cat_title_5": "Tuvalu Turquoise",
+              "clug_cat_desc_5": "£129",
+              "clug_cat_button_url_5": "shopify:\/\/products\/hornit-airo-tuvalu-turquoise",
+              "clug_cat_button_text_5": "Shop Now",
+              "clug_cat_image_6": "shopify:\/\/shop_images\/new_colour_blue.jpg",
+              "clug_cat_title_6": "Mavericks Blue",
+              "clug_cat_desc_6": "£129",
+              "clug_cat_button_url_6": "shopify:\/\/products\/hornit-airo-mavericks-blue",
+              "clug_cat_button_text_6": "Shop Now",
+              "clug_cat_title_7": "",
+              "clug_cat_desc_7": "",
+              "clug_cat_button_text_7": "",
+              "clug_cat_title_8": "",
+              "clug_cat_desc_8": "",
+              "clug_cat_button_text_8": ""
             }
           },
           "1600856265600": {
             "type": "disclaimer",
             "settings": {
-              "disclaimer_image_one": "shopify:\/\/shop_images\/Group_1.png",
+              "disclaimer_image_one": "shopify:\/\/shop_images\/image002.png",
               "disclaimer_title_one": "Levitatingly light",
               "disclaimer_content_one": "Made from a super lightweight, ultra-hard-wearing magnesium \nalloy, at 2.95kg this balance bike is levitatingly light!",
               "disclaimer_image_two": "shopify:\/\/shop_images\/001-ribbon_2x_92a1253d-1274-4c42-ad87-604220dd8df1.png",
@@ -2199,11 +2215,22 @@
               "disclaimer_content_two": "We are so confident in the quality of the AIRO frame and forks \nthat we offer a lifetime warranty meaning all your children will be \nable to start their cycling journey on the same bike!"
             }
           },
+          "730d996f-c216-42cc-b876-fd1f3bbed86e": {
+            "type": "info-block",
+            "settings": {
+              "info_color": "#ffc400",
+              "info_image": "shopify:\/\/shop_images\/bike_1.jpg",
+              "info_checkbox": false,
+              "info_title": "6 FUNKY COLOURS",
+              "info_content": "Choose between Flamingo Pink, Magma Red, Orca White, Hammer Yellow, Tuvalu Turquoise and Mavericks Blue then marvel at the magic of your little one going from tentative first steps to gnarly rider on their first bike.",
+              "info_video_url": ""
+            }
+          },
           "1600787008559": {
             "type": "info-block",
             "settings": {
               "info_color": "#e10600",
-              "info_image": "shopify:\/\/shop_images\/Mask_Group_10dsg9.jpg",
+              "info_image": "shopify:\/\/shop_images\/turquouse.jpg",
               "info_checkbox": false,
               "info_title": "Beautifully Sleek design",
               "info_content": "The grip taped footrests are contoured into the frame \nfor easy freewheeling, air-filled tyres for a smoother ride and a \npadded stem for extra protection. Fully safety tested by\n TÜVRheinland® for children aged 18months+ (EN71). CE approved.",
@@ -2214,7 +2241,7 @@
             "type": "info-block",
             "settings": {
               "info_color": "#2cccd3",
-              "info_image": "shopify:\/\/shop_images\/vdsav.jpg",
+              "info_image": "shopify:\/\/shop_images\/luca_square.jpg",
               "info_checkbox": false,
               "info_title": "EASY TO ASSEMBLE & ADJUST",
               "info_content": "With just three bolts to tighten (or four if you include adjusting \nthe seat!), your little one will be riding in minutes. The adjustable seat means the AIRO is suitable for a child with an inside leg \nmeasurement of 30cm to 48cm (11.8\" to 18.9”). The Allen key is included.",
@@ -2226,6 +2253,7 @@
           "1600786091372",
           "1600786517409",
           "1600856265600",
+          "730d996f-c216-42cc-b876-fd1f3bbed86e",
           "1600787008559",
           "1600787051940"
         ],

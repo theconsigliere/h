@@ -1165,6 +1165,10 @@
   .qv-product-description {
     padding: 20px 0 30px;
   }
+
+
+
+
   .view-product {
     display: inline-block;
     text-transform: uppercase;
@@ -1285,3 +1289,39 @@
     }
   }
 }
+
+
+.product-description {
+  max-width: 100%;
+  margin: 0 auto;
+  
+  @media (min-width: #{$screen-lg}) {
+    max-width: 80%;
+  }
+}
+
+.product-awards-div {
+  img {
+    max-height: 40px;
+
+    @media (min-width: #{$screen-lg}) {
+      max-height: 50px;
+    }
+  }
+}
+
+.awward-review-product-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+
+  .yotpo {
+    margin-left: 15px;
+  }
+
+  @media (min-width: #{$screen-lg}) {
+    justify-content: flex-start;
+  }
+}
+
