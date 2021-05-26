@@ -193,7 +193,7 @@
           "1587738339073": {
             "type": "kids-title",
             "settings": {
-              "title": "Start your Adventure",
+              "title": "",
               "contentdesc": "Just when you thought riding their bike or scooter couldn’t get any more exciting, enter Hornit cycling accessories for kids. Designed to combine safety with style the range includes helmets as well as lights with sound effects."
             }
           },
@@ -204,7 +204,7 @@
               "product_color": "#04ccb8",
               "product_image": "shopify:\/\/shop_images\/turquouse.jpg",
               "product_checkbox": false,
-              "product_title": "Hornit AIRO",
+              "product_title": "",
               "product_sub_title": "Levitatingly light balance bikes!",
               "product_content": "Weighing just 2.95kg, starting your little one on their cycling journey is easier for them than ever before with the Hornit AIRO balance bike!",
               "product_button_url": "shopify:\/\/collections\/hornit-airo",
@@ -218,7 +218,7 @@
               "product_color": "#e32c2b",
               "product_image": "shopify:\/\/shop_images\/helmet_square.jpg",
               "product_checkbox": false,
-              "product_title": "Kids helmets",
+              "product_title": "",
               "product_sub_title": "SERIOUSLY FUN LIDS FOR KIDS!",
               "product_content": "Our lids for kids are arguably the coolest around. Stylish, fun and comfortable, Hornit helmets will gear your little ones up for the greatest adventures.",
               "product_button_url": "shopify:\/\/collections\/kids-helmets",
@@ -232,7 +232,7 @@
               "product_color": "#0695d4",
               "product_image": "shopify:\/\/shop_images\/MiniHornit304.jpg",
               "product_checkbox": false,
-              "product_title": "Hornit Nano",
+              "product_title": "",
               "product_sub_title": "FOR BIKES & SCOOTERS",
               "product_content": "The perfect pocket-sized bike horn! Light up your little ones’ ride with Hornit Nano. 15 sounds. 3 lights. Available in black, blue, pink and mint green!",
               "product_button_url": "shopify:\/\/collections\/mini-hornit-nano",
@@ -246,7 +246,7 @@
               "product_color": "#04ccb8",
               "product_image": "shopify:\/\/shop_images\/mini.jpg",
               "product_checkbox": false,
-              "product_title": "Hornit Mini",
+              "product_title": "",
               "product_sub_title": "FOR BIKES & SCOOTERS",
               "product_content": "Enter a world of imagination with Hornit - the ultimate lights and sound effects toy for bikes and scooters loaded with 25 sounds and white and green lights. The perfect gift or treat!",
               "product_button_url": "shopify:\/\/collections\/mini-hornit",
@@ -942,7 +942,6 @@
               "header_image": "shopify:\/\/shop_images\/hero-wallpaper.jpg",
               "header_title": "Adults",
               "header_content": "",
-              "header_button_url": "",
               "header_button_text": ""
             }
           },
@@ -959,7 +958,7 @@
               "product_color": "#ed2c85",
               "product_image": "shopify:\/\/shop_images\/CLUG-IMAGES-04_7f09c545-b5ef-4c7d-b5b6-1bf256da693c.jpg",
               "product_checkbox": false,
-              "product_title": "Hornit Clug",
+              "product_title": "CLUG",
               "product_content": "Practicality meets innovation with CLUG, the world’s smallest bike rack. This satisfying storage solution is available in 5 sizes to fit a range of tyre sizes.",
               "product_button_url": "shopify:\/\/collections\/clug",
               "product_button_text": "Shop Now"
@@ -971,7 +970,7 @@
               "product_color": "#ffc400",
               "product_image": "shopify:\/\/shop_images\/ADULT-IMAGES_db140.jpg",
               "product_checkbox": true,
-              "product_title": "Hornit DB140",
+              "product_title": "dB140",
               "product_content": "Looking good and feeling safe go hand-in-hand when you have the world’s loudest bike horn. 140 decibels means that you won't go unnoticed on the roads.",
               "product_button_url": "shopify:\/\/products\/hornit-db140",
               "product_button_text": ""
@@ -983,7 +982,7 @@
               "product_color": "#24272c",
               "product_image": "shopify:\/\/shop_images\/ADULT-IMAGES_lite.jpg",
               "product_checkbox": false,
-              "product_title": "Hornit Lite",
+              "product_title": "LITE",
               "product_content": "Light and loud! Hornit Lite, the world’s loudest bike light keeps you safe on the roads with its 250 lumen light, 120 decibel horn, 6 light modes and running time of up to 9.5 hours.",
               "product_button_url": "shopify:\/\/products\/hornit-lite",
               "product_button_text": ""
@@ -1447,64 +1446,6 @@
               "faq_desc_24": "<p>Decide whether you want to clug vertically or horizontally. The CLUG should always sit just above (say 25mm or 1”) the centre line of the wheel. When clugging vertically this helps keep your handlebars straight. When clugging horizontally this will help make your bike more stable. Use the drilling guide on the box to drill two holes in the right place. We designed this specially for you and the box will even catch the dust as you drill! Using the screws provided screw the clipper into the holes that you have just made. Then fit the gripper inside the clipper.<\/p>"
             }
           },
-          "62d34307-f101-4352-9413-7a63b15885f1": {
-            "type": "Faq-Section",
-            "settings": {
-              "section_id": "clug-mount",
-              "faq_image": "shopify:\/\/shop_images\/VM_1.jpg",
-              "faq_title": "Bike storage accessories",
-              "product_url": "shopify:\/\/collections\/bike-storage-accessories",
-              "product_text": "See product",
-              "faq_question_1": "How long will the vacuum last for?",
-              "faq_desc_1": "<p>Actual time will depend on the quality of the vacuum, the material on which you are fixing and any debris on the surface. You should test the vacuum mount first before racking your bike in case the surface is not suitable. You should also regularly check the vacuum pump indicator for signs the vacuum is being lost. The vacuum should last for a minimum 7 days on smooth glass before the vacuum pump indicator shows orange.<\/p>",
-              "faq_question_2": "How much weight can the Vacuum Mount hold?",
-              "faq_desc_2": "<p>The Vacuum Mounts have been tested to hold 55kg (121lbs). In reality they are holding only a fraction of this weight as the bicycle has to have at least one wheel on the floor at all times.<\/p>",
-              "faq_question_3": "Do I need to buy a CLUG separately?",
-              "faq_desc_3": "<p>Yes! The Vacuum Mount is compatible with all sizes of CLUG, but you do need to buy this separately.<\/p>",
-              "faq_question_4": "How do I know if the Vacuum Mount will work on my particular surface?",
-              "faq_desc_4": "<p>If the surface is smooth, non-porous and clean then you can pretty much guarantee the Vacuum Mount. On finely textured surfaces or if the surface is porous then the Vacuum Mount may only work for a short time. The only way to really find out is to test it. If it’s not for you then simply return it to us, as per our <a href=\"\/policies\/refund-policy\" title=\"Refund Policy\">refund policy<\/a>.<\/p>",
-              "faq_question_5": "",
-              "faq_desc_5": "",
-              "faq_question_6": "",
-              "faq_desc_6": "",
-              "faq_question_7": "",
-              "faq_desc_7": "",
-              "faq_question_8": "",
-              "faq_desc_8": "",
-              "faq_question_9": "",
-              "faq_desc_9": "",
-              "faq_question_10": "",
-              "faq_desc_10": "",
-              "faq_question_11": "",
-              "faq_desc_11": "",
-              "faq_question_12": "",
-              "faq_desc_12": "",
-              "faq_question_13": "",
-              "faq_desc_13": "",
-              "faq_question_14": "",
-              "faq_desc_14": "",
-              "faq_question_15": "",
-              "faq_desc_15": "",
-              "faq_question_16": "",
-              "faq_desc_16": "",
-              "faq_question_17": "",
-              "faq_desc_17": "",
-              "faq_question_18": "",
-              "faq_desc_18": "",
-              "faq_question_19": "",
-              "faq_desc_19": "",
-              "faq_question_20": "",
-              "faq_desc_20": "",
-              "faq_question_21": "",
-              "faq_desc_21": "",
-              "faq_question_22": "",
-              "faq_desc_22": "",
-              "faq_question_23": "",
-              "faq_desc_23": "",
-              "faq_question_24": "",
-              "faq_desc_24": ""
-            }
-          },
           "1600943837481": {
             "type": "Faq-Section",
             "settings": {
@@ -1546,7 +1487,7 @@
               "faq_question_16": "What type of valve has the AIRO got?",
               "faq_desc_16": "<p>The AIRO uses Schrader valves. <\/p>",
               "faq_question_17": "What type of pump does the AIRO need?",
-              "faq_desc_17": "<p>Most modern pumps are designed to be used with Schrader valves, either with 2 separate connectors or a universal one. These push on, ignoring the thread on the valve head and commonly use a lever to lock in place whilst pumping. <\/p><p>Older or dedicated pumps come with a flexible attachment which has a captive nut that needs to be threaded on to the valve until finger tight to pump it up.<\/p>",
+              "faq_desc_17": "<p>Most modern pumps are designed to be used with Schrader valves, either with 2 separate connectors or a universal one. These push on, ignoring the thread on the valve head and commonly use a lever to lock in place whilst pumping. <\/p><p>Older or more dedicated pumps (also known as a frame pump), come with a flexible attachment which has a captive nut that needs to be threaded on to the valve until finger tight to pump it up. <\/p>",
               "faq_question_18": "",
               "faq_desc_18": "",
               "faq_question_19": "",
@@ -1915,7 +1856,6 @@
         "block_order": [
           "1588435966226",
           "1588432328358",
-          "62d34307-f101-4352-9413-7a63b15885f1",
           "1600943837481",
           "1588434111405",
           "1588436188865",
@@ -2391,13 +2331,6 @@
             "settings": {
               "faq_t_section": "Title"
             }
-          },
-          "c234a09e-b320-41ef-90df-ef9df9f36517": {
-            "type": "faq-block",
-            "settings": {
-              "faq_url": "#clug-mount",
-              "faq_t_section": "Mount"
-            }
           }
         },
         "block_order": [
@@ -2410,8 +2343,7 @@
           "ae91aeb0-0996-4374-9083-b8be3e32c997",
           "62d64ecf-3b10-4a20-bd0a-538254d8f579",
           "9cc53e45-021b-4b2b-8f05-9e2011caa8d6",
-          "584ad08c-98f5-42de-abb2-f87dabb31799",
-          "c234a09e-b320-41ef-90df-ef9df9f36517"
+          "584ad08c-98f5-42de-abb2-f87dabb31799"
         ],
         "settings": {}
       },

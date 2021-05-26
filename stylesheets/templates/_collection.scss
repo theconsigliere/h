@@ -1301,23 +1301,7 @@
   }
 }
 
-a.airo-button {
-  background: $yellow;
-  /* width: 100%; */
-  padding: 10px 20px;
-  border-radius: 25px;
-  color: $black;
-  transition: all 0.3s ease-in-out;
 
-  @media (min-width: #{$screen-xl}) {
-    padding: 10px 40px;
-  }
-
-  &:hover {
-    background: $black;
-    color: $yellow;
-  }
-}
 
 .ai_bt-img {
   overflow: hidden;

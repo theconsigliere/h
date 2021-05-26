@@ -1,0 +1,42 @@
+{% if product.metafields.custom_fields["product_awards_title"] != blank %}
+
+<div class="product-awards-section">
+
+
+    <div class="pa-s-inner">
+        <!-- <div class="pa-s-title-section">
+            <div class="corner left-corner">
+                <div class="line line-one"></div>
+                <div class="line line-two"></div>
+            </div>
+            <div class="corner right-corner">
+                <div class="line line-one"></div>
+                <div class="line line-two"></div>
+            </div>
+
+            <h4 class='uppercase'>{{ 'product.awards.title' | t }}</h4>
+            <p>{{ 'product.awards.subtitle' | t }}</p>
+        </div> -->
+
+        <div class="pa-s-awards-inner">
+            {% if product.metafields.custom_fields["product_awards_image"] != blank %}
+                <div class="pa-s-image-item">
+                    <img data-src="{{ product.metafields.custom_fields["product_awards_image"] }}" class="lazyload"/>
+                </div>
+            {% endif %}
+
+            <div class="pa-s-text-item">
+                <h3>{{ product.metafields.custom_fields["product_awards_title"] }}</h3>
+                {% if product.metafields.custom_fields["product_awards_description"] != blank %}
+                <h6>  {{ product.metafields.custom_fields["product_awards_description"] }}</h6>
+                {% endif %}
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+{% endif %}
