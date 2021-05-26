@@ -82,6 +82,10 @@
       "money": "Money Back Guarantee",
       "money_desc": "Free 60-day return policy"
     },
+    "awards": {
+      "title": "Proudly awarded by industry experts",
+      "subtitle": "Our trophy cabinet is pretty full. Thanks Folks!"
+    },
     "card": {
       "options_styles_singular": "{{ optionCount }} option \/ {{ styleCount }} style",
       "sizes_styles_singular": "{{ optionCount }} option \/ {{ styleCount }} sizes",

@@ -1325,3 +1325,99 @@
   }
 }
 
+.product-awards-section {
+  background: #f5f5f5;
+
+  .pa-s-inner {
+    max-width: 80%;
+    padding: 5vh 0;
+    margin: 0 auto;
+
+    @media (min-width: #{$screen-lg}) {
+      max-width: 60%;
+    }
+  }
+
+
+}
+
+.pa-s-title-section {
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  padding: 2em 0;
+  text-align: center;
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  .corner {
+    position: absolute;
+
+    .line {
+      width: 4px;
+      height: 25px;
+      background: $grey;
+    }
+  }
+
+  .left-corner {
+    top: 0;
+    left: -5%;
+    
+    .line-one {
+      transform: rotate(
+        90deg
+        ) translateY(-45%);
+
+    }
+
+    .line-two {
+
+      transform: translateY(-50%);
+    }
+  }
+
+  .right-corner {
+    bottom: 0;
+    right: 0;
+    transform: rotate(
+      180deg
+      );
+    
+    .line-one {
+      transform: rotate(
+        90deg
+        ) translateY(-45%);
+
+    }
+
+    .line-two {
+
+      transform: translateY(-50%);
+    }
+  }
+
+}
+
+.pa-s-awards-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.pa-s-image-item {
+  max-height: 250px;
+
+  img {
+    width: auto;
+    max-height: 250px;
+
+  }
+}
+
+.pa-s-text-item {
+  padding-left: 1em;
+}
