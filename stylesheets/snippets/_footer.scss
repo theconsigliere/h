@@ -204,8 +204,12 @@
 // payment logos
 
 .payment-icon {
-  width: 2em;
+  width: 1.2em;
   margin: 0 5px;
+
+  @media (min-width: #{$screen-sm}) {
+    width: 2em;
+  }
 
   @media (min-width: #{$screen-lg}) {
     width: 3.125em;
