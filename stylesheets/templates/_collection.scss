@@ -722,6 +722,204 @@
   padding-top: 8vh;
 }
 
+// KIDS COLLECTION - HERO & CHILDREN'S STARTER
+//----------------------------------------------
+#shopify-section-hero-bike-collection, #shopify-section-children-starter-bikes-collection {
+  
+  @media (min-width: #{$screen-lg}) {
+    padding-top: 5vh;
+  }
+
+  .collection-header {
+    position: relative;
+    background: #00000080;
+
+
+    @media (min-width: #{$screen-lg}) {
+      height: 75vh;
+      width: 90vw;
+      margin: auto;
+    }
+
+    &::after {
+      content:'';
+      position:absolute;
+      left:0; 
+      top:0;
+      width:100%; 
+      height:100%;
+      background: linear-gradient(300deg,rgba(0,0,0,0.95) 0,rgba(255,255,255,0) 100%);
+
+      @media (min-width: #{$screen-lg}) {
+        background: linear-gradient(300deg,rgba(0,0,0,0.95) 0,rgba(255,255,255,0) 70%);
+      }
+    }
+  }
+
+  .collection-header-content {
+    z-index: 4;
+    text-align: center;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: #{$screen-lg}) {
+      text-align: left;
+      margin-right: 5%;
+    }
+  
+    img {
+      width: 250px;
+    }
+  }
+
+  .kids-header-desc {
+    border-top: 1px solid #707070;
+  }
+
+  .disclaimer-section-title {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5vh;
+    max-width: 95%;
+
+    @media (min-width: #{$screen-lg}) {
+      max-width: 80%;
+    }
+  }
+
+  .disclaimer-group {
+    position: relative;
+
+    @media (min-width: #{$screen-lg}) {
+      &::after {
+        content: '';
+        position: absolute;
+        height: 80%;
+        width: 1px;
+        background: $black;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .fullwidth-image-section {
+
+    img {
+      width: 100%;
+      object-fit: cover;
+
+    }
+  }
+
+  .hero-display-section {
+    margin: auto;
+    padding: 10vh 0;
+    max-width: 95%;
+
+    @media (min-width: #{$screen-lg}) {
+      max-width: 80%;
+      padding: 20vh 0;
+    }
+
+    .hero-bike-image {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-display-bike {
+      z-index: 2;
+      max-width: 18rem;
+
+      @media (min-width: #{$screen-lg}) {
+        max-width: 35rem;
+      }
+    }
+
+    .hero-logo-bg {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-display-content {
+      text-align: center;
+      margin: auto;
+      max-width: 100%;
+
+      @media (min-width: #{$screen-lg}) {
+        max-width: 75%;
+      }
+    }
+
+    .hero-display-spec {
+      position: relative;
+      display: block;
+      margin: 5vh 0;
+
+      @media (min-width: #{$screen-lg}) {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+
+    .hero-number {
+      font-weight: $type-bold;
+      font-size: 2.5rem;
+    }
+  }
+
+  .extras {
+    margin-bottom: 10vh;
+
+    .bike-title-section {
+      margin-top: 0;
+
+      @media (min-width: #{$screen-lg}) {
+        margin-top: 10vh;
+      }
+    }
+
+    .ai_box-item {
+      margin: 1rem;
+      max-width: 35rem;
+    }
+
+    .ai_box-item:hover {
+      background: #F0F0F0;
+    }
+
+    .extra-section-inner {
+      display: block;
+      margin: auto;
+      max-width: 95%;
+
+      @media (min-width: #{$screen-lg}) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+      }
+    }
+
+    .inner-ai_bt-ts {
+      display: block;
+      margin: 1rem auto;
+      width: 90%;
+      border: none;
+    }
+  }
+}
+
+
 // COLLECTION LIST
 //-------------------------------------------
 
@@ -1287,12 +1485,13 @@
 
 .bt-ts-box {
   min-width: 35%;
+  
   img {
     width: 30%;
   }
 
   h5 {
-    font-weight: 200;
+    font-weight: $type-bold;
     margin-bottom: 1rem;
   }
 

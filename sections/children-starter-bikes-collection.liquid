@@ -533,8 +533,76 @@
                     "placeholder": "Shop Now",
                     "info": "Defaults to \"Shop Now\""
                 }
+            ]            
+        },  {
+            "type": "fullwidth-image",
+            "name": "Fullwidth Image Section",
+            "settings": [
+                {
+                    "id": "full_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                }
+            ]
+        },  {
+            "type": "hero-display",
+            "name": "Hero Display",
+            "settings": [
+                {
+                    "id": "logo_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                },
+                {
+                    "id": "hero_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                },
+                {
+                    "id": "hero_title",
+                    "type": "text",
+                    "label": "Hero Title"
+                },
+                {
+                    "id": "hashtag_text",
+                    "type": "text",
+                    "label": "Hero Hashtag"
+                },
+                {
+                    "id": "desc_text",
+                    "type": "text",
+                    "label": "Hero Description"
+                },
+                {
+                    "id": "size_number",
+                    "type": "number",
+                    "label": "Size Number"
+                },
+                {
+                    "id": "age_number",
+                    "type": "text",
+                    "label": "Age Number"
+                },
+                {
+                    "id": "weight_number",
+                    "type": "number",
+                    "label": "Weight Number"
+                }, 
+                {
+                    "id": "hero_button_url",
+                    "type": "url",
+                    "label": "Button URL"
+                }, 
+                {
+                    "id": "hero_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "placeholder": "Shop Now",
+                    "info": "Defaults to \"Shop Now\""
+                }
             ]
         }
+
     ]
 }
 
@@ -558,29 +626,30 @@
                 </div>
 
                 <div class="collection-header-content kids-header-content airo-header-content">
-
                  
 
                     {% if block.settings.show_product_logo == 'hornit-hero' %}
                         <img data-src="{{ 'hero-white.svg' | asset_url }}" alt="Hero Logo" class="airo-product-logo lazyload"/>
-                    {% endif %}
+                    {% endif %}                    
 
 
-                    <h3 class="white uppercase kids-header-font">{{ block.settings.header_title }}</h3>
+                    <div class="kids-header-desc">
+                        <h3 class="white uppercase kids-header-font">{{ block.settings.header_title }}</h3>
 
-                    {% if block.settings.header_content != blank %}
-                        <p class="white airo-desc">{{ block.settings.header_content }}</p>
-                    {% endif %}
+                        {% if block.settings.header_content != blank %}
+                            <p class="white airo-desc">{{ block.settings.header_content }}</p>
+                        {% endif %}
 
-                    {% if block.settings.header_button_url != blank %}
-                        <a href="{{ block.settings.header_button_url }}" class="block-button">
-                            {% if block.settings.header_button_text != blank %}
-                                {{ block.settings.header_button_text }}
-                            {% else %}
-                                {{ "general.shop.shop_now" | t }}
-                            {% endif %}
-                        </a>
-                    {% endif %}
+                        {% if block.settings.header_button_url != blank %}
+                            <a href="{{ block.settings.header_button_url }}" class="block-button">
+                                {% if block.settings.header_button_text != blank %}
+                                    {{ block.settings.header_button_text }}
+                                {% else %}
+                                    {{ "general.shop.shop_now" | t }}
+                                {% endif %}
+                            </a>
+                        {% endif %}
+                    </div>
 
                 </div>
 
@@ -724,30 +793,30 @@
                     {% if block.settings.extra_button_url_1 != blank %}
 
                         <article class="ai_box-item extra__item">
-                            <div class="ai_bt-img extra__item__img">
-                                <a href="{{ block.settings.extra_button_url_1 }}">
+                            <a href="{{ block.settings.extra_button_url_1 }}">
+                                <div class="ai_bt-img extra__item__img">
                                     <img data-src="{{ block.settings.extra_image_1 | img_url: 'master' }}" alt="{{ block.settings.extra_image_1.alt }}" class="lazyload"/>
-                                </a>
-                            </div>
-                            <div class="ai_bt-ts">
-                                <div class="inner-ai_bt-ts">
-                                    <div class="bt-ts-box">
-                                  
-                                        <h4 class='uppercase'> {{ block.settings.extra_title_1 }}</h4>
-                                        <p>{{ block.settings.extra_desc_1 }}</p>
-
-                                    </div>
-                                    <div class="bt-ts-box">
-                                        {% if block.settings.extra_button_url_1 != blank %}
-                                        <a href="{{ block.settings.extra_button_url_1 }}" class='hero-button'>
-                                            {{ block.settings.extra_button_text_1 }}
-                                        </a>
-                                    {% endif %}
-
-                                    </div>
-
                                 </div>
-                            </div>
+                                <div class="ai_bt-ts">
+                                    <div class="inner-ai_bt-ts">
+                                        <div class="bt-ts-box">
+                                    
+                                            <h5 class='uppercase'> {{ block.settings.extra_title_1 }}</h5>
+                                            <p>{{ block.settings.extra_desc_1 }}</p>
+
+                                        </div>
+                                        <div class="bt-ts-box">
+                                            {% if block.settings.extra_button_url_1 != blank %}
+                                            <a href="{{ block.settings.extra_button_url_1 }}" class='underline-button underline-button-black button-block uppercase'>
+                                                {{ block.settings.extra_button_text_1 }}
+                                            </a>
+                                        {% endif %}
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
                         </article>
 
                     {% endif %}
@@ -755,69 +824,63 @@
                     {% if block.settings.extra_button_url_2 != blank %}
 
                         <article class="ai_box-item">
-                            <div class="ai_bt-img">
-                                <a href="{{ block.settings.extra_button_url_2 }}">
+                            <a href="{{ block.settings.extra_button_url_2 }}">
+                                <div class="ai_bt-img">                                
                                     <img data-src="{{ block.settings.extra_image_2 | img_url: 'master' }}" alt="{{ block.settings.extra_image_2.alt }}" class="lazyload"/>
-                                </a>
-                            </div>
-                            <div class="ai_bt-ts">
-                                <div class="inner-ai_bt-ts">
-                                    <div class="bt-ts-box">
-                                       
-                                        <h5> {{ block.settings.extra_title_2 }}</h5>
-                                        <p>{{ block.settings.extra_desc_2 }}</p>
-
-                                    </div>
-                                    <div class="bt-ts-box">
-                                        {% if block.settings.extra_button_url_2 != blank %}
-                                        <a href="{{ block.settings.extra_button_url_2 }}" class='airo-button'>
-                                            {{ block.settings.extra_button_text_2 }}
-                                        </a>
-                                    {% endif %}
-
-                                    </div>
-
                                 </div>
-                            </div>
+                                <div class="ai_bt-ts">
+                                    <div class="inner-ai_bt-ts">
+                                        <div class="bt-ts-box">
+                                        
+                                            <h5 class='uppercase'> {{ block.settings.extra_title_2 }}</h5>
+                                            <p>{{ block.settings.extra_desc_2 }}</p>
+
+                                        </div>
+                                        <div class="bt-ts-box">
+                                            {% if block.settings.extra_button_url_2 != blank %}
+                                            <a href="{{ block.settings.extra_button_url_2 }}" class='underline-button underline-button-black button-block uppercase'>
+                                                {{ block.settings.extra_button_text_2 }}
+                                            </a>
+                                        {% endif %}
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
                         </article>
 
                     {% endif %}
 
                     {% if block.settings.extra_button_url_3 != blank %}
 
-                    <article class="ai_box-item">
-                        <div class="ai_bt-img">
+                        <article class="ai_box-item">
                             <a href="{{ block.settings.extra_button_url_3 }}">
-                                <img data-src="{{ block.settings.extra_image_3 | img_url: 'master' }}" alt="{{ block.settings.extra_image_3.alt }}" class="lazyload"/>
+                                <div class="ai_bt-img">                                
+                                    <img data-src="{{ block.settings.extra_image_3 | img_url: 'master' }}" alt="{{ block.settings.extra_image_3.alt }}" class="lazyload"/>                                
+                                </div>
+                                <div class="ai_bt-ts">
+                                    <div class="inner-ai_bt-ts">
+                                        <div class="bt-ts-box">                                    
+                                            <h5 class='uppercase'> {{ block.settings.extra_title_3 }}</h5>
+                                            <p>{{ block.settings.extra_desc_3 }}</p>
+                                        </div>
+                                        <div class="bt-ts-box">
+                                            {% if block.settings.extra_button_url_3 != blank %}
+                                                <a href="{{ block.settings.extra_button_url_3 }}" class='underline-button underline-button-black button-block uppercase'>
+                                                    {{ block.settings.extra_button_text_3 }}
+                                                </a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
                             </a>
-                        </div>
-                        <div class="ai_bt-ts">
-                            <div class="inner-ai_bt-ts">
-                                <div class="bt-ts-box">
-                                   
-                                    <h5> {{ block.settings.extra_title_3 }}</h5>
-                                    <p>{{ block.settings.extra_desc_3 }}</p>
+                        </article>
 
-                                </div>
-                                <div class="bt-ts-box">
-                                    {% if block.settings.extra_button_url_3 != blank %}
-                                    <a href="{{ block.settings.extra_button_url_3 }}" class='airo-button'>
-                                        {{ block.settings.extra_button_text_3 }}
-                                    </a>
-                                {% endif %}
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </article>
-
-                {% endif %}
+                    {% endif %}
 
                 </div>
             </div>
-
-
 
         </section>
 
@@ -844,6 +907,76 @@
 
 
 			</div>
+
+
+
+
+        {% when 'fullwidth-image' %}
+
+
+			<div class="fullwidth-image-section">
+
+				{% if block.settings.full_image != blank %}
+
+					<div class="full-image">
+						<img data-src="{{ block.settings.full_image | img_url: 'master' }}" alt="{{ block.settings.full_image.alt }}" class="lazyload"/>
+					</div>
+
+				{% endif %}
+
+			</div>
+
+
+
+
+        {% when 'hero-display' %}
+
+
+			<div class="hero-display-section">
+                <div class="hero-bike-image">
+                    <img data-src="{{ block.settings.hero_image | img_url: 'master' }}" alt="{{ block.settings.hero_image.alt }}" class="hero-display-bike lazyload"/>
+                    <img data-src="{{ block.settings.logo_image | img_url: 'master' }}" alt="{{ block.settings.logo_image.alt }}" class="hero-logo-bg lazyload"/>
+                </div>
+
+                <div class="hero-display-content">
+
+                    {% if block.settings.hero_title != blank %}
+                        <h2 class="uppercase">{{ block.settings.hero_title }}</h2>
+                    {% endif %}
+
+                    {% if block.settings.hashtag_text != blank %}
+                        <h5 class="uppercase">{{ block.settings.hashtag_text }}</h5>
+                    {% endif %}
+
+                    {% if block.settings.desc_text != blank %}
+                        <p>{{ block.settings.desc_text }}</p>
+                    {% endif %}
+
+                    <div class="hero-display-spec">
+                        {% if block.settings.size_number != blank %}
+                            <h6 class="uppercase">SIZE<br><span class="hero-number">{{ block.settings.size_number}}"</span></h6>
+                        {% endif %}
+
+                        {% if block.settings.age_number != blank %}
+                            <h6 class="uppercase">age<br><span class="hero-number">{{ block.settings.age_number}}</span></h6>
+                        {% endif %}
+
+                        {% if block.settings.weight_number != blank %}
+                            <h6 class="uppercase">weight<br><span class="hero-number">{{ block.settings.weight_number}}</span>kg</h6>
+                        {% endif %}
+                    </div>
+
+                    {% if block.settings.hero_button_url != blank %}
+                        <a href="{{ block.settings.hero_button_url }}" class='airo-button'>
+                            {{ block.settings.hero_button_text }}
+                        </a>
+                    {% endif %}
+                    
+                </div>
+			</div>
+
+
+
 
 
 		{% when 'hero-category' %}

@@ -213,6 +213,11 @@
   }
 }
 
+.underline-button-black {
+  border-bottom: 5px solid $black!important;
+  max-width: fit-content;
+}
+
 .black-button {
   @include reset-input;
   display: inline-block;
