@@ -558,6 +558,13 @@
                     "type": "image_picker",
                     "label": "Image"
                 },
+
+                {
+                    "id": "hero_title_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                },
+
                 {
                     "id": "hero_title",
                     "type": "text",
@@ -628,13 +635,16 @@
                 <div class="collection-header-content kids-header-content airo-header-content">
                  
 
-                    {% if block.settings.show_product_logo == 'hornit-hero' %}
-                        <img data-src="{{ 'hero-white.svg' | asset_url }}" alt="Hero Logo" class="airo-product-logo lazyload"/>
-                    {% endif %}                    
+                    {% comment %}
+                        {% if block.settings.show_product_logo == 'hornit-hero' %}
+                            <img data-src="{{ 'hero-white.svg' | asset_url }}" alt="Hero Logo" class="airo-product-logo lazyload"/>
+                        {% endif %}
+                    {% endcomment %}
+
+                    <h3 class="white uppercase kids-header-font">{{ block.settings.header_title }}</h3>
 
 
-                    <div class="kids-header-desc">
-                        <h3 class="white uppercase kids-header-font">{{ block.settings.header_title }}</h3>
+                    <div class="kids-header-desc">                        
 
                         {% if block.settings.header_content != blank %}
                             <p class="white airo-desc">{{ block.settings.header_content }}</p>
@@ -940,9 +950,13 @@
 
                 <div class="hero-display-content">
 
-                    {% if block.settings.hero_title != blank %}
-                        <h2 class="uppercase">{{ block.settings.hero_title }}</h2>
-                    {% endif %}
+                    {% comment %}
+                        {% if block.settings.hero_title != blank %}
+                            <h2 class="uppercase">{{ block.settings.hero_title }}</h2>
+                        {% endif %}
+                    {% endcomment %}
+
+                    <img data-src="{{ block.settings.hero_title_image | img_url: 'master' }}" alt="{{ block.settings.logo_image.alt }}" class="hero-title-image lazyload"/>
 
                     {% if block.settings.hashtag_text != blank %}
                         <h5 class="uppercase">{{ block.settings.hashtag_text }}</h5>

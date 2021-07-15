@@ -72,10 +72,16 @@
                     "type": "text",
                     "label": "Title",
                     "placeholder": "Title"
-                }, {
+                }, 
+                {
+                    "id": "size_number_1",
+                    "type": "number",
+                    "label": "Size Number"
+                },               
+                {
                     "id": "clug_cat_desc_1",
                     "type": "text",
-                    "label": "price",
+                    "label": "Price",
                     "placeholder": "From £129"
                 }, {
                     "id": "clug_cat_button_url_1",
@@ -96,6 +102,11 @@
                     "type": "text",
                     "label": "Title",
                     "placeholder": "Title"
+                }, 
+                {
+                    "id": "size_number_2",
+                    "type": "number",
+                    "label": "Size Number"
                 }, {
                     "id": "clug_cat_desc_2",
                     "type": "text",
@@ -120,6 +131,10 @@
                     "type": "text",
                     "label": "Title",
                     "placeholder": "Title"
+                },                 {
+                    "id": "size_number_3",
+                    "type": "number",
+                    "label": "Size Number"
                 }, {
                     "id": "clug_cat_desc_3",
                     "type": "text",
@@ -144,6 +159,10 @@
                     "type": "text",
                     "label": "Title",
                     "placeholder": "Title"
+                },                 {
+                    "id": "size_number_4",
+                    "type": "number",
+                    "label": "Size Number"
                 }, {
                     "id": "clug_cat_desc_4",
                     "type": "text",
@@ -168,7 +187,11 @@
                     "type": "text",
                     "label": "Title",
                     "placeholder": "Title"
-                }, {
+                },                {
+                    "id": "size_number_5",
+                    "type": "number",
+                    "label": "Size Number"
+                },  {
                     "id": "clug_cat_desc_5",
                     "type": "text",
                     "label": "price",
@@ -192,6 +215,10 @@
                     "type": "text",
                     "label": "Title",
                     "placeholder": "Title"
+                },                 {
+                    "id": "size_number_6",
+                    "type": "number",
+                    "label": "Size Number"
                 }, {
                     "id": "clug_cat_desc_6",
                     "type": "text",
@@ -216,6 +243,10 @@
                     "type": "text",
                     "label": "Title",
                     "placeholder": "Title"
+                },                 {
+                    "id": "size_number_7",
+                    "type": "number",
+                    "label": "Size Number"
                 }, {
                     "id": "clug_cat_desc_7",
                     "type": "text",
@@ -240,6 +271,10 @@
                     "type": "text",
                     "label": "Title",
                     "placeholder": "Title"
+                },                 {
+                    "id": "size_number_8",
+                    "type": "number",
+                    "label": "Size Number"
                 }, {
                     "id": "clug_cat_desc_8",
                     "type": "text",
@@ -885,6 +920,11 @@
                                     <div class="bt-ts-box">
                                         <img data-src="{{ 'hero-black.svg' | asset_url }}" alt="Clug Logo" class="airo-product-logo lazyload"/>
                                         <h5> {{ block.settings.clug_cat_title_1 }}</h5>
+                                        {% if block.settings.size_number_1 != blank %}
+                                            <h6 class="uppercase hero-size">size<span class="hero-number">{{ block.settings.size_number_1}}"</span></h6>
+                                        {% endif %}                                       
+                                        
+                                        
                                         <p>{{ block.settings.clug_cat_desc_4 }}</p>
 
                                     </div>
@@ -914,6 +954,10 @@
                                     <div class="bt-ts-box">
                                         <img data-src="{{ 'hero-black.svg' | asset_url }}" alt="Clug Logo" class="airo-product-logo lazyload"/>
                                         <h5> {{ block.settings.clug_cat_title_2 }}</h5>
+                                        {% if block.settings.size_number_2 != blank %}
+                                            <h6 class="uppercase hero-size">size<span class="hero-number">{{ block.settings.size_number_2}}"</span></h6>
+                                        {% endif %}
+
                                         <p>{{ block.settings.clug_cat_desc_4 }}</p>
 
                                     </div>
@@ -943,6 +987,10 @@
                                     <div class="bt-ts-box">
                                         <img data-src="{{ 'hero-black.svg' | asset_url }}" alt="Clug Logo" class="airo-product-logo lazyload"/>
                                         <h5> {{ block.settings.clug_cat_title_3 }}</h5>
+                                        {% if block.settings.size_number_3 != blank %}
+                                            <h6 class="uppercase hero-size">size<span class="hero-number">{{ block.settings.size_number_3}}"</span></h6>
+                                        {% endif %}
+
                                         <p>{{ block.settings.clug_cat_desc_4 }}</p>
 
                                     </div>
@@ -971,6 +1019,10 @@
                                     <div class="bt-ts-box">
                                         <img data-src="{{ 'hero-black.svg' | asset_url }}" alt="Clug Logo" class="airo-product-logo lazyload"/>
                                         <h5> {{ block.settings.clug_cat_title_4 }}</h5>
+                                        {% if block.settings.size_number_4 != blank %}
+                                            <h6 class="uppercase hero-size">size<span class="hero-number">{{ block.settings.size_number_4}}"</span></h6>
+                                        {% endif %}
+
                                         <p>{{ block.settings.clug_cat_desc_4 }}</p>
 
                                     </div>
@@ -1000,6 +1052,10 @@
                                     <div class="bt-ts-box">
                                         <img data-src="{{ 'hero-black.svg' | asset_url }}" alt="Clug Logo" class="airo-product-logo lazyload"/>
                                         <h5> {{ block.settings.clug_cat_title_5 }}</h5>
+                                        {% if block.settings.size_number_5 != blank %}
+                                            <h6 class="uppercase hero-size">size<span class="hero-number">{{ block.settings.size_number_5}}"</span></h6>
+                                        {% endif %}
+
                                         <p>{{ block.settings.clug_cat_desc_5 }}</p>
 
                                     </div>
@@ -1031,6 +1087,10 @@
                                             <div class="bt-ts-box">
                                                 <img data-src="{{ 'hero-black.svg' | asset_url }}" alt="Clug Logo" class="airo-product-logo lazyload"/>
                                                 <h5> {{ block.settings.clug_cat_title_6 }}</h5>
+                                                {% if block.settings.size_number_6 != blank %}
+                                                    <h6 class="uppercase hero-size">size<span class="hero-number">{{ block.settings.size_number_6}}"</span></h6>
+                                                {% endif %}
+
                                                 <p>{{ block.settings.clug_cat_desc_6 }}</p>
         
                                             </div>
@@ -1062,6 +1122,10 @@
                                                 <div class="bt-ts-box">
                                                     <img data-src="{{ 'hero-black.svg' | asset_url }}" alt="Clug Logo" class="airo-product-logo lazyload"/>
                                                     <h5> {{ block.settings.clug_cat_title_7 }}</h5>
+                                                    {% if block.settings.size_number_7 != blank %}
+                                                        <h6 class="uppercase hero-size">size<span class="hero-number">{{ block.settings.size_number_7}}"</span></h6>
+                                                    {% endif %}
+
                                                     <p>{{ block.settings.clug_cat_desc_7 }}</p>
             
                                                 </div>
@@ -1094,6 +1158,10 @@
                                                     <div class="bt-ts-box">
                                                         <img data-src="{{ 'hero-black.svg' | asset_url }}" alt="Clug Logo" class="airo-product-logo lazyload"/>
                                                         <h5> {{ block.settings.clug_cat_title_8 }}</h5>
+                                                        {% if block.settings.size_number_8 != blank %}
+                                                            <h6 class="uppercase hero-size">size<span class="hero-number">{{ block.settings.size_number_8}}"</span></h6>
+                                                        {% endif %}
+                                                        
                                                         <p>{{ block.settings.clug_cat_desc_8 }}</p>
                 
                                                     </div>

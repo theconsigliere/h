@@ -2793,10 +2793,12 @@
           "b35e4b84-1f7d-4315-9e4f-2b3d8dd663ed": {
             "type": "disclaimer",
             "settings": {
+              "disclaimer_main_title": "CUTTING EDGE FEATURES",
+              "disclaimer_sub_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore et dolore",
               "disclaimer_image_one": "shopify:\/\/shop_images\/image002.png",
               "disclaimer_title_one": "LEVITATINGLY LIGHT",
               "disclaimer_content_one": "Made from a super lightweight, ultra-hard-wearing\n magnesium alloy, at 2.95kg this balance bike is levitatingly light",
-              "disclaimer_image_two": "shopify:\/\/shop_images\/Group_66_addf5e91-7f5b-49dd-a4af-ad99d21373b2.png",
+              "disclaimer_image_two": "shopify:\/\/shop_images\/001-ribbon_2x_92a1253d-1274-4c42-ad87-604220dd8df1.png",
               "disclaimer_title_two": "LIFETIME WARRANTY",
               "disclaimer_content_two": "We are so confident in the quality of the AIRO frame and \nforks that we offer a lifetime warranty meaning all your \nchildren will be able to start their cycling journey on the same bike!"
             }
@@ -2804,33 +2806,33 @@
           "83752e20-7145-4179-9cf4-1f1eec8626a5": {
             "type": "info-block",
             "settings": {
-              "info_color": "#24272c",
+              "info_color": "#3accd2",
               "info_image": "shopify:\/\/shop_images\/DSC06476_1.jpg",
               "info_checkbox": false,
-              "info_title": "",
-              "info_content": "",
+              "info_title": "EASY TO ASSEMBLE & ADJUST",
+              "info_content": "With just three bolts to tighten (or four if you include adjusting \nthe seat!), your little one will be riding in minutes. The adjustable seat means the AIRO is suitable for a child with an inside leg \nmeasurement of 30cm to 48cm (11.8\" to 18.9”). The Allen key is included.",
               "info_video_url": ""
             }
           },
           "19ea4ab7-d8b6-4bbf-a99f-de32c54e800e": {
             "type": "info-block",
             "settings": {
-              "info_color": "#24272c",
+              "info_color": "#fcc435",
               "info_image": "shopify:\/\/shop_images\/Group_967_1.jpg",
               "info_checkbox": false,
-              "info_title": "",
-              "info_content": "",
+              "info_title": "4 FUNKY COLOURS",
+              "info_content": "Choose between Flamingo Pink, Magma Red, Orca White, Hammer Yellow, Tuvalu Turquoise and Mavericks Blue then marvel at the magic of your little one going from tentative first steps to gnarly rider on their first bike.",
               "info_video_url": ""
             }
           },
           "1089d328-912c-4d26-9eb4-eeb42299fd7b": {
             "type": "info-block",
             "settings": {
-              "info_color": "#24272c",
+              "info_color": "#e10613",
               "info_image": "shopify:\/\/shop_images\/Mask_Group_118_1.jpg",
               "info_checkbox": false,
-              "info_title": "",
-              "info_content": "",
+              "info_title": "Beautifully Sleek design",
+              "info_content": "The grip taped footrests are contoured into the frame \nfor easy freewheeling, air-filled tyres for a smoother ride and a \npadded stem for extra protection. Fully safety tested by\n TÜVRheinland® for children aged 18months+ (EN71). CE approved.",
               "info_video_url": ""
             }
           },
@@ -2883,10 +2885,56 @@
               "header_button_url": "",
               "header_button_text": ""
             }
+          },
+          "3a088146-b8d5-46d4-85fc-e1ccd17c52ce": {
+            "type": "hero-display",
+            "settings": {
+              "logo_image": "shopify:\/\/shop_images\/hero-logo-grey.png",
+              "hero_image": "shopify:\/\/shop_images\/bike-hero-2.png",
+              "hero_title": "Hero",
+              "hashtag_text": "#cluganywhere",
+              "desc_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore et dolore  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit  in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur  sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "size_number": 14,
+              "age_number": "3-4",
+              "weight_number": 6.5,
+              "hero_button_url": "shopify:\/\/products\/hero-16-dark-pink",
+              "hero_button_text": "shop now"
+            }
+          },
+          "54bad76f-e441-4301-b077-b6217cfcf484": {
+            "type": "fullwidth-image",
+            "settings": {
+              "full_image": "shopify:\/\/shop_images\/children-starter-image.jpg"
+            }
+          },
+          "e35a8cc0-16e8-4914-9b40-156e23a3cc2a": {
+            "type": "extras",
+            "settings": {
+              "extra_title": "Take your bike to new heights",
+              "extra_desc": "",
+              "extra_image_1": "shopify:\/\/shop_images\/DSC06256_1.jpg",
+              "extra_title_1": "Accessories",
+              "extra_desc_1": "We designed the CLUG to be a great fit with just about every bike tyre out there.  We sell five versions of the CLUG .",
+              "extra_button_url_1": "shopify:\/\/collections\/kids-spare-parts",
+              "extra_button_text_1": "shop now",
+              "extra_image_2": "shopify:\/\/shop_images\/Mask_Group_108_1.jpg",
+              "extra_title_2": "Airo",
+              "extra_desc_2": "We designed the CLUG to be a great fit with just about every bike tyre out there.  We sell five versions of the CLUG .",
+              "extra_button_url_2": "shopify:\/\/collections\/hornit-airo",
+              "extra_button_text_2": "shop now",
+              "extra_image_3": "shopify:\/\/shop_images\/DSC05576_1.jpg",
+              "extra_title_3": "Spares",
+              "extra_desc_3": "We designed the CLUG to be a great fit with just about every bike tyre out there.  We sell five versions of the CLUG .",
+              "extra_button_url_3": "shopify:\/\/collections\/kids-spare-parts",
+              "extra_button_text_3": "shop now"
+            }
           }
         },
         "block_order": [
-          "9a102a7b-a1d0-40dc-9c11-91ef496bb6f5"
+          "9a102a7b-a1d0-40dc-9c11-91ef496bb6f5",
+          "3a088146-b8d5-46d4-85fc-e1ccd17c52ce",
+          "54bad76f-e441-4301-b077-b6217cfcf484",
+          "e35a8cc0-16e8-4914-9b40-156e23a3cc2a"
         ],
         "settings": {
           "title_top": "Custom content"
