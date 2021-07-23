@@ -757,7 +757,6 @@
     margin: 1rem 0 1rem 0;
   }
   .hero-number {
-    margin-left: 1rem;
     font-weight: $type-bold;
   }
 }
@@ -894,21 +893,82 @@
       }
     }
 
-    .hero-display-spec {
-      position: relative;
-      display: block;
-      margin: 5vh 0;
-
-      @media (min-width: #{$screen-lg}) {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-      }
-    }
 
     .hero-number {
       font-weight: $type-bold;
       font-size: 2.5rem;
+    }
+  }
+
+  .hero-display-spec {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2rem auto;
+
+    .uppercase {
+      text-align: center;
+    }
+  }
+
+  .inner-ai_bt-ts {
+    display: block;
+    margin: auto;
+    padding-bottom: 2rem;
+    width: 90%;
+
+    a, h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .quote-section {
+
+    margin-bottom: 5vh;
+
+    .quote-body {
+
+      position: relative;
+      width: fit-content;
+      margin: auto;
+      margin-top: 6vh!important;
+
+      p {
+        max-width: 85%;
+      }
+
+      h3 {
+        font-size: 4rem;
+      }
+
+      .quote-icon-left, .quote-icon-right {
+        position: absolute;
+        width: 2rem;
+        margin: 0;
+
+        img {
+          margin: 0;
+        }
+      }
+      .quote-icon-left {
+        right: 100%;
+        bottom: 100%;
+      }
+      .quote-icon-right {
+        left: 100%;
+        top: 100%;
+        transform: rotate(180deg);
+      }
+    }
+    .quote-image {
+      margin-top: 0;
+
+      img {
+        max-width: 10%;
+      }
     }
   }
 
@@ -1515,9 +1575,10 @@
 
 .bt-ts-box {
   min-width: 35%;
+  margin: 1rem 0;
   
   img {
-    width: 30%;
+    width: 25%;
   }
 
   h5 {

@@ -750,11 +750,12 @@
           "1593787820504": {
             "type": "contact-info",
             "settings": {
+              "contact_image": "shopify:\/\/shop_images\/Helen_919fe788-80ae-466b-8812-a730fd5c6cd3.jpg",
               "contact_image_two": "shopify:\/\/shop_images\/helen.png",
               "name": "Helen",
               "job_title": "Operations",
               "tel": "07704705342",
-              "email": "Alex@thehornit.com"
+              "email": "Helen@thehornit.com"
             }
           },
           "1599215556754": {
@@ -766,6 +767,17 @@
               "job_title": "Product Design",
               "tel": "",
               "email": "louis@thehornit.com"
+            }
+          },
+          "47f672fe-b5fc-48f1-91e0-44b964f1029a": {
+            "type": "contact-info",
+            "settings": {
+              "contact_image": "shopify:\/\/shop_images\/ioana_1a45fd22-3899-4f2e-842e-c18c2886cd14.jpg",
+              "contact_image_two": "shopify:\/\/shop_images\/ioana.jpg",
+              "name": "Ioana",
+              "job_title": "Finance",
+              "tel": "",
+              "email": "Ioana@thehornit.com"
             }
           }
         },
@@ -779,7 +791,8 @@
           "1592577607750",
           "1587928499545",
           "1593787820504",
-          "1599215556754"
+          "1599215556754",
+          "47f672fe-b5fc-48f1-91e0-44b964f1029a"
         ],
         "settings": {}
       },
@@ -2741,7 +2754,7 @@
             "settings": {
               "header_image": "shopify:\/\/shop_images\/csb_1.jpg",
               "show_product_logo": "hornit-hero",
-              "header_title": "Hornit Hero dfjk",
+              "header_title": "Hornit Hero",
               "header_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt  ut labore et dolore magna aliqua. \nUt enim ad minim veniam, quis nostrud exercitation.",
               "header_button_url": "",
               "header_button_text": ""
@@ -2753,22 +2766,26 @@
               "clug_cat_title": "Choose your Hero",
               "clug_cat_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt  ut labore et dolore magna aliqua. \nUt enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt  ut labore et dolore magna aliqua. \nUt enim ad minim veniam, quis nostrud exercitation.",
               "clug_cat_image_1": "shopify:\/\/shop_images\/Mask_Group_116_1.jpg",
-              "clug_cat_title_1": "Snapper Red",
+              "clug_cat_title_1": "",
+              "size_number_1": 14,
               "clug_cat_desc_1": "£TBA",
               "clug_cat_button_url_1": "#",
               "clug_cat_button_text_1": "Shop now",
               "clug_cat_image_2": "shopify:\/\/shop_images\/Mask_Group_117_1.jpg",
-              "clug_cat_title_2": "Blue Racer",
+              "clug_cat_title_2": "",
+              "size_number_2": 16,
               "clug_cat_desc_2": "£TBA",
               "clug_cat_button_url_2": "#",
               "clug_cat_button_text_2": "Shop now",
               "clug_cat_image_3": "shopify:\/\/shop_images\/Mask_Group_112_1.jpg",
-              "clug_cat_title_3": "Mawas Orange",
+              "clug_cat_title_3": "",
+              "size_number_3": 20,
               "clug_cat_desc_3": "£tba",
               "clug_cat_button_url_3": "#",
               "clug_cat_button_text_3": "Shop now",
               "clug_cat_image_4": "shopify:\/\/shop_images\/Mask_Group_115_1.jpg",
-              "clug_cat_title_4": "Pink Dragon",
+              "clug_cat_title_4": "",
+              "size_number_4": 14,
               "clug_cat_desc_4": "£tba",
               "clug_cat_button_url_4": "#",
               "clug_cat_button_text_4": "Shop now",
@@ -2880,7 +2897,7 @@
             "settings": {
               "header_image": "shopify:\/\/shop_images\/csb_1.jpg",
               "show_product_logo": "hornit-hero",
-              "header_title": "Children Starter Bikes",
+              "header_title": "Children's Starter Bikes",
               "header_content": "",
               "header_button_url": "",
               "header_button_text": ""
@@ -2891,6 +2908,7 @@
             "settings": {
               "logo_image": "shopify:\/\/shop_images\/hero-logo-grey.png",
               "hero_image": "shopify:\/\/shop_images\/bike-hero-2.png",
+              "hero_title_image": "shopify:\/\/shop_images\/hero-black.png",
               "hero_title": "Hero",
               "hashtag_text": "#cluganywhere",
               "desc_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore et dolore  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit  in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur  sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",

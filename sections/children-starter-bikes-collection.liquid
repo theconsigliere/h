@@ -409,7 +409,32 @@
                     "label": "Disclaimer Content"
                 }
             ]
-        }, {
+        },
+        
+        {
+            "type": "quote-block",
+            "name": "Quote Block",
+            "settings": [
+                {
+                    "id": "quote_image",
+                    "type": "image_picker",
+                    "label": "Background Image"
+                },{
+                    "id": "quote_title",
+                    "type": "text",
+                    "label": "Title",
+                    "placeholder": "Defaults to Collection Title"
+                }, {
+                    "id": "quote_content",
+                    "type": "textarea",
+                    "label": "Content"
+                }
+            ]
+        },       
+        
+        
+        
+        {
             "type": "info-block",
             "name": "Info Block",
             "settings": [
@@ -917,6 +942,40 @@
 
 
 			</div>
+
+
+
+        {% when 'quote-block' %}
+
+
+            <div class="quote-section title-section">
+
+                    
+                {% if block.settings.quote_content != blank %}
+                    <div class="quote-body">
+                        <div class="quote-icon-left">
+                            <img data-src="{{ 'quote.svg' | asset_url }}" alt="quote" class="lazyload"/>
+                        </div>
+                        <h3 class="kids-header-font uppercase">{{ block.settings.quote_title }}</h3>
+                        <div class="quote-icon-right">
+                            <img data-src="{{ 'quote.svg' | asset_url }}" alt="quote" class="lazyload"/>
+                        </div>
+                    </div>
+                {% endif %}
+
+                <p>{{ block.settings.quote_content }}</p>
+
+
+                {% if block.settings.quote_image != blank %}
+
+                    <div class="quote-image">
+                        <img data-src="{{ block.settings.quote_image | img_url: 'master' }}" alt="{{ block.settings.quote_image.alt }}" class="lazyload"/>
+                    </div>
+
+                {% endif %}
+
+
+            </div>
 
 
 
