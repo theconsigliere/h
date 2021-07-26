@@ -2768,43 +2768,63 @@
               "clug_cat_image_1": "shopify:\/\/shop_images\/Mask_Group_116_1.jpg",
               "clug_cat_title_1": "",
               "size_number_1": 14,
+              "age_number_1": "2.5-4.5",
+              "weight_number_1": 5.4,
               "clug_cat_desc_1": "£TBA",
               "clug_cat_button_url_1": "#",
               "clug_cat_button_text_1": "Shop now",
               "clug_cat_image_2": "shopify:\/\/shop_images\/Mask_Group_117_1.jpg",
               "clug_cat_title_2": "",
               "size_number_2": 16,
+              "age_number_2": "2.5-4.5",
+              "weight_number_2": 8,
               "clug_cat_desc_2": "£TBA",
               "clug_cat_button_url_2": "#",
               "clug_cat_button_text_2": "Shop now",
               "clug_cat_image_3": "shopify:\/\/shop_images\/Mask_Group_112_1.jpg",
               "clug_cat_title_3": "",
               "size_number_3": 20,
+              "age_number_3": "2.5-4.5",
+              "weight_number_3": 5.4,
               "clug_cat_desc_3": "£tba",
               "clug_cat_button_url_3": "#",
               "clug_cat_button_text_3": "Shop now",
               "clug_cat_image_4": "shopify:\/\/shop_images\/Mask_Group_115_1.jpg",
               "clug_cat_title_4": "",
               "size_number_4": 14,
+              "age_number_4": "2.5-4.5",
+              "weight_number_4": 7,
               "clug_cat_desc_4": "£tba",
               "clug_cat_button_url_4": "#",
               "clug_cat_button_text_4": "Shop now",
               "clug_cat_title_5": "",
+              "age_number_5": "",
               "clug_cat_desc_5": "",
               "clug_cat_button_url_5": "",
               "clug_cat_button_text_5": "",
               "clug_cat_title_6": "",
+              "age_number_6": "",
               "clug_cat_desc_6": "",
               "clug_cat_button_url_6": "",
               "clug_cat_button_text_6": "",
               "clug_cat_title_7": "",
+              "age_number_7": "",
               "clug_cat_desc_7": "",
               "clug_cat_button_url_7": "",
               "clug_cat_button_text_7": "",
               "clug_cat_title_8": "",
+              "age_number_8": "",
               "clug_cat_desc_8": "",
               "clug_cat_button_url_8": "",
               "clug_cat_button_text_8": ""
+            }
+          },
+          "9ced16ca-874e-433b-ba1b-e751a1b4d5a0": {
+            "type": "quote-block",
+            "settings": {
+              "quote_image": "shopify:\/\/shop_images\/hero-black.png",
+              "quote_title": "NOT ALL BIKES ARE CREATED EQUAL",
+              "quote_content": "Lorem ipsum dolor sit amet."
             }
           },
           "b35e4b84-1f7d-4315-9e4f-2b3d8dd663ed": {
@@ -2879,6 +2899,7 @@
         "block_order": [
           "f5c4d898-4a98-4932-a087-c6d877c98c18",
           "51180174-8341-4579-8628-d186646a6a67",
+          "9ced16ca-874e-433b-ba1b-e751a1b4d5a0",
           "b35e4b84-1f7d-4315-9e4f-2b3d8dd663ed",
           "83752e20-7145-4179-9cf4-1f1eec8626a5",
           "19ea4ab7-d8b6-4bbf-a99f-de32c54e800e",
@@ -2898,7 +2919,7 @@
               "header_image": "shopify:\/\/shop_images\/csb_1.jpg",
               "show_product_logo": "hornit-hero",
               "header_title": "Children's Starter Bikes",
-              "header_content": "",
+              "header_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
               "header_button_url": "",
               "header_button_text": ""
             }
@@ -2923,6 +2944,14 @@
             "type": "fullwidth-image",
             "settings": {
               "full_image": "shopify:\/\/shop_images\/children-starter-image.jpg"
+            }
+          },
+          "acc7a142-75bd-4e2a-9aed-a8c5f0474606": {
+            "type": "quote-block",
+            "settings": {
+              "quote_image": "shopify:\/\/shop_images\/hero-black.png",
+              "quote_title": "Not all bikes are created equal",
+              "quote_content": "lorem ipsum dolor sit amet"
             }
           },
           "e35a8cc0-16e8-4914-9b40-156e23a3cc2a": {
@@ -2952,6 +2981,7 @@
           "9a102a7b-a1d0-40dc-9c11-91ef496bb6f5",
           "3a088146-b8d5-46d4-85fc-e1ccd17c52ce",
           "54bad76f-e441-4301-b077-b6217cfcf484",
+          "acc7a142-75bd-4e2a-9aed-a8c5f0474606",
           "e35a8cc0-16e8-4914-9b40-156e23a3cc2a"
         ],
         "settings": {

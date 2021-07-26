@@ -439,19 +439,6 @@
             "limit": 1,
             "settings": [
                 {
-                    "id": "video_image",
-                    "type": "image_picker",
-                    "label": "Vide Hero Image"
-                }, {
-                    "id": "video_title",
-                    "type": "text",
-                    "label": "Title",
-                    "placeholder": "Video Title"
-                }, {
-                    "id": "video_desc",
-                    "type": "textarea",
-                    "label": "Text Description"
-                }, {
                     "id": "video_link",
                     "type": "url",
                     "label": "Link to Library"
@@ -1112,15 +1099,19 @@
                                         </div>
                                         
                                         
-                                        <p>{{ block.settings.clug_cat_desc_4 }}</p>
+                                        
 
                                     </div>
-                                    <div class="bt-ts-box">
+                                    <div class="bt-ts-box price-btn">
+
+                                        <p>{{ block.settings.clug_cat_desc_4 }}</p>
+
+
                                         {% if block.settings.clug_cat_button_url_1 != blank %}
-										<a href="{{ block.settings.clug_cat_button_url_1 }}" class='airo-button'>
-											{{ block.settings.clug_cat_button_text_1 }}
-										</a>
-									{% endif %}
+                                            <a href="{{ block.settings.clug_cat_button_url_1 }}" class='airo-button'>
+                                                {{ block.settings.clug_cat_button_text_1 }}
+                                            </a>
+                                        {% endif %}
 
                                     </div>
 
@@ -1157,10 +1148,12 @@
                                             {% endif %}
                                         </div>
 
-                                        <p>{{ block.settings.clug_cat_desc_4 }}</p>
+                                        
 
                                     </div>
-                                    <div class="bt-ts-box">
+                                    <div class="bt-ts-box price-btn">
+
+                                        <p>{{ block.settings.clug_cat_desc_4 }}</p>
                                         {% if block.settings.clug_cat_button_url_2 != blank %}
 										<a href="{{ block.settings.clug_cat_button_url_2 }}" class='airo-button'>
 											{{ block.settings.clug_cat_button_text_2 }}
@@ -1202,10 +1195,10 @@
                                             {% endif %}
                                         </div>
 
-                                        <p>{{ block.settings.clug_cat_desc_4 }}</p>
 
                                     </div>
-                                    <div class="bt-ts-box">
+                                    <div class="bt-ts-box price-btn">
+                                        <p>{{ block.settings.clug_cat_desc_4 }}</p>
                                         {% if block.settings.clug_cat_button_url_3 != blank %}
 										<a href="{{ block.settings.clug_cat_button_url_3 }}" class='airo-button'>
 											{{ block.settings.clug_cat_button_text_3 }}
@@ -1246,10 +1239,10 @@
                                             {% endif %}
                                         </div>
 
-                                        <p>{{ block.settings.clug_cat_desc_4 }}</p>
 
                                     </div>
-                                    <div class="bt-ts-box">
+                                    <div class="bt-ts-box price-btn">
+                                        <p>{{ block.settings.clug_cat_desc_4 }}</p>
                                         {% if block.settings.clug_cat_button_url_4 != blank %}
 										<a href="{{ block.settings.clug_cat_button_url_4 }}" class='airo-button'>
 											{{ block.settings.clug_cat_button_text_4 }}
@@ -1291,10 +1284,10 @@
                                             {% endif %}
                                         </div>
 
-                                        <p>{{ block.settings.clug_cat_desc_5 }}</p>
 
                                     </div>
-                                    <div class="bt-ts-box">
+                                    <div class="bt-ts-box price-btn">
+                                        <p>{{ block.settings.clug_cat_desc_5 }}</p>
                                         {% if block.settings.clug_cat_button_url_5 != blank %}
                                         <a href="{{ block.settings.clug_cat_button_url_5 }}" class='airo-button'>
                                             {{ block.settings.clug_cat_button_text_5 }}
@@ -1338,10 +1331,10 @@
                                                     {% endif %}
                                                 </div>
 
-                                                <p>{{ block.settings.clug_cat_desc_6 }}</p>
         
                                             </div>
-                                            <div class="bt-ts-box">
+                                            <div class="bt-ts-box price-btn">
+                                                <p>{{ block.settings.clug_cat_desc_6 }}</p>
                                                 {% if block.settings.clug_cat_button_url_6 != blank %}
                                                 <a href="{{ block.settings.clug_cat_button_url_6 }}" class='airo-button'>
                                                     {{ block.settings.clug_cat_button_text_6 }}
@@ -1385,10 +1378,10 @@
                                                         {% endif %}
                                                     </div>
 
-                                                    <p>{{ block.settings.clug_cat_desc_7 }}</p>
             
                                                 </div>
-                                                <div class="bt-ts-box">
+                                                <div class="bt-ts-box price-btn">
+                                                    <p>{{ block.settings.clug_cat_desc_7 }}</p>
                                                     {% if block.settings.clug_cat_button_url_7 != blank %}
                                                     <a href="{{ block.settings.clug_cat_button_url_7 }}" class='airo-button'>
                                                         {{ block.settings.clug_cat_button_text_7 }}
@@ -1432,10 +1425,10 @@
                                                                 <h6 class="uppercase">weight<br><span class="hero-number">{{ block.settings.weight_number_8}}</span>kg</h6>
                                                             {% endif %}
                                                         </div>
-                                                        <p>{{ block.settings.clug_cat_desc_8 }}</p>
                 
                                                     </div>
-                                                    <div class="bt-ts-box">
+                                                    <div class="bt-ts-box price-btn">
+                                                        <p>{{ block.settings.clug_cat_desc_8 }}</p>
                                                         {% if block.settings.clug_cat_button_url_8 != blank %}
                                                         <a href="{{ block.settings.clug_cat_button_url_8 }}" class='airo-button'>
                                                             {{ block.settings.clug_cat_button_text_8 }}
@@ -1659,6 +1652,30 @@
 
 			<section class="page-video-section">
 
+                <div class="video-inner">
+
+
+                    <div class="video-library-item">
+                        <iframe title="vimeo-player" src="{{ block.settings.video_url }}" width="640" height="272" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    {% comment %}
+                    <div class="title-section">
+                        <h5 class="uppercase">{{ block.settings.video_title }}</h5>
+                        <p class="p-fade">{{ block.settings.video_desc }}
+                        </p>
+                    </div>
+                    {% endcomment %}
+
+
+                </div>
+            </section>
+
+
+
+            {% comment %}
+            <section class="page-video-section">
+
 				<a href="{{ block.settings.video_link }}" class='video-link'>
 					<div class="page-video-image">
 						<img data-src="{{ block.settings.video_image | img_url: 'master' }}" alt="{{ block.settings.video_image.alt }}" class="lazyload"/>
@@ -1683,6 +1700,7 @@
 
 			</section>
 
+            {% endcomment %}
 
 
 		{% endcase %}

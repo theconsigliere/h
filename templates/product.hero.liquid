@@ -6,7 +6,7 @@
 {% endcomment %}
 
 
-<div class="product-page" id="page-product">
+<div class="product-page hero-product-page" id="page-product">
 
     {% comment %}Begin Product Top{% endcomment %}
     <div id="product-top">
@@ -60,32 +60,55 @@
             <div class="product-actions">
 
 
-                <nav aria-label="breadcrumbs" class="breadcrumb" role="navigation">
-                    {% comment %}
-						if within collection url, display collecion name
-					{% endcomment %}
-                    {% if collection %}
-                        <a class="current-page" href="{{ collection.url }}">{{ collection.title }}</a>
-                    {% endif %}
-
-                </nav>
+                {% render 'breadcrumbs' %}
 
 
-                <h2 class="uppercase product-title">{{ product.title }}</h2>
-                {% comment %}
-					{{ description }}
-				{% endcomment %}
-              <div class="yotpo bottomLine"
-    data-appkey="sUnimvLjrmNljb4x2eC8Lp5UJNikQuyGNVKTalTh"
-    data-domain="{{shop.permanent_domain | escape }}"
-    data-product-id="{{ product.id }}"
-    data-product-models="{{ product.id }}"
-    data-name="{{ product.title | escape }}"
-    data-url="{{ shop.url }}{{ product.url }}"
-    data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
-    data-description="{{ product.description | escape }}"
-    data-bread-crumbs="{% for tag in product.tags %}{{ tag | escape }};{% endfor %}">
-</div>
+                <h3 class="kids-header-font uppercase product-title fadeInUp">{{ product.title }}</h3>
+
+
+
+                <div class="yotpo bottomLine"
+                    data-appkey="sUnimvLjrmNljb4x2eC8Lp5UJNikQuyGNVKTalTh"
+                    data-domain="{{shop.permanent_domain | escape }}"
+                    data-product-id="{{ product.id }}"
+                    data-product-models="{{ product.id }}"
+                    data-name="{{ product.title | escape }}"
+                    data-url="{{ shop.url }}{{ product.url }}"
+                    data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
+                    data-description="{{ product.description | escape }}"
+                    data-bread-crumbs="{% for tag in product.tags %}{{ tag | escape }};{% endfor %}">
+                </div>
+
+                {% if product.metafields.custom_fields["shortdesc_desc"] != blank %}
+                    <p>{{ product.metafields.custom_fields["shortdesc_desc"] }}</p>
+                {% endif %}
+
+
+                {%- comment -%}Warranty disclaimer{%- endcomment -%}
+
+                {% if product.metafields.custom_fields["bike_warranty_title"] != blank %}
+
+                    <div class="mtb__notice">
+                        <div class="yellow-background notice_top"></div>
+                        <div class="helmet__inner">
+
+                            <p class="uppercase font-bolder">
+                                {{ product.metafields.custom_fields["bike_warranty_title"] }}
+                            </p>
+
+                            {% if product.metafields.custom_fields["bike_warranty_description"]  != blank %}
+                                <p class='small-p'>{{ product.metafields.custom_fields["bike_warranty_description"] }}</p>
+                            {% endif %}
+
+                        </div>
+
+
+                    </div>
+
+                {% endif %}
+
+
+
 
                 {% include 'add-to-cart-form' %}
 
@@ -117,18 +140,370 @@
 
         {% endif %}
 
+        {% comment %}
+            <div class="shipping-returns">
+                <div class="info-section shipping">
+                    <h6 class="font-bolder uppercase">{{ 'product.shipping.title' | t }}</h6>
+                    <p>{{ shop.shipping_policy }}</p>
+                </div>
 
-        <div class="shipping-returns">
-            <div class="info-section shipping">
-                <h6 class="font-bolder uppercase">{{ 'product.shipping.title' | t }}</h6>
-                <p>{{ shop.shipping_policy }}</p>
+                <div class="info-section returns">
+                    <h6 class="font-bolder uppercase">{{ 'product.returns.title' | t }}</h6>
+                    <p>{{ shop.refund_policy }}</p>
+                </div>
+            </div>
+        {% endcomment %}
+
+
+
+
+        <section class="product-content-section">
+
+            {% include "product-shipping-returns" %}
+
+
+            <div class="inner">
+
+                <div class="info-section description">
+
+                    <div class="product-description">
+                        {% comment %}
+							this has been set above by the description_array
+						{% endcomment %}
+                        {% if product.metafields.custom_fields["product_description_title"] != blank %}
+                            <h1 class="kids-header-font uppercase">{{ product.metafields.custom_fields["product_description_title"] }}</h1>
+                        {% endif %}
+
+                        <p>{{ description }}</p>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="info-section returns">
-                <h6 class="font-bolder uppercase">{{ 'product.returns.title' | t }}</h6>
-                <p>{{ shop.refund_policy }}</p>
+        </section>
+
+
+        {%- comment -%}Product images{%- endcomment -%}
+
+        {% if product.metafields.custom_fields["product_image_one" != blank %}
+            <section class=" product-content-section image-section">
+
+
+                <div class="product-section-inner">
+
+
+                    <div class="image-item">
+                        <img data-src="{{ product.metafields.custom_fields["product_image_one"] }}" class="lazyload"/>
+                    </div>
+
+                    {% if product.metafields.custom_fields["product_image_two"] != blank %}
+                        <div class="image-item">
+                            <img data-src="{{ product.metafields.custom_fields["product_image_two"] }}" class="lazyload"/>
+                        </div>
+                    {% endif %}
+
+                    {% if product.metafields.custom_fields["product_image_three"] != blank %}
+                        <div class="image-item">
+                            <img data-src="{{ product.metafields.custom_fields["product_image_three"] }}" class="lazyload"/>
+                        </div>
+                    {% endif %}
+
+
+                </div>
+
+            </section>
+
+        {% endif %}
+
+
+        {%- comment -%}End Product images{%- endcomment -%}
+
+        {%- comment -%}Info Area{%- endcomment -%}
+
+        {% if product.metafields.custom_fields["info_area_title"] != blank %}
+
+            <section class=" product-content-section info-area">
+
+
+                <div class="product-section-inner">
+
+
+                    <div class="info-area-item">
+
+                        <h4 class="font-bolder kids-sub-header-font uppercase">
+                            {{ product.metafields.custom_fields["info_area_title"] }}
+                        </h4>
+
+                        {% if product.metafields.custom_fields["info_area_description"] != blank %}
+                            <p>{{ product.metafields.custom_fields["info_area_description"] }}</p>
+
+                        {% endif %}
+
+                    </div>
+
+
+                    {% if product.metafields.custom_fields["info_area_title_two"] != blank %}
+                        <div class="info-area-item">
+
+                            <h4 class="font-bolder kids-sub-header-font uppercase">
+                                {{ product.metafields.custom_fields["info_area_title_two"] }}
+                            </h4>
+
+                            {% if product.metafields.custom_fields["info_area_description_two"] != blank %}
+                                <p>{{ product.metafields.custom_fields["info_area_description_two"] }}</p>
+
+                            {% endif %}
+
+                        </div>
+
+                    {% endif %}
+
+                </div>
+
+
+            </section>
+
+        {% endif %}
+
+
+        {%- comment -%}End info area{%- endcomment -%}
+
+
+        {%- comment -%}Information List{%- endcomment -%}
+
+        {% if product.metafields.custom_fields["information_list"] != blank %}
+
+            <section class=" product-content-section info-list">
+
+                <h2 class="uppercase kids-header-font ta-center ">Further Information</h2>
+
+                <div class="inner">
+
+
+                    <div class="info-list-inner">
+
+                        {{ product.metafields.custom_fields["information_list"] }}
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        {% endif %}
+
+
+        {%- comment -%}Information list end{%- endcomment -%}
+
+
+        {%- comment -%} Closeup Grid Info {%- endcomment -%}
+        {% if product.metafields.custom_fields["closeup_grid"] != blank %}
+            <section class="closeup-grid-section">
+                <div class="closeup-grid">
+                    {% for item in product.metafields.custom_fields["closeup_grid"] %}
+                        <div class="closeup-grid-row grid-item-{{ forloop.index0 }}">
+
+                            <div class="closeup-grid-text">
+                                <div class="grid-text-inner">
+                                    {% if item["item_title"] != blank %}
+                                        <div class="custom-field--value">
+                                            <h5>{{ item["item_title"] }}</h5>
+                                        </div>
+                                    {% endif %}
+                                    {% if item["item_description"] != blank %}
+                                        <div class="custom-field--value">
+                                            <p>{{ item["item_description"] }}</p>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            {% if item["image_url"] != blank %} 
+                                <div class="closeup-grid-image">
+                                    <img data-src="{{ item["image_url"] }}" class="lazyload"/>
+                                </div>
+                            {% endif %}
+
+
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+        {% endif %}
+        {%- comment -%}IGrid Info end{%- endcomment -%}
+
+
+        {%- comment -%}FAQ Section{%- endcomment -%}
+
+        {% if product.metafields.custom_fields["faq_section"] == 1 %}
+
+            <section class="tab-section" id="faqs">
+                <div class="inner">
+                    <h3 class="text-align uppercase">Frequently Asked Questions</h3>
+
+                    <div class="tabs">
+
+                        {% if product.metafields.custom_fields["faq_question"] != blank %}
+                            <div class="tab">
+
+                                <input class="tab-input" type="checkbox"/>
+
+                                <label class="tab-label">
+                                    <p class="black">{{ product.metafields.custom_fields["faq_question"] }}</p>
+                                </label>
+
+                                {% if product.metafields.custom_fields["faq_answer"] != blank %}
+                                    <div class="tab-content">
+                                        <p>{{ product.metafields.custom_fields["faq_answer"] }}</p>
+                                    </div>
+                                {% endif %}
+
+                            </div>
+
+                        {% endif %}
+
+                        {% if product.metafields.custom_fields["faq_question_2"] != blank %}
+
+                            <div class="tab">
+                                <input class="tab-input" type="checkbox"/>
+
+                                <label class="tab-label">
+                                    <p class="black">{{ product.metafields.custom_fields["faq_question_2"] }}</p>
+                                </label>
+
+                                {% if product.metafields.custom_fields["faq_answer_2"] != blank %}
+                                    <div class="tab-content">
+                                        <p>{{ product.metafields.custom_fields["faq_answer_2"] }}</p>
+                                    </div>
+                                {% endif %}
+
+                            </div>
+
+                        {% endif %}
+
+                        {% if product.metafields.custom_fields["faq_question_3"] != blank %}
+
+                            <div class="tab">
+
+                                <input class="tab-input" type="checkbox"/>
+                                <label class="tab-label">
+                                    <p class="black">{{ product.metafields.custom_fields["faq_question_3"] }}</p>
+                                </label>
+
+
+                                {% if product.metafields.custom_fields["faq_answer_3"] != blank %}
+                                    <div class="tab-content">
+                                        <p>{{ product.metafields.custom_fields["faq_answer_3"] }}</p>
+                                    </div>
+                                {% endif %}
+                            </div>
+
+                        {% endif %}
+
+                        {% if product.metafields.custom_fields["faq_question_4"] != blank %}
+
+                            <div class="tab">
+
+                                <input class="tab-input" type="checkbox"/>
+                                <label class="tab-label">
+                                    <p class="black">{{ product.metafields.custom_fields["faq_question_4"] }}</p>
+                                </label>
+
+
+                                {% if product.metafields.custom_fields["faq_answer_4"] != blank %}
+                                    <div class="tab-content">
+                                        <p>{{ product.metafields.custom_fields["faq_answer_4"] }}</p>
+                                    </div>
+                                {% endif %}
+                            </div>
+
+                        {% endif %}
+                    </div>
+
+                    {% if product.metafields.custom_fields["faq_button_link"] != blank %}
+                        <div class="tabs-button">
+                            <a class="block-button" href="{{ product.metafields.custom_fields["faq_button_link"] }}">SEE FAQ'S
+                            </a>
+                        </div>
+                    {% endif %}
+
+
+                </div>
+            </section>
+
+        {% endif %}
+
+
+        {%- comment -%}FAQ Section End{%- endcomment -%}
+
+        {%- comment -%}Review Section
+
+        <div class="reviews">
+            <div class="inner">
+                {% include 'yotpo-reviews' %}
             </div>
+
         </div>
+        {%- endcomment -%}
+
+        {%- comment -%}End of Review Section{%- endcomment -%}
+
+                  {%- comment -%}product awards{%- endcomment -%}
+
+
+                  {% include 'awards-section' %}
+                  
+                  
+        
+        
+                  {%- comment -%}end product awards{%- endcomment -%}
+
+
+        {%- comment -%}Video Section{%- endcomment -%}
+
+
+        {% if product.metafields.custom_fields["video_url"] != blank %}
+
+            <section class="video-section">
+
+                {%- comment -%}Fullscreen Product image{%- endcomment -%}
+                {% if product.metafields.custom_fields["product_image_full_screen"] != blank %}
+
+                    <img data-src="{{ product.metafields.custom_fields["product_image_full_screen"] }}" class="lazyload"/>
+                {% endif %}
+
+                {%- comment -%}End of fullscreen Product Image{%- endcomment -%}
+
+
+                <div class="video-section-title">
+                    {%- comment -%}
+						<div class="video-icon">
+						                        {% include "inline-icon" with svg: 'play-button.svg' %}
+						                    </div>
+					{%- endcomment -%}
+
+                    {% if product.metafields.custom_fields["video_section_title"] != blank %}
+                        <h4 class="white uppercase">
+                            {{ product.metafields.custom_fields["video_section_title"] }}
+                        </h4>
+                    {% endif %}
+
+
+                    {%- comment -%}pass url into video snippet{%- endcomment -%}
+                    {% include "video" with video_url: product.metafields.custom_fields["video_url"] %}
+
+
+                </div>
+
+
+            </section>
+
+        {% endif %}
+
+
+        {%- comment -%}End Video Section{%- endcomment -%}
       
       
     </div>

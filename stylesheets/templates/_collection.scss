@@ -913,6 +913,24 @@
     }
   }
 
+  .price-btn {
+    text-align: center;
+  }
+
+  .video-library-item {
+    padding: 0;
+  }
+
+  .page-video-section {
+    padding: 5vh 0;
+    background: none;
+  }
+
+  .video-inner {
+    max-width: 70%;
+    height: 100%;
+  }
+
   .inner-ai_bt-ts {
     display: block;
     margin: auto;
@@ -1599,9 +1617,12 @@
   img {
     transition: all 3s ease-in-out;
   }
+
+  /*
   &:hover {
     img {
     //  transform: scale(1.1);
     }
   }
+  */
 }
