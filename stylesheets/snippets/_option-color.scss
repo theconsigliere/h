@@ -82,6 +82,20 @@
   background: $white;
 }
 
+.snapper-red-color {
+  background: #bf2c3c;
+}
+.blue-racer-color {
+  background: #b1dfee;
+}
+.mawas-orange-color {
+  background: #dd5839;
+}
+.pink-dragon-color {
+  background: #e83672;
+}
+
+
 .option-values {
   @include flexend-center-row;
   width: 80%;

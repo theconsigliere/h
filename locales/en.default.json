@@ -131,7 +131,11 @@
       "white-orange": "FA4F23",
       "black-white": "000000",
       "white-black": "000000",
-      "black-black": "000000"
+      "black-black": "000000",
+      "snapper-red": "ff0022",
+      "blue-racer": "ff0022",
+      "mawas-orange": "ff0022",
+      "pink-dragon": "ff0022"
     }
   },
   "search": {

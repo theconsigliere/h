@@ -419,6 +419,7 @@
 
   .color-swatch {
     border-radius: 100%;
+    aspect-ratio: 1;
   }
 
   &.color-white {
@@ -1466,10 +1467,10 @@
 // Closeup Grid Section
 .closeup-grid-section {
   max-width: 90%;
-  margin: auto;
+  margin: 10vh auto;
 
   @media (min-width: #{$screen-lg}) {
-    width: 70%;
+    width: 80%;
   }
 
 

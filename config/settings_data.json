@@ -2840,6 +2840,15 @@
               "disclaimer_content_two": "We are so confident in the quality of the AIRO frame and \nforks that we offer a lifetime warranty meaning all your \nchildren will be able to start their cycling journey on the same bike!"
             }
           },
+          "b9075e9c-4571-4986-9354-112974032302": {
+            "type": "video",
+            "settings": {
+              "video_title": "Test test etetstssss",
+              "video_desc": "",
+              "video_link": "",
+              "video_url": "https:\/\/player.vimeo.com\/video\/566991272"
+            }
+          },
           "83752e20-7145-4179-9cf4-1f1eec8626a5": {
             "type": "info-block",
             "settings": {
@@ -2901,6 +2910,7 @@
           "51180174-8341-4579-8628-d186646a6a67",
           "9ced16ca-874e-433b-ba1b-e751a1b4d5a0",
           "b35e4b84-1f7d-4315-9e4f-2b3d8dd663ed",
+          "b9075e9c-4571-4986-9354-112974032302",
           "83752e20-7145-4179-9cf4-1f1eec8626a5",
           "19ea4ab7-d8b6-4bbf-a99f-de32c54e800e",
           "1089d328-912c-4d26-9eb4-eeb42299fd7b",
@@ -2940,10 +2950,13 @@
               "hero_button_text": "shop now"
             }
           },
-          "54bad76f-e441-4301-b077-b6217cfcf484": {
-            "type": "fullwidth-image",
+          "b7d52aa3-54da-4bd7-9fd9-f1460165887f": {
+            "type": "video",
             "settings": {
-              "full_image": "shopify:\/\/shop_images\/children-starter-image.jpg"
+              "video_title": "",
+              "video_desc": "",
+              "video_link": "",
+              "video_url": "https:\/\/player.vimeo.com\/video\/566991272"
             }
           },
           "acc7a142-75bd-4e2a-9aed-a8c5f0474606": {
@@ -2980,7 +2993,7 @@
         "block_order": [
           "9a102a7b-a1d0-40dc-9c11-91ef496bb6f5",
           "3a088146-b8d5-46d4-85fc-e1ccd17c52ce",
-          "54bad76f-e441-4301-b077-b6217cfcf484",
+          "b7d52aa3-54da-4bd7-9fd9-f1460165887f",
           "acc7a142-75bd-4e2a-9aed-a8c5f0474606",
           "e35a8cc0-16e8-4914-9b40-156e23a3cc2a"
         ],

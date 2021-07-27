@@ -269,33 +269,14 @@
         {%- comment -%}End info area{%- endcomment -%}
 
 
-        {%- comment -%}Information List{%- endcomment -%}
 
-        {% if product.metafields.custom_fields["information_list"] != blank %}
-
-            <section class=" product-content-section info-list">
-
-                <h2 class="uppercase kids-header-font ta-center ">Further Information</h2>
-
-                <div class="inner">
+        {%- comment -%}product awards{%- endcomment -%}
 
 
-                    <div class="info-list-inner">
-
-                        {{ product.metafields.custom_fields["information_list"] }}
+        {% include 'awards-section' %}
 
 
-                    </div>
-
-                </div>
-
-            </section>
-
-
-        {% endif %}
-
-
-        {%- comment -%}Information list end{%- endcomment -%}
+        {%- comment -%}end product awards{%- endcomment -%}
 
 
         {%- comment -%} Closeup Grid Info {%- endcomment -%}
@@ -333,6 +314,34 @@
             </section>
         {% endif %}
         {%- comment -%}IGrid Info end{%- endcomment -%}
+
+        {%- comment -%}Information List{%- endcomment -%}
+
+            {% if product.metafields.custom_fields["information_list"] != blank %}
+
+            <section class=" product-content-section info-list">
+
+                <h2 class="uppercase kids-header-font ta-center ">Further Information</h2>
+
+                <div class="inner">
+
+
+                    <div class="info-list-inner">
+
+                        {{ product.metafields.custom_fields["information_list"] }}
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        {% endif %}
+
+
+        {%- comment -%}Information list end{%- endcomment -%}
 
 
         {%- comment -%}FAQ Section{%- endcomment -%}
@@ -449,16 +458,6 @@
         {%- endcomment -%}
 
         {%- comment -%}End of Review Section{%- endcomment -%}
-
-                  {%- comment -%}product awards{%- endcomment -%}
-
-
-                  {% include 'awards-section' %}
-                  
-                  
-        
-        
-                  {%- comment -%}end product awards{%- endcomment -%}
 
 
         {%- comment -%}Video Section{%- endcomment -%}
