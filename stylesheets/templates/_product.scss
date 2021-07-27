@@ -1475,16 +1475,20 @@
 
 
   .closeup-grid-row {
-    display: grid;
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-    grid-template-columns: 1fr 1fr;
+    display: block;
 
     &:nth-child(even) {
       .closeup-grid-image {
           grid-column: 0;
           grid-row: 1;
       }
+    }
+
+    @media (min-width: #{$screen-lg}) {
+      display: grid;
+      grid-column-gap: 0;
+      grid-row-gap: 0;
+      grid-template-columns: 1fr 1fr;
     }
   }
 
