@@ -825,6 +825,8 @@
     img {
       width: 100%;
       object-fit: cover;
+      min-height: 500px;
+      max-height: 75vh;
     }
   }
 
@@ -984,7 +986,15 @@
       margin-top: 0;
 
       img {
-        max-width: 10%;
+        max-width: 40%;
+
+        @media (min-width: #{$screen-sm}) {
+          max-width: 30%;
+        }
+
+        @media (min-width: #{$screen-lg}) {
+          max-width: 15%;
+        }
       }
     }
   }
