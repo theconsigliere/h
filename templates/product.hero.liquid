@@ -315,6 +315,54 @@
         {% endif %}
         {%- comment -%}IGrid Info end{%- endcomment -%}
 
+
+
+        {%- comment -%}Video Section{%- endcomment -%}
+
+
+        {% if product.metafields.custom_fields["video_url"] != blank %}
+
+            <section class="video-section">
+
+                {%- comment -%}Fullscreen Product image{%- endcomment -%}
+                {% if product.metafields.custom_fields["product_image_full_screen"] != blank %}
+
+                    <img data-src="{{ product.metafields.custom_fields["product_image_full_screen"] }}" class="lazyload"/>
+                {% endif %}
+
+                {%- comment -%}End of fullscreen Product Image{%- endcomment -%}
+
+
+                <div class="video-section-title">
+                    {%- comment -%}
+                        <div class="video-icon">
+                                                {% include "inline-icon" with svg: 'play-button.svg' %}
+                                            </div>
+                    {%- endcomment -%}
+
+                    {% if product.metafields.custom_fields["video_section_title"] != blank %}
+                        <h4 class="white uppercase">
+                            {{ product.metafields.custom_fields["video_section_title"] }}
+                        </h4>
+                    {% endif %}
+
+
+                    {%- comment -%}pass url into video snippet{%- endcomment -%}
+                    {% include "video" with video_url: product.metafields.custom_fields["video_url"] %}
+
+
+                </div>
+
+
+            </section>
+
+        {% endif %}
+
+
+        {%- comment -%}End Video Section{%- endcomment -%}
+
+
+
         {%- comment -%}Information List{%- endcomment -%}
 
             {% if product.metafields.custom_fields["information_list"] != blank %}
@@ -458,51 +506,6 @@
         {%- endcomment -%}
 
         {%- comment -%}End of Review Section{%- endcomment -%}
-
-
-        {%- comment -%}Video Section{%- endcomment -%}
-
-
-        {% if product.metafields.custom_fields["video_url"] != blank %}
-
-            <section class="video-section">
-
-                {%- comment -%}Fullscreen Product image{%- endcomment -%}
-                {% if product.metafields.custom_fields["product_image_full_screen"] != blank %}
-
-                    <img data-src="{{ product.metafields.custom_fields["product_image_full_screen"] }}" class="lazyload"/>
-                {% endif %}
-
-                {%- comment -%}End of fullscreen Product Image{%- endcomment -%}
-
-
-                <div class="video-section-title">
-                    {%- comment -%}
-						<div class="video-icon">
-						                        {% include "inline-icon" with svg: 'play-button.svg' %}
-						                    </div>
-					{%- endcomment -%}
-
-                    {% if product.metafields.custom_fields["video_section_title"] != blank %}
-                        <h4 class="white uppercase">
-                            {{ product.metafields.custom_fields["video_section_title"] }}
-                        </h4>
-                    {% endif %}
-
-
-                    {%- comment -%}pass url into video snippet{%- endcomment -%}
-                    {% include "video" with video_url: product.metafields.custom_fields["video_url"] %}
-
-
-                </div>
-
-
-            </section>
-
-        {% endif %}
-
-
-        {%- comment -%}End Video Section{%- endcomment -%}
       
       
     </div>

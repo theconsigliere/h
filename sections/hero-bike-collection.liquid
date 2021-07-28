@@ -442,7 +442,18 @@
                     "id": "video_link",
                     "type": "url",
                     "label": "Link to Library"
-                }, {
+                }, 
+                {
+                    "id": "video_image",
+                    "type": "image_picker",
+                    "label": "Placeholder Image"
+                },                
+                {
+                    "id": "video_title",
+                    "type": "text",
+                    "label": "Video Title"
+                },
+                {
                     "id": "video_url",
                     "type": "video_url",
                     "label": "Video URL",
@@ -450,12 +461,23 @@
                         "youtube",
                         "vimeo"
                     ],
-                    "default": "https://youtu.be/o0HGtxPc454",
+                    "default": "https://player.vimeo.com/video/566991272",
                     "info": "Text",
                     "placeholder": "Add your video link here"
                 }
             ]
-        }, {
+        },   {
+            "type": "fullwidth-image",
+            "name": "Fullwidth Image Section",
+            "settings": [
+                {
+                    "id": "full_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                }
+            ]
+        },  
+        {
             "type": "colour-section",
             "name": "Colour Section",
             "settings": [
@@ -999,6 +1021,27 @@
             </div>
 
         </section>
+
+
+
+
+
+        {% when 'fullwidth-image' %}
+
+
+            <div class="fullwidth-image-section">
+
+                {% if block.settings.full_image != blank %}
+
+                    <div class="full-image">
+                        <img data-src="{{ block.settings.full_image | img_url: 'master' }}" alt="{{ block.settings.full_image.alt }}" class="lazyload"/>
+                    </div>
+
+                {% endif %}
+
+            </div>
+
+
 
 
 		{% when 'title' %}
@@ -1650,25 +1693,30 @@
 
 		{% when 'video' %}
 
-			<section class="page-video-section">
+            <section class="video-section">
 
-                <div class="video-inner">
+                {%- comment -%}Fullscreen Product image{%- endcomment -%}
+                {% if block.settings.video_image != blank %}
+                    <img data-src="{{ block.settings.video_image | img_url: 'master' }}" alt="{{ block.settings.video_image.alt }}" class="lazyload"/>
+                {% endif %}
+
+                {%- comment -%}End of fullscreen Product Image{%- endcomment -%}
 
 
-                    <div class="video-library-item">
-                        <iframe title="vimeo-player" src="{{ block.settings.video_url }}" width="640" height="272" frameborder="0" allowfullscreen></iframe>
-                    </div>
+                <div class="video-section-title">
 
-                    {% comment %}
-                    <div class="title-section">
-                        <h5 class="uppercase">{{ block.settings.video_title }}</h5>
-                        <p class="p-fade">{{ block.settings.video_desc }}
-                        </p>
-                    </div>
-                    {% endcomment %}
+                    {% if block.settings.video_title != blank %}
+                        <h4 class="white uppercase">
+                            {{ block.settings.video_title }}
+                        </h4>
+                    {% endif %}
 
+
+                    {%- comment -%}pass url into video snippet{%- endcomment -%}
+                    {% include "video" with video_url: block.settings.video_url %}
 
                 </div>
+
             </section>
 
 
