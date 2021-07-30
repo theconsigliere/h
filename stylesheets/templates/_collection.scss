@@ -1008,8 +1008,12 @@
 
     .ai_box-item {
       margin: 1rem;
-      max-width: 35rem;
+      max-width: 100%;
       transition: all .3s ease-in-out;
+
+      @media (min-width: #{$screen-lg}) {
+        max-width: 35rem;
+      }
     }
 
     .ai_box-item:hover {
@@ -1627,6 +1631,8 @@
 
   img {
     transition: all 3s ease-in-out;
+    width: 100%;
+    object-fit: cover;
   }
 
   /*

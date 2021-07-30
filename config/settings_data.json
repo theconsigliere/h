@@ -2763,7 +2763,7 @@
           "f5c4d898-4a98-4932-a087-c6d877c98c18": {
             "type": "kids-header",
             "settings": {
-              "header_image": "shopify:\/\/shop_images\/csb_1.jpg",
+              "header_image": "shopify:\/\/shop_images\/emerson_main.jpg",
               "show_product_logo": "hornit-hero",
               "header_title": "Hornit Hero",
               "header_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt  ut labore et dolore magna aliqua. \nUt enim ad minim veniam, quis nostrud exercitation.",
@@ -2792,22 +2792,20 @@
               "clug_cat_desc_2": "£TBA",
               "clug_cat_button_url_2": "#",
               "clug_cat_button_text_2": "Shop now",
-              "clug_cat_image_3": "shopify:\/\/shop_images\/Mask_Group_112_1.jpg",
               "clug_cat_title_3": "",
-              "size_number_3": 20,
-              "age_number_3": "2.5-4.5",
-              "weight_number_3": 5.4,
-              "clug_cat_desc_3": "£tba",
+              "size_number_3": 0,
+              "age_number_3": "",
+              "weight_number_3": 0,
+              "clug_cat_desc_3": "",
               "clug_cat_button_url_3": "#",
-              "clug_cat_button_text_3": "Shop now",
-              "clug_cat_image_4": "shopify:\/\/shop_images\/Mask_Group_115_1.jpg",
+              "clug_cat_button_text_3": "",
               "clug_cat_title_4": "",
-              "size_number_4": 14,
-              "age_number_4": "2.5-4.5",
-              "weight_number_4": 7,
-              "clug_cat_desc_4": "£tba",
+              "size_number_4": 0,
+              "age_number_4": "",
+              "weight_number_4": 0,
+              "clug_cat_desc_4": "",
               "clug_cat_button_url_4": "#",
-              "clug_cat_button_text_4": "Shop now",
+              "clug_cat_button_text_4": "",
               "clug_cat_title_5": "",
               "age_number_5": "",
               "clug_cat_desc_5": "",
@@ -2850,7 +2848,7 @@
           "1c46b9b1-cbe3-47cb-8ae9-dc9957c274a2": {
             "type": "fullwidth-image",
             "settings": {
-              "full_image": "shopify:\/\/shop_images\/hero-blue-2.jpg"
+              "full_image": "shopify:\/\/shop_images\/DSC05986_copy.jpg"
             }
           },
           "b35e4b84-1f7d-4315-9e4f-2b3d8dd663ed": {
@@ -2870,7 +2868,7 @@
             "type": "info-block",
             "settings": {
               "info_color": "#3accd2",
-              "info_image": "shopify:\/\/shop_images\/DSC06476_1.jpg",
+              "info_image": "shopify:\/\/shop_images\/lauren.jpg",
               "info_checkbox": false,
               "info_title": "EASY TO ASSEMBLE & ADJUST",
               "info_content": "With just three bolts to tighten (or four if you include adjusting \nthe seat!), your little one will be riding in minutes. The adjustable seat means the AIRO is suitable for a child with an inside leg \nmeasurement of 30cm to 48cm (11.8\" to 18.9”). The Allen key is included.",
@@ -2892,7 +2890,7 @@
             "type": "info-block",
             "settings": {
               "info_color": "#e10613",
-              "info_image": "shopify:\/\/shop_images\/Mask_Group_118_1.jpg",
+              "info_image": "shopify:\/\/shop_images\/hero-orange-2.jpg",
               "info_checkbox": false,
               "info_title": "Beautifully Sleek design",
               "info_content": "The grip taped footrests are contoured into the frame \nfor easy freewheeling, air-filled tyres for a smoother ride and a \npadded stem for extra protection. Fully safety tested by\n TÜVRheinland® for children aged 18months+ (EN71). CE approved.",
@@ -2904,7 +2902,7 @@
             "settings": {
               "extra_title": "Take your bike to new heights",
               "extra_desc": "",
-              "extra_image_1": "shopify:\/\/shop_images\/DSC06256_1.jpg",
+              "extra_image_1": "shopify:\/\/shop_images\/flamingo_2.jpg",
               "extra_title_1": "Helmets",
               "extra_desc_1": "From AIRO to MINI and from NANO to HERO, we have spares for every need!",
               "extra_button_url_1": "shopify:\/\/collections\/helmets",
