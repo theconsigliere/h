@@ -67,6 +67,7 @@
       "on_sale": "Sale",
       "was": "Was",
       "now": "Now",
+      "from": "From",
       "quantity": "Quantity",
       "add_to_cart": "Add to cart",
       "back_to_collection": "Back to {{ title }}",

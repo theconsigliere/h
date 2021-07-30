@@ -1980,6 +1980,16 @@
               "video_url": "https:\/\/player.vimeo.com\/video\/564121861"
             }
           },
+          "59f24bdf-ccbc-4b03-9d94-65d1ba5e2f74": {
+            "type": "video",
+            "disabled": true,
+            "settings": {
+              "video_id": "",
+              "video_title": "Hornit HERO",
+              "video_desc": "Check out the Hornit HERO in action.",
+              "video_url": "https:\/\/player.vimeo.com\/video\/580784474"
+            }
+          },
           "1589190678916": {
             "type": "video",
             "settings": {
@@ -2092,6 +2102,7 @@
         "block_order": [
           "1589190108708",
           "e734a26a-a8d9-4b20-9c85-88955f3a3035",
+          "59f24bdf-ccbc-4b03-9d94-65d1ba5e2f74",
           "1589190678916",
           "60837f3d-d8ca-4f97-a32f-03798fce06a4",
           "680ce45a-c7c7-475a-9413-a8a0cd94fc18",
@@ -2819,12 +2830,27 @@
               "clug_cat_button_text_8": ""
             }
           },
+          "b9075e9c-4571-4986-9354-112974032302": {
+            "type": "video",
+            "settings": {
+              "video_link": "",
+              "video_image": "shopify:\/\/shop_images\/hero-blue-3.jpg",
+              "video_title": "Check out our hero video",
+              "video_url": "https:\/\/player.vimeo.com\/video\/580784474"
+            }
+          },
           "9ced16ca-874e-433b-ba1b-e751a1b4d5a0": {
             "type": "quote-block",
             "settings": {
               "quote_image": "shopify:\/\/shop_images\/hero-black.png",
               "quote_title": "NOT ALL BIKES ARE CREATED EQUAL",
               "quote_content": "Lorem ipsum dolor sit amet."
+            }
+          },
+          "1c46b9b1-cbe3-47cb-8ae9-dc9957c274a2": {
+            "type": "fullwidth-image",
+            "settings": {
+              "full_image": "shopify:\/\/shop_images\/hero-blue-2.jpg"
             }
           },
           "b35e4b84-1f7d-4315-9e4f-2b3d8dd663ed": {
@@ -2840,15 +2866,6 @@
               "disclaimer_content_two": "We are so confident in the quality of the AIRO frame and \nforks that we offer a lifetime warranty meaning all your \nchildren will be able to start their cycling journey on the same bike!"
             }
           },
-          "b9075e9c-4571-4986-9354-112974032302": {
-            "type": "video",
-            "settings": {
-              "video_title": "Test test etetstssss",
-              "video_desc": "",
-              "video_link": "",
-              "video_url": "https:\/\/player.vimeo.com\/video\/566991272"
-            }
-          },
           "83752e20-7145-4179-9cf4-1f1eec8626a5": {
             "type": "info-block",
             "settings": {
@@ -2857,7 +2874,7 @@
               "info_checkbox": false,
               "info_title": "EASY TO ASSEMBLE & ADJUST",
               "info_content": "With just three bolts to tighten (or four if you include adjusting \nthe seat!), your little one will be riding in minutes. The adjustable seat means the AIRO is suitable for a child with an inside leg \nmeasurement of 30cm to 48cm (11.8\" to 18.9”). The Allen key is included.",
-              "info_video_url": ""
+              "info_video_url": "https:\/\/player.vimeo.com\/video\/566991272"
             }
           },
           "19ea4ab7-d8b6-4bbf-a99f-de32c54e800e": {
@@ -2886,20 +2903,20 @@
             "type": "extras",
             "settings": {
               "extra_title": "Take your bike to new heights",
-              "extra_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt  ut labore et dolore magna aliqua. \nUt enim ad minim veniam, quis nostrud exercitation.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt  ut labore et dolore magna aliqua. \nUt enim ad minim veniam, quis nostrud exercitation.",
+              "extra_desc": "",
               "extra_image_1": "shopify:\/\/shop_images\/DSC06256_1.jpg",
               "extra_title_1": "Helmets",
-              "extra_desc_1": "We designed the CLUG to be a great fit with just about every bike tyre out there.  We sell five versions of the CLUG .",
+              "extra_desc_1": "From AIRO to MINI and from NANO to HERO, we have spares for every need!",
               "extra_button_url_1": "shopify:\/\/collections\/helmets",
               "extra_button_text_1": "Shop now",
-              "extra_image_2": "shopify:\/\/shop_images\/DSC05576_1.jpg",
+              "extra_image_2": "shopify:\/\/shop_images\/Mask_Group_108_1.jpg",
               "extra_title_2": "Spares",
-              "extra_desc_2": "We designed the CLUG to be a great fit with just about every bike tyre out there.  We sell five versions of the CLUG .",
+              "extra_desc_2": "From AIRO to MINI and from NANO to HERO, we have spares for every need!",
               "extra_button_url_2": "shopify:\/\/collections\/accessories",
               "extra_button_text_2": "Shop now",
               "extra_image_3": "shopify:\/\/shop_images\/Mask_Group_108_1.jpg",
               "extra_title_3": "Hornit Airo",
-              "extra_desc_3": "We designed the CLUG to be a great fit with just about every bike tyre out there.  We sell five versions of the CLUG .",
+              "extra_desc_3": "From AIRO to MINI and from NANO to HERO, we have spares for every need!",
               "extra_button_url_3": "shopify:\/\/collections\/hornit-airo",
               "extra_button_text_3": "Shop Now"
             }
@@ -2908,9 +2925,10 @@
         "block_order": [
           "f5c4d898-4a98-4932-a087-c6d877c98c18",
           "51180174-8341-4579-8628-d186646a6a67",
-          "9ced16ca-874e-433b-ba1b-e751a1b4d5a0",
-          "b35e4b84-1f7d-4315-9e4f-2b3d8dd663ed",
           "b9075e9c-4571-4986-9354-112974032302",
+          "9ced16ca-874e-433b-ba1b-e751a1b4d5a0",
+          "1c46b9b1-cbe3-47cb-8ae9-dc9957c274a2",
+          "b35e4b84-1f7d-4315-9e4f-2b3d8dd663ed",
           "83752e20-7145-4179-9cf4-1f1eec8626a5",
           "19ea4ab7-d8b6-4bbf-a99f-de32c54e800e",
           "1089d328-912c-4d26-9eb4-eeb42299fd7b",
@@ -2953,9 +2971,9 @@
           "b7d52aa3-54da-4bd7-9fd9-f1460165887f": {
             "type": "video",
             "settings": {
-              "video_title": "",
-              "video_desc": "",
               "video_link": "",
+              "video_image": "shopify:\/\/shop_images\/turquouse.jpg",
+              "video_title": "Check Out our airo video",
               "video_url": "https:\/\/player.vimeo.com\/video\/566991272"
             }
           },
@@ -2965,6 +2983,12 @@
               "quote_image": "shopify:\/\/shop_images\/hero-black.png",
               "quote_title": "Not all bikes are created equal",
               "quote_content": "lorem ipsum dolor sit amet"
+            }
+          },
+          "00556bef-a71b-4619-8b5c-6ce5c06f4f41": {
+            "type": "fullwidth-image",
+            "settings": {
+              "full_image": "shopify:\/\/shop_images\/hero-orange-2.jpg"
             }
           },
           "e35a8cc0-16e8-4914-9b40-156e23a3cc2a": {
@@ -2995,6 +3019,7 @@
           "3a088146-b8d5-46d4-85fc-e1ccd17c52ce",
           "b7d52aa3-54da-4bd7-9fd9-f1460165887f",
           "acc7a142-75bd-4e2a-9aed-a8c5f0474606",
+          "00556bef-a71b-4619-8b5c-6ce5c06f4f41",
           "e35a8cc0-16e8-4914-9b40-156e23a3cc2a"
         ],
         "settings": {
